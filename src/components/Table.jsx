@@ -1,4 +1,4 @@
-import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { ChevronDoubleLeftIcon, ChevronDoubleRightIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { useFilters, useGlobalFilter, usePagination, useSortBy, useTable } from 'react-table'
 // import { useAsyncDebounce } from 'react-table'
