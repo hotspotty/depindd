@@ -1,10 +1,10 @@
-import Head from 'next/head'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
+import Head from 'next/head'
 
 import { Layout } from '@/components/Layout'
 
-import 'focus-visible'
 import '@/styles/tailwind.css'
+import 'focus-visible'
 
 function getNodeText(node) {
   let text = ''
@@ -57,6 +57,8 @@ export default function App({ Component, pageProps }) {
 
   let description = pageProps.markdoc?.frontmatter.description
 
+  let tableId = pageProps.markdoc?.frontmatter.tableId
+
   let tableOfContents = pageProps.markdoc?.content
     ? collectHeadings(pageProps.markdoc.content)
     : []
@@ -67,7 +69,7 @@ export default function App({ Component, pageProps }) {
         <title>{pageTitle}</title>
         {description && <meta name="description" content={description} />}
       </Head>
-      <Layout title={title} tableOfContents={tableOfContents}>
+      <Layout title={title} tableId={tableId} tableOfContents={tableOfContents}>
         <Component {...pageProps} />
       </Layout>
     </>

@@ -1,9 +1,9 @@
 ---
-title: CacheAdvance.predict()
+title: Helium IoT
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
-Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.
+This is a LoRaWAN network. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.
 
 ---
 

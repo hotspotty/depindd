@@ -1,29 +1,13 @@
 ---
-title: What is DePIN
-pageTitle: DePinterest - What is DePIN?
-description: DePIN is ...
+title: Payback time
+pageTitle: DePinterest - Payback time
+description: Rank DePIN projects by miner payback time
+tableId: 1
 ---
 
-This is a ranking of the different DePIN projects based on how long it takes to earn back the investment in a miner. {% .lead %}
+## Quick start
 
-{% quick-links %}
-
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
-
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
-
-{% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
-
-{% quick-link title="API reference" icon="theming" href="/" description="Learn to easily customize and modify your app's visual design to fit your brand." /%}
-
-{% /quick-links %}
-
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste.
-
----
-
-## Definition
-
+The point of this page is to identify the projects that are paid back the quickest.
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
 
 ### Installing dependencies

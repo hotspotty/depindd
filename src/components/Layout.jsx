@@ -1,8 +1,3 @@
-import { useCallback, useEffect, useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import clsx from 'clsx'
-
 import { Hero } from '@/components/Hero'
 import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
@@ -10,52 +5,36 @@ import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
+import clsx from 'clsx'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import React, { useCallback, useEffect, useState } from 'react'
+import Table, { AvatarCell, SelectColumnFilter, StatusPill } from './Table'
 
 const navigation = [
   {
-    title: 'Introduction',
+    title: 'About',
     links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'What is DePIN', href: '/' },
+      { title: 'Why DePinterest', href: '/docs/why-depinterest' },
     ],
   },
   {
-    title: 'Core concepts',
+    title: 'DePIN Leaderboard',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Payback time ', href: '/docs/payback-time' },
+      { title: 'Network revenue', href: '/docs/network-revenue' },
+      { title: 'Network size', href: '/docs/network-size' },
     ],
   },
   {
-    title: 'Advanced guides',
+    title: 'DePIN Networks',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
-    ],
-  },
-  {
-    title: 'API reference',
-    links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'Helium IoT', href: '/docs/helium-iot' },
+      { title: 'Helium 5G', href: '/docs/cacheadvance-predict' },
+      { title: 'XNET', href: '/docs/cacheadvance-flush' },
+      { title: 'DIMO', href: '/docs/cacheadvance-revert' },
+      { title: 'Hivemapper', href: '/docs/cacheadvance-regret' },
     ],
   },
   {
@@ -164,7 +143,74 @@ function useTableOfContents(tableOfContents) {
   return currentSection
 }
 
-export function Layout({ children, title, tableOfContents }) {
+const getData = () => {
+  const data = [
+    {
+      name: 'Jane Cooper',
+      email: 'jane.cooper@example.com',
+      title: 'Regional Paradigm Technician',
+      department: 'Optimization',
+      status: 'Active',
+      role: 'Admin',
+      age: 27,
+      imgUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    },
+    {
+      name: 'Cody Fisher',
+      email: 'cody.fisher@example.com',
+      title: 'Product Directives Officer',
+      department: 'Intranet',
+      status: 'Inactive',
+      role: 'Owner',
+      age: 43,
+      imgUrl: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    },
+    {
+      name: 'Esther Howard',
+      email: 'esther.howard@example.com',
+      title: 'Forward Response Developer',
+      department: 'Directives',
+      status: 'Active',
+      role: 'Member',
+      age: 32,
+      imgUrl: 'https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    },
+    {
+      name: 'Jenny Wilson',
+      email: 'jenny.wilson@example.com',
+      title: 'Central Security Manager',
+      department: 'Program',
+      status: 'Offline',
+      role: 'Member',
+      age: 29,
+      imgUrl: 'https://images.unsplash.com/photo-1498551172505-8ee7ad69f235?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    },
+    {
+      name: 'Kristin Watson',
+      email: 'kristin.watson@example.com',
+      title: 'Lean Implementation Liaison',
+      department: 'Mobility',
+      status: 'Inactive',
+      role: 'Admin',
+      age: 36,
+      imgUrl: 'https://images.unsplash.com/photo-1532417344469-368f9ae6d187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    },
+    {
+      name: 'Cameron Williamson',
+      email: 'cameron.williamson@example.com',
+      title: 'Internal Applications Engineer',
+      department: 'Security',
+      status: 'Active',
+      role: 'Member',
+      age: 24,
+      imgUrl: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60',
+    },
+  ]
+  return [...data, ...data, ...data]
+}
+
+
+export function Layout({ children, title, tableId, tableOfContents }) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
   let allLinks = navigation.flatMap((section) => section.links)
@@ -175,6 +221,7 @@ export function Layout({ children, title, tableOfContents }) {
     section.links.find((link) => link.href === router.pathname)
   )
   let currentSection = useTableOfContents(tableOfContents)
+  let containsDataTable = !!tableId
 
   function isActive(section) {
     if (section.id === currentSection) {
@@ -186,13 +233,48 @@ export function Layout({ children, title, tableOfContents }) {
     return section.children.findIndex(isActive) > -1
   }
 
+
+  const columns = React.useMemo(() => [
+    {
+      Header: "Name",
+      accessor: 'name',
+      Cell: AvatarCell,
+      imgAccessor: "imgUrl",
+      emailAccessor: "email",
+    },
+    {
+      Header: "Title",
+      accessor: 'title',
+    },
+    {
+      Header: "Status",
+      accessor: 'status',
+      Cell: StatusPill,
+    },
+    {
+      Header: "Age",
+      accessor: 'age',
+    },
+    {
+      Header: "Role",
+      accessor: 'role',
+      Filter: SelectColumnFilter,  // new
+      filter: 'includes',
+    },
+  ], [])
+
+  const data = React.useMemo(() => getData(), [])
+
+
   return (
     <>
       <Header navigation={navigation} />
 
       {isHomePage && <Hero />}
 
-      <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
+
+
+      <div className="relative mx-auto flex flex-wrap max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
@@ -204,110 +286,213 @@ export function Layout({ children, title, tableOfContents }) {
             />
           </div>
         </div>
-        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
-          <article>
-            {(title || section) && (
-              <header className="mb-9 space-y-1">
-                {section && (
-                  <p className="font-display text-sm font-medium text-sky-500">
+
+
+        <div className="flex-1">
+
+        {containsDataTable && (
+          <div className="px-4 pt-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:pl-16 xl:pr-6">
+          <header className="mb-9 space-y-1">
+          {section && (
+            <p className="font-display text-sm font-medium text-sky-500">
+              {section.title}
+            </p>
+          )}
+          {title && (
+            <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+              {title}
+            </h1>
+          )}
+        </header>
+   
+        <div className="mb-8 flex rounded-3xl bg-amber-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10">
+          <table className="border-collapse w-full text-sm shadow-sm">
+            <thead className="">
+              <tr>
+                <th className="group border-b border-slate-300 dark:border-slate-600 font-semibold px-4 py-3 text-slate-900 dark:text-slate-200 text-left" aria-sort="ascending">
+                  <span className="flex gap-2 items-center w-full justify-between">
+                    DePIN network
+                  </span>
+                </th>
+                <th className="border-b border-slate-300 dark:border-slate-600 font-semibold px-4 py-3 text-slate-900 dark:text-slate-200 text-right">Payback time</th>
+                <th className="border-b border-slate-300 dark:border-slate-600 font-semibold px-4 py-3 text-slate-900 dark:text-slate-200 text-right">Miner cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400">Helium IoT</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right">13 months</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right tabular-nums">$200.00</td>
+              </tr>
+              <tr>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400">DIMO</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right">3 months</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right tabular-nums">$500.00</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 text-slate-500 dark:text-slate-400">Hivemapper</td>
+                <td className="px-4 py-3 text-slate-500 dark:text-slate-400 text-right">6 months</td>
+                <td className="px-4 py-3 text-slate-500 dark:text-slate-400 text-right tabular-nums">$600.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mb-8">
+          <table className="border-collapse w-full border-y border-slate-400 dark:border-slate-500 text-sm shadow-sm">
+            <thead className="">
+              <tr>
+                <th className="group border border-l-0 border-r-0 border-slate-300 dark:border-slate-600 font-semibold px-4 py-3 text-slate-900 dark:text-slate-200 text-left" aria-sort="ascending">
+                  <span className="flex gap-2 items-center w-full justify-between">
+                    DePIN network
+                  </span>
+                </th>
+                <th className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-600 font-semibold px-4 py-3 text-slate-900 dark:text-slate-200 text-right">Payback time</th>
+                <th className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-600 font-semibold px-4 py-3 text-slate-900 dark:text-slate-200 text-right">Miner cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400">Helium IoT</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right">13 months</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right tabular-nums">$200.00</td>
+              </tr>
+              <tr>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400">DIMO</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right">3 months</td>
+                <td className="border border-l-0 border-r-0 border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right tabular-nums">$500.00</td>
+              </tr>
+              <tr>
+                <td className="border-b border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400">Hivemapper</td>
+                <td className="border-b border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right">6 months</td>
+                <td className="border-b border-slate-300 dark:border-slate-700 px-4 py-3 text-slate-500 dark:text-slate-400 text-right tabular-nums">$600.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div className="mt-6">
+          <Table columns={columns} data={data} />
+        </div>
+
+          </div>
+        )}
+       
+      
+
+
+        
+    <div className="flex">
+    <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+    <article>
+      {!containsDataTable && (title || section) && (
+        <header className="mb-9 space-y-1">
+          {section && (
+            <p className="font-display text-sm font-medium text-sky-500">
+              {section.title}
+            </p>
+          )}
+          {title && (
+            <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+              {title}
+            </h1>
+          )}
+        </header>
+      )}
+      <Prose>{children}</Prose>
+    </article>
+    <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
+      {previousPage && (
+        <div>
+          <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+            Previous
+          </dt>
+          <dd className="mt-1">
+            <Link
+              href={previousPage.href}
+              className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+            >
+              <span aria-hidden="true">&larr;</span> {previousPage.title}
+            </Link>
+          </dd>
+        </div>
+      )}
+      {nextPage && (
+        <div className="ml-auto text-right">
+          <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+            Next
+          </dt>
+          <dd className="mt-1">
+            <Link
+              href={nextPage.href}
+              className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+            >
+              {nextPage.title} <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </dd>
+        </div>
+      )}
+    </dl>
+  </div>
+  <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+    <nav aria-labelledby="on-this-page-title" className="w-56">
+      {tableOfContents.length > 0 && (
+        <>
+          <h2
+            id="on-this-page-title"
+            className="font-display text-sm font-medium text-slate-900 dark:text-white"
+          >
+            On this page
+          </h2>
+          <ol role="list" className="mt-4 space-y-3 text-sm">
+            {tableOfContents.map((section) => (
+              <li key={section.id}>
+                <h3>
+                  <Link
+                    href={`#${section.id}`}
+                    className={clsx(
+                      isActive(section)
+                        ? 'text-sky-500'
+                        : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
+                    )}
+                  >
                     {section.title}
-                  </p>
-                )}
-                {title && (
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                    {title}
-                  </h1>
-                )}
-              </header>
-            )}
-            <Prose>{children}</Prose>
-          </article>
-          <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
-            {previousPage && (
-              <div>
-                <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Previous
-                </dt>
-                <dd className="mt-1">
-                  <Link
-                    href={previousPage.href}
-                    className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-                  >
-                    <span aria-hidden="true">&larr;</span> {previousPage.title}
                   </Link>
-                </dd>
-              </div>
-            )}
-            {nextPage && (
-              <div className="ml-auto text-right">
-                <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Next
-                </dt>
-                <dd className="mt-1">
-                  <Link
-                    href={nextPage.href}
-                    className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                </h3>
+                {section.children.length > 0 && (
+                  <ol
+                    role="list"
+                    className="mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400"
                   >
-                    {nextPage.title} <span aria-hidden="true">&rarr;</span>
-                  </Link>
-                </dd>
-              </div>
-            )}
-          </dl>
-        </div>
-        <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
-          <nav aria-labelledby="on-this-page-title" className="w-56">
-            {tableOfContents.length > 0 && (
-              <>
-                <h2
-                  id="on-this-page-title"
-                  className="font-display text-sm font-medium text-slate-900 dark:text-white"
-                >
-                  On this page
-                </h2>
-                <ol role="list" className="mt-4 space-y-3 text-sm">
-                  {tableOfContents.map((section) => (
-                    <li key={section.id}>
-                      <h3>
+                    {section.children.map((subSection) => (
+                      <li key={subSection.id}>
                         <Link
-                          href={`#${section.id}`}
-                          className={clsx(
-                            isActive(section)
+                          href={`#${subSection.id}`}
+                          className={
+                            isActive(subSection)
                               ? 'text-sky-500'
-                              : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
-                          )}
+                              : 'hover:text-slate-600 dark:hover:text-slate-300'
+                          }
                         >
-                          {section.title}
+                          {subSection.title}
                         </Link>
-                      </h3>
-                      {section.children.length > 0 && (
-                        <ol
-                          role="list"
-                          className="mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400"
-                        >
-                          {section.children.map((subSection) => (
-                            <li key={subSection.id}>
-                              <Link
-                                href={`#${subSection.id}`}
-                                className={
-                                  isActive(subSection)
-                                    ? 'text-sky-500'
-                                    : 'hover:text-slate-600 dark:hover:text-slate-300'
-                                }
-                              >
-                                {subSection.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ol>
-                      )}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            )}
-          </nav>
+                      </li>
+                    ))}
+                  </ol>
+                )}
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+    </nav>
+  </div>
+    </div>
+
         </div>
+
+
       </div>
     </>
   )

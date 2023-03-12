@@ -1,25 +1,22 @@
-import { Fragment } from 'react'
-import Image from 'next/image'
 import clsx from 'clsx'
+import Image from 'next/image'
 import Highlight, { defaultProps } from 'prism-react-renderer'
+import { Fragment } from 'react'
 
 import { Button } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 
-const codeLanguage = 'javascript'
-const code = `export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
-}`
+const codeLanguage = 'bash'
+const code = `DIMO: 3 months
+Hivemapper: 7 months
+Helium 5G: 13 months`
 
 const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
-  { name: 'package.json', isActive: false },
+  { name: 'Payback time', isActive: true },
+  { name: 'Network revenue', isActive: false },
+  { name: 'Network size', isActive: false },
 ]
 
 function TrafficLightsIcon(props) {
@@ -49,11 +46,10 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Never miss the cache again.
+              DePINterest
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                Cache every single thing your app could ever do ahead of time,
-                so your code never even has to run at all.
+              Join the DePIN movement, where anyone can earn passive income  through community built and owned physical infrastructure networks!
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>
@@ -93,6 +89,9 @@ export function Hero() {
                 <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
                 <div className="pl-4 pt-4">
                   <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
+                  <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-white">
+                  Leaderboard
+                  </h3>
                   <div className="mt-4 flex space-x-2 text-xs">
                     {tabs.map((tab) => (
                       <div
