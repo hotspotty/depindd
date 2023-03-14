@@ -1,6 +1,9 @@
-import { DarkMode, Gradient, LightMode } from '@/components/Icon'
+import { DarkMode, Gradient, IconComponentProps, LightMode } from "../Icon"
 
-export function InstallationIcon({ id, color }) {
+export const InstallationIcon: React.FC<IconComponentProps> = ({
+  id,
+  color,
+}) => {
   return (
     <>
       <defs>

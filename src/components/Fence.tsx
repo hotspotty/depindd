@@ -1,7 +1,12 @@
-import { Fragment } from 'react'
-import Highlight, { defaultProps } from 'prism-react-renderer'
+import Highlight, { defaultProps } from "prism-react-renderer"
+import { Fragment } from "react"
 
-export function Fence({ children, language }) {
+interface Props {
+  language: any
+  children: string
+}
+
+export const Fence: React.FC<Props> = ({ children, language }) => {
   return (
     <Highlight
       {...defaultProps}
@@ -19,7 +24,7 @@ export function Fence({ children, language }) {
                   .map((token, tokenIndex) => (
                     <span key={tokenIndex} {...getTokenProps({ token })} />
                   ))}
-                {'\n'}
+                {"\n"}
               </Fragment>
             ))}
           </code>

@@ -1,15 +1,15 @@
-import { slugifyWithCounter } from '@sindresorhus/slugify'
-import Head from 'next/head'
-
-import { Layout } from '@/components/Layout'
-
-import '@/styles/tailwind.css'
-import 'focus-visible'
+import type { MarkdocNextJsPageProps } from "@markdoc/next.js"
+import { slugifyWithCounter } from "@sindresorhus/slugify"
+import "focus-visible"
+import type { AppProps } from "next/app"
+import Head from "next/head"
+import { Layout } from "../components/Layout"
+import "../styles/tailwind.css"
 
 function getNodeText(node) {
-  let text = ''
+  let text = ""
   for (let child of node.children ?? []) {
-    if (typeof child === 'string') {
+    if (typeof child === "string") {
       text += child
     }
     text += getNodeText(child)
@@ -17,19 +17,19 @@ function getNodeText(node) {
   return text
 }
 
-function collectHeadings(nodes, slugify = slugifyWithCounter()) {
+const collectHeadings = (nodes, slugify = slugifyWithCounter()) => {
   let sections = []
 
   for (let node of nodes) {
-    if (node.name === 'h2' || node.name === 'h3') {
+    if (node.name === "h2" || node.name === "h3") {
       let title = getNodeText(node)
       if (title) {
         let id = slugify(title)
         node.attributes.id = id
-        if (node.name === 'h3') {
+        if (node.name === "h3") {
           if (!sections[sections.length - 1]) {
             throw new Error(
-              'Cannot add `h3` to table of contents without a preceding `h2`'
+              "Cannot add `h3` to table of contents without a preceding `h2`"
             )
           }
           sections[sections.length - 1].children.push({
@@ -48,7 +48,9 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
   return sections
 }
 
-export default function App({ Component, pageProps }) {
+export type MyAppProps = MarkdocNextJsPageProps
+
+export default function App({ Component, pageProps }: AppProps<MyAppProps>) {
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =

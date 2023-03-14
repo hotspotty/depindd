@@ -1,14 +1,20 @@
-import { useEffect, useState } from 'react'
-import { Listbox } from '@headlessui/react'
-import clsx from 'clsx'
+import { Listbox } from "@headlessui/react"
+import clsx from "clsx"
+import { useEffect, useState } from "react"
 
-const themes = [
-  { name: 'Light', value: 'light', icon: LightIcon },
-  { name: 'Dark', value: 'dark', icon: DarkIcon },
-  { name: 'System', value: 'system', icon: SystemIcon },
+interface Theme {
+  name: string
+  value: string
+  icon: any
+}
+
+const themes: Theme[] = [
+  { name: "Light", value: "light", icon: LightIcon },
+  { name: "Dark", value: "dark", icon: DarkIcon },
+  { name: "System", value: "system", icon: SystemIcon },
 ]
 
-function LightIcon(props) {
+function LightIcon(props: any) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
@@ -20,7 +26,7 @@ function LightIcon(props) {
   )
 }
 
-function DarkIcon(props) {
+function DarkIcon(props: any) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
@@ -32,7 +38,7 @@ function DarkIcon(props) {
   )
 }
 
-function SystemIcon(props) {
+function SystemIcon(props: any) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
@@ -44,17 +50,17 @@ function SystemIcon(props) {
   )
 }
 
-export function ThemeSelector(props) {
-  let [selectedTheme, setSelectedTheme] = useState()
+export function ThemeSelector(props: any) {
+  let [selectedTheme, setSelectedTheme] = useState<Theme | undefined>()
 
   useEffect(() => {
     if (selectedTheme) {
-      document.documentElement.setAttribute('data-theme', selectedTheme.value)
+      document.documentElement.setAttribute("data-theme", selectedTheme.value)
     } else {
       setSelectedTheme(
         themes.find(
           (theme) =>
-            theme.value === document.documentElement.getAttribute('data-theme')
+            theme.value === document.documentElement.getAttribute("data-theme")
         )
       )
     }
@@ -64,13 +70,13 @@ export function ThemeSelector(props) {
     let handler = () =>
       setSelectedTheme(
         themes.find(
-          (theme) => theme.value === (window.localStorage.theme ?? 'system')
+          (theme) => theme.value === (window.localStorage.theme ?? "system")
         )
       )
 
-    window.addEventListener('storage', handler)
+    window.addEventListener("storage", handler)
 
-    return () => window.removeEventListener('storage', handler)
+    return () => window.removeEventListener("storage", handler)
   }, [])
 
   return (
@@ -97,12 +103,12 @@ export function ThemeSelector(props) {
             value={theme}
             className={({ active, selected }) =>
               clsx(
-                'flex cursor-pointer select-none items-center rounded-[0.625rem] p-1',
+                "flex cursor-pointer select-none items-center rounded-[0.625rem] p-1",
                 {
-                  'text-sky-500': selected,
-                  'text-slate-900 dark:text-white': active && !selected,
-                  'text-slate-700 dark:text-slate-400': !active && !selected,
-                  'bg-slate-100 dark:bg-slate-900/40': active,
+                  "text-sky-500": selected,
+                  "text-slate-900 dark:text-white": active && !selected,
+                  "text-slate-700 dark:text-slate-400": !active && !selected,
+                  "bg-slate-100 dark:bg-slate-900/40": active,
                 }
               )
             }
@@ -112,10 +118,10 @@ export function ThemeSelector(props) {
                 <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
                   <theme.icon
                     className={clsx(
-                      'h-4 w-4',
+                      "h-4 w-4",
                       selected
-                        ? 'fill-sky-400 dark:fill-sky-400'
-                        : 'fill-slate-400'
+                        ? "fill-sky-400 dark:fill-sky-400"
+                        : "fill-slate-400"
                     )}
                   />
                 </div>

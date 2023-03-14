@@ -1,25 +1,24 @@
-import clsx from 'clsx'
-import Image from 'next/image'
-import Highlight, { defaultProps } from 'prism-react-renderer'
-import { Fragment } from 'react'
+import clsx from "clsx"
+import Image from "next/image"
+import Highlight, { defaultProps } from "prism-react-renderer"
+import { Fragment } from "react"
+import blurCyanImage from "../images/blur-cyan.png"
+import blurIndigoImage from "../images/blur-indigo.png"
+import { Button } from "./Button"
+import { HeroBackground } from "./HeroBackground"
 
-import { Button } from '@/components/Button'
-import { HeroBackground } from '@/components/HeroBackground'
-import blurCyanImage from '@/images/blur-cyan.png'
-import blurIndigoImage from '@/images/blur-indigo.png'
-
-const codeLanguage = 'bash'
+const codeLanguage = "bash"
 const code = `DIMO: 3 months
 Hivemapper: 7 months
 Helium 5G: 13 months`
 
 const tabs = [
-  { name: 'Payback time', isActive: true },
-  { name: 'Network revenue', isActive: false },
-  { name: 'Network size', isActive: false },
+  { name: "Payback time", isActive: true },
+  { name: "Network revenue", isActive: false },
+  { name: "Network size", isActive: false },
 ]
 
-function TrafficLightsIcon(props) {
+function TrafficLightsIcon(props: any) {
   return (
     <svg aria-hidden="true" viewBox="0 0 42 10" fill="none" {...props}>
       <circle cx="5" cy="5" r="4.5" />
@@ -46,10 +45,12 @@ export function Hero() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-              DePINterest
+                DePINterest
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-              Join the DePIN movement, where anyone can earn passive income  through community built and owned physical infrastructure networks!
+                Join the DePIN movement, where anyone can earn passive income
+                through community built and owned physical infrastructure
+                networks!
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/">Get started</Button>
@@ -90,23 +91,23 @@ export function Hero() {
                 <div className="pl-4 pt-4">
                   <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
                   <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-white">
-                  Leaderboard
+                    Leaderboard
                   </h3>
                   <div className="mt-4 flex space-x-2 text-xs">
                     {tabs.map((tab) => (
                       <div
                         key={tab.name}
                         className={clsx(
-                          'flex h-6 rounded-full',
+                          "flex h-6 rounded-full",
                           tab.isActive
-                            ? 'bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
-                            : 'text-slate-500'
+                            ? "bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300"
+                            : "text-slate-500"
                         )}
                       >
                         <div
                           className={clsx(
-                            'flex items-center rounded-full px-2.5',
-                            tab.isActive && 'bg-slate-800'
+                            "flex items-center rounded-full px-2.5",
+                            tab.isActive && "bg-slate-800"
                           )}
                         >
                           {tab.name}
@@ -120,10 +121,10 @@ export function Hero() {
                       className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
                     >
                       {Array.from({
-                        length: code.split('\n').length,
+                        length: code.split("\n").length,
                       }).map((_, index) => (
                         <Fragment key={index}>
-                          {(index + 1).toString().padStart(2, '0')}
+                          {(index + 1).toString().padStart(2, "0")}
                           <br />
                         </Fragment>
                       ))}
@@ -144,21 +145,27 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6'
+                            "flex overflow-x-auto pb-6"
                           )}
                           style={style}
                         >
                           <code className="px-4">
-                            {tokens.map((line, lineIndex) => (
-                              <div key={lineIndex} {...getLineProps({ line })}>
-                                {line.map((token, tokenIndex) => (
-                                  <span
-                                    key={tokenIndex}
-                                    {...getTokenProps({ token })}
-                                  />
-                                ))}
-                              </div>
-                            ))}
+                            {tokens.map((line) => {
+                              const { key, ...restLineProps } = getLineProps({
+                                line,
+                              })
+                              return (
+                                <div key={key} {...restLineProps}>
+                                  {line.map((token) => {
+                                    const { key, ...restTokenProps } =
+                                      getTokenProps({ token })
+                                    return (
+                                      <span key={key} {...restTokenProps} />
+                                    )
+                                  })}
+                                </div>
+                              )
+                            })}
                           </code>
                         </pre>
                       )}

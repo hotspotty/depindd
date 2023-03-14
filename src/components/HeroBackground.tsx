@@ -1,6 +1,10 @@
-import { useId } from 'react'
+import { useId } from "react"
 
-export function HeroBackground(props) {
+interface Props {
+  className?: string
+}
+
+export const HeroBackground: React.FC<Props> = (props) => {
   let id = useId()
 
   return (
