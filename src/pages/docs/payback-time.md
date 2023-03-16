@@ -1,6 +1,6 @@
 ---
 title: Payback time
-pageTitle: DePinterest - Payback time
+pageTitle: DePPIN DD - Payback time
 description: Rank DePIN projects by miner payback time
 tableId: 1
 ---
@@ -31,10 +31,10 @@ Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut par
 ```js
 // cache-advance.config.js
 export default {
-  strategy: 'predictive',
+  strategy: "predictive",
   engine: {
     cpus: 12,
-    backups: ['./storage/cache.wtf'],
+    backups: ["./storage/cache.wtf"],
   },
 }
 ```

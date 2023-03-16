@@ -19,7 +19,7 @@ export function Logo(props) {
   return (
     <div {...props}>
       <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-3xl tracking-tight text-transparent">
-                DePinterest
+        DePIN DD
       </p>
     </div>
   )
