@@ -67,6 +67,30 @@ Furthermore, Helium's network is designed to be open and transparent, with all n
 - [Gristle King - Youtube](https://www.youtube.com/@thegristleking)
 - [Hotspotty](https://hotspotty.net)
 
+---
+
+## Scores
+
+1-10, 10 being "best"
+
+### Governance: 7/10
+
+The governance of the Helium network is facilitated by the community through their voting and submission of Helium Improvement Proposals (HIPs). The Helium Foundation, a 501(c)(6) non-profit organization, and Nova Labs, Inc., a corporation, are the current governing entities responsible for implementing these changes. The Helium Foundation possesses complete control over the brand assets and intellectual property of Helium, and they intend to oversee the maintenance of the Helium blockchain, miner, and Hotspot app source code. Meanwhile, Nova Labs, Inc. continues to play an essential role in issuing chain-variables and rescue blocks while also sharing signing responsibility with The Helium Foundation. Further information can be obtained from this Medium article.
+
+### Tokenomics: 7/10
+
+Helium's HNT token issuance began in August 2019 with a planned maximum supply of 60 million but only 43 million were issued due to slow block times. The adjusted max supply is now 223 million due to token halving every two years. HNT has two basic functions, one being the token itself and the other being Data Credits, which are pegged to $USD (one Data Credit remains constant at $0.00001) and derived from HNT through a burn transaction. Data Credits are used to pay for wireless data transmission fees on the network, and HNT adjusts to network usage patterns through a burn and mint equilibrium design. Net Emissions provide enough HNT to reward consensus group members and hotspots, but there will be a cap on the number of HNT created via Net Emissions to maintain the deflationary effect of Burn and Mint. Net Emissions has yet to become active.
+
+Following the approval of HIP51, the Helium DAO was established to facilitate the creation of subDAOs to allow for a plethora of communication networks on the Helium Network, collectively known as Decentralized Network Protocols (DNPs). These DNPs would each be assigned a unique token, referred to as Decentralized Network Tokens (DNTs), and would allow for the HNT-Data Credit burn-and-mint equilibrium as the foundation of the Helium Flywheel to continue, while the corresponding subDAOs determine Proof-of-Coverage rules and earnings for their respective tokens. Currently, the IOT and MOBILE subDAOs are active, as Helium only supports LoRaWAN and 5G. You can check out the Helium GitHub to dive deep on this process and get a sneak peek of other potential protocols that are in discussion.
+
+### Ease of mining: 5/10
+
+As the Helium Network's blockchain and proof of coverage systems continue to strengthen, earning tokens on the network has become a relatively straightforward process. The physical or software maintenance required for hotspots is minimal, as long as they have consistent power and internet connectivity. However, the challenge lies in securing premium physical locations that ensure reliable coverage, which is crucial for optimal earnings on the network.
+
+Mining on the IoT network has always been much simpler and more straightforward than for the MOBILE network. IoT miners are roughly a tenth of the cost of MOBILE miners, can be set up in 10 minutes vs. 30+, and earn much more passively as nearby IoT hotspots beacon off of each other and prove coverage (whereas MOBILE hotspots don’t have nearly the same range and therefore must be validated by modeled rf coverage or a special device that’s coming out soon, called the Spot.
+
+---
+
 ## Data sources and calculations
 
 ### Average monthly USD earnings
@@ -89,23 +113,3 @@ Multiply the token number by the current price of token, found [here](https://co
 ### Payback period
 
 Average miner price/average monthly USD earnings
-
-## Scores
-
-1-10, 10 being "best"
-
-### Governance score: 7/10
-
-The governance of the Helium network is facilitated by the community through their voting and submission of Helium Improvement Proposals (HIPs). The Helium Foundation, a 501(c)(6) non-profit organization, and Nova Labs, Inc., a corporation, are the current governing entities responsible for implementing these changes. The Helium Foundation possesses complete control over the brand assets and intellectual property of Helium, and they intend to oversee the maintenance of the Helium blockchain, miner, and Hotspot app source code. Meanwhile, Nova Labs, Inc. continues to play an essential role in issuing chain-variables and rescue blocks while also sharing signing responsibility with The Helium Foundation. Further information can be obtained from this Medium article.
-
-### Tokenomics score: 7/10
-
-Helium's HNT token issuance began in August 2019 with a planned maximum supply of 60 million but only 43 million were issued due to slow block times. The adjusted max supply is now 223 million due to token halving every two years. HNT has two basic functions, one being the token itself and the other being Data Credits, which are pegged to $USD (one Data Credit remains constant at $0.00001) and derived from HNT through a burn transaction. Data Credits are used to pay for wireless data transmission fees on the network, and HNT adjusts to network usage patterns through a burn and mint equilibrium design. Net Emissions provide enough HNT to reward consensus group members and hotspots, but there will be a cap on the number of HNT created via Net Emissions to maintain the deflationary effect of Burn and Mint. Net Emissions has yet to become active.
-
-Following the approval of HIP51, the Helium DAO was established to facilitate the creation of subDAOs to allow for a plethora of communication networks on the Helium Network, collectively known as Decentralized Network Protocols (DNPs). These DNPs would each be assigned a unique token, referred to as Decentralized Network Tokens (DNTs), and would allow for the HNT-Data Credit burn-and-mint equilibrium as the foundation of the Helium Flywheel to continue, while the corresponding subDAOs determine Proof-of-Coverage rules and earnings for their respective tokens. Currently, the IOT and MOBILE subDAOs are active, as Helium only supports LoRaWAN and 5G. You can check out the Helium GitHub to dive deep on this process and get a sneak peek of other potential protocols that are in discussion.
-
-### Ease of mining score: 5/10
-
-As the Helium Network's blockchain and proof of coverage systems continue to strengthen, earning tokens on the network has become a relatively straightforward process. The physical or software maintenance required for hotspots is minimal, as long as they have consistent power and internet connectivity. However, the challenge lies in securing premium physical locations that ensure reliable coverage, which is crucial for optimal earnings on the network.
-
-Mining on the IoT network has always been much simpler and more straightforward than for the MOBILE network. IoT miners are roughly a tenth of the cost of MOBILE miners, can be set up in 10 minutes vs. 30+, and earn much more passively as nearby IoT hotspots beacon off of each other and prove coverage (whereas MOBILE hotspots don’t have nearly the same range and therefore must be validated by modeled rf coverage or a special device that’s coming out soon, called the Spot.

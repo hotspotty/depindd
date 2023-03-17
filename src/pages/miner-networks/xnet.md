@@ -51,6 +51,30 @@ The current governance of XNET is somewhat centralized through XNET, Inc. as it 
 
 - [Gecko Terminal](https://www.geckoterminal.com/polygon_pos/pools/0xf3bd3ef3280b2b406cfbe5dccd6e7162f848c8f0)
 
+---
+
+## Scores
+
+1-10, 10 being "best"
+
+### Governance: 3/10
+
+Currently, XNET is under the sole governance of XNET, Inc. as they are deeply involved in shaping the network's strategy and focus. However, XNET, Inc. values the opinions and inputs of its participants and intends to establish a system of checks and balances through the launch of the XNET Foundation DAO later this year.
+
+### Tokenomics: 5/10
+
+The deflationary XNET token has a total max supply of 24 billion tokens. The allocation breakdown is as follows: Foundation Pool (18%), Ecosystem Pool (13%), Operator Pool (39%), Investor Pool (15%), and Insider Pool (15%). Tokens from each pool will be gradually released or subject to specific lockup or vesting periods. XNET mining is limited to the operator pool, which holds 9,360,000,000 tokens or 39%. Participants operating XNET Mobile Network nodes and validating the network will receive rewards from this pool over several years, with a 10-15 day lockup period on the tokens.
+
+XNET's whitepaper provides a practical example to explain tokenomics. When an operator pays $1 for 1 GB of data from XNET Mobile Network Operator, it is divided into three parts. $0.40 is used to buy and burn $XNET tokens from the market to pay for the data traffic itself. $0.30 covers the costs of back-end operation and running the network core. The remaining $0.30 is allocated to various services and network growth, and newly issued $XNET tokens are issued from the Operator Pool. Generally, the value of $XNET issued from the Operator Pool is higher than the value of the data tickets burned.
+
+### Ease of mining: 5/10
+
+XNET's deployment model is focused on providing 5G connection to specific clusters, which are deemed to have a greater need. In contrast to other 5G protocols, XNET does not allow its operators to deploy miners wherever they see fit, instead focusing on specific areas with eligible hexes for rewards. Fortunately, their [explorer](https://explorer.xnetmobile.com/) provides an easy method for checking eligibility, and as expansion occurs to a greater number of clusters, the difficulty of earning tokens is expected to trend downwards.
+
+XNET mining is more difficult than most other DePIN protocols, due to the complex and technical nature of the equipment deployed (cellular radios and antennas).
+
+---
+
 ## Data sources and calculations
 
 ### Average monthly USD earnings
@@ -70,23 +94,3 @@ Note: XG1 Marconi Gateway (not included above) costs $995 and can be used to ref
 ### Payback period
 
 Average miner price/average monthly USD earnings
-
-## Scores
-
-1-10, 10 being "best"
-
-### Governance score: 3/10
-
-Currently, XNET is under the sole governance of XNET, Inc. as they are deeply involved in shaping the network's strategy and focus. However, XNET, Inc. values the opinions and inputs of its participants and intends to establish a system of checks and balances through the launch of the XNET Foundation DAO later this year.
-
-### Tokenomic score: 5/10
-
-The deflationary XNET token has a total max supply of 24 billion tokens. The allocation breakdown is as follows: Foundation Pool (18%), Ecosystem Pool (13%), Operator Pool (39%), Investor Pool (15%), and Insider Pool (15%). Tokens from each pool will be gradually released or subject to specific lockup or vesting periods. XNET mining is limited to the operator pool, which holds 9,360,000,000 tokens or 39%. Participants operating XNET Mobile Network nodes and validating the network will receive rewards from this pool over several years, with a 10-15 day lockup period on the tokens.
-
-XNET's whitepaper provides a practical example to explain tokenomics. When an operator pays $1 for 1 GB of data from XNET Mobile Network Operator, it is divided into three parts. $0.40 is used to buy and burn $XNET tokens from the market to pay for the data traffic itself. $0.30 covers the costs of back-end operation and running the network core. The remaining $0.30 is allocated to various services and network growth, and newly issued $XNET tokens are issued from the Operator Pool. Generally, the value of $XNET issued from the Operator Pool is higher than the value of the data tickets burned.
-
-### Ease of mining: 5/10
-
-XNET's deployment model is focused on providing 5G connection to specific clusters, which are deemed to have a greater need. In contrast to other 5G protocols, XNET does not allow its operators to deploy miners wherever they see fit, instead focusing on specific areas with eligible hexes for rewards. Fortunately, their [explorer](https://explorer.xnetmobile.com/) provides an easy method for checking eligibility, and as expansion occurs to a greater number of clusters, the difficulty of earning tokens is expected to trend downwards.
-
-XNET mining is more difficult than most other DePIN protocols, due to the complex and technical nature of the equipment deployed (cellular radios and antennas).
