@@ -18,7 +18,7 @@ function getNodeText(node) {
 }
 
 const collectHeadings = (nodes, slugify = slugifyWithCounter()) => {
-  let sections = []
+  let sections: any[] = []
 
   for (let node of nodes) {
     if (node.name === "h2" || node.name === "h3") {

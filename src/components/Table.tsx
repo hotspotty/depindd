@@ -200,17 +200,17 @@ function Table({ columns, data }) {
               >
                 <thead className="bg-gray-50">
                   {headerGroups.map((headerGroup, i) => (
-                    <tr key={i} {...headerGroup.getHeaderGroupProps()}>
+                    <tr {...headerGroup.getHeaderGroupProps()} key={i}>
                       {headerGroup.headers.map((column, j) => (
                         // Add the sorting props to control sorting. For this example
                         // we can add them into the header props
                         <th
-                          key={j}
                           scope="col"
                           className="group px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
                           {...column.getHeaderProps(
                             (column as any).getSortByToggleProps()
                           )}
+                          key={j}
                         >
                           <div className="flex items-center justify-between">
                             {column.render("Header")}
@@ -240,14 +240,14 @@ function Table({ columns, data }) {
                     // new
                     prepareRow(row)
                     return (
-                      <tr key={i} {...row.getRowProps()}>
+                      <tr {...row.getRowProps()} key={i}>
                         {row.cells.map((cell, j) => {
                           return (
                             <td
-                              key={j}
                               {...cell.getCellProps()}
                               className="whitespace-nowrap px-6 py-4"
                               role="cell"
+                              key={j}
                             >
                               {(cell.column.Cell as any).name ===
                               "defaultRenderer" ? (
