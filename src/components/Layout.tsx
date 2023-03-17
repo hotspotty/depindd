@@ -19,7 +19,7 @@ const navigation: NavigationType = [
   {
     title: "About",
     links: [
-      { title: "What is DePIN", href: "/about/what-is-depin" },
+      { title: "What is DePIN", href: "/" },
       { title: "What is DePIN DD", href: "/about/what-is-depindd" },
     ],
   },
@@ -263,7 +263,7 @@ const getData = () => {
 
 export function Layout({ children, title, tableId, tableOfContents }) {
   let router = useRouter()
-  let isHomePage = router.pathname === "/about/what-is-depin"
+  let isHomePage = router.pathname === "/"
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
