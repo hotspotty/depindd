@@ -24,7 +24,7 @@ const navigation: NavigationType = [
     ],
   },
   {
-    title: "Leaderboard",
+    title: "Leaderboards",
     links: [
       {
         title: "Miner payback time ",
