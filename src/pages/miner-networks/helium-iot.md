@@ -46,6 +46,8 @@ Furthermore, Helium's network is designed to be open and transparent, with all n
 - [Website](https://www.helium.com/)
 - [Twitter](https://twitter.com/helium)
 - [Discord](https://discord.com/invite/helium)
+- [Github](https://github.com/helium)
+- [Youtube](hhttps://www.youtube.com/@HeliumEcosystem)
 - [Whitepaper](http://whitepaper.helium.com/)
 - [Governance](https://docs.helium.com/community-governance/)
 - [Tokenomics](https://docs.helium.com/blockchain/mining)

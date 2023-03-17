@@ -51,7 +51,8 @@ The $DIMO token holders can create and vote on proposals called DIMO Improvement
 - [Twitter](https://twitter.com/DIMO_Network)
 - [Discord](https://discord.com/invite/B5K5eScyQM)
 - [Github](https://github.com/DIMO-Network)
-- [Blog](https://medium.com/dimo-network)
+- [Youtube](https://www.youtube.com/@dimo_network)
+- [Medium](https://medium.com/dimo-network)
 - [Whitepaper](https://docs.dimo.zone/docs)
 - [Governance](https://docs.dimo.zone/governance/)
 - [Network explorer](https://explorer.dimo.zone/)
@@ -82,3 +83,23 @@ Note: software (app-only, generally free) connections are available for more mod
 ### Payback period
 
 Average miner price/average monthly USD earnings
+
+## Scores
+
+1-10, 10 being "best"
+
+### Governance score: 8/10
+
+DIMO's community governance is considered strong, as demonstrated by the creation of DIP-6, which outlines governance for the DIMO Foundation, an entity registered with the Cayman Islands Monetary Authority (CIMA). Digital Infrastructure Inc., the corporation that initially developed DIMO, still plays a role in the network through a legal services agreement with the Foundation. However, all decisions are made by the community and are pushed through by the Foundation, which covers important roles such as being the smart contract admin, treasury allocation, enacting contracts to pursue network duties, using IP and the DIMO brand as seen fit by the community, and revoking any licenses in instances of malice. These powers are enacted solely through the involvement of the community via DIPs. If you're interested in learning more, we suggest taking a look at [DIP-6](https://docs.dimo.zone/governance/dip6).
+
+### Tokenomics score: 6/10
+
+DIMO’s tokenomics has a max supply of 1,000,000,000 and provides a strong focus by allocating 70% to its users and treasury. The total breakdown is split into 5 parts with the DIMO treasury receiving 25%, the baseline issuance receiving 38%, airdrops account for 7%, capital partners are set at 8% and are fully locked for a minimum of 2 years, which is the same case for the 22% provided to the team. The Baseline Issuance of 382,491,185 $DIMO will be distributed over 40 years, with a weekly issuance of 1,105,000 $DIMO to users for the first year. The issuance will decrease by 15% each year.
+
+DIMO, like other decentralized networks, has a built-in burn mechanism. Transactions involving the sale of user data or access are translated to $DIMO tokens, and the user's share is distributed in $DIMO while 1% of the transaction is burned. DIMO's tokenomics structure is continuously developing, and DIPs are being discussed daily on their Discord. While the initial system is subject to many changes, a more complete structure will be established once data transfers begin.
+
+### Ease of mining: 9/10
+
+In its current state the ease of mining on DIMO is arguably one of the easiest within the DePIN ecosystem and is fairly passive once installed. ince rewards are accrued via the baseline issuance, users are incentivized simply by how active they are on the network and ensuring their hardware device is connected to their car and the app.
+
+As the network matures, the difficulty will increase in order to achieve several goals. Firstly, it will incentivize a continuous data connection, which will allow for a fuller story of driver behavior and vehicle performance to be captured over a longer period of time. Secondly, it will reward those who provide a greater quantity and frequency of reliable data, as this will be more valuable to the network than sporadic or low-quality data. Finally, the system will avoid rewarding based on distance or time traveled, as this could incentivize unnecessary and wasteful driving behavior that would not benefit the network or its users.

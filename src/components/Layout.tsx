@@ -37,25 +37,25 @@ const navigation: NavigationType = [
     title: "Network categories",
     links: [
       {
-        title: "Wireless",
-        href: "/categories/wireless-networks",
-      },
-      { title: "Sensor", href: "/categories/sensor-networks" },
-      {
         title: "Energy",
         href: "/categories/energy-networks",
       },
+      { title: "Sensor", href: "/categories/sensor-networks" },
       { title: "Server", href: "/categories/server-networks" },
+      {
+        title: "Wireless",
+        href: "/categories/wireless-networks",
+      },
     ],
   },
   {
     title: "Miner networks",
     links: [
+      { title: "DIMO", href: "/miner-networks/dimo" },
       { title: "Helium IOT", href: "/miner-networks/helium-iot" },
       { title: "Helium MOBILE", href: "/miner-networks/helium-mobile" },
-      { title: "XNET", href: "/miner-networks/xnet" },
-      { title: "DIMO", href: "/miner-networks/dimo" },
       { title: "Hivemapper", href: "/miner-networks/hivemapper" },
+      { title: "XNET", href: "/miner-networks/xnet" },
     ],
   },
 ]
