@@ -1,6 +1,6 @@
 ---
-title: Payback time
-pageTitle: DePPIN DD - Payback time
+title: Miner payback time
+pageTitle: DePIN DD - Payback time
 description: Rank DePIN projects by miner payback time
 tableId: 1
 ---

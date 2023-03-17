@@ -53,9 +53,11 @@ export function Hero() {
                 networks!
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
-                <Button href="/" variant="secondary">
-                  View on GitHub
+                <Button href="/leaderboards/miner-payback-time">
+                  Get started
+                </Button>
+                <Button href="/about/what-is-depindd" variant="secondary">
+                  Learn more
                 </Button>
               </div>
             </div>

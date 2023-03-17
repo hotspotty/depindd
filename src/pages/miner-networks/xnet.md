@@ -1,9 +1,9 @@
 ---
-title: Design principles
-description: Quidem magni aut exercitationem maxime rerum eos.
+title: XNET
+description: XNET
 ---
 
-Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.
+This is a LoRaWAN network. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.
 
 ---
 
@@ -18,8 +18,8 @@ Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut par
 ```js
 /** @type {import('@tailwindlabs/lorem').ipsum} */
 export default {
-  lorem: 'ipsum',
-  dolor: ['sit', 'amet', 'consectetur'],
+  lorem: "ipsum",
+  dolor: ["sit", "amet", "consectetur"],
   adipiscing: {
     elit: true,
   },

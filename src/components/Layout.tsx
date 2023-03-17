@@ -7,7 +7,6 @@ import { Logo, Logomark } from "./Logo"
 import { MobileNavigation } from "./MobileNavigation"
 import { Navigation } from "./Navigation"
 import { Prose } from "./Prose"
-import { Search } from "./Search"
 import Table, { AvatarCell, SelectColumnFilter, StatusPill } from "./Table"
 import { ThemeSelector } from "./ThemeSelector"
 
@@ -20,34 +19,43 @@ const navigation: NavigationType = [
   {
     title: "About",
     links: [
-      { title: "What is DePIN", href: "/" },
-      { title: "Why DePinterest", href: "/docs/why-depinterest" },
+      { title: "What is DePIN", href: "/about/what-is-depin" },
+      { title: "What is DePIN DD", href: "/about/what-is-depindd" },
     ],
   },
   {
-    title: "DePIN Leaderboard",
+    title: "Leaderboard",
     links: [
-      { title: "Payback time ", href: "/docs/payback-time" },
-      { title: "Network revenue", href: "/docs/network-revenue" },
-      { title: "Network size", href: "/docs/network-size" },
+      {
+        title: "Miner payback time ",
+        href: "/leaderboards/miner-payback-time",
+      },
+      { title: "Network size", href: "/leaderboards/network-size" },
     ],
   },
   {
-    title: "DePIN Networks",
+    title: "Network categories",
     links: [
-      { title: "Helium IoT", href: "/docs/helium-iot" },
-      { title: "Helium 5G", href: "/docs/cacheadvance-predict" },
-      { title: "XNET", href: "/docs/cacheadvance-flush" },
-      { title: "DIMO", href: "/docs/cacheadvance-revert" },
-      { title: "Hivemapper", href: "/docs/cacheadvance-regret" },
+      {
+        title: "Wireless",
+        href: "/categories/wireless-networks",
+      },
+      { title: "Sensor", href: "/categories/sensor-networks" },
+      {
+        title: "Energy",
+        href: "/categories/energy-networks",
+      },
+      { title: "Server", href: "/categories/server-networks" },
     ],
   },
   {
-    title: "Contributing",
+    title: "Miner networks",
     links: [
-      { title: "How to contribute", href: "/docs/how-to-contribute" },
-      { title: "Architecture guide", href: "/docs/architecture-guide" },
-      { title: "Design principles", href: "/docs/design-principles" },
+      { title: "Helium IOT", href: "/miner-networks/helium-iot" },
+      { title: "Helium MOBILE", href: "/miner-networks/helium-mobile" },
+      { title: "XNET", href: "/miner-networks/xnet" },
+      { title: "DIMO", href: "/miner-networks/dimo" },
+      { title: "Hivemapper", href: "/miner-networks/hivemapper" },
     ],
   },
 ]
@@ -92,14 +100,47 @@ const Header: React.FC<{ navigation: NavigationType }> = ({ navigation }) => {
           <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
         </Link>
       </div>
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-        <Search />
-      </div>
-      <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
-        <ThemeSelector className="relative z-10" />
-        <Link href="https://github.com" className="group" aria-label="GitHub">
-          <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
-        </Link>
+
+      <div className="relative flex basis-0 justify-end md:flex-grow">
+        <nav className="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+          <ul className="flex space-x-8">
+            <li>
+              <a
+                className="hover:text-sky-500 dark:hover:text-sky-400"
+                href="/leaderboards/miner-payback-time"
+              >
+                Networks
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-sky-500 dark:hover:text-sky-400"
+                href="/showcase"
+              >
+                Showcase
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:text-sky-500 dark:hover:text-sky-400"
+                href="/blog"
+              >
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="ml-6 flex items-center gap-6 border-l border-slate-200 pl-6 dark:border-slate-800 sm:gap-8">
+          <ThemeSelector className="relative z-10" />
+          <Link
+            href="https://github.com/hotspotty/depindd"
+            className="group"
+            aria-label="GitHub"
+          >
+            <GitHubIcon className="h-5 w-5 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
+          </Link>
+        </div>
       </div>
     </header>
   )
@@ -222,7 +263,7 @@ const getData = () => {
 
 export function Layout({ children, title, tableId, tableOfContents }) {
   let router = useRouter()
-  let isHomePage = router.pathname === "/"
+  let isHomePage = router.pathname === "/about/what-is-depin"
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
