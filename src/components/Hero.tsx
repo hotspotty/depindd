@@ -1,9 +1,9 @@
+import blurCyanImage from "@/images/blur-cyan.png"
+import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
 import Image from "next/image"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import { Fragment } from "react"
-import blurCyanImage from "../images/blur-cyan.png"
-import blurIndigoImage from "../images/blur-indigo.png"
 import { Button } from "./Button"
 import { HeroBackground } from "./HeroBackground"
 

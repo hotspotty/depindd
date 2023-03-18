@@ -1,4 +1,9 @@
-import { DarkMode, Gradient, IconComponentProps, LightMode } from "../Icon"
+import {
+  DarkMode,
+  Gradient,
+  IconComponentProps,
+  LightMode,
+} from "@/components/Icon"
 
 export const PresetsIcon: React.FC<IconComponentProps> = ({ id, color }) => {
   return (

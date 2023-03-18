@@ -1,8 +1,8 @@
 "use client"
 
-import "../styles/tailwind.css"
-import { Layout } from "../components/Layout"
+import { Layout } from "@/components/Layout"
 import Script from "next/script"
+import "../styles/tailwind.css"
 
 type Props = {
   children: React.ReactNode
