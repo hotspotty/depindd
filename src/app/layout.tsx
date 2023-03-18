@@ -1,5 +1,3 @@
-"use client"
-
 import { Layout } from "@/components/Layout"
 import Script from "next/script"
 import "../styles/tailwind.css"
@@ -28,6 +26,7 @@ export default RootLayout
 // Utils
 //
 
+// TODO: improve implementation
 const themeScript = `
   let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
 

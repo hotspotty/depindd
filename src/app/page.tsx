@@ -1,6 +1,4 @@
-"use client"
-
-const App: React.FC = (props) => {
+const App = (props) => {
   return <div>HOME</div>
 }
 
