@@ -21,7 +21,7 @@ const navigation: NavigationType = [
   {
     title: "About",
     links: [
-      { title: "What is DePIN", href: "/" },
+      { title: "What is DePIN", href: "/about/what-is-depin" },
       { title: "What is DePIN DD", href: "/about/what-is-depindd" },
     ],
   },
