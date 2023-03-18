@@ -1,9 +1,8 @@
 "use client"
 
+import "../styles/tailwind.css"
 import { Layout } from "../components/Layout"
 import Script from "next/script"
-import "../styles/tailwind.css"
-import { useEffect } from "react"
 
 type Props = {
   children: React.ReactNode
@@ -11,10 +10,10 @@ type Props = {
 
 const RootLayout: React.FC<Props> = ({ children }) => {
   return (
-    <html className="antialiased [font-feature-settings:'ss01']" lang="en">
+    <html className="dark antialiased [font-feature-settings:'ss01']" lang="en">
       <Script id="darkmode" dangerouslySetInnerHTML={{ __html: themeScript }} />
 
-      <body className="bg-white dark:bg-slate-900">
+      <body className="bg-white dark:bg-slate-900 ">
         <Layout title={""} tableId={""} tableOfContents={[]}>
           {children}
         </Layout>
@@ -52,7 +51,7 @@ const themeScript = `
     }, 0)
   }
 
-  document.documentElement.setAttribute('data-theme', updateTheme('dark'))
+  document.documentElement.setAttribute('data-theme', updateTheme())
 
   new MutationObserver(([{ oldValue }]) => {
     let newValue = document.documentElement.getAttribute('data-theme')
@@ -64,5 +63,5 @@ const themeScript = `
     }
   }).observe(document.documentElement, { attributeFilter: ['data-theme'], attributeOldValue: true })
 
-  isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions('dark'))
+  isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions())
 `

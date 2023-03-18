@@ -2,7 +2,7 @@
 
 import clsx from "clsx"
 import Link from "next/link"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 import React, { useCallback, useEffect, useState } from "react"
 import { Hero } from "./Hero"
 import { Logo, Logomark } from "./Logo"
@@ -21,12 +21,12 @@ const navigation: NavigationType = [
   {
     title: "About",
     links: [
-      { title: "What is DePIN", href: "/about/what-is-depin" },
+      { title: "What is DePIN", href: "/" },
       { title: "What is DePIN DD", href: "/about/what-is-depindd" },
     ],
   },
   {
-    title: "Leaderboard",
+    title: "Leaderboards",
     links: [
       {
         title: "Miner payback time ",
@@ -39,25 +39,25 @@ const navigation: NavigationType = [
     title: "Network categories",
     links: [
       {
-        title: "Wireless",
-        href: "/categories/wireless-networks",
-      },
-      { title: "Sensor", href: "/categories/sensor-networks" },
-      {
         title: "Energy",
         href: "/categories/energy-networks",
       },
+      { title: "Sensor", href: "/categories/sensor-networks" },
       { title: "Server", href: "/categories/server-networks" },
+      {
+        title: "Wireless",
+        href: "/categories/wireless-networks",
+      },
     ],
   },
   {
     title: "Miner networks",
     links: [
+      { title: "DIMO", href: "/miner-networks/dimo" },
       { title: "Helium IOT", href: "/miner-networks/helium-iot" },
       { title: "Helium MOBILE", href: "/miner-networks/helium-mobile" },
-      { title: "XNET", href: "/miner-networks/xnet" },
-      { title: "DIMO", href: "/miner-networks/dimo" },
       { title: "Hivemapper", href: "/miner-networks/hivemapper" },
+      { title: "XNET", href: "/miner-networks/xnet" },
     ],
   },
 ]
@@ -264,9 +264,8 @@ const getData = () => {
 }
 
 export function Layout({ children, title, tableId, tableOfContents }) {
-  let router = useRouter()
   const pathname = usePathname()
-  let isHomePage = pathname === "/about/what-is-depin"
+  let isHomePage = pathname === "/"
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === pathname)
   let previousPage = allLinks[linkIndex - 1]

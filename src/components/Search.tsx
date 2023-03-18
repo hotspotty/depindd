@@ -5,9 +5,9 @@ import { useCallback, useEffect, useState } from "react"
 import { createPortal } from "react-dom"
 
 const docSearchConfig = {
-  appId: process.env.NEXT_PUBLIC_DOCSEARCH_APP_ID,
-  apiKey: process.env.NEXT_PUBLIC_DOCSEARCH_API_KEY,
-  indexName: process.env.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME,
+  appId: process.env.NEXT_PUBLIC_DOCSEARCH_APP_ID!,
+  apiKey: process.env.NEXT_PUBLIC_DOCSEARCH_API_KEY!,
+  indexName: process.env.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME!,
 }
 
 function Hit({ hit, children }) {

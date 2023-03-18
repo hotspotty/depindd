@@ -1,13 +1,6 @@
 "use client"
 
-import { slugifyWithCounter } from "@sindresorhus/slugify"
-import type { MarkdocNextJsPageProps } from "@markdoc/next.js"
-import { useRouter } from "next/navigation"
-
-export type Props = MarkdocNextJsPageProps
-
-const App: React.FC<Props> = (props) => {
-  let router = useRouter()
+const App: React.FC = (props) => {
   return <div>HOME</div>
 }
 
