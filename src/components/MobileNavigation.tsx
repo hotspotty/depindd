@@ -1,6 +1,6 @@
 import { Dialog } from "@headlessui/react"
 import Link from "next/link"
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { Logomark } from "./Logo"
 import { Navigation } from "./Navigation"
@@ -36,7 +36,7 @@ function CloseIcon(props) {
 }
 
 export function MobileNavigation({ navigation }) {
-  let router = useRouter()
+  let router: any = null
   let [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -46,12 +46,12 @@ export function MobileNavigation({ navigation }) {
       setIsOpen(false)
     }
 
-    router.events.on("routeChangeComplete", onRouteChange)
-    router.events.on("routeChangeError", onRouteChange)
+    router?.events.on("routeChangeComplete", onRouteChange)
+    router?.events.on("routeChangeError", onRouteChange)
 
     return () => {
-      router.events.off("routeChangeComplete", onRouteChange)
-      router.events.off("routeChangeError", onRouteChange)
+      router?.events.off("routeChangeComplete", onRouteChange)
+      router?.events.off("routeChangeError", onRouteChange)
     }
   }, [router, isOpen])
 
