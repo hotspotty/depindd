@@ -1,5 +1,6 @@
 "use client"
 
+import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
 import GitHubIcon from "@/components/icons/GithubIcon"
 import { Logo, Logomark } from "@/components/Logo"
 import { MobileNavigation } from "@/components/MobileNavigation"
@@ -7,12 +8,11 @@ import { ThemeSelector } from "@/components/ThemeSelector"
 import clsx from "clsx"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { SidebarSection } from "../(utils)/sidebar"
 
 export default function Header({
-  sidebarItems,
+  sidebar,
 }: {
-  sidebarItems: SidebarSection
+  sidebar: EnhancedSidebarSection[]
 }) {
   let [isScrolled, setIsScrolled] = useState(false)
 
@@ -38,7 +38,7 @@ export default function Header({
       )}
     >
       <div className="mr-6 flex lg:hidden">
-        <MobileNavigation sidebarItems={sidebarItems} />
+        <MobileNavigation sidebar={sidebar} />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">

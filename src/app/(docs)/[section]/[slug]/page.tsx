@@ -3,9 +3,9 @@ import {
   collectHeadings,
   getMarkdownContent,
 } from "@/app/(docs)/(utils)/markdown"
-import { sidebarItems } from "@/app/(docs)/(utils)/sidebar"
 import { components } from "@/app/(docs)/config.markdoc"
 import { ARTICLES_PATH } from "@/app/api/articles/route"
+import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
 import { Prose } from "@/components/Prose"
 import Markdoc from "@markdoc/markdoc"
 import { Metadata } from "next"
@@ -45,19 +45,17 @@ export async function generateMetadata({
 }
 
 export default async function Page({ params }: PageProps) {
+  const sidebar: EnhancedSidebarSection[] = await fetch(
+    process.env.NEXT_API_BASE_URL + "/api/sidebar"
+  ).then((res) => res.json())
+
   const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
-
   const { title, content } = await getMarkdownContent(filePath)
-
   const tableOfContents = collectHeadings(content)
-  const allPages = sidebarItems.flatMap(({ section, items }) =>
-    items.map((page) => ({ ...page, route: `/${section}/${page.slug}` }))
-  )
+  const allPages = sidebar.flatMap((section) => section.items)
   const pageIndex = allPages.findIndex((page) => page.slug === params.slug)
   const previousPage = allPages[pageIndex - 1]
   const nextPage = allPages[pageIndex + 1]
-
-  // TODO: make items just the slug string, and leverage the frontmatter for the labels
 
   return (
     <div className="flex-1">
@@ -84,7 +82,7 @@ export default async function Page({ params }: PageProps) {
                 </dt>
                 <dd className="mt-1">
                   <Link
-                    href={previousPage.route}
+                    href={previousPage.path}
                     className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
                   >
                     <span aria-hidden="true">&larr;</span> {previousPage.label}
@@ -99,7 +97,7 @@ export default async function Page({ params }: PageProps) {
                 </dt>
                 <dd className="mt-1">
                   <Link
-                    href={nextPage.route}
+                    href={nextPage.path}
                     className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
                   >
                     {nextPage.label} <span aria-hidden="true">&rarr;</span>

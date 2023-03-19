@@ -1,15 +1,19 @@
 import { Navigation } from "@/components/Navigation"
+import { EnhancedSidebarSection } from "../api/sidebar/route"
 import Header from "./(components)/Header"
-import { sidebarItems } from "./(utils)/sidebar"
 
-export default function DocsLayout({
+export default async function DocsLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode
 }) {
+  const sidebar: EnhancedSidebarSection[] = await fetch(
+    process.env.NEXT_API_BASE_URL + "/api/sidebar"
+  ).then((res) => res.json())
+
   return (
     <body className="bg-white dark:bg-slate-900 ">
-      <Header sidebarItems={sidebarItems} />
+      <Header sidebar={sidebar} />
 
       <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
@@ -18,7 +22,7 @@ export default function DocsLayout({
           <div className="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block" />
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5">
             <Navigation
-              sidebarItems={sidebarItems}
+              sidebar={sidebar}
               className="w-64 pr-8 xl:w-72 xl:pr-16"
             />
           </div>

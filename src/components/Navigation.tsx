@@ -1,15 +1,15 @@
 "use client"
 
-import { SidebarSection } from "@/app/(docs)/(utils)/sidebar"
+import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
 import clsx from "clsx"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 export function Navigation({
-  sidebarItems,
+  sidebar,
   className,
 }: {
-  sidebarItems: SidebarSection
+  sidebar: EnhancedSidebarSection[]
   className?: string
 }) {
   const pathname = usePathname() // TODO: make it work in server side
@@ -17,7 +17,7 @@ export function Navigation({
   return (
     <nav className={clsx("text-base lg:text-sm", className)}>
       <ul role="list" className="space-y-9">
-        {sidebarItems.map(({ section, label, items }) => (
+        {sidebar.map(({ section, label, items }) => (
           <li key={section}>
             <h2 className="font-display font-medium text-slate-900 dark:text-white">
               {label}
