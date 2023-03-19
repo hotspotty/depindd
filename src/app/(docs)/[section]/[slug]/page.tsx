@@ -25,7 +25,6 @@ type PageProps = {
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  // TODO: add env variable to production environment
   const articles = await fetch(
     process.env.NEXT_API_BASE_URL + "/api/articles"
   ).then((res) => res.json())

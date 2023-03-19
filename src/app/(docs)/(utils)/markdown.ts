@@ -30,6 +30,7 @@ export const collectHeadings = (nodes: any, slugify = slugifyWithCounter()) => {
   let sections: any[] = []
 
   for (let node of nodes) {
+    if (!node) continue
     if (node.name === "h2" || node.name === "h3") {
       let title = getNodeText(node)
       if (title) {
