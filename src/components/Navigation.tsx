@@ -1,9 +1,11 @@
-import Link from "next/link"
+"use client"
+
 import clsx from "clsx"
+import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 export function Navigation({ navigation, className }) {
-  const pathname = usePathname()
+  const pathname = usePathname() // TODO: make it work in server side
 
   return (
     <nav className={clsx("text-base lg:text-sm", className)}>

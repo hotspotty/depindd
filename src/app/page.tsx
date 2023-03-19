@@ -1,13 +1,7 @@
-const App = (props) => {
-  return <div>HOME</div>
+export const metadata = {
+  title: "My Page Title",
 }
 
-export default App
-
-//
-// Utils
-//
-
-const metadata = {
-  title: "My Page Title",
+export default function Home() {
+  return <div>HOME</div>
 }

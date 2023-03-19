@@ -1,6 +1,24 @@
+import { config } from "@/app/(docs)/config.markdoc"
+import Markdoc from "@markdoc/markdoc"
 import { slugifyWithCounter } from "@sindresorhus/slugify"
+import fs from "fs"
+import matter from "gray-matter"
+import path from "path"
 
-export const getNodeText = (node) => {
+export async function getMarkdownContent(
+  baseFilePath: string,
+  slug: string | undefined
+) {
+  const filePath = path.join(baseFilePath, slug + ".md")
+  const source = fs.readFileSync(filePath, "utf-8")
+  const matterResult = matter(source)
+  const { title, type } = matterResult.data
+  const ast = Markdoc.parse(source)
+  const content = Markdoc.transform(ast, config)
+  return { content, title }
+}
+
+const getNodeText = (node) => {
   let text = ""
 
   for (let child of node.children ?? []) {
@@ -13,7 +31,7 @@ export const getNodeText = (node) => {
   return text
 }
 
-export const collectHeadings = (nodes, slugify = slugifyWithCounter()) => {
+export const collectHeadings = (nodes: any, slugify = slugifyWithCounter()) => {
   let sections: any[] = []
 
   for (let node of nodes) {

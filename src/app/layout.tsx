@@ -1,4 +1,3 @@
-import { Layout } from "@/components/Layout"
 import Script from "next/script"
 import "../styles/tailwind.css"
 
@@ -11,11 +10,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
     <html className="dark antialiased [font-feature-settings:'ss01']" lang="en">
       <Script id="darkmode" dangerouslySetInnerHTML={{ __html: themeScript }} />
 
-      <body className="bg-white dark:bg-slate-900 ">
-        <Layout title={""} tableId={""} tableOfContents={[]}>
-          {children}
-        </Layout>
-      </body>
+      <body className="bg-white dark:bg-slate-900 ">{children}</body>
     </html>
   )
 }

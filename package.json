@@ -23,6 +23,8 @@
     "autoprefixer": "10.4.12",
     "clsx": "1.2.1",
     "focus-visible": "5.2.0",
+    "glob": "9.3.0",
+    "gray-matter": "4.0.3",
     "next": "13.2.4",
     "postcss-focus-visible": "8.0.2",
     "postcss-import": "15.1.0",
