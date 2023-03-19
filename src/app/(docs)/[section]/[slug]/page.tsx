@@ -11,13 +11,13 @@ import { glob } from "glob"
 import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
-import { title } from "process"
 import React from "react"
 
-const ARTICLES_PATH = "src/app/(docs)/(articles)" // TODO: make it dynamic
+const ARTICLES_PATH = "src/app/(docs)/(articles)"
 const POSTS_DIR = path.join(process.cwd(), ARTICLES_PATH)
 
 type Params = {
+  section: string
   slug: string
 }
 
@@ -29,24 +29,31 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
   const docPaths = await glob(path.join(POSTS_DIR, "**/*.md"))
-  console.log(docPaths)
   return docPaths.map((docPath) => {
-    return { slug: path.basename(docPath, path.extname(docPath)) }
+    const section = path
+      .dirname(docPath.replace(POSTS_DIR, ""))
+      .replace("/", "")
+    const slug = path.basename(docPath, path.extname(docPath))
+    return { section, slug }
   })
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { title } = await getMarkdownContent(POSTS_DIR, params.slug)
-  return { title }
+  const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
+  const { title } = await getMarkdownContent(filePath)
+  return {
+    title: params.section.replaceAll("-", " ") + " - " + title,
+  }
 }
 
 export default async function Page({ params }: PageProps) {
-  const { content } = await getMarkdownContent(POSTS_DIR, params.slug)
+  const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
+  const { title, content } = await getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
 
-  // TODO: fix
+  // TODO: use file system to iterate through them
   const pathname = path.join(POSTS_DIR, params.slug) // usePathname()
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === pathname)
@@ -62,16 +69,12 @@ export default async function Page({ params }: PageProps) {
         <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
           <article>
             <header className="mb-9 space-y-1">
-              {section && (
-                <p className="font-display text-sm font-medium text-sky-500">
-                  {section.title}
-                </p>
-              )}
-              {title && (
-                <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                  {title}
-                </h1>
-              )}
+              <p className="font-display text-sm font-medium capitalize text-sky-500">
+                {params.section.replaceAll("-", " ")}
+              </p>
+              <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                {title}
+              </h1>
             </header>
             <Prose>
               {Markdoc.renderers.react(content, React, { components })}

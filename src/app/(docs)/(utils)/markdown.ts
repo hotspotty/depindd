@@ -3,13 +3,8 @@ import Markdoc from "@markdoc/markdoc"
 import { slugifyWithCounter } from "@sindresorhus/slugify"
 import fs from "fs"
 import matter from "gray-matter"
-import path from "path"
 
-export async function getMarkdownContent(
-  baseFilePath: string,
-  slug: string | undefined
-) {
-  const filePath = path.join(baseFilePath, slug + ".md")
+export async function getMarkdownContent(filePath: string) {
   const source = fs.readFileSync(filePath, "utf-8")
   const matterResult = matter(source)
   const { title, type } = matterResult.data
