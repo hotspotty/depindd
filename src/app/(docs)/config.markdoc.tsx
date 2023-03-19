@@ -1,7 +1,6 @@
 import { Callout } from "@/components/Callout"
 import { QuickLink, QuickLinks } from "@/components/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
-// import Callout from "./(Components)/callout"
 
 const config: Config = {
   nodes: {
@@ -18,14 +17,6 @@ const config: Config = {
         },
       },
     },
-    // fence: {
-    //   render: "Fence",
-    //   attributes: {
-    //     language: {
-    //       type: String,
-    //     },
-    //   },
-    // },
   },
   tags: {
     callout: {
@@ -66,7 +57,6 @@ const config: Config = {
 }
 
 const components = {
-  // Fence: Fence,
   Figure: ({
     src,
     alt = "",
