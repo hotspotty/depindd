@@ -5,16 +5,13 @@ import {
 } from "@/app/(docs)/(utils)/markdown"
 import { navigation } from "@/app/(docs)/(utils)/navigation"
 import { components } from "@/app/(docs)/config.markdoc"
+import { ARTICLES_PATH } from "@/app/api/articles/route"
 import { Prose } from "@/components/Prose"
 import Markdoc from "@markdoc/markdoc"
-import { glob } from "glob"
 import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
 import React from "react"
-
-const ARTICLES_PATH = "src/app/(docs)/(articles)"
-const POSTS_DIR = path.join(process.cwd(), ARTICLES_PATH)
 
 type Params = {
   section: string
@@ -28,14 +25,12 @@ type PageProps = {
 export const dynamicParams = false
 
 export async function generateStaticParams() {
-  const docPaths = await glob(path.join(POSTS_DIR, "**/*.md"))
-  return docPaths.map((docPath) => {
-    const section = path
-      .dirname(docPath.replace(POSTS_DIR, ""))
-      .replace("/", "")
-    const slug = path.basename(docPath, path.extname(docPath))
-    return { section, slug }
-  })
+  // TODO: add env variable to production environment
+  const articles = await fetch(
+    process.env.NEXT_API_BASE_URL + "/api/articles"
+  ).then((res) => res.json())
+
+  return articles.map(({ section, slug }) => ({ section, slug }))
 }
 
 export async function generateMetadata({
@@ -53,15 +48,12 @@ export default async function Page({ params }: PageProps) {
   const { title, content } = await getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
 
-  // TODO: use file system to iterate through them
-  const pathname = path.join(POSTS_DIR, params.slug) // usePathname()
+  // TODO: use the /api/articles instead of the navigation
+  const route = "/" + path.join(params.section, params.slug)
   let allLinks = navigation.flatMap((section) => section.links)
-  let linkIndex = allLinks.findIndex((link) => link.href === pathname)
+  let linkIndex = allLinks.findIndex((link) => link.href === route)
   let previousPage = allLinks[linkIndex - 1]
   let nextPage = allLinks[linkIndex + 1]
-  let section = navigation.find((section) =>
-    section.links.find((link) => link.href === pathname)
-  )
 
   return (
     <div className="flex-1">
