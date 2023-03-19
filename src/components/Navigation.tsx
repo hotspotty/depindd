@@ -1,6 +1,6 @@
 "use client"
 
-import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
+import { SidebarSection } from "@/app/api/sidebar/route"
 import clsx from "clsx"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -9,7 +9,7 @@ export function Navigation({
   sidebar,
   className,
 }: {
-  sidebar: EnhancedSidebarSection[]
+  sidebar: SidebarSection[]
   className?: string
 }) {
   const pathname = usePathname() // TODO: make it work in server side

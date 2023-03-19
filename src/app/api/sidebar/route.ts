@@ -1,5 +1,5 @@
 import { getMarkdownContent } from "@/app/(docs)/(utils)/markdown"
-import { sidebarItems } from "@/app/(docs)/(utils)/sidebar"
+import sidebarConfig from "@/app/(docs)/config.sidebar.json"
 import { NextResponse } from "next/server"
 import path from "path"
 
@@ -7,17 +7,17 @@ export const ARTICLES_PATH = "src/app/(docs)/(articles)"
 
 type EnhancedSidebarPage = { label: string; slug: string; path: string }
 
-export type EnhancedSidebarSection = {
+export type SidebarSection = {
   section: string
   label: string
   items: EnhancedSidebarPage[]
 }
 
 export async function GET() {
-  const enhancedSidebarSections: EnhancedSidebarSection[] = []
+  const sidebarSections: SidebarSection[] = []
 
-  for (var section of sidebarItems) {
-    const enhancedSection: EnhancedSidebarSection = {
+  for (var section of sidebarConfig) {
+    const enhancedSection: SidebarSection = {
       section: section.section,
       label: section.label,
       items: [],
@@ -35,8 +35,8 @@ export async function GET() {
       })
     }
 
-    enhancedSidebarSections.push(enhancedSection)
+    sidebarSections.push(enhancedSection)
   }
 
-  return NextResponse.json(enhancedSidebarSections)
+  return NextResponse.json(sidebarSections)
 }

@@ -5,7 +5,7 @@ import {
 } from "@/app/(docs)/(utils)/markdown"
 import { components } from "@/app/(docs)/config.markdoc"
 import { ARTICLES_PATH } from "@/app/api/articles/route"
-import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
+import { SidebarSection } from "@/app/api/sidebar/route"
 import { Prose } from "@/components/Prose"
 import Markdoc from "@markdoc/markdoc"
 import { Metadata } from "next"
@@ -45,7 +45,7 @@ export async function generateMetadata({
 }
 
 export default async function Page({ params }: PageProps) {
-  const sidebar: EnhancedSidebarSection[] = await fetch(
+  const sidebar: SidebarSection[] = await fetch(
     process.env.NEXT_API_BASE_URL + "/api/sidebar"
   ).then((res) => res.json())
   const section = sidebar.find(({ section }) => section === params.section)

@@ -1,6 +1,6 @@
 "use client"
 
-import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
+import { SidebarSection } from "@/app/api/sidebar/route"
 import GitHubIcon from "@/components/icons/GithubIcon"
 import { Logo, Logomark } from "@/components/Logo"
 import { MobileNavigation } from "@/components/MobileNavigation"
@@ -9,11 +9,7 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
-export default function Header({
-  sidebar,
-}: {
-  sidebar: EnhancedSidebarSection[]
-}) {
+export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
   let [isScrolled, setIsScrolled] = useState(false)
 
   // TODO: see how to only do this in the client size but render the rest in the server side

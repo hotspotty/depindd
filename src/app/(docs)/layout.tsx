@@ -1,5 +1,5 @@
 import { Navigation } from "@/components/Navigation"
-import { EnhancedSidebarSection } from "../api/sidebar/route"
+import { SidebarSection } from "../api/sidebar/route"
 import Header from "./(components)/Header"
 
 export default async function DocsLayout({
@@ -7,7 +7,7 @@ export default async function DocsLayout({
 }: {
   children: React.ReactNode
 }) {
-  const sidebar: EnhancedSidebarSection[] = await fetch(
+  const sidebar: SidebarSection[] = await fetch(
     process.env.NEXT_API_BASE_URL + "/api/sidebar"
   ).then((res) => res.json())
 

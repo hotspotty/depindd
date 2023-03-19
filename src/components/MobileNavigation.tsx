@@ -1,4 +1,4 @@
-import { EnhancedSidebarSection } from "@/app/api/sidebar/route"
+import { SidebarSection } from "@/app/api/sidebar/route"
 import { Dialog } from "@headlessui/react"
 import Link from "next/link"
 import { useEffect, useState } from "react"
@@ -35,11 +35,7 @@ function CloseIcon(props) {
   )
 }
 
-export function MobileNavigation({
-  sidebar,
-}: {
-  sidebar: EnhancedSidebarSection[]
-}) {
+export function MobileNavigation({ sidebar }: { sidebar: SidebarSection[] }) {
   let router: any = null
   let [isOpen, setIsOpen] = useState(false)
 
