@@ -26,7 +26,8 @@ export const dynamicParams = false
 
 export async function generateStaticParams() {
   const articles = await fetch(
-    process.env.NEXT_API_BASE_URL + "/api/articles"
+    process.env.NEXT_API_BASE_URL + "/api/articles",
+    { cache: "no-store" }
   ).then((res) => res.json())
 
   return articles.map(({ section, slug }) => ({ section, slug }))
