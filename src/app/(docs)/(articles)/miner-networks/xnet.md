@@ -1,6 +1,5 @@
 ---
 title: XNET
-description: XNET
 ---
 
 ## About

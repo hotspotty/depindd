@@ -1,6 +1,5 @@
 ---
 title: DIMO
-description: DIMO
 ---
 
 ## About

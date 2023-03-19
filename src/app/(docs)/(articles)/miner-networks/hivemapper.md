@@ -1,6 +1,5 @@
 ---
 title: Hivemapper
-description: Hivemapper
 ---
 
 ## About

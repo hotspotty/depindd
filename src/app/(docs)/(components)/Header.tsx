@@ -7,9 +7,13 @@ import { ThemeSelector } from "@/components/ThemeSelector"
 import clsx from "clsx"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { NavigationType } from "../(utils)/navigation"
+import { SidebarSection } from "../(utils)/sidebar"
 
-export default function Header({ navigation }: { navigation: NavigationType }) {
+export default function Header({
+  sidebarItems,
+}: {
+  sidebarItems: SidebarSection
+}) {
   let [isScrolled, setIsScrolled] = useState(false)
 
   // TODO: see how to only do this in the client size but render the rest in the server side
@@ -34,7 +38,7 @@ export default function Header({ navigation }: { navigation: NavigationType }) {
       )}
     >
       <div className="mr-6 flex lg:hidden">
-        <MobileNavigation navigation={navigation} />
+        <MobileNavigation sidebarItems={sidebarItems} />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">

@@ -1,6 +1,5 @@
 ---
 title: Helium Mobile
-description: Helium Mobile
 ---
 
 ## About

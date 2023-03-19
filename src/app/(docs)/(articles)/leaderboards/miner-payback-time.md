@@ -1,8 +1,5 @@
 ---
 title: Miner payback time
-pageTitle: DePIN DD - Payback time
-description: Rank DePIN projects by miner payback time
-tableId: 1
 ---
 
 ## Quick start
@@ -21,28 +18,17 @@ npm install @tailwindlabs/cache-advance
 Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
 
 {% callout type="warning" title="Oh no! Something bad happened!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
+This is what a disclaimer message looks like. You might want to incluI don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
 {% /callout %}
 
 ### Configuring the library
 
 Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
 
-```js
-// cache-advance.config.js
-export default {
-  strategy: "predictive",
-  engine: {
-    cpus: 12,
-    backups: ["./storage/cache.wtf"],
-  },
-}
-```
-
 Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
 
 {% callout title="You should know!" %}
-This is what a disclaimer message looks like. You might want to include inline `code` in it. Or maybe you’ll want to include a [link](/) in it. I don’t think we should get too carried away with other scenarios like lists or tables — that would be silly.
+This is what a disclaimer message looks like. You might we lists or tables — that would be silly.
 {% /callout %}
 
 ---

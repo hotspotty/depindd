@@ -1,6 +1,5 @@
 ---
 title: What is DePIN DD
-description: The goal of DePIN DD
 ---
 
 This page will explain the the purpose of this website

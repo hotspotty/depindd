@@ -1,6 +1,5 @@
 ---
 title: Helium IoT
-description: Helium IoT
 ---
 
 ## About

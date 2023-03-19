@@ -1,3 +1,4 @@
+import { Callout } from "@/components/Callout"
 import { QuickLink, QuickLinks } from "@/components/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 // import Callout from "./(Components)/callout"
@@ -81,6 +82,7 @@ const components = {
       <figcaption>{caption}</figcaption>
     </figure>
   ),
+  Callout: Callout,
   QuickLinks: QuickLinks,
   QuickLink: QuickLink,
 }

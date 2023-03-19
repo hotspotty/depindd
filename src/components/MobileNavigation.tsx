@@ -1,6 +1,6 @@
+import { SidebarSection } from "@/app/(docs)/(utils)/sidebar"
 import { Dialog } from "@headlessui/react"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { Logomark } from "./Logo"
 import { Navigation } from "./Navigation"
@@ -35,7 +35,11 @@ function CloseIcon(props) {
   )
 }
 
-export function MobileNavigation({ navigation }) {
+export function MobileNavigation({
+  sidebarItems,
+}: {
+  sidebarItems: SidebarSection
+}) {
   let router: any = null
   let [isOpen, setIsOpen] = useState(false)
 
@@ -84,7 +88,7 @@ export function MobileNavigation({ navigation }) {
               <Logomark className="h-9 w-9" />
             </Link>
           </div>
-          <Navigation navigation={navigation} className="mt-5 px-1" />
+          <Navigation sidebarItems={sidebarItems} className="mt-5 px-1" />
         </Dialog.Panel>
       </Dialog>
     </>
