@@ -1,9 +1,8 @@
 import { getMarkdownContent } from "@/app/(docs)/(utils)/markdown"
 import sidebarConfig from "@/app/(docs)/config.sidebar.json"
+import { ARTICLES_PATH } from "@/app/(docs)/[section]/[slug]/page"
 import { NextResponse } from "next/server"
 import path from "path"
-
-export const ARTICLES_PATH = "src/app/(docs)/(articles)"
 
 type EnhancedSidebarPage = { label: string; slug: string; path: string }
 

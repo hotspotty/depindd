@@ -5,9 +5,9 @@ import {
   getMarkdownContent,
 } from "@/app/(docs)/(utils)/markdown"
 import { components } from "@/app/(docs)/config.markdoc"
-import { ARTICLES_PATH } from "@/app/api/articles/route"
 import { SidebarSection } from "@/app/api/sidebar/route"
 import Markdoc from "@markdoc/markdoc"
+import { glob } from "glob"
 import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
@@ -24,13 +24,18 @@ type PageProps = {
 
 export const dynamicParams = false
 
-export async function generateStaticParams() {
-  const articles = await fetch(
-    process.env.NEXT_API_BASE_URL + "/api/articles",
-    { cache: "no-store" }
-  ).then((res) => res.json())
+export const ARTICLES_PATH = "src/app/(docs)/(articles)"
+const ARTICLES_DIR = path.join(process.cwd(), ARTICLES_PATH)
 
-  return articles.map(({ section, slug }) => ({ section, slug }))
+export async function generateStaticParams() {
+  const docPaths = await glob(path.join(ARTICLES_DIR, "**/*.md"))
+  return docPaths.map((docPath) => {
+    const section = path
+      .dirname(docPath.replace(ARTICLES_DIR, ""))
+      .replace("/", "")
+    const slug = path.basename(docPath, path.extname(docPath))
+    return { section, slug }
+  })
 }
 
 export async function generateMetadata({
