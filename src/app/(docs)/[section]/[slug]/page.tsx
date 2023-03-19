@@ -48,7 +48,7 @@ export default async function Page({ params }: PageProps) {
   const sidebar: EnhancedSidebarSection[] = await fetch(
     process.env.NEXT_API_BASE_URL + "/api/sidebar"
   ).then((res) => res.json())
-
+  const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
   const { title, content } = await getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
@@ -63,8 +63,8 @@ export default async function Page({ params }: PageProps) {
         <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
           <article>
             <header className="mb-9 space-y-1">
-              <p className="font-display text-sm font-medium capitalize text-sky-500">
-                {params.section.replaceAll("-", " ")}
+              <p className="font-display text-sm font-medium text-sky-500">
+                {section?.label}
               </p>
               <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
                 {title}
