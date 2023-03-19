@@ -4,8 +4,8 @@ import clsx from "clsx"
 import Image from "next/image"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import { Fragment } from "react"
-import { Button } from "./Button"
 import { HeroBackground } from "./HeroBackground"
+import { HeroButton } from "./HeroButton"
 
 const codeLanguage = "bash"
 const code = `DIMO: 3 months
@@ -53,12 +53,12 @@ export function Hero() {
                 networks!
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/leaderboards/miner-payback-time">
+                <HeroButton href="/leaderboards/miner-payback-time">
                   Get started
-                </Button>
-                <Button href="/about/what-is-depindd" variant="secondary">
+                </HeroButton>
+                <HeroButton href="/about/what-is-depindd" variant="secondary">
                   Learn more
-                </Button>
+                </HeroButton>
               </div>
             </div>
           </div>

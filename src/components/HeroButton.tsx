@@ -15,7 +15,7 @@ interface Props {
   children: React.ReactNode | React.ReactNode[]
 }
 
-export const Button: React.FC<Props> = ({
+export const HeroButton: React.FC<Props> = ({
   variant = "primary",
   className,
   href,

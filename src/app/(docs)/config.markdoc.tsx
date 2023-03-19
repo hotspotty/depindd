@@ -1,4 +1,4 @@
-import { Callout } from "@/components/Callout"
+import { Callout } from "@/app/(docs)/(components)/Callout"
 import { QuickLink, QuickLinks } from "@/components/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 

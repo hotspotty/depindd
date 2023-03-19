@@ -3,7 +3,7 @@ import {
   Gradient,
   IconComponentProps,
   LightMode,
-} from "@/components/Icon"
+} from "@/app/(docs)/(components)/Icon"
 
 export const LightbulbIcon: React.FC<IconComponentProps> = ({ id, color }) => {
   return (

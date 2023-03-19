@@ -1,3 +1,4 @@
+import { Prose } from "@/app/(docs)/(components)/Prose"
 import TableOfContents from "@/app/(docs)/(components)/TableOfContents"
 import {
   collectHeadings,
@@ -6,7 +7,6 @@ import {
 import { components } from "@/app/(docs)/config.markdoc"
 import { ARTICLES_PATH } from "@/app/api/articles/route"
 import { SidebarSection } from "@/app/api/sidebar/route"
-import { Prose } from "@/components/Prose"
 import Markdoc from "@markdoc/markdoc"
 import { Metadata } from "next"
 import Link from "next/link"

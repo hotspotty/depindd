@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Icon } from "./Icon"
+import { Icon } from "../app/(docs)/(components)/Icon"
 
 interface QuickLinksProps {
   children: React.ReactNode | React.ReactNode[]
