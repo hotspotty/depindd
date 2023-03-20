@@ -16,13 +16,13 @@ DePIN projects can be split up in four categories according to Sami Kassab in [M
 
 {% quick-links %}
 
-{% quick-link title="Energy networks" icon="installation" href="/categories/energy-networks" /%}
+{% quick-link title="Energy networks" icon="installation" href="/categories/energy" /%}
 
-{% quick-link title="Sensor networks" icon="presets" href="/categories/sensor-networks" /%}
+{% quick-link title="Sensor networks" icon="presets" href="/categories/sensor" /%}
 
-{% quick-link title="Server networks" icon="plugins" href="/categories/server-networks" /%}
+{% quick-link title="Server networks" icon="plugins" href="/categories/server" /%}
 
-{% quick-link title="Wireless networks" icon="theming" href="/categories/wireless-networks" /%}
+{% quick-link title="Wireless networks" icon="theming" href="/categories/wireless" /%}
 
 {% /quick-links %}
 
