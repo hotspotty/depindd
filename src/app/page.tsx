@@ -159,9 +159,9 @@ const Home: React.FC = () => {
                 <span
                   className={clsx(
                     earnSelected === earnMethod.title
-                      ? "rounded-md bg-sky-400 text-white first:rounded-r-md last:rounded-l-md"
-                      : "bg-[#262A40] text-gray-300",
-                    "z-10 flex h-full cursor-pointer items-center justify-center px-4 font-medium hover:opacity-80"
+                      ? "rounded-md bg-sky-300 font-semibold text-slate-900 first:rounded-r-md last:rounded-l-md hover:bg-sky-200"
+                      : "bg-slate-800 font-medium text-white hover:bg-slate-700",
+                    "z-10 flex h-full cursor-pointer items-center justify-center px-4 text-sm"
                   )}
                   key={earnMethod.title}
                 >
@@ -173,14 +173,14 @@ const Home: React.FC = () => {
             <div className="flex gap-4">
               {earnSelectedItems().map((item, index) => (
                 <div
-                  className="flex w-4/12 flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
+                  className="flex w-4/12 flex-col rounded-xl border border-slate-200 p-4 dark:border-slate-800 dark:bg-slate-800"
                   key={index}
                 >
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#3f4474] text-[#acb0d2]">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-700 text-slate-200">
                     {index + 1}
                   </span>
                   <span className="my-2 text-lg">{item.title}</span>
-                  <span className="text-sm font-medium text-gray-400">
+                  <span className="text-sm font-medium text-slate-600 dark:text-slate-400">
                     {item.description}
                   </span>
                 </div>
