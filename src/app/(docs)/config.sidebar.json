@@ -12,12 +12,7 @@
   {
     "section": "categories",
     "label": "Network categories",
-    "items": [
-      "energy-networks",
-      "sensor-networks",
-      "server-networks",
-      "wireless-networks"
-    ]
+    "items": ["energy", "sensor", "server", "wireless"]
   },
   {
     "section": "miner-networks",
