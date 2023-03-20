@@ -2,16 +2,18 @@
 
 import clsx from "clsx"
 import Link from "next/link"
-import { useCallback, useEffect, useState } from "react"
+import { use, useCallback, useEffect, useState } from "react"
 
-function isActive(section: any, currentSection: string) {
+const isActive = (section: any, currentSection: string) => {
   if (section.id === currentSection) {
     return true
   }
+
   if (!section.children) {
     return false
   }
-  return section.children.findIndex(isActive) > -1
+
+  return section.children.findIndex((item) => item.id === currentSection) > -1
 }
 
 export default function TableOfContents({
@@ -38,7 +40,9 @@ export default function TableOfContents({
 
   useEffect(() => {
     if (tableOfContents.length === 0) return
+
     let headings = getHeadings(tableOfContents)
+
     function onScroll() {
       let top = window.scrollY
       let current = headings[0].id
@@ -49,10 +53,13 @@ export default function TableOfContents({
           break
         }
       }
+
       setCurrentSection(current)
     }
+
     window.addEventListener("scroll", onScroll, { passive: true })
     onScroll()
+
     return () => {
       window.removeEventListener("scroll", onScroll)
     }
