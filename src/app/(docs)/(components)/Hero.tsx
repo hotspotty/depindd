@@ -34,13 +34,13 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-slate-900 text-transparent">
                 DePIN DD
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-slate-400">
+              <p className="mt-3 text-lg text-slate-600 dark:text-slate-400">
                 Everything you need for Due Diligence on DePIN
               </p>
-              <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
+              <div className="mt-6 flex gap-4 sm:mt-10 md:justify-center lg:justify-start">
                 <HeroButton href="/leaderboards/miner-payback-time">
                   Get started
                 </HeroButton>

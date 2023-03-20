@@ -1,3 +1,5 @@
+"use client"
+
 import { Listbox } from "@headlessui/react"
 import clsx from "clsx"
 import { useEffect, useState } from "react"

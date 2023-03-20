@@ -1,7 +1,6 @@
 "use client"
 
 import GitHubIcon from "@/app/(docs)/(components)/icons/GithubIcon"
-import { Logo, Logomark } from "@/app/(docs)/(components)/Logo"
 import { MobileNavigation } from "@/app/(docs)/(components)/MobileNavigation"
 import { ThemeSelector } from "@/app/(docs)/(components)/ThemeSelector"
 import clsx from "clsx"
@@ -38,8 +37,9 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
-          <Logomark className="h-9 w-9 lg:hidden" />
-          <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
+          <p className="bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-3xl font-extrabold tracking-tight text-slate-900 text-transparent">
+            DePIN DD
+          </p>
         </Link>
       </div>
 
