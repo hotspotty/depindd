@@ -1,6 +1,6 @@
 "use client"
 
-import { SidebarSection } from "@/app/api/sidebar/route"
+import { SidebarSection } from "@/app/(docs)/(utils)/sidebar"
 import clsx from "clsx"
 import Link from "next/link"
 import { usePathname } from "next/navigation"

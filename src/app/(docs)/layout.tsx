@@ -1,15 +1,13 @@
 import { Navigation } from "@/components/Navigation"
-import { SidebarSection } from "../api/sidebar/route"
 import Header from "./(components)/Header"
+import { getSidebarItems } from "./(utils)/sidebar"
 
 export default async function DocsLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode
 }) {
-  const sidebar: SidebarSection[] = await fetch(
-    process.env.NEXT_API_BASE_URL + "/api/sidebar"
-  ).then((res) => res.json())
+  const sidebar = getSidebarItems()
 
   return (
     <body className="bg-white dark:bg-slate-900 ">

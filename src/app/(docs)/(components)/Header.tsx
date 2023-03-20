@@ -1,6 +1,5 @@
 "use client"
 
-import { SidebarSection } from "@/app/api/sidebar/route"
 import GitHubIcon from "@/components/icons/GithubIcon"
 import { Logo, Logomark } from "@/components/Logo"
 import { MobileNavigation } from "@/components/MobileNavigation"
@@ -8,6 +7,7 @@ import { ThemeSelector } from "@/components/ThemeSelector"
 import clsx from "clsx"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { SidebarSection } from "../(utils)/sidebar"
 
 export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
   let [isScrolled, setIsScrolled] = useState(false)

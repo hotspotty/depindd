@@ -1,4 +1,4 @@
-import { SidebarSection } from "@/app/api/sidebar/route"
+import { SidebarSection } from "@/app/(docs)/(utils)/sidebar"
 import { Dialog } from "@headlessui/react"
 import Link from "next/link"
 import { useEffect, useState } from "react"

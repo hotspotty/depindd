@@ -4,10 +4,10 @@ import { slugifyWithCounter } from "@sindresorhus/slugify"
 import fs from "fs"
 import matter from "gray-matter"
 
-export async function getMarkdownContent(filePath: string) {
+export function getMarkdownContent(filePath: string) {
   const source = fs.readFileSync(filePath, "utf-8")
   const matterResult = matter(source)
-  const { title, type } = matterResult.data
+  const { title } = matterResult.data
   const ast = Markdoc.parse(source)
   const content = Markdoc.transform(ast, config)
   return { content, title }

@@ -5,13 +5,13 @@ import {
   getMarkdownContent,
 } from "@/app/(docs)/(utils)/markdown"
 import { components } from "@/app/(docs)/config.markdoc"
-import { SidebarSection } from "@/app/api/sidebar/route"
 import Markdoc from "@markdoc/markdoc"
 import { glob } from "glob"
 import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
 import React from "react"
+import { ARTICLES_PATH, getSidebarItems } from "../../(utils)/sidebar"
 
 type Params = {
   section: string
@@ -24,7 +24,6 @@ type PageProps = {
 
 export const dynamicParams = false
 
-export const ARTICLES_PATH = "src/app/(docs)/(articles)"
 const ARTICLES_DIR = path.join(process.cwd(), ARTICLES_PATH)
 
 export async function generateStaticParams() {
@@ -42,19 +41,17 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
-  const { title } = await getMarkdownContent(filePath)
+  const { title } = getMarkdownContent(filePath)
   return {
     title: params.section.replaceAll("-", " ") + " - " + title,
   }
 }
 
-export default async function Page({ params }: PageProps) {
-  const sidebar: SidebarSection[] = await fetch(
-    process.env.NEXT_API_BASE_URL + "/api/sidebar"
-  ).then((res) => res.json())
+export default function Page({ params }: PageProps) {
+  const sidebar = getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
-  const { title, content } = await getMarkdownContent(filePath)
+  const { title, content } = getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)
   const pageIndex = allPages.findIndex((page) => page.slug === params.slug)
