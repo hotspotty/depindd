@@ -1,6 +1,7 @@
+import Header from "@/app/(docs)/(components)/Header"
+import { Hero } from "@/app/(docs)/(components)/Hero"
 import { Navigation } from "@/app/(docs)/(components)/Navigation"
-import Header from "./(components)/Header"
-import { getSidebarItems } from "./(utils)/sidebar"
+import { getSidebarItems } from "@/app/(docs)/(utils)/sidebar"
 
 export default async function DocsLayout({
   children, // will be a page or nested layout
@@ -12,6 +13,8 @@ export default async function DocsLayout({
   return (
     <body className="bg-white dark:bg-slate-900 ">
       <Header sidebar={sidebar} />
+
+      <Hero />
 
       <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">

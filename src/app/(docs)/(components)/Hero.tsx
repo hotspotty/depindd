@@ -2,21 +2,11 @@ import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
 import Image from "next/image"
-import Highlight, { defaultProps } from "prism-react-renderer"
 import { Fragment } from "react"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
 
-const codeLanguage = "bash"
-const code = `DIMO: 3 months
-Hivemapper: 7 months
-Helium 5G: 13 months`
-
-const tabs = [
-  { name: "Payback time", isActive: true },
-  { name: "Network revenue", isActive: false },
-  { name: "Network size", isActive: false },
-]
+const tabs = [{ name: "Miner payback time", isActive: true }]
 
 function TrafficLightsIcon(props: any) {
   return (
@@ -120,58 +110,24 @@ export function Hero() {
                   <div className="mt-6 flex items-start px-1 text-sm">
                     <div
                       aria-hidden="true"
-                      className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
+                      className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-300"
                     >
                       {Array.from({
-                        length: code.split("\n").length,
+                        length: 3,
                       }).map((_, index) => (
                         <Fragment key={index}>
-                          {(index + 1).toString().padStart(2, "0")}
+                          {index + 1}
                           <br />
                         </Fragment>
                       ))}
                     </div>
-                    <Highlight
-                      {...defaultProps}
-                      code={code}
-                      language={codeLanguage}
-                      theme={undefined}
-                    >
-                      {({
-                        className,
-                        style,
-                        tokens,
-                        getLineProps,
-                        getTokenProps,
-                      }) => (
-                        <pre
-                          className={clsx(
-                            className,
-                            "flex overflow-x-auto pb-6"
-                          )}
-                          style={style}
-                        >
-                          <code className="px-4">
-                            {tokens.map((line) => {
-                              const { key, ...restLineProps } = getLineProps({
-                                line,
-                              })
-                              return (
-                                <div key={key} {...restLineProps}>
-                                  {line.map((token) => {
-                                    const { key, ...restTokenProps } =
-                                      getTokenProps({ token })
-                                    return (
-                                      <span key={key} {...restTokenProps} />
-                                    )
-                                  })}
-                                </div>
-                              )
-                            })}
-                          </code>
-                        </pre>
-                      )}
-                    </Highlight>
+                    <pre className="flex overflow-x-auto pb-6">
+                      <code className="px-4 text-slate-300">
+                        <div>DIMO: 3 months</div>
+                        <div>Hivemapper: 7 months</div>
+                        <div>Helium 5G: 13 months</div>
+                      </code>
+                    </pre>
                   </div>
                 </div>
               </div>
