@@ -11,7 +11,7 @@ export default async function DocsLayout({
   const sidebar = getSidebarItems()
 
   return (
-    <body className="bg-white dark:bg-slate-900 ">
+    <body className="bg-white dark:bg-slate-900">
       <Header sidebar={sidebar} />
 
       <Hero />

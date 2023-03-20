@@ -47,28 +47,28 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
         <nav className="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
           <ul className="flex space-x-8">
             <li>
-              <a
+              <Link
                 className="hover:text-sky-500 dark:hover:text-sky-400"
                 href="/leaderboards/miner-payback-time"
               >
                 Networks
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="hover:text-sky-500 dark:hover:text-sky-400"
                 href="/showcase"
               >
                 Showcase
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="hover:text-sky-500 dark:hover:text-sky-400"
                 href="/blog"
               >
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
