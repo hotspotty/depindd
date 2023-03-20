@@ -1,11 +1,17 @@
+import { networks } from "@/app/(docs)/(content)/miner-networks/networkInfo"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
+import fs from "fs"
+import matter from "gray-matter"
 import Image from "next/image"
 import Link from "next/link"
+import path from "path"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import GitHubIcon from "./(docs)/(components)/icons/GithubIcon"
+import { QuickLink } from "./(docs)/(components)/QuickLinks"
 import { ThemeSelector } from "./(docs)/(components)/ThemeSelector"
+import { CONTENT_PATH } from "./(docs)/(utils)/sidebar"
 
 export const metadata = {
   title: "DePIN DD",
@@ -13,6 +19,22 @@ export const metadata = {
 
 const Home: React.FC = () => {
   let earnSelected = "Mine"
+
+  const featuredNetworks = networks.slice(0, 6).map((network) => {
+    const filePath = path.join(
+      CONTENT_PATH,
+      "miner-networks",
+      network.id + ".md"
+    )
+    const source = fs.readFileSync(filePath, "utf-8")
+    const matterResult = matter(source)
+    return {
+      id: network.id,
+      title: matterResult.data.title,
+      path: `/miner-networks/${network.id}`,
+      category: network.category,
+    }
+  })
 
   const earnSelectedItems = () => {
     const earnMethod = EARN_METHODS.find(
@@ -190,34 +212,14 @@ const Home: React.FC = () => {
           </div>
           <span className="text-3xl font-medium">Featured Projects</span>
 
-          <div className="mt-10 flex w-full flex-wrap gap-4">
-            {PROJECTS.map((item, index) => (
-              <div
-                className="z-10 flex w-[calc(33%-8px)] flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
-                key={index}
-              >
-                <span className="my-2 mb-4 text-lg font-bold">
-                  {item.asset}
-                </span>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex flex-col">
-                    <span className="mb-1 text-sm font-semibold text-gray-400">
-                      APY
-                    </span>
-                    <span className="font-bold text-gray-300">{item.apy}</span>
-                  </div>
-
-                  <div className="flex flex-col">
-                    <span className="mb-1 text-sm font-semibold text-gray-400">
-                      DAILY
-                    </span>
-                    <span className="font-bold text-gray-300">
-                      {item.daily}
-                    </span>
-                  </div>
-                </div>
-              </div>
+          <div className="mt-10 grid w-full grid-cols-1 gap-6 sm:grid-cols-3">
+            {featuredNetworks.map((network) => (
+              <QuickLink
+                key={network.id}
+                title={network.title}
+                description={network.category}
+                href={network.path}
+              />
             ))}
           </div>
         </div>
@@ -332,38 +334,5 @@ const EARN_METHODS = [
           "Get your return on investment by mining tokens with your miner",
       },
     ],
-  },
-]
-
-const PROJECTS = [
-  {
-    asset: "Helium",
-    apy: "2.48%",
-    daily: "0.01%",
-  },
-  {
-    asset: "DIMO",
-    apy: "10.03%",
-    daily: "0.03%",
-  },
-  {
-    asset: "Hivemapper",
-    apy: "11.75%",
-    daily: "0.05%",
-  },
-  {
-    asset: "XNET",
-    apy: "3.69%",
-    daily: "0.01%",
-  },
-  {
-    asset: "React Network",
-    apy: "14.34%",
-    daily: "0.04%",
-  },
-  {
-    asset: "WeatherXM",
-    apy: "11.75%",
-    daily: "0.03%",
   },
 ]
