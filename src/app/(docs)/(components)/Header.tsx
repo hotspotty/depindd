@@ -37,7 +37,12 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
-          <p className="bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-3xl font-extrabold tracking-tight text-slate-900 text-transparent">
+          <p
+            className={clsx(
+              isScrolled ? "opacity-100" : "opacity-0",
+              "bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-3xl font-extrabold tracking-tight text-slate-900 text-transparent transition-opacity duration-500 ease-in"
+            )}
+          >
             DePIN DD
           </p>
         </Link>

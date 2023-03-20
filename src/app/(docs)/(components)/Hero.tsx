@@ -34,7 +34,7 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-slate-900 text-transparent">
+              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text text-5xl font-extrabold tracking-tight text-slate-900 text-transparent">
                 DePIN DD
               </p>
               <p className="mt-3 text-lg text-slate-600 dark:text-slate-400">
