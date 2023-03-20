@@ -93,23 +93,23 @@ const Home: React.FC = () => {
                 className="flex w-[calc(33%-8px)] flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
                 key={index}
               >
-                <span className="my-2 text-lg">{item.asset}</span>
+                <span className="my-2 text-lg font-bold mb-4">{item.asset}</span>
 
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="text-xs font-semibold text-gray-400">
+                    <span className="text-sm font-semibold text-gray-400 mb-1">
                       APY
                     </span>
-                    <span className="font-semibold text-gray-300">
+                    <span className="font-bold text-gray-300">
                       {item.apy}
                     </span>
                   </div>
 
                   <div className="flex flex-col">
-                    <span className="text-xs font-semibold text-gray-400">
+                    <span className="text-sm font-semibold text-gray-400 mb-1">
                       DAILY
                     </span>
-                    <span className="font-semibold text-gray-300">
+                    <span className="font-bold text-gray-300">
                       {item.daily}
                     </span>
                   </div>
