@@ -11,7 +11,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
 import React from "react"
-import { ARTICLES_PATH, getSidebarItems } from "../../(utils)/sidebar"
+import { CONTENT_PATH, getSidebarItems } from "../../(utils)/sidebar"
 
 type Params = {
   section: string
@@ -24,7 +24,7 @@ type PageProps = {
 
 export const dynamicParams = false
 
-const ARTICLES_DIR = path.join(process.cwd(), ARTICLES_PATH)
+const ARTICLES_DIR = path.join(process.cwd(), CONTENT_PATH)
 
 export async function generateStaticParams() {
   const docPaths = await glob(path.join(ARTICLES_DIR, "**/*.md"))
@@ -40,7 +40,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
+  const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const { title } = getMarkdownContent(filePath)
   return {
     title: params.section.replaceAll("-", " ") + " - " + title,
@@ -50,7 +50,7 @@ export async function generateMetadata({
 export default function Page({ params }: PageProps) {
   const sidebar = getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)
-  const filePath = path.join(ARTICLES_PATH, params.section, params.slug + ".md")
+  const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const { title, content } = getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)

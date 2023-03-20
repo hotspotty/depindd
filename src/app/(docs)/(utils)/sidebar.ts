@@ -11,7 +11,7 @@ export type SidebarSection = {
   items: SidebarPage[]
 }
 
-export const ARTICLES_PATH = "src/app/(docs)/(articles)"
+export const CONTENT_PATH = "src/app/(docs)/(content)"
 
 export function getSidebarItems() {
   return sidebarConfig.reduce((acc: SidebarSection[], section) => {
@@ -19,7 +19,7 @@ export function getSidebarItems() {
       section: section.section,
       label: section.label,
       items: section.items.map((page) => {
-        const filePath = path.join(ARTICLES_PATH, section.section, page + ".md")
+        const filePath = path.join(CONTENT_PATH, section.section, page + ".md")
         const source = fs.readFileSync(filePath, "utf-8")
         const matterResult = matter(source)
         return {
