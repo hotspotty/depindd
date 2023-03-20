@@ -1,4 +1,7 @@
+import blurCyanImage from "@/images/blur-cyan.png"
+import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
+import Image from "next/image"
 import Link from "next/link"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import GitHubIcon from "./(docs)/(components)/icons/GithubIcon"
@@ -23,7 +26,7 @@ const Home: React.FC = () => {
     <div className="flex w-full flex-col items-center text-white">
       <header className="flex w-full flex-wrap items-center bg-white px-4 py-5 dark:bg-transparent dark:shadow-none sm:px-6 lg:px-8">
         <div className="relative flex basis-0 justify-end md:flex-grow">
-          <nav className="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+          <nav className="z-10 text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
             <ul className="flex space-x-8">
               <li>
                 <a
@@ -66,7 +69,36 @@ const Home: React.FC = () => {
         </div>
       </header>
       <div className="w-full max-w-6xl">
+        <div className="relative w-full">
+          <Image
+            className="absolute -top-64 -right-64"
+            src={blurCyanImage}
+            alt=""
+            width={530}
+            height={530}
+            unoptimized
+            priority
+          />
+          <Image
+            className="absolute -bottom-40 -right-44"
+            src={blurIndigoImage}
+            alt=""
+            width={567}
+            height={567}
+            unoptimized
+            priority
+          />
+        </div>
         <div className="mt-[30vh] mb-[40vh] flex flex-col items-center justify-center">
+          <Image
+            className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
+            src={blurCyanImage}
+            alt=""
+            width={530}
+            height={530}
+            unoptimized
+            priority
+          />
           <p className="bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-8xl font-extrabold tracking-tight text-slate-900 text-transparent">
             DePIN DD
           </p>
@@ -86,6 +118,17 @@ const Home: React.FC = () => {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center">
+          <div className="relative w-full">
+            <Image
+              className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
+              src={blurCyanImage}
+              alt=""
+              width={530}
+              height={530}
+              unoptimized
+              priority
+            />
+          </div>
           <span className="text-3xl font-medium">Earn with DePIN</span>
 
           <div className="flex w-full flex-col items-center">
@@ -96,7 +139,7 @@ const Home: React.FC = () => {
                     earnSelected === earnMethod.title
                       ? "rounded-md bg-sky-400 text-white first:rounded-r-md last:rounded-l-md"
                       : "bg-[#262A40] text-gray-300",
-                    "flex h-full cursor-pointer items-center justify-center px-4 font-medium hover:opacity-80"
+                    "z-10 flex h-full cursor-pointer items-center justify-center px-4 font-medium hover:opacity-80"
                   )}
                   key={earnMethod.title}
                 >
@@ -125,12 +168,32 @@ const Home: React.FC = () => {
         </div>
 
         <div className="my-40 flex w-full flex-col items-center justify-center">
+          <div className="relative w-full">
+            <Image
+              className="absolute -top-64 -right-64"
+              src={blurCyanImage}
+              alt=""
+              width={530}
+              height={530}
+              unoptimized
+              priority
+            />
+            <Image
+              className="absolute -bottom-40 -right-44"
+              src={blurIndigoImage}
+              alt=""
+              width={567}
+              height={567}
+              unoptimized
+              priority
+            />
+          </div>
           <span className="text-3xl font-medium">Featured Projects</span>
 
           <div className="mt-10 flex w-full flex-wrap gap-4">
             {PROJECTS.map((item, index) => (
               <div
-                className="flex w-[calc(33%-8px)] flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
+                className="z-10 flex w-[calc(33%-8px)] flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
                 key={index}
               >
                 <span className="my-2 mb-4 text-lg font-bold">
