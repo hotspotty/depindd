@@ -6,7 +6,12 @@ import { Fragment } from "react"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
 
-const tabs = [{ name: "Miner payback time", isActive: true }]
+const tabs = [
+  { name: "Miner payback time", isActive: true },
+  { name: "Governance score", isActive: false },
+  { name: "Tokenomics score", isActive: false },
+  { name: "Ease of mining score", isActive: false },
+]
 
 export function Hero() {
   return (
