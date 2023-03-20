@@ -7,7 +7,12 @@
   {
     "section": "leaderboards",
     "label": "Leaderboards",
-    "items": ["miner-payback-time"]
+    "items": [
+      "miner-payback-time",
+      "governance-score",
+      "tokenomics-score",
+      "ease-of-mining-score"
+    ]
   },
   {
     "section": "categories",
