@@ -1,9 +1,9 @@
 "use client"
 
-import GitHubIcon from "@/components/icons/GithubIcon"
-import { Logo, Logomark } from "@/components/Logo"
-import { MobileNavigation } from "@/components/MobileNavigation"
-import { ThemeSelector } from "@/components/ThemeSelector"
+import GitHubIcon from "@/app/(docs)/(components)/icons/GithubIcon"
+import { Logo, Logomark } from "@/app/(docs)/(components)/Logo"
+import { MobileNavigation } from "@/app/(docs)/(components)/MobileNavigation"
+import { ThemeSelector } from "@/app/(docs)/(components)/ThemeSelector"
 import clsx from "clsx"
 import Link from "next/link"
 import { useEffect, useState } from "react"

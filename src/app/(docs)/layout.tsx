@@ -1,4 +1,4 @@
-import { Navigation } from "@/components/Navigation"
+import { Navigation } from "@/app/(docs)/(components)/Navigation"
 import Header from "./(components)/Header"
 import { getSidebarItems } from "./(utils)/sidebar"
 

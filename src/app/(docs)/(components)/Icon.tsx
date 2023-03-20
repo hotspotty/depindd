@@ -1,11 +1,11 @@
 import clsx from "clsx"
 import { useId } from "react"
-import { InstallationIcon } from "../../../components/icons/InstallationIcon"
-import { LightbulbIcon } from "../../../components/icons/LightbulbIcon"
-import { PluginsIcon } from "../../../components/icons/PluginsIcon"
-import { PresetsIcon } from "../../../components/icons/PresetsIcon"
-import { ThemingIcon } from "../../../components/icons/ThemingIcon"
-import { WarningIcon } from "../../../components/icons/WarningIcon"
+import { InstallationIcon } from "./icons/InstallationIcon"
+import { LightbulbIcon } from "./icons/LightbulbIcon"
+import { PluginsIcon } from "./icons/PluginsIcon"
+import { PresetsIcon } from "./icons/PresetsIcon"
+import { ThemingIcon } from "./icons/ThemingIcon"
+import { WarningIcon } from "./icons/WarningIcon"
 
 export interface IconComponentProps {
   id: string

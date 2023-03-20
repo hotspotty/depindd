@@ -1,5 +1,5 @@
 import { Callout } from "@/app/(docs)/(components)/Callout"
-import { QuickLink, QuickLinks } from "@/components/QuickLinks"
+import { QuickLink, QuickLinks } from "@/app/(docs)/(components)/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 
 const config: Config = {
