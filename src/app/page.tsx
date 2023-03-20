@@ -17,18 +17,18 @@ const Home: React.FC = () => {
   }
 
   return (
-    <div className="flex w-full flex-col items-center text-white bg-[#1e2030]">
+    <div className="flex w-full flex-col items-center bg-[#1e2030] text-white">
       <div className="w-full max-w-6xl">
         <div className="mt-6 flex items-center justify-between">
           <span className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-3xl tracking-tight text-transparent">
             DepiN DD
           </span>
-          <button className="rounded-md bg-sky-400 px-4 py-2 text-sm font-medium text-white hover:opacity-70">
+          <button className="rounded-full bg-sky-300 py-2 px-4 text-sm font-semibold text-slate-900 hover:bg-sky-200 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300/50 active:bg-sky-500">
             Launch App
           </button>
         </div>
 
-        <div className="mt-[30vh] mb-[10vh] flex flex-col items-center justify-center">
+        <div className="mt-[40vh] mb-[40vh] flex flex-col items-center justify-center">
           <span className="text-8xl font-bold">DePIN DD</span>
 
           <span className="my-12 flex flex-col items-center text-lg font-semibold text-gray-400">
@@ -36,16 +36,16 @@ const Home: React.FC = () => {
           </span>
 
           <div className="flex items-center">
-            <button className="mr-3 rounded-md bg-sky-400 px-6 py-3 font-medium text-white hover:opacity-70">
+            <button className="mr-3 rounded-full bg-sky-300 py-2 px-4 text-sm font-semibold text-slate-900 hover:bg-sky-200 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300/50 active:bg-sky-500">
               Launch App
             </button>
-            <button className="ml-3 rounded-md bg-gray-700 px-6 py-3 font-medium text-white hover:opacity-70">
+            <button className="ml-3 rounded-full bg-gray-700 px-4 py-2 font-medium text-white hover:opacity-70">
               View Docs
             </button>
           </div>
         </div>
 
-        <div className="flex min-h-screen w-full flex-col items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-center">
           <span className="text-3xl font-medium">Earn with DePIN</span>
 
           <div className="flex w-full flex-col items-center">
@@ -81,6 +81,41 @@ const Home: React.FC = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="my-40 flex w-full flex-col items-center justify-center">
+          <span className="text-3xl font-medium">Featured Projects</span>
+
+          <div className="mt-10 flex w-full flex-wrap gap-4">
+            {PROJECTS.map((item, index) => (
+              <div
+                className="flex w-[calc(33%-8px)] flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
+                key={index}
+              >
+                <span className="my-2 text-lg">{item.asset}</span>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold text-gray-400">
+                      APY
+                    </span>
+                    <span className="font-semibold text-gray-300">
+                      {item.apy}
+                    </span>
+                  </div>
+
+                  <div className="flex flex-col">
+                    <span className="text-xs font-semibold text-gray-400">
+                      DAILY
+                    </span>
+                    <span className="font-semibold text-gray-300">
+                      {item.daily}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -194,5 +229,38 @@ const EARN_METHODS = [
           "Get your return on investment by mining tokens with your miner",
       },
     ],
+  },
+]
+
+const PROJECTS = [
+  {
+    asset: "Helium",
+    apy: "2.48%",
+    daily: "0.01%",
+  },
+  {
+    asset: "DIMO",
+    apy: "10.03%",
+    daily: "0.03%",
+  },
+  {
+    asset: "Hivemapper",
+    apy: "11.75%",
+    daily: "0.05%",
+  },
+  {
+    asset: "XNET",
+    apy: "3.69%",
+    daily: "0.01%",
+  },
+  {
+    asset: "React Network",
+    apy: "14.34%",
+    daily: "0.04%",
+  },
+  {
+    asset: "WeatherXM",
+    apy: "11.75%",
+    daily: "0.03%",
   },
 ]
