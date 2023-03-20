@@ -78,6 +78,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
           <Link
             href="https://github.com/hotspotty/depindd"
             className="group"
+            target="_blank"
             aria-label="GitHub"
           >
             <GitHubIcon className="h-5 w-5 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
