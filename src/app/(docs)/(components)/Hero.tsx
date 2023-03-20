@@ -38,9 +38,7 @@ export function Hero() {
                 DePIN DD
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
-                Join the DePIN movement, where anyone can earn passive income
-                through community built and owned physical infrastructure
-                networks!
+                Everything you need for Due Diligence on DePIN
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <HeroButton href="/leaderboards/miner-payback-time">
