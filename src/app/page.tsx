@@ -179,7 +179,7 @@ const EARN_METHODS = [
           "Explore DePIN projects and find the best one available to you",
       },
       {
-        title: "Purchase minor",
+        title: "Purchase miner",
         description:
           "Compare miner options and make a purchase with your preferred decision",
       },
@@ -204,7 +204,7 @@ const EARN_METHODS = [
           "Explore DePIN projects and find the best one available to you",
       },
       {
-        title: "Purchase minor",
+        title: "Purchase miner",
         description:
           "Compare miner options and make a purchase with your preferred decision",
       },
@@ -229,7 +229,7 @@ const EARN_METHODS = [
           "Explore DePIN projects and find the best one available to you",
       },
       {
-        title: "Purchase minor",
+        title: "Purchase miner",
         description:
           "Compare miner options and make a purchase with your preferred decision",
       },
@@ -254,7 +254,7 @@ const EARN_METHODS = [
           "Explore DePIN projects and find the best one available to you",
       },
       {
-        title: "Purchase minor",
+        title: "Purchase miner",
         description:
           "Compare miner options and make a purchase with your preferred decision",
       },
