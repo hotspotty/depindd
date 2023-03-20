@@ -1,7 +1,9 @@
+import { redirect } from "next/navigation"
+
 export const metadata = {
-  title: "My Page Title",
+  title: "DePIN DD",
 }
 
 export default function Home() {
-  return <div>HOME</div>
+  redirect("/about/what-is-depin")
 }
