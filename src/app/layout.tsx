@@ -57,5 +57,5 @@ const themeScript = `
     }
   }).observe(document.documentElement, { attributeFilter: ['data-theme'], attributeOldValue: true })
 
-  isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions())
+  isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions('dark'))
 `

@@ -1,7 +1,6 @@
 import clsx from "clsx"
-import { redirect } from "next/navigation"
 
-const metadata = {
+export const metadata = {
   title: "DePIN DD",
 }
 
@@ -93,20 +92,20 @@ const Home: React.FC = () => {
                 className="flex w-[calc(33%-8px)] flex-col rounded-lg border border-[#41498e7e] bg-[#2D3153] p-4 shadow-md"
                 key={index}
               >
-                <span className="my-2 text-lg font-bold mb-4">{item.asset}</span>
+                <span className="my-2 mb-4 text-lg font-bold">
+                  {item.asset}
+                </span>
 
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
-                    <span className="text-sm font-semibold text-gray-400 mb-1">
+                    <span className="mb-1 text-sm font-semibold text-gray-400">
                       APY
                     </span>
-                    <span className="font-bold text-gray-300">
-                      {item.apy}
-                    </span>
+                    <span className="font-bold text-gray-300">{item.apy}</span>
                   </div>
 
                   <div className="flex flex-col">
-                    <span className="text-sm font-semibold text-gray-400 mb-1">
+                    <span className="mb-1 text-sm font-semibold text-gray-400">
                       DAILY
                     </span>
                     <span className="font-bold text-gray-300">

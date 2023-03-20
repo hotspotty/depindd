@@ -35,6 +35,11 @@ export const collectHeadings = (nodes: any, slugify = slugifyWithCounter()) => {
 
   for (let node of nodes) {
     if (!node) continue
+
+    if (node.name === "a") {
+      node.attributes.target = "_blank"
+    }
+
     if (node.name === "h2" || node.name === "h3") {
       let title = getNodeText(node)
       if (title) {
