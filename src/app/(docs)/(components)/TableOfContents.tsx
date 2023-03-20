@@ -2,6 +2,7 @@
 
 import clsx from "clsx"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { use, useCallback, useEffect, useState } from "react"
 
 const isActive = (section: any, currentSection: string) => {
@@ -21,6 +22,7 @@ export default function TableOfContents({
 }: {
   tableOfContents: any[]
 }) {
+  const pathname = usePathname()
   let [currentSection, setCurrentSection] = useState(tableOfContents[0]?.id)
 
   let getHeadings = useCallback((tableOfContents) => {
@@ -65,6 +67,17 @@ export default function TableOfContents({
     }
   }, [getHeadings, tableOfContents])
 
+  const goToSection = useCallback((id: string) => {
+    let el = document.getElementById(id)
+    if (!el) return
+
+    let style = window.getComputedStyle(el)
+    let scrollMt = parseFloat(style.scrollMarginTop)
+
+    let top = window.scrollY + el.getBoundingClientRect().top - scrollMt
+    window.scrollTo({ top, behavior: "smooth" })
+  }, [])
+
   return (
     <nav className="w-56">
       {tableOfContents.length > 0 && (
@@ -73,7 +86,8 @@ export default function TableOfContents({
             <li key={section.id}>
               <h3>
                 <Link
-                  href={`#${section.id}`}
+                  onClick={() => goToSection(section.id)}
+                  href={`${pathname}#${section.id}`}
                   className={clsx(
                     isActive(section, currentSection)
                       ? "text-sky-500"
@@ -91,7 +105,8 @@ export default function TableOfContents({
                   {section.children.map((subSection) => (
                     <li key={subSection.id}>
                       <Link
-                        href={`#${subSection.id}`}
+                        onClick={() => goToSection(subSection.id)}
+                        href={`${pathname}#${subSection.id}`}
                         className={
                           isActive(subSection, currentSection)
                             ? "text-sky-500"
