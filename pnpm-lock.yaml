@@ -21,6 +21,7 @@ specifiers:
   glob: 9.3.0
   gray-matter: 4.0.3
   next: 13.2.4
+  next-sitemap: 4.0.6
   postcss: 8.4.21
   postcss-focus-visible: 8.0.2
   postcss-import: 15.1.0
@@ -50,6 +51,7 @@ dependencies:
   glob: 9.3.0
   gray-matter: 4.0.3
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
+  next-sitemap: 4.0.6_next@13.2.4
   postcss: 8.4.21
   postcss-focus-visible: 8.0.2_postcss@8.4.21
   postcss-import: 15.1.0_postcss@8.4.21
@@ -184,6 +186,10 @@ packages:
     dependencies:
       regenerator-runtime: 0.13.11
     dev: true
+
+  /@corex/deepmerge/4.0.37:
+    resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
+    dev: false
 
   /@docsearch/css/3.2.1:
     resolution: {integrity: sha512-gaP6TxxwQC+K8D6TRx5WULUWKrcbzECOPA2KCVMuI+6C7dNiGUk5yXXzVhc5sld79XKYLnO9DRTI4mjXDYkh+g==}
@@ -2101,6 +2107,19 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-sitemap/4.0.6_next@13.2.4:
+    resolution: {integrity: sha512-pZ9tynYe6mRR189qZqcOlWVgM1Gxo07BJQW0AjerKmLwQOt+6FQMdaDgifgCt6jDT3Y3EG/+NUDDZRcd0gbPkA==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.37
+      minimist: 1.2.8
+      next: 13.2.4_biqbaboplfbrettd7655fr4n2y
+    dev: false
 
   /next/13.2.4_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-g1I30317cThkEpvzfXujf0O4wtaQHtDCLhlivwlTJ885Ld+eOgcz7r3TGQzeU+cSRoNHtD8tsJgzxVdYojFssw==}

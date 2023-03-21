@@ -6,6 +6,7 @@
     "dev": "next dev",
     "dev-traced": "NODE_OPTIONS='--trace-warnings' next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start -p 3002",
     "lint": "next lint"
   },
@@ -28,6 +29,7 @@
     "glob": "9.3.0",
     "gray-matter": "4.0.3",
     "next": "13.2.4",
+    "next-sitemap": "4.0.6",
     "postcss": "8.4.21",
     "postcss-focus-visible": "8.0.2",
     "postcss-import": "15.1.0",

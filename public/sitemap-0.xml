@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http://localhost:3000</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/miner-networks/xnet</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/miner-networks/hivemapper</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/miner-networks/helium-mobile</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/miner-networks/helium-iot</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/miner-networks/dimo</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/categories/wireless</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/categories/server</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/categories/sensor</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/categories/energy</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/leaderboards/tokenomics-score</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/leaderboards/miner-payback-time</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/leaderboards/governance-score</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/leaderboards/ease-of-mining-score</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/about/what-is-depindd</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/about/what-is-depin</loc><lastmod>2023-03-21T22:36:43.190Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
