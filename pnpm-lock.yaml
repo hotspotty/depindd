@@ -7,6 +7,7 @@ specifiers:
   '@markdoc/markdoc': 0.2.2
   '@markdoc/next.js': 0.2.2
   '@sindresorhus/slugify': 2.1.0
+  '@tailwindcss/forms': 0.5.3
   '@tailwindcss/typography': 0.5.7
   '@types/node': 18.15.0
   '@types/react': 18.0.28
@@ -37,6 +38,7 @@ dependencies:
   '@markdoc/markdoc': 0.2.2_pmekkgnqduwlme35zpnqhenc34
   '@markdoc/next.js': 0.2.2_3j4cpzfaxiijdqkz3pfltbrmui
   '@sindresorhus/slugify': 2.1.0
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.1
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
   '@types/node': 18.15.0
   '@types/react': 18.0.28
@@ -498,6 +500,15 @@ packages:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
       tslib: 2.5.0
+    dev: false
+
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.1:
+    resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.2.1
     dev: false
 
   /@tailwindcss/typography/0.5.7_tailwindcss@3.2.1:
@@ -2043,6 +2054,11 @@ packages:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.1
+
+  /mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
+    dev: false
 
   /minimatch/3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}

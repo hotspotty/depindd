@@ -78,7 +78,7 @@ export const networks: NetworkInfo[] = [
     category: "wireless",
     token: "IOT",
     blockchain: "solana",
-    status: "production",
+    status: "development",
   },
   {
     id: "helium-mobile",

@@ -1,3 +1,5 @@
+// TODO: replace by heroicons
+
 export const SortIcon: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <svg
