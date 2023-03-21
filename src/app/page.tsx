@@ -10,6 +10,7 @@ import path from "path"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import GitHubIcon from "./(docs)/(components)/icons/GithubIcon"
 import { QuickLink } from "./(docs)/(components)/QuickLinks"
+import { Search } from "./(docs)/(components)/Search"
 import { ThemeSelector } from "./(docs)/(components)/ThemeSelector"
 import { CONTENT_PATH } from "./(docs)/(utils)/sidebar"
 
@@ -46,9 +47,9 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex w-full flex-col items-center text-white">
-      <header className="flex w-full flex-wrap items-center bg-white px-4 py-5 dark:bg-transparent dark:shadow-none sm:px-6 lg:px-8">
+      <header className="z-10 flex w-full items-center bg-white px-4 py-5 dark:bg-transparent dark:shadow-none sm:px-6 lg:px-8">
         <div className="relative flex basis-0 justify-end md:flex-grow">
-          <nav className="z-10 text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+          <nav className="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
             <ul className="flex space-x-8">
               <li>
                 <a
@@ -130,12 +131,8 @@ const Home: React.FC = () => {
           </span>
 
           <div className="mt-6 flex gap-4 sm:mt-10 md:justify-center lg:justify-start">
-            <HeroButton href="/leaderboards/miner-payback-time">
-              Get started
-            </HeroButton>
-            <HeroButton href="/about/what-is-depindd" variant="secondary">
-              Learn more
-            </HeroButton>
+            <HeroButton href="/about/what-is-depin">Get started</HeroButton>
+            <Search />
           </div>
         </div>
 
