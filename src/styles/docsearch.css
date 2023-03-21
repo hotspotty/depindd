@@ -107,6 +107,7 @@
   background: transparent;
   padding: 0 1rem 0 3rem;
   outline: none;
+  border: 0;
 }
 
 .DocSearch-Input::placeholder {
