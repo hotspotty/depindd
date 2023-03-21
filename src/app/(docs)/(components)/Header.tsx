@@ -7,7 +7,6 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { SidebarSection } from "../(utils)/sidebar"
-import { Search } from "./Search"
 
 export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
   let [isScrolled, setIsScrolled] = useState(false)
@@ -47,10 +46,6 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
             DePIN DD
           </p>
         </Link>
-      </div>
-
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-        <Search />
       </div>
 
       <div className="relative flex basis-0 justify-end md:flex-grow">
