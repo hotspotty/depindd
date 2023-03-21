@@ -40,7 +40,7 @@ function PaginationButton({
     <button
       type="button"
       className={clsx(
-        "relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50",
+        "text-tale-400 relative inline-flex items-center rounded-md border-0 px-4 py-2 text-sm font-medium ring-1 ring-inset ring-white/10 hover:bg-white/10 focus:ring-2 focus:ring-sky-600 sm:text-sm sm:leading-6",
         className
       )}
       {...rest}
