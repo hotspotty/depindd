@@ -21,6 +21,7 @@ specifiers:
   glob: 9.3.0
   gray-matter: 4.0.3
   next: 13.2.4
+  postcss: 8.4.21
   postcss-focus-visible: 8.0.2
   postcss-import: 15.1.0
   prettier: 2.7.1
@@ -43,18 +44,19 @@ dependencies:
   '@types/node': 18.15.0
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  autoprefixer: 10.4.12
+  autoprefixer: 10.4.12_postcss@8.4.21
   clsx: 1.2.1
   focus-visible: 5.2.0
   glob: 9.3.0
   gray-matter: 4.0.3
   next: 13.2.4_biqbaboplfbrettd7655fr4n2y
-  postcss-focus-visible: 8.0.2
-  postcss-import: 15.1.0
+  postcss: 8.4.21
+  postcss-focus-visible: 8.0.2_postcss@8.4.21
+  postcss-import: 15.1.0_postcss@8.4.21
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-table: 7.8.0_react@18.2.0
-  tailwindcss: 3.2.1
+  tailwindcss: 3.2.1_postcss@8.4.21
   typescript: 4.9.5
 
 devDependencies:
@@ -508,7 +510,7 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.2.1
+      tailwindcss: 3.2.1_postcss@8.4.21
     dev: false
 
   /@tailwindcss/typography/0.5.7_tailwindcss@3.2.1:
@@ -520,7 +522,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.2.1
+      tailwindcss: 3.2.1_postcss@8.4.21
     dev: false
 
   /@types/json5/0.0.29:
@@ -794,7 +796,7 @@ packages:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
     dev: true
 
-  /autoprefixer/10.4.12:
+  /autoprefixer/10.4.12_postcss@8.4.21:
     resolution: {integrity: sha512-WrCGV9/b97Pa+jtwf5UGaRjgQIg7OK3D06GnoYoZNcG1Xb8Gt3EfuKjlhh9i/VtT16g6PYjZ69jdJ2g8FxSC4Q==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -806,6 +808,7 @@ packages:
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
+      postcss: 8.4.21
       postcss-value-parser: 4.2.0
     dev: false
 
@@ -2322,12 +2325,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /postcss-focus-visible/8.0.2:
+  /postcss-focus-visible/8.0.2_postcss@8.4.21:
     resolution: {integrity: sha512-f/Vd+EC/GaKElknU59esVcRYr/Y3t1ZAQyL4u2xSOgkDy4bMCmG7VP5cGvj3+BTLNE9ETfEuz2nnt4qkZwTTeA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
     dependencies:
+      postcss: 8.4.21
       postcss-selector-parser: 6.0.11
     dev: false
 
@@ -2343,12 +2347,13 @@ packages:
       resolve: 1.22.1
     dev: false
 
-  /postcss-import/15.1.0:
+  /postcss-import/15.1.0_postcss@8.4.21:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
+      postcss: 8.4.21
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.1
@@ -2786,10 +2791,12 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /tailwindcss/3.2.1:
+  /tailwindcss/3.2.1_postcss@8.4.21:
     resolution: {integrity: sha512-Uw+GVSxp5CM48krnjHObqoOwlCt5Qo6nw1jlCRwfGy68dSYb/LwS9ZFidYGRiM+w6rMawkZiu1mEMAsHYAfoLg==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3

@@ -1,3 +1,4 @@
+import "focus-visible"
 import "../styles/tailwind.css"
 
 type Props = {
