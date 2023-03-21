@@ -22,7 +22,9 @@ import {
   useTable,
   UseTableInstanceProps,
 } from "react-table"
-import { SortDownIcon, SortIcon, SortUpIcon } from "./shared/Icons"
+import SortDownIcon from "./icons/SortDownIcon"
+import SortIcon from "./icons/SortIcon"
+import SortUpIcon from "./icons/SortUpIcon"
 
 function PaginationButton({
   children,
@@ -198,7 +200,7 @@ function Table({
                       // we can add them into the header props
                       <th
                         scope="col"
-                        className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white first:sm:pl-0 last:sm:pr-0"
+                        className="group py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white first:sm:pl-0 last:sm:pr-0"
                         {...column.getHeaderProps(
                           (column as any).getSortByToggleProps()
                         )}
@@ -210,12 +212,12 @@ function Table({
                           <span>
                             {(column as any).isSorted ? (
                               (column as any).isSortedDesc ? (
-                                <SortDownIcon className="h-4 w-4 text-gray-400" />
+                                <SortDownIcon className="text-tale-400 h-4 w-4" />
                               ) : (
-                                <SortUpIcon className="h-4 w-4 text-gray-400" />
+                                <SortUpIcon className="text-tale-400 h-4 w-4" />
                               )
                             ) : (
-                              <SortIcon className="h-4 w-4 text-gray-400 opacity-0 group-hover:opacity-100" />
+                              <SortIcon className="text-tale-400 h-4 w-4 opacity-0 group-hover:opacity-100" />
                             )}
                           </span>
                         </div>
@@ -229,7 +231,6 @@ function Table({
                 className="divide-y divide-gray-800"
               >
                 {page.map((row, i) => {
-                  // new
                   prepareRow(row)
                   return (
                     <tr {...row.getRowProps()} key={i} className="border-b-0">
