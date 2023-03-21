@@ -17,7 +17,7 @@ export interface NetworkInfo {
   category: "energy" | "sensor" | "server" | "wireless"
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
-  state: "development" | "production"
+  status: "development" | "production"
 }
 
 export const networks: NetworkInfo[] = [
@@ -49,7 +49,7 @@ export const networks: NetworkInfo[] = [
     category: "sensor",
     token: "DIMO",
     blockchain: "polygon",
-    state: "production",
+    status: "production",
   },
   {
     id: "helium-iot",
@@ -78,7 +78,7 @@ export const networks: NetworkInfo[] = [
     category: "wireless",
     token: "IOT",
     blockchain: "solana",
-    state: "production",
+    status: "production",
   },
   {
     id: "helium-mobile",
@@ -108,7 +108,7 @@ export const networks: NetworkInfo[] = [
     category: "wireless",
     token: "MOBILE",
     blockchain: "solana",
-    state: "production",
+    status: "production",
   },
   {
     id: "hivemapper",
@@ -137,7 +137,7 @@ export const networks: NetworkInfo[] = [
     category: "sensor",
     token: "HONEY",
     blockchain: "solana",
-    state: "production",
+    status: "production",
   },
   {
     id: "xnet",
@@ -167,6 +167,6 @@ export const networks: NetworkInfo[] = [
     category: "wireless",
     token: "XNET",
     blockchain: "polygon",
-    state: "production",
+    status: "production",
   },
 ]
