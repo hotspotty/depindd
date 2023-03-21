@@ -2,7 +2,7 @@
 title: Governance score
 ---
 
-{% data-table id="governance-score" / %}
+{% score-leaderboard type="governance" / %}
 
 ## About
 
