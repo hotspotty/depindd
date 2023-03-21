@@ -49,7 +49,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
       </div>
 
       <div className="relative flex basis-0 justify-end md:flex-grow">
-        <nav className="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+        <nav className="mr-6 hidden border-r border-slate-200 pr-6 text-sm font-semibold leading-6 text-slate-700 dark:border-slate-800 dark:text-slate-200 lg:block">
           <ul className="flex space-x-8">
             <li>
               <Link
@@ -78,7 +78,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
           </ul>
         </nav>
 
-        <div className="ml-6 flex items-center gap-6 border-l border-slate-200 pl-6 dark:border-slate-800 sm:gap-8">
+        <div className="flex items-center gap-6  sm:gap-8">
           <ThemeSelector className="relative z-10" />
           <Link
             href="https://github.com/hotspotty/depindd"
