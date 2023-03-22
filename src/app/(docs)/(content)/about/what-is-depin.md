@@ -38,3 +38,4 @@ DePIN projects can be split up in four categories according to Sami Kassab in [M
 - [Article](https://medium.com/borderless-capital/edgefi-597b9c747a94) by [Borderless Capital](https://www.borderlesscapital.io/)
 - [Article](https://medium.com/@mikezajko_16091/token-incentivized-physical-infrastructure-networks-3548b3182d82) by [Lattice](https://lattice.fund/)
 - [Article](https://multicoin.capital/2022/04/05/proof-of-physical-work/) by [Multicoin Capital](https://multicoin.capital/)
+- [Article](https://www.peaq.network/blog/what-are-decentralized-physical-infrastructure-networks-depin) by [Peaq](https://www.peaq.network)
