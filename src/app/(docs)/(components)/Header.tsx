@@ -54,7 +54,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
       </div>
 
       <div className="relative flex basis-0 justify-end md:flex-grow">
-        <nav className="mr-6 hidden border-r border-slate-200 pr-6 text-sm font-semibold leading-6 text-slate-700 dark:border-slate-800 dark:text-slate-200 lg:block">
+        <nav className="mr-6 hidden border-r border-slate-200 pr-6 text-sm font-semibold leading-6 text-slate-700 dark:border-slate-800 dark:text-slate-200 lg:hidden">
           <ul className="flex space-x-8">
             <li>
               <Link

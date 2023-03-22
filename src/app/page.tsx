@@ -49,7 +49,7 @@ const Home: React.FC = () => {
     <div className="flex w-full flex-col items-center text-white">
       <header className="z-10 flex w-full items-center bg-white px-4 py-5 dark:bg-transparent dark:shadow-none sm:px-6 lg:px-8">
         <div className="relative flex basis-0 justify-end md:flex-grow">
-          <nav className="text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
+          <nav className="hidden text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
             <ul className="flex space-x-8">
               <li>
                 <a
