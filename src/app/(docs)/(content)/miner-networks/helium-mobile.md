@@ -94,3 +94,16 @@ Multiply the token number by the current price of token, found [here](https://co
 ### Payback period
 
 Average miner price/average monthly USD earnings
+
+---
+
+## Company info
+
+### Funding
+
+- $2,800,000 was raised in the Seed Round on Nov 2013
+- $16,000,000 was raised in the Series A Round on Dec 2014
+- $20,000,000 was raised in the Series B Round on April 2016
+- $15,000,000 was raised in the Series C Round on Jun 2019
+- $111,000,000 was raised in the Series D Round on Aug 2021
+- $200,000,000 was raised in the Private Round on Feb 2022

@@ -88,3 +88,11 @@ Note: software (app-only, generally free) connections are available for more mod
 ### Payback period
 
 Average miner price/average monthly USD earnings
+
+---
+
+## Company info
+
+### Funding
+
+- $9,000,000 was raised in the Seed Round on Feb 2022

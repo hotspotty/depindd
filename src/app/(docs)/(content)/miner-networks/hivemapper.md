@@ -77,3 +77,12 @@ There’s currently only one Hivemapper dashcam sold for $549, made by Hivemappe
 ### Payback period
 
 Average miner price/average monthly USD earnings
+
+---
+
+## Company info
+
+### Funding
+
+- $3,000,000 was raised in the Seed Round on Nov 2015
+- $18,000,000 was raised in the Series A Round on April 2022
