@@ -6,10 +6,4 @@ title: Governance score
 
 ## About
 
-The governance score is a score that reflects how well the network is governed.
-
-### Factors that matter
-
-These factors play a role in governance: ...
-
-TODO: we can also add columns to the table with links to their community proposal system, ...
+The **Governance Score** is a subjective measure for the level of decentralization, community input on governance, and quality of governance structure. This score covers things like: controlling entities (Foundation, core development team as a C corp, etc), IP and token owners, who has the right to make what level of changes, etc.

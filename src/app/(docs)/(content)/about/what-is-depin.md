@@ -8,7 +8,7 @@ DePIN = Decentralized Physical Infrastructure Networks
 
 ## Introduction
 
-DePIN is a way to use blockchain technology to build physical networks, like internet connectivity or power grids, from the ground up without needing to rely on big companies or governments to do it. Instead, people can work together and get rewarded with tokens to build and maintain these networks. This could make it cheaper, more secure, and more efficient to build and use these networks in the future.
+DePIN stands for decentralized physical infrastructure networks and is the term that’s used to describe a relatively nascent, yet potentially very impactful sector of the crypto economy. DePIN are built on the belief that token incentives and decentralized governance can be used to motivate individuals to build real-world networks and deliver value to end users. The sector is made up of projects in industries as diverse as energy, compute, sensors, and wireless.
 
 ## Categories
 

@@ -6,8 +6,4 @@ title: Ease of mining score
 
 ## About
 
-The ease of mining score is a score that reflects how easy it is to get started with mining for a given network.
-
-### Factors that matter
-
-These factors play a role in the ease of mining: ...
+The **Ease of Mining Score** is our subjective measure for the relative ease of mining tokens from a project. This score covers things like: if mining is an active or passive activity (if active what action is needed and how often), how expensive in terms of time/money/effort the mining action is to complete, if the action gets more difficult to complete over time, etc. Opex for mining is considered here.

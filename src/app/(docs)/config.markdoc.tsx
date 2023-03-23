@@ -1,6 +1,7 @@
 import { Callout } from "@/app/(docs)/(components)/Callout"
 import { QuickLink, QuickLinks } from "@/app/(docs)/(components)/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
+import Link from "next/link"
 import ScoreLeaderboard from "./(components)/ScoreLeaderboard"
 import Scores from "./(components)/Scores"
 
@@ -67,6 +68,14 @@ const config: Config = {
         href: { type: String },
       },
     },
+    "internal-link": {
+      render: "InternalLink",
+      selfClosing: true,
+      attributes: {
+        title: { type: String },
+        href: { type: String },
+      },
+    },
   },
 }
 
@@ -91,6 +100,9 @@ const components = {
   QuickLinks: QuickLinks,
   QuickLink: QuickLink,
   ScoreLeaderboard: ScoreLeaderboard,
+  InternalLink: ({ href, title }: { href: string; title: string }) => (
+    <Link href={href}>{title}</Link>
+  ),
 }
 
 export { config, components }
