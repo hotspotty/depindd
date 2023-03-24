@@ -1,7 +1,3 @@
----
-title: Helium IoT
----
-
 ## About
 
 ### What is this network?

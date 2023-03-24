@@ -12,6 +12,7 @@ interface Score {
 
 export interface NetworkInfo {
   id: string // Miner network filename
+  title: string
   miners: Miner[]
   scores: Score[]
   category: "energy" | "sensor" | "server" | "wireless"
@@ -23,6 +24,7 @@ export interface NetworkInfo {
 export const networks: NetworkInfo[] = [
   {
     id: "dimo",
+    title: "DIMO",
     miners: [],
     scores: [
       {
@@ -53,6 +55,7 @@ export const networks: NetworkInfo[] = [
   },
   {
     id: "helium-iot",
+    title: "Helium IoT",
     miners: [],
     scores: [
       {
@@ -82,6 +85,7 @@ export const networks: NetworkInfo[] = [
   },
   {
     id: "helium-mobile",
+    title: "Helium Mobile",
     miners: [],
     scores: [
       {
@@ -112,6 +116,7 @@ export const networks: NetworkInfo[] = [
   },
   {
     id: "hivemapper",
+    title: "Hivemapper",
     miners: [],
     scores: [
       {
@@ -141,6 +146,7 @@ export const networks: NetworkInfo[] = [
   },
   {
     id: "xnet",
+    title: "XNET",
     miners: [],
     scores: [
       {

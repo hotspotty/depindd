@@ -1,7 +1,3 @@
----
-title: DIMO
----
-
 ## About
 
 ### What is this network?

@@ -11,6 +11,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
 import React from "react"
+import { networks } from "../../(content)/miner-networks/networkInfo"
 import { CONTENT_PATH, getSidebarItems } from "../../(utils)/sidebar"
 
 type Params = {
@@ -40,10 +41,12 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
+  const networkInfo = networks.find((item) => item.id === params.slug)
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const { title } = getMarkdownContent(filePath)
   return {
-    title: params.section.replaceAll("-", " ") + " - " + title,
+    title:
+      params.section.replaceAll("-", " ") + " - " + title || networkInfo?.title,
   }
 }
 
@@ -51,6 +54,7 @@ export default function Page({ params }: PageProps) {
   const sidebar = getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
+  const networkInfo = networks.find((item) => item.id === params.slug)
   const { title, content } = getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)
@@ -68,7 +72,7 @@ export default function Page({ params }: PageProps) {
                 {section?.label}
               </p>
               <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                {title}
+                {title || networkInfo?.title}
               </h1>
             </header>
             <Prose>

@@ -1,7 +1,3 @@
----
-title: XNET
----
-
 ## About
 
 ### What is this network?

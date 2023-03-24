@@ -1,7 +1,3 @@
----
-title: Helium Mobile
----
-
 ## About
 
 ### What is this network?

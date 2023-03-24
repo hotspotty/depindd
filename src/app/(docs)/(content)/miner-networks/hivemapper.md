@@ -1,7 +1,3 @@
----
-title: Hivemapper
----
-
 ## About
 
 ### What is this network?

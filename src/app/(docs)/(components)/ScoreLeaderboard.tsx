@@ -1,9 +1,5 @@
-import fs from "fs"
-import matter from "gray-matter"
-import path from "path"
 import Table, { LinkCell, SelectColumnFilter } from "../(components)/Table"
 import { networks } from "../(content)/miner-networks/networkInfo"
-import { CONTENT_PATH } from "../(utils)/sidebar"
 
 export default function ScoreLeaderboard({
   type,
@@ -15,17 +11,9 @@ export default function ScoreLeaderboard({
       const score = item.scores.find((score) => score.type === type)
       if (!score) return
 
-      const filePath = path.join(
-        CONTENT_PATH,
-        "miner-networks",
-        item.id + ".md"
-      )
-      const source = fs.readFileSync(filePath, "utf-8")
-      const matterResult = matter(source)
-
       return {
         id: item.id,
-        name: matterResult.data.title,
+        name: item.title,
         category: item.category,
         categoryPath: `/categories/${item.category}`,
         score: score.value,
