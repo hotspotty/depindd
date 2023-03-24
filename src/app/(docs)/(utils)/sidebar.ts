@@ -2,6 +2,7 @@ import sidebarConfig from "@/app/(docs)/config.sidebar.json"
 import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
+import { networks } from "../(content)/miner-networks/networkInfo"
 
 type SidebarPage = { label: string; slug: string; path: string }
 
@@ -19,13 +20,14 @@ export function getSidebarItems() {
       section: section.section,
       label: section.label,
       items: section.items.map((page) => {
+        const networkInfo = networks.find((item) => item.id === page)
         const filePath = path.join(CONTENT_PATH, section.section, page + ".md")
         const source = fs.readFileSync(filePath, "utf-8")
         const matterResult = matter(source)
         return {
           slug: page,
           path: `/${section.section}/${page}`,
-          label: matterResult.data.title,
+          label: networkInfo?.title || matterResult.data.title,
         }
       }),
     }

@@ -1,3 +1,7 @@
+{% links network="hivemapper" / %}
+
+---
+
 ## About
 
 ### What is this network?
@@ -32,33 +36,16 @@ Currently a large portion of the network’s governance is still in the control 
 
 At the moment the best way to get involved with key decisions is to voice your opinion on the Hivemapper discord and become an active and present contributor.
 
-### Official links
+### Funding
 
-- [Website](https://hivemapper.com/)
-- [Twitter](https://twitter.com/Hivemapper)
-- [Discord](https://discord.com/invite/FRWMKyy5v2)
-- [Github](https://github.com/hivemapper)
-- [Youtube](https://www.youtube.com/@Hivemapper)
-- [Blog](https://hivemapper.com/blog/)
-- [Whitepaper](https://docs.hivemapper.com/welcome/introduction)
-- [Governance](https://docs.hivemapper.com/main-concepts/community-and-governance)
-- [Network explorer](https://hivemapper.com/explorer)
-- [Tokenomics](https://docs.hivemapper.com/honey-token/earning-honey/ways-to-contribute)
-- [Buy miner](https://shop.hivemapper.com/)
-- [Data QA](https://hivemapper.com/map-quality/)
-
-### Additional resources
-
-- [Coingecko](https://www.coingecko.com/en/coins/hivemapper)
-- [Dune dashboard](https://dune.com/murathan/hivemapper)
+- $3,000,000 was raised in the Seed Round on Nov 2015
+- $18,000,000 was raised in the Series A Round on April 2022
 
 ---
+
+## DD Metrics
 
 {% scores network="hivemapper" / %}
-
----
-
-## Data sources and calculations
 
 ### Average monthly USD earnings
 
@@ -73,12 +60,3 @@ There’s currently only one Hivemapper dashcam sold for $549, made by Hivemappe
 ### Payback period
 
 Average miner price/average monthly USD earnings
-
----
-
-## Company info
-
-### Funding
-
-- $3,000,000 was raised in the Seed Round on Nov 2015
-- $18,000,000 was raised in the Series A Round on April 2022

@@ -1,4 +1,4 @@
-import { Prose } from "@/app/(docs)/(components)/Prose"
+import { Prose } from "@/app/(docs)/(components)/markdoc/Prose"
 import TableOfContents from "@/app/(docs)/(components)/TableOfContents"
 import {
   collectHeadings,
@@ -72,7 +72,7 @@ export default function Page({ params }: PageProps) {
                 {section?.label}
               </p>
               <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                {title || networkInfo?.title}
+                {networkInfo?.title || title}
               </h1>
             </header>
             <Prose>

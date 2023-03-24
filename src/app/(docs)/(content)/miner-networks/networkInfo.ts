@@ -10,6 +10,37 @@ interface Score {
   description: string
 }
 
+interface LinkItem {
+  label?: string
+  type:
+    | "website"
+    | "foundation"
+    | "company"
+    | "twitter"
+    | "discord"
+    | "github"
+    | "youtube"
+    | "instagram"
+    | "blog"
+    | "medium"
+    | "reddit"
+    | "whitepaper"
+    | "governance"
+    | "telegram"
+    | "facebook"
+    | "tiktok"
+    | "linkedin"
+    | "documentation"
+    | "forum"
+    | "tokenomics"
+    | "explorer"
+    | "shop"
+    | "coingecko"
+    | "analytics"
+    | "other"
+  url: string
+}
+
 export interface NetworkInfo {
   id: string // Miner network filename
   title: string
@@ -19,6 +50,7 @@ export interface NetworkInfo {
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
   status: "development" | "production"
+  links: LinkItem[]
 }
 
 export const networks: NetworkInfo[] = [
@@ -52,6 +84,79 @@ export const networks: NetworkInfo[] = [
     token: "DIMO",
     blockchain: "polygon",
     status: "production",
+    links: [
+      // TODO: add facebook, tiktok, instagram, telegram
+      {
+        type: "website",
+        url: "https://dimo.zone",
+      },
+      {
+        type: "foundation",
+        url: "https://dimo.zone/news/dimo-foundation",
+      },
+      {
+        type: "twitter",
+        url: "https://twitter.com/DIMO_Network",
+      },
+      {
+        type: "reddit",
+        url: "https://www.reddit.com/r/dimo_network/",
+      },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/dimo-network",
+      },
+      {
+        type: "discord",
+        url: "https://discord.com/invite/B5K5eScyQM",
+      },
+      {
+        type: "github",
+        url: "https://dimo.zone/https://github.com/DIMO-Network",
+      },
+      {
+        type: "youtube",
+        url: "https://www.youtube.com/@dimo_network",
+      },
+      {
+        type: "facebook",
+        url: "https://www.facebook.com/profile.php?id=100083232793823",
+      },
+      { type: "instagram", url: "https://instagram.com/dimo_network" },
+      { type: "blog", url: "https://dimo.zone/news" },
+      {
+        type: "medium",
+        url: "https://medium.com/dimo-network",
+      },
+      {
+        type: "documentation",
+        url: "https://docs.dimo.zone/docs",
+      },
+      {
+        type: "governance",
+        url: "https://docs.dimo.zone/governance",
+      },
+      {
+        type: "tokenomics",
+        url: "https://docs.dimo.zone/overview/dimotoken/token-details-and-distribution",
+      },
+      {
+        type: "explorer",
+        url: "https://explorer.dimo.zone",
+      },
+      {
+        type: "shop",
+        url: "https://shop.dimo.zone",
+      },
+      {
+        type: "coingecko",
+        url: "https://www.coingecko.com/en/coins/dimo",
+      },
+      {
+        type: "analytics",
+        url: "https://dune.com/dylan_dimo/dimo",
+      },
+    ],
   },
   {
     id: "helium-iot",
@@ -82,6 +187,104 @@ export const networks: NetworkInfo[] = [
     token: "IOT",
     blockchain: "solana",
     status: "development",
+    links: [
+      // TODO: add facebook, tiktok, instagram, telegram
+      {
+        type: "website",
+        url: "https://www.helium.com",
+      },
+      {
+        type: "foundation",
+        url: "https://www.helium.foundation",
+      },
+      {
+        type: "twitter",
+        url: "https://twitter.com/helium",
+      },
+      {
+        type: "reddit",
+        url: "https://www.reddit.com/r/HeliumNetwork",
+      },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/heliumnetwork/",
+      },
+      {
+        type: "discord",
+        url: "https://discord.com/invite/helium",
+      },
+      {
+        type: "github",
+        url: "https://github.com/helium",
+      },
+      {
+        type: "youtube",
+        url: "https://www.youtube.com/@HeliumEcosystem",
+      },
+      { type: "tiktok", url: "https://www.tiktok.com/@dimo_network" },
+      { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
+      { type: "instagram", url: "https://instagram.com/helium" },
+      { type: "blog", url: "https://blog.helium.com" },
+      {
+        type: "medium",
+        url: "https://heliumfoundation.medium.com",
+      },
+      { type: "telegram", url: "https://t.me/helium_network" },
+      {
+        type: "whitepaper",
+        url: "http://whitepaper.helium.com",
+      },
+      {
+        type: "documentation",
+        url: "https://docs.helium.com",
+      },
+      {
+        type: "governance",
+        url: "https://docs.helium.com/community-governance",
+      },
+      {
+        type: "tokenomics",
+        url: "https://docs.helium.com/blockchain/mining",
+      },
+      {
+        type: "explorer",
+        url: "https://explorer.helium.com",
+      },
+      {
+        label: "Mappers",
+        type: "explorer",
+        url: "https://mappers.helium.com",
+      },
+      {
+        label: "Hntscan",
+        type: "explorer",
+        url: "https://www.hntscan.io",
+      },
+      {
+        label: "Hotspotty",
+        type: "explorer",
+        url: "https://app.hotspotty.net",
+      },
+      {
+        label: "Nova Labs - Founding team of the Helium Network",
+        type: "company",
+        url: "https://nova.xyz",
+      },
+      {
+        label: "1663 - Nova's IoT solutions provider",
+        type: "company",
+        url: "https://1663.io",
+      },
+      {
+        type: "shop",
+        url: "https://www.helium.com/mine",
+      },
+      { type: "analytics", url: "http://www.helium.foundation/stats" },
+      {
+        type: "coingecko",
+        url: "https://www.coingecko.com/en/coins/helium",
+      },
+    ],
   },
   {
     id: "helium-mobile",
@@ -113,6 +316,106 @@ export const networks: NetworkInfo[] = [
     token: "MOBILE",
     blockchain: "solana",
     status: "production",
+    links: [
+      {
+        type: "website",
+        url: "https://www.helium.com",
+      },
+      {
+        type: "foundation",
+        url: "https://www.helium.foundation",
+      },
+      {
+        type: "twitter",
+        url: "https://twitter.com/helium",
+      },
+      {
+        type: "reddit",
+        url: "https://www.reddit.com/r/HeliumNetwork",
+      },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/heliumnetwork/",
+      },
+      {
+        type: "discord",
+        url: "https://discord.com/invite/helium",
+      },
+      { type: "telegram", url: "https://t.me/helium_network" },
+      {
+        type: "github",
+        url: "https://github.com/helium",
+      },
+      {
+        type: "youtube",
+        url: "https://www.youtube.com/@HeliumEcosystem",
+      },
+      { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
+      { type: "instagram", url: "https://instagram.com/helium" },
+      { type: "blog", url: "https://blog.helium.com" },
+      {
+        type: "medium",
+        url: "https://heliumfoundation.medium.com",
+      },
+      {
+        type: "whitepaper",
+        url: "http://whitepaper.helium.com",
+      },
+      {
+        type: "documentation",
+        url: "https://docs.helium.com",
+      },
+      {
+        type: "governance",
+        url: "https://docs.helium.com/community-governance",
+      },
+      {
+        type: "tokenomics",
+        url: "https://docs.helium.com/blockchain/mining",
+      },
+      {
+        type: "explorer",
+        url: "https://explorer.helium.com",
+      },
+      {
+        label: "Mappers",
+        type: "explorer",
+        url: "https://mappers.helium.com",
+      },
+      {
+        label: "Hntscan",
+        type: "explorer",
+        url: "https://www.hntscan.io",
+      },
+      {
+        label: "Hotspotty",
+        type: "explorer",
+        url: "https://app.hotspotty.net",
+      },
+      {
+        label: "Nova Labs - Founding team of the Helium Network",
+        type: "company",
+        url: "https://nova.xyz",
+      },
+      {
+        label: "Helium Mobile - Nova's MVNO (Mobile Virtual Network Operator)",
+        type: "company",
+        url: "https://hellohelium.com",
+      },
+      {
+        type: "shop",
+        url: "https://www.helium.com/mine",
+      },
+      {
+        type: "coingecko",
+        url: "https://www.coingecko.com/en/coins/helium",
+      },
+      {
+        label: "$MOBILE Genesis ROI Calculator",
+        type: "other",
+        url: "https://app.hotspotty.net/helium-5g-genesis-mobile-rewards-calculator",
+      },
+    ],
   },
   {
     id: "hivemapper",
@@ -143,6 +446,78 @@ export const networks: NetworkInfo[] = [
     token: "HONEY",
     blockchain: "solana",
     status: "production",
+    links: [
+      {
+        type: "website",
+        url: "https://hivemapper.com",
+      },
+      {
+        type: "foundation",
+        url: "https://docs.hivemapper.com/main-concepts/community-and-governance",
+      },
+      {
+        type: "twitter",
+        url: "https://twitter.com/Hivemapper",
+      },
+      {
+        type: "reddit",
+        url: "https://www.reddit.com/r/hivemappernetwork",
+      },
+      {
+        type: "reddit",
+        url: "https://www.reddit.com/r/Hivemapper",
+      },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/hivemapper",
+      },
+      {
+        type: "discord",
+        url: "https://discord.com/invite/FRWMKyy5v2",
+      },
+      { type: "telegram", url: "https://t.me/+UnMYghleJYQwOGEx" },
+      {
+        type: "github",
+        url: "https://github.com/hivemapper",
+      },
+      {
+        type: "youtube",
+        url: "https://www.youtube.com/@Hivemapper",
+      },
+      { type: "tiktok", url: "https://www.tiktok.com/@hivemapper" },
+      { type: "instagram", url: "https://instagram.com/hivemapper" },
+      { type: "facebook", url: "https://www.facebook.com/hivemappernetwork" },
+      { type: "blog", url: "https://hivemapper.com/blog" },
+      {
+        type: "medium",
+        url: "https://medium.com/@hivemapper",
+      },
+      {
+        type: "documentation",
+        url: "https://docs.hivemapper.com",
+      },
+      {
+        type: "governance",
+        url: "https://docs.hivemapper.com/main-concepts/community-and-governance",
+      },
+      {
+        type: "tokenomics",
+        url: "https://docs.hivemapper.com/honey-token/what-is-honey",
+      },
+      {
+        type: "explorer",
+        url: "https://hivemapper.com/explorer",
+      },
+      {
+        type: "shop",
+        url: "https://shop.hivemapper.com",
+      },
+      {
+        type: "coingecko",
+        url: "https://www.coingecko.com/en/coins/hivemapper",
+      },
+      { type: "analytics", url: "https://dune.com/murathan/hivemapper" },
+    ],
   },
   {
     id: "xnet",
@@ -174,5 +549,64 @@ export const networks: NetworkInfo[] = [
     token: "XNET",
     blockchain: "polygon",
     status: "production",
+    links: [
+      {
+        type: "website",
+        url: "https://xnet.company/",
+      },
+      {
+        type: "foundation",
+        url: "https://xnet.company/foundation-partnerships",
+      },
+      {
+        type: "twitter",
+        url: "https://twitter.com/XNET_Mobile",
+      },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/xnet-mobile/",
+      },
+      {
+        type: "discord",
+        url: "https://discord.gg/3W5vTU8aCn",
+      },
+      {
+        type: "github",
+        url: "https://github.com/xnet-mobile",
+      },
+      {
+        type: "youtube",
+        url: "https://www.youtube.com/channel/UCyIptNxGEgzXpckV5EL38qQ",
+      },
+      {
+        type: "medium",
+        url: "https://medium.com/@XNET_Mobile",
+      },
+      { type: "whitepaper", url: "https://xnet.company/files/Whitepaper.pdf" },
+      {
+        type: "documentation",
+        url: "https://xnet.company/documents",
+      },
+      {
+        type: "governance",
+        url: "https://xnet.company/files/Governance.pdf",
+      },
+      {
+        type: "tokenomics",
+        url: "https://xnet.company/files/Phase_X.pdf",
+      },
+      {
+        type: "explorer",
+        url: "https://explorer.xnetmobile.com",
+      },
+      {
+        type: "shop",
+        url: "https://shop.xnet.company/",
+      },
+      {
+        type: "coingecko",
+        url: "https://www.geckoterminal.com/polygon_pos/pools/0xf3bd3ef3280b2b406cfbe5dccd6e7162f848c8f0",
+      },
+    ],
   },
 ]

@@ -1,6 +1,6 @@
 import clsx from "clsx"
 import Link from "next/link"
-import { Icon } from "./Icon"
+import { Icon } from "../Icon"
 
 interface QuickLinksProps {
   className?: string

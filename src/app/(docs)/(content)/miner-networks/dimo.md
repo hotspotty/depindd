@@ -1,3 +1,7 @@
+{% links network="dimo" / %}
+
+---
+
 ## About
 
 ### What is this network?
@@ -40,32 +44,15 @@ Coming soon:
 
 The $DIMO token holders can create and vote on proposals called DIMO Improvement Proposals (DIPs) that have control over the network, upgrade DIMO smart contracts and token, and set aside tokens for grants. There are no limitations on what the DIMO community can vote on or do as it is built as a decentralized community. An exemplary situation of when the DIMO community brought forth productive change was through DIP-6 with the establishment of the legal entity, the DIMO Foundation. This provided a clear and transparent bridge from the decentralized community to the legacy world of business and regulation. In addition, DIP-6 set in place a framework that enacted important permissions to the foundation such as the smart contract admin, however, built the necessary checks and balances to only allow such permissions when authorized by governance votes.
 
-### Official links
+### Funding
 
-- [Website](https://dimo.zone/)
-- [Twitter](https://twitter.com/DIMO_Network)
-- [Discord](https://discord.com/invite/B5K5eScyQM)
-- [Github](https://github.com/DIMO-Network)
-- [Youtube](https://www.youtube.com/@dimo_network)
-- [Medium](https://medium.com/dimo-network)
-- [Whitepaper](https://docs.dimo.zone/docs)
-- [Governance](https://docs.dimo.zone/governance/)
-- [Network explorer](https://explorer.dimo.zone/)
-- [Tokenomics](https://docs.dimo.zone/overview/dimotoken/token-details-and-distribution)
-- [Buy miner](https://shop.dimo.zone/)
-
-### Additional resources
-
-- [Coingecko](https://www.coingecko.com/en/coins/dimo)
-- [Autopi](https://www.autopi.io/)
+- $9,000,000 was raised in the Seed Round on Feb 2022
 
 ---
+
+## DD Metrics
 
 {% scores network="dimo" / %}
-
----
-
-## Data sources and calculations
 
 ### Average monthly USD earnings
 
@@ -84,11 +71,3 @@ Note: software (app-only, generally free) connections are available for more mod
 ### Payback period
 
 Average miner price/average monthly USD earnings
-
----
-
-## Company info
-
-### Funding
-
-- $9,000,000 was raised in the Seed Round on Feb 2022

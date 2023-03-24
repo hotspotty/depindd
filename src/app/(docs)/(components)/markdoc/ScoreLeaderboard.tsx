@@ -1,5 +1,5 @@
-import Table, { LinkCell, SelectColumnFilter } from "../(components)/Table"
-import { networks } from "../(content)/miner-networks/networkInfo"
+import { networks } from "../../(content)/miner-networks/networkInfo"
+import Table, { LinkCell, SelectColumnFilter } from "../Table"
 
 export default function ScoreLeaderboard({
   type,
@@ -17,7 +17,7 @@ export default function ScoreLeaderboard({
         category: item.category,
         categoryPath: `/categories/${item.category}`,
         score: score.value,
-        path: `/${item.category}/${item.id}`,
+        path: `/miner-networks/${item.id}`,
         status: item.status,
       }
     })

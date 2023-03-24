@@ -1,3 +1,7 @@
+{% links network="helium-mobile" / %}
+
+---
+
 ## About
 
 ### What is this network?
@@ -36,39 +40,20 @@ To facilitate community participation in the network's governance, Helium has im
 
 Furthermore, Helium's network is designed to be open and transparent, with all network activity and data recorded on the network's blockchain, which is publicly accessible. This ensures that the network's operations and decisions are open to public scrutiny, promoting transparency and accountability.
 
-### Official links
+### Funding
 
-- [Website](https://www.helium.com/)
-- [Twitter](https://twitter.com/helium)
-- [Discord](https://discord.com/invite/helium)
-- [Github](https://github.com/helium)
-- [Youtube](hhttps://www.youtube.com/@HeliumEcosystem)
-- [Whitepaper](http://whitepaper.helium.com/)
-- [Governance](https://docs.helium.com/community-governance/)
-- [Tokenomics](https://docs.helium.com/blockchain/mining)
-- [Hello Helium](https://hellohelium.com/) -> MVNO using T-Mobile and the Helium MOBILE network
-- [Helium Foundation](https://www.helium.foundation/)
-- [Nova Labs](https://nova.xyz/) -> Founding team of the Helium Network
-- [Documentation](https://github.com/helium/docs)
-- [RF modeled coverage](https://coverage-explorer.herokuapp.com/)
-- [Network explorer](https://explorer.helium.com/mobile)
-- [Governance: HIP](https://github.com/helium/HIP)
-- [Governance: Helium Vote](https://heliumvote.com/)
-
-### Additional resources
-
-- [Coingecko](https://www.coingecko.com/en/coins/helium)
-- [The Hotspot - Helium Network & Blockchain Podcast](https://open.spotify.com/show/5Wi2U6g7GWzrYzgOcsEvyb?si=d24d72d610ed40d9)
-- [Gristle King - Youtube](https://www.youtube.com/@thegristleking)
-- [Hotspotty](https://hotspotty.net)
+- $2,800,000 was raised in the Seed Round on Nov 2013
+- $16,000,000 was raised in the Series A Round on Dec 2014
+- $20,000,000 was raised in the Series B Round on April 2016
+- $15,000,000 was raised in the Series C Round on Jun 2019
+- $111,000,000 was raised in the Series D Round on Aug 2021
+- $200,000,000 was raised in the Private Round on Feb 2022
 
 ---
+
+## DD Metrics
 
 {% scores network="helium-mobile" / %}
-
----
-
-## Data sources and calculations
 
 ### Average monthly USD earnings
 
@@ -90,16 +75,3 @@ Multiply the token number by the current price of token, found [here](https://co
 ### Payback period
 
 Average miner price/average monthly USD earnings
-
----
-
-## Company info
-
-### Funding
-
-- $2,800,000 was raised in the Seed Round on Nov 2013
-- $16,000,000 was raised in the Series A Round on Dec 2014
-- $20,000,000 was raised in the Series B Round on April 2016
-- $15,000,000 was raised in the Series C Round on Jun 2019
-- $111,000,000 was raised in the Series D Round on Aug 2021
-- $200,000,000 was raised in the Private Round on Feb 2022

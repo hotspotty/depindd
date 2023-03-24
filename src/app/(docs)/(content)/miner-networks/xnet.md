@@ -1,3 +1,7 @@
+{% links network="xnet" / %}
+
+---
+
 ## About
 
 ### What is this network?
@@ -28,31 +32,15 @@ At the moment XNET is still prioritizing building out the network and making sur
 
 The current governance of XNET is somewhat centralized through XNET, Inc. as it is still in its beginning phases of building the network. They intend to keep the MNO back-end of XNET centralized, as it is the standard in the telecom space. They do however, aim to gradually decentralize the governance of the on-chain components to a stakeholder governance model, via the XNET Foundation DAO which they believe is the best way to support the network's long-term value. The XNET Foundation DAO will be responsible for this governance and will hold around 1/3 of the total $XNET tokens. They suggest that if the XNET Foundation DAO’s treasury grows to a substantial amount down the line, buying a controlling interest in XNET, Inc can ensure stakeholder governance of the entire system.
 
-### Official links
+### Funding
 
-- [Website](https://xnet.company/)
-- [Twitter](https://twitter.com/XNET_Mobile)
-- [Discord](https://discord.com/invite/3W5vTU8aCn)
-- [Github](https://github.com/xnet-mobile)
-- [Medium](https://medium.com/@XNET_Mobile)
-- [Youtube](https://www.youtube.com/channel/UCyIptNxGEgzXpckV5EL38qQ)
-- [Whitepaper](https://xnet.company/files/Whitepaper.pdf)
-- [Sustainability paper](https://www.xnet.company/files/Sustainability.pdf)
-- [Governance](https://xnet.company/files/Governance.pdf)
-- [Tokenomics](https://xnet.company/files/Phase_X.pdf)
-- [Network explorer](https://explorer.xnetmobile.com/)
-
-### Additional resources
-
-- [Gecko Terminal](https://www.geckoterminal.com/polygon_pos/pools/0xf3bd3ef3280b2b406cfbe5dccd6e7162f848c8f0)
+TBD
 
 ---
+
+## DD Metrics
 
 {% scores network="xnet" / %}
-
----
-
-## Data sources and calculations
 
 ### Average monthly USD earnings
 
