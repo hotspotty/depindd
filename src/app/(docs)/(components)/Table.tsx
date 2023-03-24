@@ -115,8 +115,11 @@ export function SelectColumnFilter({
 }
 
 export function LinkCell({ value, column, row }) {
+  const href = row.original[column.hrefAccessor]
+  if (!value) return null
+  if (!href) return value
   return (
-    <Link href={row.original[column.hrefAccessor]} target={column.linkTarget}>
+    <Link href={href} target={column.linkTarget}>
       {value}
     </Link>
   )
