@@ -1,4 +1,4 @@
-import { networks } from "../../(content)/miner-networks/networkInfo"
+import { networks } from "../../(content)/(data)/networks"
 import Table, { LinkCell, SelectColumnFilter } from "../Table"
 
 export default function ScoreLeaderboard({

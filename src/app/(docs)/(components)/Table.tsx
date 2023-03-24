@@ -25,6 +25,7 @@ import {
 import SortDownIcon from "./icons/SortDownIcon"
 import SortIcon from "./icons/SortIcon"
 import SortUpIcon from "./icons/SortUpIcon"
+import { RenderLinks } from "./markdoc/Links"
 
 function PaginationButton({
   children,
@@ -114,7 +115,15 @@ export function SelectColumnFilter({
 }
 
 export function LinkCell({ value, column, row }) {
-  return <Link href={row.original[column.hrefAccessor]}>{value}</Link>
+  return (
+    <Link href={row.original[column.hrefAccessor]} target={column.linkTarget}>
+      {value}
+    </Link>
+  )
+}
+
+export function LinksCell({ value }) {
+  return <RenderLinks linksMarkdownText={value} />
 }
 
 function Table({

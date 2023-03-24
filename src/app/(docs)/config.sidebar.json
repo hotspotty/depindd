@@ -11,7 +11,8 @@
       "miner-payback-time",
       "governance-score",
       "tokenomics-score",
-      "ease-of-mining-score"
+      "ease-of-mining-score",
+      "investors"
     ]
   },
   {

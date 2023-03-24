@@ -37,6 +37,7 @@ interface LinkItem {
     | "shop"
     | "coingecko"
     | "analytics"
+    | "crunchbase"
     | "other"
   url: string
 }
@@ -85,7 +86,6 @@ export const networks: NetworkInfo[] = [
     blockchain: "polygon",
     status: "production",
     links: [
-      // TODO: add facebook, tiktok, instagram, telegram
       {
         type: "website",
         url: "https://dimo.zone",
@@ -156,6 +156,10 @@ export const networks: NetworkInfo[] = [
         type: "analytics",
         url: "https://dune.com/dylan_dimo/dimo",
       },
+      {
+        type: "crunchbase",
+        url: "https://www.crunchbase.com/organization/dimo-9a37",
+      },
     ],
   },
   {
@@ -188,7 +192,6 @@ export const networks: NetworkInfo[] = [
     blockchain: "solana",
     status: "development",
     links: [
-      // TODO: add facebook, tiktok, instagram, telegram
       {
         type: "website",
         url: "https://www.helium.com",

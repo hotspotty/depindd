@@ -1,33 +1,31 @@
-import { networks } from "@/app/(docs)/(content)/miner-networks/networkInfo"
-import {
-  collectHeadings,
-  getMarkdownContentFromText,
-} from "@/app/(docs)/(utils)/markdown"
+import { networks } from "@/app/(docs)/(content)/(data)/networks"
 import { capitalizeFirstLetter } from "@/app/(docs)/(utils)/text"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"
 import React from "react"
+import getMarkdownContentFromText from "../../(utils)/getMarkdownContentFromText"
+import makeMarkdownLinksExternal from "../../(utils)/makeMarkdownLinksExternal"
 import { Prose } from "./Prose"
 
-export default function Links({ network }: { network: string }) {
-  const networkInfo = networks.find((item) => item.id === network)
-
-  if (!networkInfo || networkInfo.scores.length === 0) {
-    return <p>TBD</p>
-  }
-
+export function getLinksMarkdowntext(links: { title: string; url: string }[]) {
   let text = ""
 
-  networkInfo.links.forEach(({ type, label, url }, index) => {
+  links.forEach(({ title, url }, index) => {
     if (index > 0) text += " • "
-    let title = capitalizeFirstLetter(type)
-    if (label) title += ` - ${label}`
     text += `[${title}](${url}) `
   })
 
-  const content = getMarkdownContentFromText(text)
+  return text
+}
 
-  collectHeadings(content) // This is a temporary hack because this function transforms the links to external links
+export function RenderLinks({
+  linksMarkdownText,
+}: {
+  linksMarkdownText: string
+}) {
+  const content = getMarkdownContentFromText(linksMarkdownText)
+
+  makeMarkdownLinksExternal(content)
 
   return (
     <Prose>
@@ -36,4 +34,20 @@ export default function Links({ network }: { network: string }) {
       })}
     </Prose>
   )
+}
+
+export default function Links({ network }: { network: string }) {
+  const networkInfo = networks.find((item) => item.id === network)
+
+  if (!networkInfo || networkInfo.links.length === 0) {
+    return <p>TBD</p>
+  }
+
+  const links = networkInfo.links.map(({ type, label, url }) => {
+    let title = capitalizeFirstLetter(type)
+    if (label) title += ` - ${label}`
+    return { title, url }
+  })
+
+  return <RenderLinks linksMarkdownText={getLinksMarkdowntext(links)} />
 }

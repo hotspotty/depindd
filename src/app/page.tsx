@@ -1,4 +1,4 @@
-import { networks } from "@/app/(docs)/(content)/miner-networks/networkInfo"
+import { networks } from "@/app/(docs)/(content)/(data)/networks"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"

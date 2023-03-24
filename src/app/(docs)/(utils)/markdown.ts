@@ -1,13 +1,7 @@
-import { config } from "@/app/(docs)/config.markdoc"
-import Markdoc from "@markdoc/markdoc"
 import { slugifyWithCounter } from "@sindresorhus/slugify"
 import fs from "fs"
 import matter from "gray-matter"
-
-export function getMarkdownContentFromText(text: string) {
-  const ast = Markdoc.parse(text)
-  return Markdoc.transform(ast, config)
-}
+import getMarkdownContentFromText from "./getMarkdownContentFromText"
 
 export function getMarkdownContent(filePath: string) {
   const source = fs.readFileSync(filePath, "utf-8")

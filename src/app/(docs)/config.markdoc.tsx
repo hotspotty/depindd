@@ -5,6 +5,7 @@ import {
 } from "@/app/(docs)/(components)/markdoc/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 import Link from "next/link"
+import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
 import Links from "./(components)/markdoc/Links"
 import ScoreLeaderboard from "./(components)/markdoc/ScoreLeaderboard"
 import Scores from "./(components)/markdoc/Scores"
@@ -47,9 +48,14 @@ const config: Config = {
     },
     "score-leaderboard": {
       render: "ScoreLeaderboard",
+      selfClosing: true,
       attributes: {
         type: { type: String },
       },
+    },
+    "investors-leaderboard": {
+      render: "InvestorsLeaderboard",
+      selfClosing: true,
     },
     figure: {
       render: "Figure",
@@ -112,6 +118,7 @@ const components = {
   QuickLinks: QuickLinks,
   QuickLink: QuickLink,
   ScoreLeaderboard: ScoreLeaderboard,
+  InvestorsLeaderboard: InvestorsLeaderboard,
   InternalLink: ({ href, title }: { href: string; title: string }) => (
     <Link href={href}>{title}</Link>
   ),

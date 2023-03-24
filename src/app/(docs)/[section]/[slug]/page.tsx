@@ -11,7 +11,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
 import React from "react"
-import { networks } from "../../(content)/miner-networks/networkInfo"
+import { networks } from "../../(content)/(data)/networks"
 import { CONTENT_PATH, getSidebarItems } from "../../(utils)/sidebar"
 
 type Params = {

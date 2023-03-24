@@ -2,7 +2,7 @@ import sidebarConfig from "@/app/(docs)/config.sidebar.json"
 import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
-import { networks } from "../(content)/miner-networks/networkInfo"
+import { networks } from "../(content)/(data)/networks"
 
 type SidebarPage = { label: string; slug: string; path: string }
 

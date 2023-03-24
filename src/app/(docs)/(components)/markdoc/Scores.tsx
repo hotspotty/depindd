@@ -1,8 +1,8 @@
-import { networks } from "@/app/(docs)/(content)/miner-networks/networkInfo"
-import { getMarkdownContentFromText } from "@/app/(docs)/(utils)/markdown"
+import { networks } from "@/app/(docs)/(content)/(data)/networks"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"
 import React, { Fragment } from "react"
+import getMarkdownContentFromText from "../../(utils)/getMarkdownContentFromText"
 import { Prose } from "./Prose"
 
 const scoreTypeTitles = {
