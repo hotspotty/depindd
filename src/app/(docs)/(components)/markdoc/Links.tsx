@@ -1,4 +1,4 @@
-import { networks } from "@/app/(docs)/(content)/(data)/networks"
+import { networks } from "@/app/(docs)/(data)/networks"
 import { capitalizeFirstLetter } from "@/app/(docs)/(utils)/text"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"

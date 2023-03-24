@@ -2,7 +2,7 @@ import sidebarConfig from "@/app/(docs)/config.sidebar.json"
 import fs from "fs"
 import matter from "gray-matter"
 import path from "path"
-import { networks } from "../(content)/(data)/networks"
+import { networks } from "../(data)/networks"
 
 type SidebarPage = { label: string; slug: string; path: string }
 
@@ -12,7 +12,7 @@ export type SidebarSection = {
   items: SidebarPage[]
 }
 
-export const CONTENT_PATH = "src/app/(docs)/(content)"
+export const CONTENT_PATH = "src/app/(docs)/(pages)"
 
 export function getSidebarItems() {
   return sidebarConfig.reduce((acc: SidebarSection[], section) => {

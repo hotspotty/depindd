@@ -1,4 +1,4 @@
-import { networks } from "@/app/(docs)/(content)/(data)/networks"
+import { networks } from "@/app/(docs)/(data)/networks"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"

@@ -1,4 +1,4 @@
-import { networks } from "@/app/(docs)/(content)/(data)/networks"
+import { networks } from "@/app/(docs)/(data)/networks"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"
 import React, { Fragment } from "react"

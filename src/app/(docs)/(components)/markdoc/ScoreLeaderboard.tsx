@@ -1,4 +1,4 @@
-import { networks } from "../../(content)/(data)/networks"
+import { networks } from "../../(data)/networks"
 import Table, { LinkCell, SelectColumnFilter } from "../Table"
 
 export default function ScoreLeaderboard({

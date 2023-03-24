@@ -1,4 +1,4 @@
-import { investors } from "../../(content)/(data)/investors"
+import { investors } from "../../(data)/investors"
 import Table, { LinkCell, LinksCell } from "../Table"
 import { getLinksMarkdowntext } from "./Links"
 
