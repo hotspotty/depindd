@@ -1,5 +1,5 @@
 ---
-title: Server networks
+title: Servers
 ---
 
 Server networks are groups of computers that work together to provide various web-based services by tapping into idle storage, compute, and bandwidth resources.The decentralized server sector category consists of four network categories:

@@ -2,7 +2,7 @@
   {
     "section": "about",
     "label": "About",
-    "items": ["what-is-depin", "what-is-depindd"]
+    "items": ["depin", "depindd", "depin-lego"]
   },
   {
     "section": "leaderboards",
@@ -16,13 +16,13 @@
     ]
   },
   {
-    "section": "categories",
-    "label": "Network categories",
-    "items": ["energy", "sensor", "server", "wireless"]
+    "section": "lego",
+    "label": "LEGO",
+    "items": ["wireless", "sensors", "data", "servers", "hardware"]
   },
   {
     "section": "miner-networks",
-    "label": "Miner networks",
+    "label": "Projects",
     "items": ["dimo", "helium-iot", "helium-mobile", "hivemapper", "xnet"]
   }
 ]

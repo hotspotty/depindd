@@ -1,5 +1,5 @@
 ---
-title: What is DePIN?
+title: DePIN
 ---
 
 DePIN = Decentralized Physical Infrastructure Networks
@@ -9,22 +9,6 @@ DePIN = Decentralized Physical Infrastructure Networks
 ## Introduction
 
 DePIN stands for decentralized physical infrastructure networks and is the term that’s used to describe a relatively nascent, yet potentially very impactful sector of the crypto economy. DePIN are built on the belief that token incentives and decentralized governance can be used to motivate individuals to build real-world networks and deliver value to end users. The sector is made up of projects in industries as diverse as energy, compute, sensors, and wireless.
-
-## Categories
-
-DePIN projects can be split up in four categories according to Sami Kassab in [Messari's DePIN Sector Map](https://messari.io/report/the-depin-sector-map):
-
-{% quick-links %}
-
-{% quick-link title="Energy networks" icon="installation" href="/categories/energy" /%}
-
-{% quick-link title="Sensor networks" icon="presets" href="/categories/sensor" /%}
-
-{% quick-link title="Server networks" icon="plugins" href="/categories/server" /%}
-
-{% quick-link title="Wireless networks" icon="theming" href="/categories/wireless" /%}
-
-{% /quick-links %}
 
 ## Articles
 

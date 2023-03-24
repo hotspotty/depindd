@@ -39,7 +39,7 @@ export function Hero() {
                 <HeroButton href="/leaderboards/miner-payback-time">
                   Get started
                 </HeroButton>
-                <HeroButton href="/about/what-is-depindd" variant="secondary">
+                <HeroButton href="/about/depindd" variant="secondary">
                   Learn more
                 </HeroButton>
               </div>

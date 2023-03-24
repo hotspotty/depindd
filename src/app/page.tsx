@@ -131,7 +131,7 @@ const Home: React.FC = () => {
           </span>
 
           <div className="mt-6 flex gap-4 sm:mt-10 md:justify-center lg:justify-start">
-            <HeroButton href="/about/what-is-depin">Get started</HeroButton>
+            <HeroButton href="/about/depin">Get started</HeroButton>
             <Search />
           </div>
         </div>

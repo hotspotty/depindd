@@ -1,5 +1,5 @@
 ---
-title: What is DePIN DD?
+title: DePIN DD
 ---
 
 This page will explain the the purpose of this website
