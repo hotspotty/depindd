@@ -22,17 +22,13 @@ const Home: React.FC = () => {
   let earnSelected = "Mine"
 
   const featuredNetworks = networks.slice(0, 6).map((network) => {
-    const filePath = path.join(
-      CONTENT_PATH,
-      "miner-networks",
-      network.id + ".md"
-    )
+    const filePath = path.join(CONTENT_PATH, "projects", network.id + ".md")
     const source = fs.readFileSync(filePath, "utf-8")
     const matterResult = matter(source)
     return {
       id: network.id,
       title: matterResult.data.title,
-      path: `/miner-networks/${network.id}`,
+      path: `/projects/${network.id}`,
       category: network.category,
     }
   })

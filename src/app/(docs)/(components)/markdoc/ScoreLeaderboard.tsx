@@ -17,7 +17,7 @@ export default function ScoreLeaderboard({
         category: item.category,
         categoryPath: `/lego/${item.category}`,
         score: score.value,
-        path: `/miner-networks/${item.id}`,
+        path: `/projects/${item.id}`,
         status: item.status,
       }
     })
