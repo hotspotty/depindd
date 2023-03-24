@@ -25,7 +25,7 @@ export default function ScoreLeaderboard({
 
   const columns = [
     {
-      Header: "Miner network",
+      Header: "Project",
       accessor: "name",
       Cell: LinkCell,
       hrefAccessor: "path",
