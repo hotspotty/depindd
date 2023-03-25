@@ -27,7 +27,7 @@ export const QuickLinks: React.FC<QuickLinksProps> = ({
 interface QuickLinkProps {
   title: string
   description?: string
-  labels: string[]
+  labels?: string[]
   href: string
   icon?: string
   className?: string
@@ -60,7 +60,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
         <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">
           {description}
         </p>
-        <Labels labels={labels} />
+        {labels && <Labels labels={labels} />}
       </div>
     </div>
   )
