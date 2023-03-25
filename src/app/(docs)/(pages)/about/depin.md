@@ -2,16 +2,19 @@
 title: DePIN
 ---
 
-DePIN = Decentralized Physical Infrastructure Networks
+DePIN stands for **Decentralized Physical Infrastructure Networks**, which are blockchain networks that incentivize communities to build physical infrastructure networks/dApps by using tokens. These tokens are used to provide tangible benefits like power, telecom services, web access, and more.
 
----
+DePINs are designed to provide **real-world value** and rely on a decentralized network and community rather than a centralized backend and company for transactions and business logic. They are open, democratic, and more accessible compared to traditional infrastructure projects. By crowdsourcing the hardware and its maintenance,
 
-## Introduction
+DePINs operate at a fraction of the capital and operating expenditures of traditional companies, incentivize network members to take care of expenses while still profiting, and reduce barriers to entry.
 
-DePIN stands for decentralized physical infrastructure networks and is the term that’s used to describe a relatively nascent, yet potentially very impactful sector of the crypto economy. DePIN are built on the belief that token incentives and decentralized governance can be used to motivate individuals to build real-world networks and deliver value to end users. The sector is made up of projects in industries as diverse as energy, compute, sensors, and wireless.
+DePINs are versatile and can enter traditionally underserved areas.
+
+While the concept is not new, the consensus around the name has ignited a unified understanding that this is **Web3’s time to shine in the real world**.
 
 ## Articles
 
+- [What are Decentralized Physical Infrastructure Networks (DePIN)?](https://www.peaq.network/blog/what-are-decentralized-physical-infrastructure-networks-depin) by [Peaq](https://www.peaq.network)
 - Weekly DePIN updates on [Twitter](https://twitter.com/FutureMoneyVC) and [research articles](https://medium.com/@0xfu) by [FutureMoney Group](https://www.fmgroup.xyz/)
 - [Connor Lovely's blog](https://connorbuildsinpublic.substack.com/)
 - [State of Decentralized Infrastructure 2022 Report](https://ev3.xyz/state-of-decentralized-infrastructure-2022-report/) by [Escape Velocity](https://ev3.xyz/)
@@ -22,4 +25,3 @@ DePIN stands for decentralized physical infrastructure networks and is the term 
 - [Proof of Physical Work](https://multicoin.capital/2022/04/05/proof-of-physical-work/) by [Multicoin Capital](https://multicoin.capital/)
 - [Token Incentivized Physical Infrastructure Networks](https://medium.com/@mikezajko_16091/token-incentivized-physical-infrastructure-networks-3548b3182d82) by [Lattice](https://lattice.fund/)
 - [EdgeFi](https://medium.com/borderless-capital/edgefi-597b9c747a94) by [Borderless Capital](https://www.borderlesscapital.io/)
-- [What are Decentralized Physical Infrastructure Networks (DePIN)?](https://www.peaq.network/blog/what-are-decentralized-physical-infrastructure-networks-depin) by [Peaq](https://www.peaq.network)
