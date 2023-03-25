@@ -1,9 +1,7 @@
 import clsx from "clsx"
 import { useId } from "react"
-import { InstallationIcon } from "./icons/InstallationIcon"
 import { LightbulbIcon } from "./icons/LightbulbIcon"
-import { PluginsIcon } from "./icons/PluginsIcon"
-import { PresetsIcon } from "./icons/PresetsIcon"
+import { LogoIcon } from "./icons/LogoIcon"
 import { ThemingIcon } from "./icons/ThemingIcon"
 import { WarningIcon } from "./icons/WarningIcon"
 
@@ -13,9 +11,7 @@ export interface IconComponentProps {
 }
 
 const icons: { [mame: string]: React.FC<IconComponentProps> } = {
-  installation: InstallationIcon,
-  presets: PresetsIcon,
-  plugins: PluginsIcon,
+  logo: LogoIcon,
   theming: ThemingIcon,
   lightbulb: LightbulbIcon,
   warning: WarningIcon,

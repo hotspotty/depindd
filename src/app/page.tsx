@@ -3,12 +3,10 @@ import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
 import Image from "next/image"
-import Link from "next/link"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
-import GitHubIcon from "./(docs)/(components)/icons/GithubIcon"
+import { Icon } from "./(docs)/(components)/Icon"
 import { QuickLink } from "./(docs)/(components)/markdoc/QuickLinks"
 import { Search } from "./(docs)/(components)/Search"
-import { ThemeSelector } from "./(docs)/(components)/ThemeSelector"
 
 export const metadata = {
   title: "DePIN DD",
@@ -27,50 +25,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex w-full flex-col items-center text-white">
-      <header className="z-10 flex w-full items-center bg-white px-4 py-5 dark:bg-transparent dark:shadow-none sm:px-6 lg:px-8">
-        <div className="relative flex basis-0 justify-end md:flex-grow">
-          <nav className="hidden text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200">
-            <ul className="flex space-x-8">
-              <li>
-                <a
-                  className="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/leaderboards/miner-payback-time"
-                >
-                  Networks
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/showcase"
-                >
-                  Showcase
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/blog"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <div className="ml-6 flex items-center gap-6 border-l border-slate-200 pl-6 dark:border-slate-800 sm:gap-8">
-            <ThemeSelector className="relative z-10" />
-            <Link
-              href="https://github.com/hotspotty/depindd"
-              className="group"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <GitHubIcon className="h-5 w-5 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
-            </Link>
-          </div>
-        </div>
-      </header>
       <div className="w-full max-w-6xl">
         <div className="relative w-full">
           <Image
@@ -92,7 +46,7 @@ const Home: React.FC = () => {
             priority
           />
         </div>
-        <div className="mt-[35vh] mb-[40vh] flex flex-col items-center justify-center">
+        <div className="mt-[45vh] mb-[40vh] flex flex-col items-center justify-center">
           <Image
             className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
             src={blurCyanImage}
@@ -102,12 +56,17 @@ const Home: React.FC = () => {
             unoptimized
             priority
           />
-          <p className="bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-8xl font-extrabold tracking-tight text-slate-900 text-transparent">
-            DePIN DD
-          </p>
+          <div className="flex items-center gap-4">
+            <Icon icon="logo" className="h-24 w-24" />
 
-          <span className="mx-auto mt-6 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-400">
-            All you need for Due Diligence on your next <b>DePIN opportunity</b>
+            <p className="bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-8xl font-extrabold tracking-tight text-slate-900 text-transparent">
+              DePIN DD
+            </p>
+          </div>
+
+          <span className="mx-auto mt-6 max-w-3xl text-center text-lg text-slate-600 dark:text-slate-300">
+            All you need for <b>Due Diligence</b> on your next{" "}
+            <b>DePIN opportunity</b>
           </span>
 
           <div className="mt-6 flex gap-4 sm:mt-10 md:justify-center lg:justify-start">

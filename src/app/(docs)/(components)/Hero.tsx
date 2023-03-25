@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Fragment } from "react"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
+import { Icon } from "./Icon"
 
 const tabs = [
   { name: "Miner payback time", isActive: true },
@@ -29,11 +30,15 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text text-5xl font-extrabold tracking-tight text-slate-900 text-transparent">
-                DePIN DD
-              </p>
-              <p className="mt-3 text-lg text-slate-600 dark:text-slate-400">
-                Everything you need for Due Diligence on DePIN
+              <div className="flex items-center gap-4">
+                <Icon icon="logo" className="h-14 w-14" />
+                <p className="inline flex-1 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text text-5xl font-extrabold tracking-tight text-slate-900 text-transparent">
+                  DePIN DD
+                </p>
+              </div>
+
+              <p className="mt-3 text-lg text-slate-600 dark:text-slate-300">
+                Everything you need for <b>Due Diligence</b> on <b>DePIN</b>
               </p>
               <div className="mt-6 flex gap-4 sm:mt-10 md:justify-center lg:justify-start">
                 <HeroButton href="/leaderboards/miner-payback-time">

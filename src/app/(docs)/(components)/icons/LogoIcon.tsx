@@ -5,7 +5,7 @@ import {
   LightMode,
 } from "@/app/(docs)/(components)/Icon"
 
-export const PluginsIcon: React.FC<IconComponentProps> = ({ id, color }) => {
+export const LogoIcon: React.FC<IconComponentProps> = ({ id, color }) => {
   return (
     <>
       <defs>

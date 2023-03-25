@@ -1,6 +1,8 @@
 import { SidebarSection } from "@/app/(docs)/(utils)/sidebar"
 import { Dialog } from "@headlessui/react"
+import Link from "next/link"
 import { useEffect, useState } from "react"
+import { Icon } from "./Icon"
 import { Navigation } from "./Navigation"
 
 function MenuIcon(props) {
@@ -70,7 +72,15 @@ export function MobileNavigation({ sidebar }: { sidebar: SidebarSection[] }) {
         aria-label="Navigation"
       >
         <Dialog.Panel className="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 dark:bg-slate-900 sm:px-6">
-          <div className="flex items-center">
+          <div className="flex items-center justify-between">
+            <Link href="/" aria-label="Home page">
+              <div className="flex items-center gap-2">
+                <Icon icon="logo" className="h-8 w-8" />
+                <p className="flex-1 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-2xl font-extrabold tracking-tight text-slate-900 text-transparent">
+                  DePIN DD
+                </p>
+              </div>
+            </Link>
             <button
               type="button"
               onClick={() => setIsOpen(false)}
