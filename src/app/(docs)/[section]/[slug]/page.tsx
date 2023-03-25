@@ -30,6 +30,23 @@ export const dynamicParams = false
 
 const ARTICLES_DIR = path.join(process.cwd(), CONTENT_PATH)
 
+const legoCategories = {
+  wireless: ["connectivity", "positioning"],
+  sensors: [
+    "mobility",
+    "energy",
+    "environmental",
+    "healthcare",
+    "smart city",
+    "smart home",
+    "geo-location",
+    "general",
+  ],
+  data: ["storage", "marketplace", "proof", "warehouse", "analytics", "tool"],
+  servers: ["compute", "CDN", "VPN"],
+  hardware: ["manufacturer", "marketplace"],
+}
+
 export async function generateStaticParams() {
   const docPaths = await glob(path.join(ARTICLES_DIR, "**/*.md"))
   return docPaths.map((docPath) => {
@@ -58,16 +75,23 @@ export default function Page({ params }: PageProps) {
   const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const projectInfo = projects.find((item) => item.id === params.slug)
-  const [projectLabels, projectLinks] = projectInfo
-    ? [
-        [projectInfo.lego, ...projectInfo.categories],
-        projectInfo.links.map(({ type, label, url }) => {
-          let title = capitalizeFirstLetter(type)
-          if (label) title += ` - ${label}`
-          return { title, url }
-        }),
-      ]
-    : [[], []]
+
+  let labels: string[] = []
+  let links: { title: string; url: string }[] = []
+
+  if (projectInfo) {
+    labels = [projectInfo.lego, ...projectInfo.categories]
+    projectInfo.links.forEach(({ type, label, url }) => {
+      let title = capitalizeFirstLetter(type)
+      if (label) title += ` - ${label}`
+      links.push({ title, url })
+    })
+  }
+
+  if (params.section === "lego") {
+    labels = legoCategories[params.slug]
+  }
+
   const { title, content } = getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)
@@ -87,8 +111,8 @@ export default function Page({ params }: PageProps) {
               <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
                 {projectInfo?.title || title}
               </h1>
-              <Labels labels={projectLabels} />
-              <Links className="!mt-6" links={projectLinks} />
+              <Labels labels={labels} />
+              <Links className="!mt-6" links={links} />
             </header>
             <Prose>
               {Markdoc.renderers.react(content, React, { components })}

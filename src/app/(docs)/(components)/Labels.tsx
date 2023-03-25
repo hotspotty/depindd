@@ -1,5 +1,3 @@
-// style={getLabelColorStyle(color, !withoutDarkMode && isDark)}
-
 import clsx from "clsx"
 import {
   getColorFromId,
