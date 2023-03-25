@@ -73,6 +73,7 @@ export default function Page({ params }: PageProps) {
       })),
     ]
     projectInfo.links.forEach(({ type, label, url }) => {
+      if (!url) return
       let title = capitalizeFirstLetter(type)
       if (label) title += ` - ${label}`
       links.push({ title, url })

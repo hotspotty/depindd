@@ -662,6 +662,154 @@ export const projects: ProjectInfo[] = [
         type: "website",
         url: "https://www.reactnetwork.io",
       },
+      {
+        type: "foundation",
+        url: "",
+      },
+      {
+        type: "twitter",
+        url: "https://twitter.com/react_energy",
+      },
+      {
+        type: "reddit",
+        url: "",
+      },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/react-network/",
+      },
+      {
+        type: "discord",
+        url: "https://discord.gg/cSyTFpHBMj",
+      },
+      { type: "telegram", url: "" },
+      {
+        type: "github",
+        url: "",
+      },
+      {
+        type: "youtube",
+        url: "",
+      },
+      { type: "tiktok", url: "" },
+      { type: "instagram", url: "" },
+      { type: "facebook", url: "" },
+      { type: "blog", url: "https://www.reactnetwork.io/" },
+      {
+        type: "medium",
+        url: "https://reactnetwork.medium.com/",
+      },
+      {
+        type: "documentation",
+        url: "https://docs.reactnetwork.io/introduction/what-is-react",
+      },
+      {
+        type: "governance",
+        url: "",
+      },
+      {
+        type: "tokenomics",
+        url: "https://docs.reactnetwork.io/usdkwh-token-economics/usdkwh-supply",
+      },
+      {
+        type: "explorer",
+        url: "",
+      },
+      {
+        type: "shop",
+        url: "https://www.reactnetwork.io/shop",
+      },
+      {
+        type: "coingecko",
+        url: "",
+      },
+      { type: "analytics", url: "" },
     ],
   },
 ]
+
+/*
+placeholder to copy paste
+// todo: add the missing links so that this gives a complete picture of the options and we leave the empty ones empty
+  {
+    id: "",
+    title: "",
+    miners: [],
+    scores: [
+    ],
+    lego: "",
+    categories: [""],
+    token: "",
+    blockchain: "",
+    status: "",
+    logo: "/images/projects/<id>.jpeg",
+    links: [
+      {
+        type: "website",
+        url: "",
+      },
+      {
+        type: "foundation",
+        url: "",
+      },
+      {
+        type: "twitter",
+        url: "",
+      },
+      {
+        type: "reddit",
+        url: "",
+      },
+      {
+        type: "linkedin",
+        url: "",
+      },
+      {
+        type: "discord",
+        url: "",
+      },
+      { type: "telegram", url: "" },
+      {
+        type: "github",
+        url: "",
+      },
+      {
+        type: "youtube",
+        url: "",
+      },
+      { type: "tiktok", url: "" },
+      { type: "instagram", url: "" },
+      { type: "facebook", url: "" },
+      { type: "blog", url: "" },
+      {
+        type: "medium",
+        url: "",
+      },
+      {
+        type: "documentation",
+        url: "",
+      },
+      {
+        type: "governance",
+        url: "",
+      },
+      {
+        type: "tokenomics",
+        url: "",
+      },
+      {
+        type: "explorer",
+        url: "",
+      },
+      {
+        type: "shop",
+        url: "",
+      },
+      {
+        type: "coingecko",
+        url: "",
+      },
+      { type: "analytics", url: "" },
+    ],
+  },
+*/
