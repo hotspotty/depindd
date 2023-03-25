@@ -83,6 +83,7 @@ export default function Page({ params }: PageProps) {
     labels = legoCategories[params.slug].map((category) => ({
       title: category,
       url: `/lego/${params.slug}#${slugify(category)}`,
+      samePage: true,
     }))
   }
 
