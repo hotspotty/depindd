@@ -7,7 +7,6 @@ import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 import Link from "next/link"
 import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderboard"
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
-import Links from "./(components)/markdoc/Links"
 import ScoreLeaderboard from "./(components)/markdoc/ScoreLeaderboard"
 import Scores from "./(components)/markdoc/Scores"
 
@@ -94,13 +93,6 @@ const config: Config = {
         href: { type: String },
       },
     },
-    links: {
-      render: "Links",
-      selfClosing: true,
-      attributes: {
-        project: { type: String },
-      },
-    },
   },
 }
 
@@ -130,7 +122,6 @@ const components = {
   InternalLink: ({ href, title }: { href: string; title: string }) => (
     <Link href={href}>{title}</Link>
   ),
-  Links: Links,
 }
 
 export { config, components }

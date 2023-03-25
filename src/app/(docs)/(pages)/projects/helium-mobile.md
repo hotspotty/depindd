@@ -1,7 +1,3 @@
-{% links project="helium-mobile" / %}
-
----
-
 ## About
 
 ### What is this network?

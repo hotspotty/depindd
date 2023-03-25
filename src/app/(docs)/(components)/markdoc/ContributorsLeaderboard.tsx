@@ -1,6 +1,6 @@
 import { contributors } from "../../(data)/contributors"
+import { getLinksMarkdowntext } from "../Links"
 import Table, { LinkCell, LinksCell } from "../Table"
-import { getLinksMarkdowntext } from "./Links"
 
 interface GithubUser {
   login: string

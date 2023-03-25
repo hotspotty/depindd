@@ -42,12 +42,35 @@ interface LinkItem {
   url: string
 }
 
+export type Category =
+  | "connectivity"
+  | "positioning"
+  | "mobility"
+  | "energy"
+  | "environmental"
+  | "healthcare"
+  | "smart city"
+  | "smart home"
+  | "geo-location"
+  | "general"
+  | "storage"
+  | "marketplace"
+  | "proof"
+  | "warehouse"
+  | "analytics"
+  | "tool"
+  | "compute"
+  | "CDN"
+  | "VPN"
+  | "manufacturer"
+
 export interface ProjectInfo {
   id: string // Project filename
   title: string
   miners: Miner[]
   scores: Score[]
   lego: "data" | "sensors" | "servers" | "wireless" | "hardware"
+  category: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
   status: "development" | "production"
@@ -83,6 +106,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "sensors",
+    category: ["mobility"],
     token: "DIMO",
     blockchain: "polygon",
     status: "production",
@@ -191,9 +215,10 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "wireless",
+    category: ["connectivity"],
     token: "IOT",
     blockchain: "solana",
-    status: "development",
+    status: "production",
     logo: "/images/projects/helium-iot.jpeg",
     links: [
       {
@@ -319,6 +344,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "wireless",
+    category: ["connectivity"],
     token: "MOBILE",
     blockchain: "solana",
     status: "production",
@@ -450,6 +476,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "sensors",
+    category: ["mobility"],
     token: "HONEY",
     blockchain: "solana",
     status: "production",
@@ -554,6 +581,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "wireless",
+    category: ["connectivity"],
     token: "XNET",
     blockchain: "polygon",
     status: "production",
@@ -624,6 +652,7 @@ export const projects: ProjectInfo[] = [
     miners: [],
     scores: [],
     lego: "sensors",
+    category: ["energy"],
     token: "KWH",
     blockchain: "polygon",
     status: "development",

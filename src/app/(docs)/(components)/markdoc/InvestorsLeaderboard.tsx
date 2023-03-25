@@ -1,6 +1,6 @@
 import { investors } from "../../(data)/investors"
+import { getLinksMarkdowntext } from "../Links"
 import Table, { LinkCell, LinksCell } from "../Table"
-import { getLinksMarkdowntext } from "./Links"
 
 export default function InvestorsLeaderboard() {
   const data = investors.map((item) => {

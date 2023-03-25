@@ -1,7 +1,3 @@
-{% links project="helium-iot" / %}
-
----
-
 ## About
 
 ### What is this network?

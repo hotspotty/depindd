@@ -11,8 +11,11 @@ import { Metadata } from "next"
 import Link from "next/link"
 import path from "path"
 import React from "react"
+import Labels from "../../(components)/Labels"
+import Links from "../../(components)/Links"
 import { projects } from "../../(data)/projects"
 import { CONTENT_PATH, getSidebarItems } from "../../(utils)/sidebar"
+import { capitalizeFirstLetter } from "../../(utils)/text"
 
 type Params = {
   section: string
@@ -55,6 +58,16 @@ export default function Page({ params }: PageProps) {
   const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const projectInfo = projects.find((item) => item.id === params.slug)
+  const [projectLabels, projectLinks] = projectInfo
+    ? [
+        [projectInfo.lego, ...projectInfo.category],
+        projectInfo.links.map(({ type, label, url }) => {
+          let title = capitalizeFirstLetter(type)
+          if (label) title += ` - ${label}`
+          return { title, url }
+        }),
+      ]
+    : [[], []]
   const { title, content } = getMarkdownContent(filePath)
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)
@@ -74,6 +87,8 @@ export default function Page({ params }: PageProps) {
               <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
                 {projectInfo?.title || title}
               </h1>
+              <Labels labels={projectLabels} />
+              <Links className="!mt-6" links={projectLinks} />
             </header>
             <Prose>
               {Markdoc.renderers.react(content, React, { components })}

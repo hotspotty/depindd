@@ -1,7 +1,3 @@
-{% links project="dimo" / %}
-
----
-
 ## About
 
 ### What is this network?

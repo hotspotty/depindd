@@ -1,7 +1,11 @@
 // style={getLabelColorStyle(color, !withoutDarkMode && isDark)}
 
 import clsx from "clsx"
-import { getColorFromId, getLabelColorStyle } from "../(utils)/labels"
+import {
+  getColorFromId,
+  getLabelColorStyle,
+  transformLabels,
+} from "../(utils)/labels"
 
 const isDark = true // TODO: make dynamic
 
@@ -12,12 +16,15 @@ export default function Labels({
 }: {
   className?: string
   labelClassName?: string
-  labels: string[]
+  labels: string | string[] | undefined
 }) {
-  if (labels.length === 0) return null
+  const transformedLabels = transformLabels(labels)
+
+  if (transformedLabels.length === 0) return null
+
   return (
     <div className={clsx("-mx-2 space-y-4", className)}>
-      {labels.map((label) => (
+      {transformedLabels.map((label) => (
         <span
           key={label}
           style={getLabelColorStyle(getColorFromId(label), isDark)}

@@ -1,7 +1,3 @@
-{% links project="hivemapper" / %}
-
----
-
 ## About
 
 ### What is this network?

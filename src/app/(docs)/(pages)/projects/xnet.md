@@ -1,7 +1,3 @@
-{% links project="xnet" / %}
-
----
-
 ## About
 
 ### What is this network?

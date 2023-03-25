@@ -25,7 +25,7 @@ import {
 import SortDownIcon from "./icons/SortDownIcon"
 import SortIcon from "./icons/SortIcon"
 import SortUpIcon from "./icons/SortUpIcon"
-import { RenderLinks } from "./markdoc/Links"
+import { RenderLinks } from "./Links"
 
 function PaginationButton({
   children,

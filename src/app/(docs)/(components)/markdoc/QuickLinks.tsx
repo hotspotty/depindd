@@ -1,7 +1,6 @@
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import { transformLabels } from "../../(utils)/labels"
 import Labels from "../Labels"
 
 interface QuickLinksProps {
@@ -42,7 +41,6 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
   image,
   className,
 }) => {
-  const transformedLabels = transformLabels(labels)
   return (
     <div
       className={clsx(
@@ -74,7 +72,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
             <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">
               {description}
             </p>
-            <Labels labels={transformedLabels} />
+            <Labels labels={labels} />
           </div>
         </div>
       </div>
