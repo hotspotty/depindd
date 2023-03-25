@@ -34,7 +34,14 @@ export const contributors: ContributorInfo[] = [
     name: "Daniel Zabotti",
     company: "Hotspotty",
     companyWebsite: "https://hotspotty.net",
-    twitter: "https://iotex.io/",
+    twitter: "danielzabotti",
+  },
+  {
+    githubHandle: "vinigoess",
+    name: "Vinicius Goes",
+    company: "Hotspotty",
+    companyWebsite: "https://hotspotty.net",
+    twitter: "goesUX",
   },
   {
     githubHandle: "andrew-iotx",
