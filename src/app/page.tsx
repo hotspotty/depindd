@@ -1,18 +1,14 @@
-import { networks } from "@/app/(docs)/(data)/networks"
+import { projects } from "@/app/(docs)/(data)/projects"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
-import fs from "fs"
-import matter from "gray-matter"
 import Image from "next/image"
 import Link from "next/link"
-import path from "path"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import GitHubIcon from "./(docs)/(components)/icons/GithubIcon"
 import { QuickLink } from "./(docs)/(components)/markdoc/QuickLinks"
 import { Search } from "./(docs)/(components)/Search"
 import { ThemeSelector } from "./(docs)/(components)/ThemeSelector"
-import { CONTENT_PATH } from "./(docs)/(utils)/sidebar"
 
 export const metadata = {
   title: "DePIN DD",
@@ -21,17 +17,12 @@ export const metadata = {
 const Home: React.FC = () => {
   let earnSelected = "Mine"
 
-  const featuredNetworks = networks.slice(0, 6).map((network) => {
-    const filePath = path.join(CONTENT_PATH, "projects", network.id + ".md")
-    const source = fs.readFileSync(filePath, "utf-8")
-    const matterResult = matter(source)
-    return {
-      id: network.id,
-      title: matterResult.data.title,
-      path: `/projects/${network.id}`,
-      category: network.category,
-    }
-  })
+  const featuredProjects = projects.slice(0, 6).map((project) => ({
+    id: project.id,
+    title: project.title,
+    path: `/projects/${project.id}`,
+    category: project.category,
+  }))
 
   const earnSelectedItems = () => {
     const earnMethod = EARN_METHODS.find(
@@ -206,12 +197,12 @@ const Home: React.FC = () => {
           <span className="text-3xl font-medium">Featured Projects</span>
 
           <div className="mt-10 grid w-full grid-cols-1 gap-6 sm:grid-cols-3">
-            {featuredNetworks.map((network) => (
+            {featuredProjects.map((project) => (
               <QuickLink
-                key={network.id}
-                title={network.title}
-                description={network.category}
-                href={network.path}
+                key={project.id}
+                title={project.title}
+                description={project.category}
+                href={project.path}
               />
             ))}
           </div>

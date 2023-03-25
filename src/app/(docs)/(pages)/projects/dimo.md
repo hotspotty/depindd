@@ -1,4 +1,4 @@
-{% links network="dimo" / %}
+{% links project="dimo" / %}
 
 ---
 
@@ -52,7 +52,7 @@ The $DIMO token holders can create and vote on proposals called DIMO Improvement
 
 ## DD Metrics
 
-{% scores network="dimo" / %}
+{% scores project="dimo" / %}
 
 ### Average monthly USD earnings
 

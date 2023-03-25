@@ -1,4 +1,4 @@
-{% links network="helium-mobile" / %}
+{% links project="helium-mobile" / %}
 
 ---
 
@@ -53,7 +53,7 @@ Furthermore, Helium's network is designed to be open and transparent, with all n
 
 ## DD Metrics
 
-{% scores network="helium-mobile" / %}
+{% scores project="helium-mobile" / %}
 
 ### Average monthly USD earnings
 

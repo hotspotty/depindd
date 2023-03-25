@@ -1,4 +1,4 @@
-{% links network="xnet" / %}
+{% links project="xnet" / %}
 
 ---
 
@@ -40,7 +40,7 @@ TBD
 
 ## DD Metrics
 
-{% scores network="xnet" / %}
+{% scores project="xnet" / %}
 
 ### Average monthly USD earnings
 

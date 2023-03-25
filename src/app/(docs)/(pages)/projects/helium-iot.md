@@ -1,4 +1,4 @@
-{% links network="helium-iot" / %}
+{% links project="helium-iot" / %}
 
 ---
 
@@ -53,7 +53,7 @@ Furthermore, Helium's network is designed to be open and transparent, with all n
 
 ## DD Metrics
 
-{% scores network="helium-iot" / %}
+{% scores project="helium-iot" / %}
 
 ### Average monthly USD earnings
 

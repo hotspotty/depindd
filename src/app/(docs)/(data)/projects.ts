@@ -42,8 +42,8 @@ interface LinkItem {
   url: string
 }
 
-export interface NetworkInfo {
-  id: string // Miner network filename
+export interface ProjectInfo {
+  id: string // Project filename
   title: string
   miners: Miner[]
   scores: Score[]
@@ -54,7 +54,7 @@ export interface NetworkInfo {
   links: LinkItem[]
 }
 
-export const networks: NetworkInfo[] = [
+export const projects: ProjectInfo[] = [
   {
     id: "dimo",
     title: "DIMO",

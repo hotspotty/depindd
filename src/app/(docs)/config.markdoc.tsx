@@ -44,7 +44,7 @@ const config: Config = {
       render: "Scores",
       selfClosing: true,
       attributes: {
-        network: { type: String },
+        project: { type: String },
       },
     },
     "score-leaderboard": {
@@ -96,7 +96,7 @@ const config: Config = {
       render: "Links",
       selfClosing: true,
       attributes: {
-        network: { type: String },
+        project: { type: String },
       },
     },
   },

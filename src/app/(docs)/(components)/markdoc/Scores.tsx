@@ -1,4 +1,4 @@
-import { networks } from "@/app/(docs)/(data)/networks"
+import { projects } from "@/app/(docs)/(data)/projects"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"
 import React, { Fragment } from "react"
@@ -11,14 +11,14 @@ const scoreTypeTitles = {
   "ease-of-mining": "Ease of mining",
 }
 
-export default function Scores({ network }: { network: string }) {
-  const networkInfo = networks.find((item) => item.id === network)
+export default function Scores({ project }: { project: string }) {
+  const projectInfo = projects.find((item) => item.id === project)
 
-  if (!networkInfo || networkInfo.scores.length === 0) {
+  if (!projectInfo || projectInfo.scores.length === 0) {
     return <p>TBD</p>
   }
 
-  return networkInfo.scores.map(({ type, value, description }) => (
+  return projectInfo.scores.map(({ type, value, description }) => (
     <Fragment key={type}>
       <h3>
         {scoreTypeTitles[type]} score: {value}/10

@@ -1,7 +1,7 @@
 export interface InvestorInfo {
   id: string
   title: string
-  investments: string[] // IDs of miner networks
+  investments: string[] // IDs of projects
   website: string
   twitter?: string
   blog?: string

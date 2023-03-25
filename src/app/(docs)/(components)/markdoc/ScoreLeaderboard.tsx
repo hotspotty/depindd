@@ -1,4 +1,4 @@
-import { networks } from "../../(data)/networks"
+import { projects } from "../../(data)/projects"
 import Table, { LinkCell, SelectColumnFilter } from "../Table"
 
 export default function ScoreLeaderboard({
@@ -6,7 +6,7 @@ export default function ScoreLeaderboard({
 }: {
   type: "governance" | "tokenomics" | "ease-of-mining"
 }) {
-  const data = networks
+  const data = projects
     .map((item) => {
       const score = item.scores.find((score) => score.type === type)
       if (!score) return

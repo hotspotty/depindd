@@ -1,4 +1,4 @@
-import { networks } from "@/app/(docs)/(data)/networks"
+import { projects } from "@/app/(docs)/(data)/projects"
 import { capitalizeFirstLetter } from "@/app/(docs)/(utils)/text"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"
@@ -36,14 +36,14 @@ export function RenderLinks({
   )
 }
 
-export default function Links({ network }: { network: string }) {
-  const networkInfo = networks.find((item) => item.id === network)
+export default function Links({ project }: { project: string }) {
+  const projectInfo = projects.find((item) => item.id === project)
 
-  if (!networkInfo || networkInfo.links.length === 0) {
+  if (!projectInfo || projectInfo.links.length === 0) {
     return <p>TBD</p>
   }
 
-  const links = networkInfo.links.map(({ type, label, url }) => {
+  const links = projectInfo.links.map(({ type, label, url }) => {
     let title = capitalizeFirstLetter(type)
     if (label) title += ` - ${label}`
     return { title, url }

@@ -1,4 +1,4 @@
-{% links network="hivemapper" / %}
+{% links project="hivemapper" / %}
 
 ---
 
@@ -45,7 +45,7 @@ At the moment the best way to get involved with key decisions is to voice your o
 
 ## DD Metrics
 
-{% scores network="hivemapper" / %}
+{% scores project="hivemapper" / %}
 
 ### Average monthly USD earnings
 
