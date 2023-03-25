@@ -82,6 +82,7 @@ const config: Config = {
         description: { type: String },
         labels: { type: Array },
         icon: { type: String },
+        image: { type: String },
         href: { type: String },
       },
     },

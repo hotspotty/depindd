@@ -51,6 +51,7 @@ export interface ProjectInfo {
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
   status: "development" | "production"
+  logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`
   links: LinkItem[]
 }
 
@@ -85,6 +86,7 @@ export const projects: ProjectInfo[] = [
     token: "DIMO",
     blockchain: "polygon",
     status: "production",
+    logo: "/images/projects/dimo.png",
     links: [
       {
         type: "website",
@@ -191,6 +193,7 @@ export const projects: ProjectInfo[] = [
     token: "IOT",
     blockchain: "solana",
     status: "development",
+    logo: "/images/projects/helium-iot.jpeg",
     links: [
       {
         type: "website",
@@ -319,6 +322,7 @@ export const projects: ProjectInfo[] = [
     token: "MOBILE",
     blockchain: "solana",
     status: "production",
+    logo: "/images/projects/helium-mobile.jpeg",
     links: [
       {
         type: "website",
@@ -449,6 +453,7 @@ export const projects: ProjectInfo[] = [
     token: "HONEY",
     blockchain: "solana",
     status: "production",
+    logo: "/images/projects/hivemapper.jpeg",
     links: [
       {
         type: "website",
@@ -552,6 +557,7 @@ export const projects: ProjectInfo[] = [
     token: "XNET",
     blockchain: "polygon",
     status: "production",
+    logo: "/images/projects/xnet.jpeg",
     links: [
       {
         type: "website",

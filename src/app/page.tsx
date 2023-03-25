@@ -17,13 +17,6 @@ export const metadata = {
 const Home: React.FC = () => {
   let earnSelected = "Mine"
 
-  const featuredProjects = projects.slice(0, 6).map((project) => ({
-    id: project.id,
-    title: project.title,
-    path: `/projects/${project.id}`,
-    category: project.category,
-  }))
-
   const earnSelectedItems = () => {
     const earnMethod = EARN_METHODS.find(
       (earnMethod) => earnMethod.title === earnSelected
@@ -197,12 +190,13 @@ const Home: React.FC = () => {
           <span className="text-3xl font-medium">Featured Projects</span>
 
           <div className="mt-10 grid w-full grid-cols-1 gap-6 sm:grid-cols-3">
-            {featuredProjects.map((project) => (
+            {projects.slice(0, 6).map((project) => (
               <QuickLink
                 key={project.id}
                 title={project.title}
                 labels={[project.category]}
-                href={project.path}
+                image={project.logo}
+                href={`/projects/${project.id}`}
               />
             ))}
           </div>
