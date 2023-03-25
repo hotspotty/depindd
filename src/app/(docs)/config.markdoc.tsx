@@ -7,8 +7,10 @@ import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 import Link from "next/link"
 import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderboard"
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
+import LegoCategoryProjects from "./(components)/markdoc/LegoCategoryProjects"
 import ScoreLeaderboard from "./(components)/markdoc/ScoreLeaderboard"
 import Scores from "./(components)/markdoc/Scores"
+import { legos } from "./(data)/lego"
 
 const config: Config = {
   nodes: {
@@ -93,6 +95,17 @@ const config: Config = {
         href: { type: String },
       },
     },
+    "lego-category-projects": {
+      render: "LegoCategoryProjects",
+      selfClosing: true,
+      attributes: {
+        lego: {
+          type: String,
+          matches: legos,
+        },
+        category: { type: String },
+      },
+    },
   },
 }
 
@@ -122,6 +135,7 @@ const components = {
   InternalLink: ({ href, title }: { href: string; title: string }) => (
     <Link href={href}>{title}</Link>
   ),
+  LegoCategoryProjects: LegoCategoryProjects,
 }
 
 export { config, components }

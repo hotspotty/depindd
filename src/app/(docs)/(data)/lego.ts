@@ -1,3 +1,5 @@
+export const legos = ["wireless", "sensors", "data", "servers", "hardware"]
+
 export const legoCategories = {
   wireless: ["connectivity", "positioning"],
   sensors: [
