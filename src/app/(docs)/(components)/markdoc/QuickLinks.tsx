@@ -55,8 +55,8 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
             <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
               <Image
                 className="h-16 w-16 rounded-full"
-                width={32}
-                height={32}
+                width={64}
+                height={64}
                 src={image}
                 alt={title}
               />
