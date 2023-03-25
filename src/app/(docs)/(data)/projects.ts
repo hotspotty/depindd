@@ -47,7 +47,7 @@ export interface ProjectInfo {
   title: string
   miners: Miner[]
   scores: Score[]
-  category: "energy" | "sensor" | "server" | "wireless"
+  category: "data" | "sensors" | "servers" | "wireless" | "hardware"
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
   status: "development" | "production"
@@ -82,7 +82,7 @@ export const projects: ProjectInfo[] = [
         As the network matures, the difficulty will increase in order to achieve several goals. Firstly, it will incentivize a continuous data connection, which will allow for a fuller story of driver behavior and vehicle performance to be captured over a longer period of time. Secondly, it will reward those who provide a greater quantity and frequency of reliable data, as this will be more valuable to the network than sporadic or low-quality data. Finally, the system will avoid rewarding based on distance or time traveled, as this could incentivize unnecessary and wasteful driving behavior that would not benefit the network or its users.`,
       },
     ],
-    category: "sensor",
+    category: "sensors",
     token: "DIMO",
     blockchain: "polygon",
     status: "production",
@@ -449,7 +449,7 @@ export const projects: ProjectInfo[] = [
           "HONEY earnings are calculated based on coverage, freshness, and quality. Following the guidelines provided by Hivemapper and collecting imagery in desired locations, revisiting these areas for up-to-date imagery, and properly setting up the dashcam are crucial to earning HONEY. This straightforward system makes earning HONEY easy.",
       },
     ],
-    category: "sensor",
+    category: "sensors",
     token: "HONEY",
     blockchain: "solana",
     status: "production",
@@ -615,6 +615,23 @@ export const projects: ProjectInfo[] = [
       {
         type: "coingecko",
         url: "https://www.geckoterminal.com/polygon_pos/pools/0xf3bd3ef3280b2b406cfbe5dccd6e7162f848c8f0",
+      },
+    ],
+  },
+  {
+    id: "react",
+    title: "React",
+    miners: [],
+    scores: [],
+    category: "sensors",
+    token: "KWH",
+    blockchain: "polygon",
+    status: "development",
+    logo: "/images/projects/react.jpeg",
+    links: [
+      {
+        type: "website",
+        url: "https://www.reactnetwork.io",
       },
     ],
   },

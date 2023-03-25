@@ -24,6 +24,13 @@
   {
     "section": "projects",
     "label": "Projects",
-    "items": ["dimo", "helium-iot", "helium-mobile", "hivemapper", "xnet"]
+    "items": [
+      "dimo",
+      "helium-iot",
+      "helium-mobile",
+      "hivemapper",
+      "react",
+      "xnet"
+    ]
   }
 ]
