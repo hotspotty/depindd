@@ -66,14 +66,3 @@ export const getColorFromId = (id: string): string => {
   const colorIndex = generateNumberFromString(id) % labelColors.length
   return labelColors[colorIndex]
 }
-
-export const transformLabels = (labels: string | string[] | undefined) => {
-  switch (typeof labels) {
-    case "object":
-      return labels
-    case "string":
-      return labels.split(/[,;]+/)
-    default:
-      return []
-  }
-}

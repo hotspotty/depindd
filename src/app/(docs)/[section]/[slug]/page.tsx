@@ -6,6 +6,7 @@ import {
 } from "@/app/(docs)/(utils)/markdown"
 import { components } from "@/app/(docs)/config.markdoc"
 import Markdoc from "@markdoc/markdoc"
+import slugify from "@sindresorhus/slugify"
 import { glob } from "glob"
 import { Metadata } from "next"
 import Link from "next/link"
@@ -13,6 +14,7 @@ import path from "path"
 import React from "react"
 import Labels from "../../(components)/Labels"
 import Links from "../../(components)/Links"
+import { legoCategories } from "../../(data)/lego"
 import { projects } from "../../(data)/projects"
 import { CONTENT_PATH, getSidebarItems } from "../../(utils)/sidebar"
 import { capitalizeFirstLetter } from "../../(utils)/text"
@@ -29,23 +31,6 @@ type PageProps = {
 export const dynamicParams = false
 
 const ARTICLES_DIR = path.join(process.cwd(), CONTENT_PATH)
-
-const legoCategories = {
-  wireless: ["connectivity", "positioning"],
-  sensors: [
-    "mobility",
-    "energy",
-    "environmental",
-    "healthcare",
-    "smart city",
-    "smart home",
-    "geo-location",
-    "general",
-  ],
-  data: ["storage", "marketplace", "proof", "warehouse", "analytics", "tool"],
-  servers: ["compute", "CDN", "VPN"],
-  hardware: ["manufacturer", "marketplace"],
-}
 
 export async function generateStaticParams() {
   const docPaths = await glob(path.join(ARTICLES_DIR, "**/*.md"))
@@ -76,11 +61,17 @@ export default function Page({ params }: PageProps) {
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const projectInfo = projects.find((item) => item.id === params.slug)
 
-  let labels: string[] = []
+  let labels: { title: string; url: string }[] = []
   let links: { title: string; url: string }[] = []
 
   if (projectInfo) {
-    labels = [projectInfo.lego, ...projectInfo.categories]
+    labels = [
+      { title: projectInfo.lego, url: `/lego/${projectInfo.lego}` },
+      ...projectInfo.categories.map((category) => ({
+        title: category,
+        url: `/lego/${projectInfo.lego}#${slugify(category)}`,
+      })),
+    ]
     projectInfo.links.forEach(({ type, label, url }) => {
       let title = capitalizeFirstLetter(type)
       if (label) title += ` - ${label}`
@@ -89,7 +80,10 @@ export default function Page({ params }: PageProps) {
   }
 
   if (params.section === "lego") {
-    labels = legoCategories[params.slug]
+    labels = legoCategories[params.slug].map((category) => ({
+      title: category,
+      url: `/lego/${params.slug}#${slugify(category)}`,
+    }))
   }
 
   const { title, content } = getMarkdownContent(filePath)

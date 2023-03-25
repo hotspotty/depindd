@@ -24,6 +24,17 @@ export const QuickLinks: React.FC<QuickLinksProps> = ({
   )
 }
 
+const transformLabels = (labels: string | string[] | undefined) => {
+  switch (typeof labels) {
+    case "object":
+      return labels
+    case "string":
+      return labels.split(/[,;]+/)
+    default:
+      return []
+  }
+}
+
 interface QuickLinkProps {
   title: string
   description?: string
@@ -41,6 +52,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
   image,
   className,
 }) => {
+  const transformedLabels = transformLabels(labels)
   return (
     <div
       className={clsx(
@@ -72,7 +84,9 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
             <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">
               {description}
             </p>
-            <Labels labels={labels} />
+            <Labels
+              labels={transformedLabels.map((label) => ({ title: label }))}
+            />
           </div>
         </div>
       </div>
