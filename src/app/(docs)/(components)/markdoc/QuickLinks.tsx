@@ -13,12 +13,7 @@ export const QuickLinks: React.FC<QuickLinksProps> = ({
   children,
 }) => {
   return (
-    <div
-      className={clsx(
-        "not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-1",
-        className
-      )}
-    >
+    <div className={clsx("not-prose my-12 grid grid-cols-1 gap-6", className)}>
       {children}
     </div>
   )
