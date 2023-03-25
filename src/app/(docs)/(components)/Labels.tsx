@@ -23,13 +23,13 @@ export default function Labels({
   if (transformedLabels.length === 0) return null
 
   return (
-    <div className={clsx("-mx-2 space-y-4", className)}>
+    <div className={clsx("-mx-1 space-y-3", className)}>
       {transformedLabels.map((label) => (
         <span
           key={label}
           style={getLabelColorStyle(getColorFromId(label), isDark)}
           className={clsx(
-            "mx-2 inline-flex items-center rounded-md px-3 py-0.5 text-sm font-medium",
+            "mx-1 inline-flex items-center rounded-md px-3 py-0.5 text-sm font-medium",
             labelClassName
           )}
         >

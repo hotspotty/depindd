@@ -70,7 +70,7 @@ export interface ProjectInfo {
   miners: Miner[]
   scores: Score[]
   lego: "data" | "sensors" | "servers" | "wireless" | "hardware"
-  category: Category[]
+  categories: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
   status: "development" | "production"
@@ -106,7 +106,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "sensors",
-    category: ["mobility"],
+    categories: ["mobility"],
     token: "DIMO",
     blockchain: "polygon",
     status: "production",
@@ -215,7 +215,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "wireless",
-    category: ["connectivity"],
+    categories: ["connectivity"],
     token: "IOT",
     blockchain: "solana",
     status: "production",
@@ -344,7 +344,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "wireless",
-    category: ["connectivity"],
+    categories: ["connectivity"],
     token: "MOBILE",
     blockchain: "solana",
     status: "production",
@@ -476,7 +476,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "sensors",
-    category: ["mobility"],
+    categories: ["mobility"],
     token: "HONEY",
     blockchain: "solana",
     status: "production",
@@ -581,7 +581,7 @@ export const projects: ProjectInfo[] = [
       },
     ],
     lego: "wireless",
-    category: ["connectivity"],
+    categories: ["connectivity"],
     token: "XNET",
     blockchain: "polygon",
     status: "production",
@@ -652,7 +652,7 @@ export const projects: ProjectInfo[] = [
     miners: [],
     scores: [],
     lego: "sensors",
-    category: ["energy"],
+    categories: ["energy"],
     token: "KWH",
     blockchain: "polygon",
     status: "development",

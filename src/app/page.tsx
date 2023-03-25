@@ -153,7 +153,7 @@ const Home: React.FC = () => {
               <QuickLink
                 key={project.id}
                 title={project.title}
-                labels={[project.lego]}
+                labels={[project.lego, ...project.categories]}
                 image={project.logo}
                 href={`/projects/${project.id}`}
               />

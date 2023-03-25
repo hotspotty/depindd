@@ -60,7 +60,7 @@ export default function Page({ params }: PageProps) {
   const projectInfo = projects.find((item) => item.id === params.slug)
   const [projectLabels, projectLinks] = projectInfo
     ? [
-        [projectInfo.lego, ...projectInfo.category],
+        [projectInfo.lego, ...projectInfo.categories],
         projectInfo.links.map(({ type, label, url }) => {
           let title = capitalizeFirstLetter(type)
           if (label) title += ` - ${label}`
