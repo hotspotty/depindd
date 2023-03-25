@@ -120,6 +120,7 @@ export const projects: ProjectInfo[] = [
         type: "youtube",
         url: "https://www.youtube.com/@dimo_network",
       },
+      { type: "tiktok", url: "https://www.tiktok.com/@dimo_network" },
       {
         type: "facebook",
         url: "https://www.facebook.com/profile.php?id=100083232793823",
@@ -227,7 +228,6 @@ export const projects: ProjectInfo[] = [
         type: "youtube",
         url: "https://www.youtube.com/@HeliumEcosystem",
       },
-      { type: "tiktok", url: "https://www.tiktok.com/@dimo_network" },
       { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
       { type: "instagram", url: "https://instagram.com/helium" },
       { type: "blog", url: "https://blog.helium.com" },
