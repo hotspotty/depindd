@@ -3,26 +3,16 @@ title: DePIN LEGO
 contributors: ["andrewlaw"]
 ---
 
-DePIN Lego: DePIN’s Building Blocks
+The DePIN ecosystem can be broken up in different building blocks, which we will call **DePIN LEGO** blocks, analogous to [DeFi LEGO](https://phemex.com/academy/defi-composability-money-lego). These LEGOs in turn have projects in different **categories**.
 
----
-
-DePIN projects can be split up in five big areas:
+Projects in DePIN DD will follow this classification system. Learn more about each of these LEGOs and categories by clicking on the sections below:
 
 {% quick-links %}
 
-{% quick-link title="Data" href="/lego/data" /%}
-
-{% quick-link title="Sensors" href="/lego/sensors" /%}
-
-{% quick-link title="Servers" href="/lego/servers" /%}
-
-{% quick-link title="Wireless" href="/lego/wireless" /%}
-
-{% quick-link title="Hardware" href="/lego/hardware" /%}
+{% quick-link title="Wireless" href="/lego/wireless" labels="connectivity,positioning" /%}
+{% quick-link title="Sensors" href="/lego/sensors" labels="mobility,energy,environmental,healthcare,smart city,smart home,geo-location,general" /%}
+{% quick-link title="Data" href="/lego/data" labels="storage,marketplace,proof,warehouse,analytics,tool" /%}
+{% quick-link title="Servers" href="/lego/servers" labels="compute,CDN,VPN" /%}
+{% quick-link title="Hardware" href="/lego/hardware" labels="manufacturer,marketplace" /%}
 
 {% /quick-links %}
-
-## References
-
-- [DeFi LEGO](https://phemex.com/academy/defi-composability-money-lego)

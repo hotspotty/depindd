@@ -16,18 +16,13 @@ export default function Labels({
 }) {
   if (labels.length === 0) return null
   return (
-    <div
-      className={clsx(
-        "mt-3 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4",
-        className
-      )}
-    >
+    <div className={clsx("-mx-2 space-y-4", className)}>
       {labels.map((label) => (
         <span
           key={label}
           style={getLabelColorStyle(getColorFromId(label), isDark)}
           className={clsx(
-            "inline-flex items-center rounded-md px-3 py-0.5 text-sm font-medium",
+            "mx-2 inline-flex items-center rounded-md px-3 py-0.5 text-sm font-medium",
             labelClassName
           )}
         >
