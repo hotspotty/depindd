@@ -10,7 +10,7 @@ Decentralized energy networks aggregate distributed energy sources to create a m
 
 ### Storage
 
-**Storage Networks** can be classified into file storage and relational database networks. File storage networks are intended for long-term data storage and archiving. Relational database networks are designed for managing structured data that is accessed and updated frequently.
+Storage Networks can be classified into file storage and relational database networks. File storage networks are intended for long-term data storage and archiving. Relational database networks are designed for managing structured data that is accessed and updated frequently.
 
 ### Marketplace
 
