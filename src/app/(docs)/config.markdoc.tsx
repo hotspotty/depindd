@@ -80,6 +80,7 @@ const config: Config = {
       attributes: {
         title: { type: String },
         description: { type: String },
+        labels: { type: Array },
         icon: { type: String },
         href: { type: String },
       },

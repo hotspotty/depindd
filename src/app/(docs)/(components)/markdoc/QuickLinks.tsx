@@ -1,6 +1,7 @@
 import clsx from "clsx"
 import Link from "next/link"
 import { Icon } from "../Icon"
+import Labels from "../Labels"
 
 interface QuickLinksProps {
   className?: string
@@ -25,7 +26,8 @@ export const QuickLinks: React.FC<QuickLinksProps> = ({
 
 interface QuickLinkProps {
   title: string
-  description: string
+  description?: string
+  labels: string[]
   href: string
   icon?: string
   className?: string
@@ -34,6 +36,7 @@ interface QuickLinkProps {
 export const QuickLink: React.FC<QuickLinkProps> = ({
   title,
   description,
+  labels,
   href,
   icon,
   className,
@@ -57,6 +60,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
         <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">
           {description}
         </p>
+        <Labels labels={labels} />
       </div>
     </div>
   )

@@ -201,7 +201,7 @@ const Home: React.FC = () => {
               <QuickLink
                 key={project.id}
                 title={project.title}
-                description={project.category}
+                labels={[project.category]}
                 href={project.path}
               />
             ))}
