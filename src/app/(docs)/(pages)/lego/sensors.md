@@ -18,6 +18,10 @@ TBD
 
 Decentralized energy networks aggregate distributed energy sources to create a more resilient and efficient energy grid. Virtual power plants (VPPs) are a key component of these networks, consisting of batteries and controllable load resources that work together to balance power supply and demand on the energy grid. These networks enable control of energy system flexibility (VPP), collection of real-time energy consumption data, and the creation of verifiable renewable energy credits.
 
+#### Read more
+
+- [A Primer to Web3-Enabled Decentralized Energy Networks](https://medium.com/@0xfu/a-primer-to-web3-enabled-decentralized-energy-networks-e8c3075157ae)
+
 {% lego-category-projects lego="sensors" category="energy" / %}
 
 ### Environmental
