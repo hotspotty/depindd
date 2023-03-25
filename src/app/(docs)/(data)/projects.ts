@@ -47,7 +47,7 @@ export interface ProjectInfo {
   title: string
   miners: Miner[]
   scores: Score[]
-  category: "data" | "sensors" | "servers" | "wireless" | "hardware"
+  lego: "data" | "sensors" | "servers" | "wireless" | "hardware"
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: "solana" | "polygon"
   status: "development" | "production"
@@ -82,7 +82,7 @@ export const projects: ProjectInfo[] = [
         As the network matures, the difficulty will increase in order to achieve several goals. Firstly, it will incentivize a continuous data connection, which will allow for a fuller story of driver behavior and vehicle performance to be captured over a longer period of time. Secondly, it will reward those who provide a greater quantity and frequency of reliable data, as this will be more valuable to the network than sporadic or low-quality data. Finally, the system will avoid rewarding based on distance or time traveled, as this could incentivize unnecessary and wasteful driving behavior that would not benefit the network or its users.`,
       },
     ],
-    category: "sensors",
+    lego: "sensors",
     token: "DIMO",
     blockchain: "polygon",
     status: "production",
@@ -189,7 +189,7 @@ export const projects: ProjectInfo[] = [
           "As the Helium Network's blockchain and proof of coverage systems continue to strengthen, earning tokens on the network has become a relatively straightforward process. The physical or software maintenance required for hotspots is minimal, as long as they have consistent power and internet connectivity. However, the challenge lies in securing premium physical locations that ensure reliable coverage, which is crucial for optimal earnings on the network.",
       },
     ],
-    category: "wireless",
+    lego: "wireless",
     token: "IOT",
     blockchain: "solana",
     status: "development",
@@ -318,7 +318,7 @@ export const projects: ProjectInfo[] = [
           Mining on the IoT network has always been much simpler and more straightforward than for the MOBILE network. IoT miners are roughly a tenth of the cost of MOBILE miners, can be set up in 10 minutes vs. 30+, and earn much more passively as nearby IoT hotspots beacon off of each other and prove coverage (whereas MOBILE hotspots don’t have nearly the same range and therefore must be validated by modeled rf coverage or a special device that’s coming out soon, called the Spot.`,
       },
     ],
-    category: "wireless",
+    lego: "wireless",
     token: "MOBILE",
     blockchain: "solana",
     status: "production",
@@ -449,7 +449,7 @@ export const projects: ProjectInfo[] = [
           "HONEY earnings are calculated based on coverage, freshness, and quality. Following the guidelines provided by Hivemapper and collecting imagery in desired locations, revisiting these areas for up-to-date imagery, and properly setting up the dashcam are crucial to earning HONEY. This straightforward system makes earning HONEY easy.",
       },
     ],
-    category: "sensors",
+    lego: "sensors",
     token: "HONEY",
     blockchain: "solana",
     status: "production",
@@ -553,7 +553,7 @@ export const projects: ProjectInfo[] = [
         XNET mining is more difficult than most other DePIN protocols, due to the complex and technical nature of the equipment deployed (cellular radios and antennas).`,
       },
     ],
-    category: "wireless",
+    lego: "wireless",
     token: "XNET",
     blockchain: "polygon",
     status: "production",
@@ -623,7 +623,7 @@ export const projects: ProjectInfo[] = [
     title: "React",
     miners: [],
     scores: [],
-    category: "sensors",
+    lego: "sensors",
     token: "KWH",
     blockchain: "polygon",
     status: "development",

@@ -14,8 +14,8 @@ export default function ScoreLeaderboard({
       return {
         id: item.id,
         name: item.title,
-        category: item.category,
-        categoryPath: `/lego/${item.category}`,
+        lego: item.lego,
+        categoryPath: `/lego/${item.lego}`,
         score: score.value,
         path: `/projects/${item.id}`,
         status: item.status,
@@ -32,11 +32,11 @@ export default function ScoreLeaderboard({
     },
     {
       Header: "Category",
-      accessor: "category",
+      accessor: "lego",
       Cell: LinkCell,
       hrefAccessor: "categoryPath",
       Filter: SelectColumnFilter,
-      filter: "category",
+      filter: "lego",
     },
     {
       Header: "Score",

@@ -2,7 +2,7 @@
 title: Servers
 ---
 
-Server networks are groups of computers that work together to provide various web-based services by tapping into idle storage, compute, and bandwidth resources.The decentralized server sector category consists of four network categories:
+Server networks are groups of computers that work together to provide various web-based services by tapping into idle storage, compute, and bandwidth resources. The decentralized server lego consists of four network categories:
 
 - **Storage Networks** can be classified into file storage and relational database networks. File storage networks are intended for long-term data storage and archiving. Relational database networks are designed for managing structured data that is accessed and updated frequently.
 - **Compute Networks** can be divided into two main classifications: general purpose (GP) compute networks and specific purpose (SP) compute networks. GP compute networks provide computing resources that can be used for a variety of applications. SP compute networks are tailored to specific use cases such as transcoding, rendering, and machine learning.
