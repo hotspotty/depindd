@@ -1,3 +1,8 @@
+// TODO: see if they can be split up in separate json files, dynamically loaded into a json array and checked for correct typing at build time
+// This will make it easier to maintain and provide an example json that contributors can fill in
+// TODO: add documentation for how to add a new project (including adding the markdown file, sidebar and logo)
+// TOOD: add prettier before commit
+
 interface Miner {
   name: string
   url: string
@@ -16,22 +21,22 @@ interface LinkItem {
     | "website"
     | "foundation"
     | "company"
-    | "twitter"
-    | "discord"
-    | "github"
-    | "youtube"
-    | "instagram"
     | "blog"
     | "medium"
+    | "twitter"
     | "reddit"
-    | "whitepaper"
-    | "governance"
-    | "telegram"
-    | "facebook"
-    | "tiktok"
-    | "linkedin"
-    | "documentation"
     | "forum"
+    | "discord"
+    | "telegram"
+    | "youtube"
+    | "instagram"
+    | "linkedin"
+    | "tiktok"
+    | "facebook"
+    | "github"
+    | "whitepaper"
+    | "documentation"
+    | "governance"
     | "tokenomics"
     | "explorer"
     | "shop"
@@ -120,6 +125,12 @@ export const projects: ProjectInfo[] = [
         type: "foundation",
         url: "https://dimo.zone/news/dimo-foundation",
       },
+      { type: "company", url: "" },
+      { type: "blog", url: "https://dimo.zone/news" },
+      {
+        type: "medium",
+        url: "https://medium.com/dimo-network",
+      },
       {
         type: "twitter",
         url: "https://twitter.com/DIMO_Network",
@@ -128,33 +139,31 @@ export const projects: ProjectInfo[] = [
         type: "reddit",
         url: "https://www.reddit.com/r/dimo_network/",
       },
-      {
-        type: "linkedin",
-        url: "https://www.linkedin.com/company/dimo-network",
-      },
+      { type: "forum", url: "" },
       {
         type: "discord",
         url: "https://discord.com/invite/B5K5eScyQM",
       },
-      {
-        type: "github",
-        url: "https://dimo.zone/https://github.com/DIMO-Network",
-      },
+      { type: "telegram", url: "" },
       {
         type: "youtube",
         url: "https://www.youtube.com/@dimo_network",
+      },
+      { type: "instagram", url: "https://instagram.com/dimo_network" },
+      {
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/dimo-network",
       },
       { type: "tiktok", url: "https://www.tiktok.com/@dimo_network" },
       {
         type: "facebook",
         url: "https://www.facebook.com/profile.php?id=100083232793823",
       },
-      { type: "instagram", url: "https://instagram.com/dimo_network" },
-      { type: "blog", url: "https://dimo.zone/news" },
       {
-        type: "medium",
-        url: "https://medium.com/dimo-network",
+        type: "github",
+        url: "https://dimo.zone/https://github.com/DIMO-Network",
       },
+      { type: "whitepaper", url: "" },
       {
         type: "documentation",
         url: "https://docs.dimo.zone/docs",
@@ -187,6 +196,7 @@ export const projects: ProjectInfo[] = [
         type: "crunchbase",
         url: "https://www.crunchbase.com/organization/dimo-9a37",
       },
+      { type: "other", url: "" },
     ],
   },
   {
@@ -230,6 +240,21 @@ export const projects: ProjectInfo[] = [
         url: "https://www.helium.foundation",
       },
       {
+        label: "Nova Labs",
+        type: "company",
+        url: "https://nova.xyz",
+      },
+      {
+        label: "1663",
+        type: "company",
+        url: "https://1663.io",
+      },
+      { type: "blog", url: "https://blog.helium.com" },
+      {
+        type: "medium",
+        url: "https://heliumfoundation.medium.com",
+      },
+      {
         type: "twitter",
         url: "https://twitter.com/helium",
       },
@@ -237,30 +262,27 @@ export const projects: ProjectInfo[] = [
         type: "reddit",
         url: "https://www.reddit.com/r/HeliumNetwork",
       },
-      {
-        type: "linkedin",
-        url: "https://www.linkedin.com/company/heliumnetwork/",
-      },
+      { type: "forum", url: "" },
       {
         type: "discord",
         url: "https://discord.com/invite/helium",
       },
-      {
-        type: "github",
-        url: "https://github.com/helium",
-      },
+      { type: "telegram", url: "https://t.me/helium_network" },
       {
         type: "youtube",
         url: "https://www.youtube.com/@HeliumEcosystem",
       },
-      { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
       { type: "instagram", url: "https://instagram.com/helium" },
-      { type: "blog", url: "https://blog.helium.com" },
       {
-        type: "medium",
-        url: "https://heliumfoundation.medium.com",
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/heliumnetwork/",
       },
-      { type: "telegram", url: "https://t.me/helium_network" },
+      { type: "tiktok", url: "" },
+      { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
+      {
+        type: "github",
+        url: "https://github.com/helium",
+      },
       {
         type: "whitepaper",
         url: "http://whitepaper.helium.com",
@@ -297,24 +319,19 @@ export const projects: ProjectInfo[] = [
         url: "https://app.hotspotty.net",
       },
       {
-        label: "Nova Labs - Founding team of the Helium Network",
-        type: "company",
-        url: "https://nova.xyz",
-      },
-      {
-        label: "1663 - Nova's IoT solutions provider",
-        type: "company",
-        url: "https://1663.io",
-      },
-      {
         type: "shop",
         url: "https://www.helium.com/mine",
       },
-      { type: "analytics", url: "http://www.helium.foundation/stats" },
       {
         type: "coingecko",
         url: "https://www.coingecko.com/en/coins/helium",
       },
+      { type: "analytics", url: "http://www.helium.foundation/stats" },
+      {
+        type: "crunchbase",
+        url: "https://www.crunchbase.com/organization/helium-systems-inc",
+      },
+      { type: "other", url: "" },
     ],
   },
   {
@@ -359,6 +376,21 @@ export const projects: ProjectInfo[] = [
         url: "https://www.helium.foundation",
       },
       {
+        label: "Nova Labs",
+        type: "company",
+        url: "https://nova.xyz",
+      },
+      {
+        label: "Helium Mobile",
+        type: "company",
+        url: "https://hellohelium.com",
+      },
+      { type: "blog", url: "https://blog.helium.com" },
+      {
+        type: "medium",
+        url: "https://heliumfoundation.medium.com",
+      },
+      {
         type: "twitter",
         url: "https://twitter.com/helium",
       },
@@ -366,29 +398,26 @@ export const projects: ProjectInfo[] = [
         type: "reddit",
         url: "https://www.reddit.com/r/HeliumNetwork",
       },
-      {
-        type: "linkedin",
-        url: "https://www.linkedin.com/company/heliumnetwork/",
-      },
+      { type: "forum", url: "" },
       {
         type: "discord",
         url: "https://discord.com/invite/helium",
       },
       { type: "telegram", url: "https://t.me/helium_network" },
       {
-        type: "github",
-        url: "https://github.com/helium",
-      },
-      {
         type: "youtube",
         url: "https://www.youtube.com/@HeliumEcosystem",
       },
-      { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
       { type: "instagram", url: "https://instagram.com/helium" },
-      { type: "blog", url: "https://blog.helium.com" },
       {
-        type: "medium",
-        url: "https://heliumfoundation.medium.com",
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/heliumnetwork/",
+      },
+      { type: "tiktok", url: "" },
+      { type: "facebook", url: "https://www.facebook.com/heliumsystems" },
+      {
+        type: "github",
+        url: "https://github.com/helium",
       },
       {
         type: "whitepaper",
@@ -426,22 +455,17 @@ export const projects: ProjectInfo[] = [
         url: "https://app.hotspotty.net",
       },
       {
-        label: "Nova Labs - Founding team of the Helium Network",
-        type: "company",
-        url: "https://nova.xyz",
-      },
-      {
-        label: "Helium Mobile - Nova's MVNO (Mobile Virtual Network Operator)",
-        type: "company",
-        url: "https://hellohelium.com",
-      },
-      {
         type: "shop",
         url: "https://www.helium.com/mine",
       },
       {
         type: "coingecko",
         url: "https://www.coingecko.com/en/coins/helium",
+      },
+      { type: "analytics", url: "" },
+      {
+        type: "crunchbase",
+        url: "https://www.crunchbase.com/organization/helium-systems-inc",
       },
       {
         label: "$MOBILE Genesis ROI Calculator",
@@ -490,6 +514,12 @@ export const projects: ProjectInfo[] = [
         type: "foundation",
         url: "https://docs.hivemapper.com/main-concepts/community-and-governance",
       },
+      { type: "company", url: "" },
+      { type: "blog", url: "https://hivemapper.com/blog" },
+      {
+        type: "medium",
+        url: "https://medium.com/@hivemapper",
+      },
       {
         type: "twitter",
         url: "https://twitter.com/Hivemapper",
@@ -502,31 +532,28 @@ export const projects: ProjectInfo[] = [
         type: "reddit",
         url: "https://www.reddit.com/r/Hivemapper",
       },
-      {
-        type: "linkedin",
-        url: "https://www.linkedin.com/company/hivemapper",
-      },
+      { type: "forum", url: "" },
       {
         type: "discord",
         url: "https://discord.com/invite/FRWMKyy5v2",
       },
       { type: "telegram", url: "https://t.me/+UnMYghleJYQwOGEx" },
       {
-        type: "github",
-        url: "https://github.com/hivemapper",
-      },
-      {
         type: "youtube",
         url: "https://www.youtube.com/@Hivemapper",
       },
-      { type: "tiktok", url: "https://www.tiktok.com/@hivemapper" },
       { type: "instagram", url: "https://instagram.com/hivemapper" },
-      { type: "facebook", url: "https://www.facebook.com/hivemappernetwork" },
-      { type: "blog", url: "https://hivemapper.com/blog" },
       {
-        type: "medium",
-        url: "https://medium.com/@hivemapper",
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/hivemapper",
       },
+      { type: "tiktok", url: "https://www.tiktok.com/@hivemapper" },
+      { type: "facebook", url: "https://www.facebook.com/hivemappernetwork" },
+      {
+        type: "github",
+        url: "https://github.com/hivemapper",
+      },
+      { type: "whitepaper", url: "" },
       {
         type: "documentation",
         url: "https://docs.hivemapper.com",
@@ -552,6 +579,11 @@ export const projects: ProjectInfo[] = [
         url: "https://www.coingecko.com/en/coins/hivemapper",
       },
       { type: "analytics", url: "https://dune.com/murathan/hivemapper" },
+      {
+        type: "crunchbase",
+        url: "https://www.crunchbase.com/organization/hivemapper",
+      },
+      { type: "other", url: "" },
     ],
   },
   {
@@ -595,29 +627,37 @@ export const projects: ProjectInfo[] = [
         type: "foundation",
         url: "https://xnet.company/foundation-partnerships",
       },
+      { type: "company", url: "" },
+      { type: "blog", url: "" },
+      {
+        type: "medium",
+        url: "https://medium.com/@XNET_Mobile",
+      },
       {
         type: "twitter",
         url: "https://twitter.com/XNET_Mobile",
       },
-      {
-        type: "linkedin",
-        url: "https://www.linkedin.com/company/xnet-mobile/",
-      },
+      { type: "reddit", url: "" },
+      { type: "forum", url: "" },
       {
         type: "discord",
         url: "https://discord.gg/3W5vTU8aCn",
       },
-      {
-        type: "github",
-        url: "https://github.com/xnet-mobile",
-      },
+      { type: "telegram", url: "" },
       {
         type: "youtube",
         url: "https://www.youtube.com/channel/UCyIptNxGEgzXpckV5EL38qQ",
       },
+      { type: "instagram", url: "" },
       {
-        type: "medium",
-        url: "https://medium.com/@XNET_Mobile",
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/xnet-mobile/",
+      },
+      { type: "tiktok", url: "" },
+      { type: "facebook", url: "" },
+      {
+        type: "github",
+        url: "https://github.com/xnet-mobile",
       },
       { type: "whitepaper", url: "https://xnet.company/files/Whitepaper.pdf" },
       {
@@ -644,6 +684,9 @@ export const projects: ProjectInfo[] = [
         type: "coingecko",
         url: "https://www.geckoterminal.com/polygon_pos/pools/0xf3bd3ef3280b2b406cfbe5dccd6e7162f848c8f0",
       },
+      { type: "analytics", url: "" },
+      { type: "crunchbase", url: "" },
+      { type: "other", url: "" },
     ],
   },
   {
@@ -666,6 +709,12 @@ export const projects: ProjectInfo[] = [
         type: "foundation",
         url: "",
       },
+      { type: "company", url: "" },
+      { type: "blog", url: "https://www.reactnetwork.io/" },
+      {
+        type: "medium",
+        url: "https://reactnetwork.medium.com/",
+      },
       {
         type: "twitter",
         url: "https://twitter.com/react_energy",
@@ -674,38 +723,35 @@ export const projects: ProjectInfo[] = [
         type: "reddit",
         url: "",
       },
-      {
-        type: "linkedin",
-        url: "https://www.linkedin.com/company/react-network/",
-      },
+      { type: "forum", url: "" },
       {
         type: "discord",
         url: "https://discord.gg/cSyTFpHBMj",
       },
       { type: "telegram", url: "" },
       {
-        type: "github",
-        url: "",
-      },
-      {
         type: "youtube",
         url: "",
       },
-      { type: "tiktok", url: "" },
       { type: "instagram", url: "" },
-      { type: "facebook", url: "" },
-      { type: "blog", url: "https://www.reactnetwork.io/" },
       {
-        type: "medium",
-        url: "https://reactnetwork.medium.com/",
+        type: "linkedin",
+        url: "https://www.linkedin.com/company/react-network/",
       },
+      { type: "tiktok", url: "" },
+      { type: "facebook", url: "" },
+      {
+        type: "github",
+        url: "",
+      },
+      { type: "whitepaper", url: "" },
       {
         type: "documentation",
         url: "https://docs.reactnetwork.io/introduction/what-is-react",
       },
       {
         type: "governance",
-        url: "",
+        url: "https://docs.reactnetwork.io/usdkwh-token-economics/community-ownership",
       },
       {
         type: "tokenomics",
@@ -724,6 +770,11 @@ export const projects: ProjectInfo[] = [
         url: "",
       },
       { type: "analytics", url: "" },
+      {
+        type: "crunchbase",
+        url: "https://www.crunchbase.com/organization/react-network",
+      },
+      { type: "other", url: "" },
     ],
   },
 ]
@@ -744,72 +795,32 @@ placeholder to copy paste
     status: "",
     logo: "/images/projects/<id>.jpeg",
     links: [
-      {
-        type: "website",
-        url: "",
-      },
-      {
-        type: "foundation",
-        url: "",
-      },
-      {
-        type: "twitter",
-        url: "",
-      },
-      {
-        type: "reddit",
-        url: "",
-      },
-      {
-        type: "linkedin",
-        url: "",
-      },
-      {
-        type: "discord",
-        url: "",
-      },
-      { type: "telegram", url: "" },
-      {
-        type: "github",
-        url: "",
-      },
-      {
-        type: "youtube",
-        url: "",
-      },
-      { type: "tiktok", url: "" },
-      { type: "instagram", url: "" },
-      { type: "facebook", url: "" },
+      { type: "website", url: "" },
+      { type: "foundation", url: "" },
+      { type: "company", url: ""},
       { type: "blog", url: "" },
-      {
-        type: "medium",
-        url: "",
-      },
-      {
-        type: "documentation",
-        url: "",
-      },
-      {
-        type: "governance",
-        url: "",
-      },
-      {
-        type: "tokenomics",
-        url: "",
-      },
-      {
-        type: "explorer",
-        url: "",
-      },
-      {
-        type: "shop",
-        url: "",
-      },
-      {
-        type: "coingecko",
-        url: "",
-      },
+      { type: "medium", url: "" },
+      { type: "twitter", url: "" },
+      { type: "reddit", url: "" },
+      { type: "forum", url: ""},
+      { type: "discord", url: "" },
+      { type: "telegram", url: "" },
+      { type: "youtube", url: "" },
+      { type: "instagram", url: "" },
+      { type: "linkedin", url: "" },
+      { type: "tiktok", url: "" },
+      { type: "facebook", url: "" },
+      { type: "github", url: "" },
+      { type: "whitepaper", url: "" },
+      { type: "documentation", url: "" },
+      { type: "governance", url: "" },
+      { type: "tokenomics", url: "" },
+      { type: "explorer", url: "" },
+      { type: "shop", url: "" },
+      { type: "coingecko", url: "" },
       { type: "analytics", url: "" },
+      { type: "crunchbase", url: "" },
+      { type: "other", url: "" },
     ],
   },
 */
