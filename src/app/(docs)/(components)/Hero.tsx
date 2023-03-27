@@ -2,6 +2,7 @@ import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
 import clsx from "clsx"
 import Image from "next/image"
+import Link from "next/link"
 import { Fragment } from "react"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
@@ -32,9 +33,16 @@ export function Hero() {
             <div className="relative">
               <div className="flex items-center gap-4">
                 <Icon icon="logo" className="h-14 w-14" />
-                <p className="inline flex-1 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text text-5xl font-extrabold tracking-tight text-slate-900 text-transparent">
-                  DePIN DD
-                </p>
+                <div className="flex-1">
+                  <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text text-5xl font-extrabold tracking-tight text-slate-900 text-transparent">
+                    DePIN DD
+                  </p>
+                  <Link href="https://hotspotty.net" target="_blank">
+                    <span className="ml-2 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text text-sm tracking-tight text-slate-900 text-transparent">
+                      by Hotspotty
+                    </span>
+                  </Link>
+                </div>
               </div>
 
               <p className="mt-3 text-lg text-slate-600 dark:text-slate-300">
