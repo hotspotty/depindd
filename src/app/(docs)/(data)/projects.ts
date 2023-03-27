@@ -786,8 +786,7 @@ placeholder to copy paste
     id: "",
     title: "",
     miners: [],
-    scores: [
-    ],
+    scores: [],
     lego: "",
     categories: [""],
     token: "",

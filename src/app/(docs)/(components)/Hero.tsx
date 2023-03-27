@@ -120,9 +120,9 @@ export function Hero() {
                     </div>
                     <pre className="flex overflow-x-auto pb-6">
                       <code className="px-4 text-slate-300">
-                        <div>DIMO: 3 months</div>
-                        <div>Hivemapper: 7 months</div>
-                        <div>Helium 5G: 13 months</div>
+                        <div>DIMO: x months</div>
+                        <div>Hivemapper: y months</div>
+                        <div>Helium 5G: z months</div>
                       </code>
                     </pre>
                   </div>
