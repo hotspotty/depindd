@@ -1,0 +1,88 @@
+{
+  "slug": "react",
+  "title": "React",
+  "miners": [],
+  "scores": [],
+  "lego": "sensors",
+  "categories": ["energy"],
+  "token": "KWH",
+  "blockchain": "polygon",
+  "status": "development",
+  "logo": "/images/projects/react.jpeg",
+  "links": [
+    {
+      "type": "website",
+      "url": "https://www.reactnetwork.io"
+    },
+    {
+      "type": "foundation",
+      "url": ""
+    },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://www.reactnetwork.io/" },
+    {
+      "type": "medium",
+      "url": "https://reactnetwork.medium.com/"
+    },
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/react_energy"
+    },
+    {
+      "type": "reddit",
+      "url": ""
+    },
+    { "type": "forum", "url": "" },
+    {
+      "type": "discord",
+      "url": "https://discord.gg/cSyTFpHBMj"
+    },
+    { "type": "telegram", "url": "" },
+    {
+      "type": "youtube",
+      "url": ""
+    },
+    { "type": "instagram", "url": "" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/react-network/"
+    },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    {
+      "type": "github",
+      "url": ""
+    },
+    { "type": "whitepaper", "url": "" },
+    {
+      "type": "documentation",
+      "url": "https://docs.reactnetwork.io/introduction/what-is-react"
+    },
+    {
+      "type": "governance",
+      "url": "https://docs.reactnetwork.io/usdkwh-token-economics/community-ownership"
+    },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.reactnetwork.io/usdkwh-token-economics/usdkwh-supply"
+    },
+    {
+      "type": "explorer",
+      "url": ""
+    },
+    {
+      "type": "shop",
+      "url": "https://www.reactnetwork.io/shop"
+    },
+    {
+      "type": "coingecko",
+      "url": ""
+    },
+    { "type": "analytics", "url": "" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/react-network"
+    },
+    { "type": "other", "url": "" }
+  ]
+}
