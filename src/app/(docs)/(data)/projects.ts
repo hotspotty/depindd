@@ -70,7 +70,7 @@ export type Category =
   | "manufacturer"
 
 export interface ProjectInfo {
-  id: string // Project filename
+  slug: string // Project filename
   title: string
   miners: Miner[]
   scores: Score[]
@@ -85,7 +85,7 @@ export interface ProjectInfo {
 
 export const projects: ProjectInfo[] = [
   {
-    id: "dimo",
+    slug: "dimo",
     title: "DIMO",
     miners: [],
     scores: [
@@ -200,7 +200,7 @@ export const projects: ProjectInfo[] = [
     ],
   },
   {
-    id: "helium-iot",
+    slug: "helium-iot",
     title: "Helium IoT",
     miners: [],
     scores: [
@@ -335,7 +335,7 @@ export const projects: ProjectInfo[] = [
     ],
   },
   {
-    id: "helium-mobile",
+    slug: "helium-mobile",
     title: "Helium Mobile",
     miners: [],
     scores: [
@@ -475,7 +475,7 @@ export const projects: ProjectInfo[] = [
     ],
   },
   {
-    id: "hivemapper",
+    slug: "hivemapper",
     title: "Hivemapper",
     miners: [],
     scores: [
@@ -587,7 +587,7 @@ export const projects: ProjectInfo[] = [
     ],
   },
   {
-    id: "xnet",
+    slug: "xnet",
     title: "XNET",
     miners: [],
     scores: [
@@ -690,7 +690,7 @@ export const projects: ProjectInfo[] = [
     ],
   },
   {
-    id: "react",
+    slug: "react",
     title: "React",
     miners: [],
     scores: [],
@@ -783,7 +783,7 @@ export const projects: ProjectInfo[] = [
 placeholder to copy paste
 // todo: add the missing links so that this gives a complete picture of the options and we leave the empty ones empty
   {
-    id: "",
+    slug: "",
     title: "",
     miners: [],
     scores: [],

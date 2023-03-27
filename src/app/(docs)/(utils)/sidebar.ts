@@ -20,7 +20,7 @@ export function getSidebarItems() {
       section: section.section,
       label: section.label,
       items: section.items.map((page) => {
-        const projectInfo = projects.find((item) => item.id === page)
+        const projectInfo = projects.find((item) => item.slug === page)
         const filePath = path.join(CONTENT_PATH, section.section, page + ".md")
         const source = fs.readFileSync(filePath, "utf-8")
         const matterResult = matter(source)

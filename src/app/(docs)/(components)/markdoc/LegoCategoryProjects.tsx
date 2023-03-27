@@ -22,10 +22,10 @@ export default function LegoCategoryProjects({
       <QuickLinks className="lg:grid-cols-2">
         {filteredProjects.map((project) => (
           <QuickLink
-            key={project.id}
+            key={project.slug}
             title={project.title}
             image={project.logo}
-            href={`/projects/${project.id}`}
+            href={`/projects/${project.slug}`}
           />
         ))}
       </QuickLinks>

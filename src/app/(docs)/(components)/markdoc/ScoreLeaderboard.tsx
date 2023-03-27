@@ -12,12 +12,12 @@ export default function ScoreLeaderboard({
       if (!score) return
 
       return {
-        id: item.id,
+        id: item.slug,
         name: item.title,
         lego: item.lego,
         categoryPath: `/lego/${item.lego}`,
         score: score.value,
-        path: `/projects/${item.id}`,
+        path: `/projects/${item.slug}`,
         status: item.status,
       }
     })

@@ -46,7 +46,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const projectInfo = projects.find((item) => item.id === params.slug)
+  const projectInfo = projects.find((item) => item.slug === params.slug)
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
   const { title } = getMarkdownContent(filePath)
   return {
@@ -59,7 +59,7 @@ export default function Page({ params }: PageProps) {
   const sidebar = getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
-  const projectInfo = projects.find((item) => item.id === params.slug)
+  const projectInfo = projects.find((item) => item.slug === params.slug)
 
   let labels: { title: string; url: string }[] = []
   let links: { title: string; url: string }[] = []

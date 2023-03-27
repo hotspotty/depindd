@@ -151,11 +151,11 @@ const Home: React.FC = () => {
           <div className="mt-10 grid w-full grid-cols-1 gap-6 sm:grid-cols-3">
             {projects.slice(0, 6).map((project) => (
               <QuickLink
-                key={project.id}
+                key={project.slug}
                 title={project.title}
                 labels={[project.lego, ...project.categories]}
                 image={project.logo}
-                href={`/projects/${project.id}`}
+                href={`/projects/${project.slug}`}
               />
             ))}
           </div>

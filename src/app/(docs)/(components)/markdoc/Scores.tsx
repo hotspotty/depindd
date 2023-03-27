@@ -12,7 +12,7 @@ const scoreTypeTitles = {
 }
 
 export default function Scores({ project }: { project: string }) {
-  const projectInfo = projects.find((item) => item.id === project)
+  const projectInfo = projects.find((item) => item.slug === project)
 
   if (!projectInfo || projectInfo.scores.length === 0) {
     return <p>TBD</p>
