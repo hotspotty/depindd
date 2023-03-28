@@ -29,7 +29,10 @@
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "https://docs.arkreen.com/" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://docs.arkreen.com/token/token-distribution" },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.arkreen.com/token/token-distribution"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },

@@ -6,7 +6,7 @@
   "lego": "wireless",
   "categories": ["connectivity"],
   "token": "",
-  "blockchain": "",
+  "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/<project-id>.jpeg",
   "links": [

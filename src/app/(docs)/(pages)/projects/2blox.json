@@ -6,7 +6,7 @@
   "lego": "sensors",
   "categories": ["mobility"],
   "token": "",
-  "blockchain": "",
+  "blockchain": "algorand",
   "status": "development",
   "logo": "/images/projects/2blox.jpeg",
   "links": [
@@ -22,7 +22,10 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/2bloxaway/" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/2bloxaway/"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },

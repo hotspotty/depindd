@@ -1,12 +1,12 @@
 {
   "slug": "envirobloq",
-  "title": "Envirobloq",
+  "title": "EnviroBLOQ",
   "miners": [],
   "scores": [],
   "lego": "sensors",
   "categories": ["smart home"],
   "token": "OTX",
-  "blockchain": "Iotex",
+  "blockchain": "iotex",
   "status": "production",
   "logo": "/images/projects/envirobloq.jpeg",
   "links": [
@@ -15,7 +15,10 @@
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
     { "type": "medium", "url": "" },
-    { "type": "twitter", "url": "https://twitter.com/envirobloq?ref_src=twsrc%5Etfw" },
+    {
+      "type": "twitter",
+      "url": "https://twitter.com/envirobloq?ref_src=twsrc%5Etfw"
+    },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
@@ -31,7 +34,10 @@
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://envirobloq.io/#home" },
-    { "type": "shop", "url": "https://www.crowdsupply.com/iotex/pebble-tracker" },
+    {
+      "type": "shop",
+      "url": "https://www.crowdsupply.com/iotex/pebble-tracker"
+    },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "https://www.coingecko.com/en/coins/iotex" },

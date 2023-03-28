@@ -4,7 +4,7 @@
   "miners": [],
   "scores": [],
   "lego": "sensors",
-  "categories": ["positioning"],
+  "categories": ["geo-location"],
   "token": "GEOD",
   "blockchain": "polygon",
   "status": "production",
@@ -26,7 +26,10 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://facebook.com/groups/geodnet" },
     { "type": "github", "url": "https://github.com/geodnet/whitepaper" },
-    { "type": "whitepaper", "url": "https://geodnet.com/file/Geodnet%20whitepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://geodnet.com/file/Geodnet%20whitepaper.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "https://geodnet.com/ecosystem.html" },
