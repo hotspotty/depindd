@@ -38,7 +38,7 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://www.fryfoundation.com/explorer" },
     { "type": "shop", "url": "https://www.fryfoundation.com/shop" },
-    { "type": "coingecko", "url": "" },
+    { "type": "coingecko", "url": "https://vestige.fi/asset/924268058" },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

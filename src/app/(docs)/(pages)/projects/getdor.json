@@ -35,7 +35,10 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "https://www.getdor.com/pricing" },
-    { "type": "coingecko", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/constellation"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }
