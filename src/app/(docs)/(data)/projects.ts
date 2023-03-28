@@ -8,6 +8,11 @@ import heliumMobile from "@/app/(docs)/(pages)/projects/helium-mobile.json"
 import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
+import element from "@/app/(docs)/(pages)/projects/element.json"
+import fryFoundation from "@/app/(docs)/(pages)/projects/fry-foundation.json"
+import getdor from "@/app/(docs)/(pages)/projects/getdor.json"
+import greenPowerNetwork from "@/app/(docs)/(pages)/projects/green-power-network.json"
+import healthblocks from "@/app/(docs)/(pages)/projects/healthblocks.json"
 
 interface Miner {
   name: string
@@ -100,4 +105,9 @@ export const projects: ProjectInfo[] = [
   twoblox as ProjectInfo,
   envirobloq as ProjectInfo,
   geodnet as ProjectInfo,
+  element as ProjectInfo,
+  fryFoundation as ProjectInfo,
+  getdor as ProjectInfo,
+  greenPowerNetwork as ProjectInfo,
+  healthblocks as ProjectInfo,
 ]
