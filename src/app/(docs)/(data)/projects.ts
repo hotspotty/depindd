@@ -4,6 +4,10 @@ import heliumMobile from "@/app/(docs)/(pages)/projects/helium-mobile.json"
 import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
+import arkreen from "@/app/(docs)/(pages)/projects/arkreen.json"
+import twoblox from "@/app/(docs)/(pages)/projects/2blox.json"
+import envirobloq from "@/app/(docs)/(pages)/projects/envirobloq.json"
+import geodnet from "@/app/(docs)/(pages)/projects/geodnet.json"
 
 interface Miner {
   name: string
@@ -92,4 +96,8 @@ export const projects: ProjectInfo[] = [
   hivemapper as ProjectInfo,
   xnet as ProjectInfo,
   react as ProjectInfo,
+  arkreen as ProjectInfo,
+  twoblox as ProjectInfo,
+  envirobloq as ProjectInfo,
+  geodnet as ProjectInfo,
 ]
