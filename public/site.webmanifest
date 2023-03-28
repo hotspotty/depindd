@@ -1,0 +1,19 @@
+{
+  "name": "DePIN DD by Hotspotty",
+  "short_name": "DePIN DD",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "rgb(15,23,42)",
+  "background_color": "rgb(15,23,42)",
+  "display": "standalone"
+}

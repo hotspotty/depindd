@@ -1,4 +1,8 @@
+import twoblox from "@/app/(docs)/(pages)/projects/2blox.json"
+import arkreen from "@/app/(docs)/(pages)/projects/arkreen.json"
 import dimo from "@/app/(docs)/(pages)/projects/dimo.json"
+import envirobloq from "@/app/(docs)/(pages)/projects/envirobloq.json"
+import geodnet from "@/app/(docs)/(pages)/projects/geodnet.json"
 import heliumIot from "@/app/(docs)/(pages)/projects/helium-iot.json"
 import heliumMobile from "@/app/(docs)/(pages)/projects/helium-mobile.json"
 import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
@@ -79,7 +83,7 @@ export interface ProjectInfo {
   lego: "data" | "sensors" | "servers" | "wireless" | "hardware"
   categories: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
-  blockchain: "solana" | "polygon"
+  blockchain: "solana" | "polygon" | "iotex" | "algorand"
   status: "development" | "production"
   logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`
   links: LinkItem[]
@@ -92,4 +96,8 @@ export const projects: ProjectInfo[] = [
   hivemapper as ProjectInfo,
   xnet as ProjectInfo,
   react as ProjectInfo,
+  arkreen as ProjectInfo,
+  twoblox as ProjectInfo,
+  envirobloq as ProjectInfo,
+  geodnet as ProjectInfo,
 ]

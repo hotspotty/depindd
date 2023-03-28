@@ -41,12 +41,13 @@ git push origin fix/some-bug-#123
 ## Adding a new DePIN project
 
 1. Come up with a slug for the project. This slug will act as the filename and id within the codebase. Let's say the project is called `Project X`, then you can go to [slugify.online](https://slugify.online/), enter `Project X` and press the `SLUGIFY` button so you get your slug: `project-x`
-2. Add an empty `project-x.md` file to [/src/app/(docs)/(pages)/projects](</src/app/(docs)/(pages)/projects>)
-3. Copy the [example json](</src/app/(docs)/(pages)/projects/_example_project.json>) file and rename it to `project-x.json`
-4. Add the project details to `project-x.json` using the [LEGO classification](https://depindd.com/about/depin-lego) and the [possible values](</src/app/(docs)/(data)/projects.ts>)
-5. Download the logo from the project's Twitter account and save it as `project-x.png` (or other extension) in [/public/images/projects](/public/images/projects)
-6. Add a link to that image to the `project-x.json` file
-7. Update [/app/(docs)/(data)/projects.ts](</src/app/(docs)/(data)/projects.ts>) to add the `project-x.json` data:
+2. Create a branch called `add-project/project-x`
+3. Add an empty `project-x.md` file to [/src/app/(docs)/(pages)/projects](</src/app/(docs)/(pages)/projects>)
+4. Copy the [example json](</src/app/(docs)/(pages)/projects/_example_project.json>) file and rename it to `project-x.json`
+5. Add the project details to `project-x.json` using the [LEGO classification](https://depindd.com/about/depin-lego) and the [possible values](</src/app/(docs)/(data)/projects.ts>)
+6. Download the logo from the project's Twitter account and save it as `project-x.png` (or other extension) in [/public/images/projects](/public/images/projects)
+7. Add a link to that image to the `project-x.json` file
+8. Update [/app/(docs)/(data)/projects.ts](</src/app/(docs)/(data)/projects.ts>) to add the `project-x.json` data:
 
 ```ts
 import projectX from "@/app/(docs)/(pages)/projects/project-x.json"
@@ -59,7 +60,7 @@ export const projects: ProjectInfo[] = [
 ]
 ```
 
-8. Add the `project-x` slug to the sidebar in the projects section of [/src/app/(docs)/config.sidebar.json](</src/app/(docs)/config.sidebar.json>)
+9. Add the `project-x` slug to the sidebar in the projects section of [/src/app/(docs)/config.sidebar.json](</src/app/(docs)/config.sidebar.json>). The order of projects should be alphabetically.
 
 ```ts
 [
@@ -69,14 +70,12 @@ export const projects: ProjectInfo[] = [
     "label": "Projects",
     "items": [
       ...,
-      "project-x"
+      "project-x", // Add in alphabetical order
+      ...
     ]
   }
 ]
 ```
 
-9. Run `pnpm build` to see if there are any errors
-10. Run `pnpm start` and browse to `http://localhost:3002` to see if `Project X` is listed correctly on the website
-11. Create a branch called `add-project/project-x`
-12. Push your changes to your forked repository
-13. Go to [github.com/hotspotty/depindd](https://github.com/hotspotty/depindd) in your web browser and issue a new pull request
+10. Push your changes to your forked repository
+11. Go to [github.com/hotspotty/depindd](https://github.com/hotspotty/depindd) in your web browser and issue a new pull request
