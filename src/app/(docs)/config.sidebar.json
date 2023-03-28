@@ -25,7 +25,11 @@
     "section": "projects",
     "label": "Projects",
     "items": [
+      "2blox",
+      "arkreen",
       "dimo",
+      "envirobloq",
+      "geodnet",
       "helium-iot",
       "helium-mobile",
       "hivemapper",
