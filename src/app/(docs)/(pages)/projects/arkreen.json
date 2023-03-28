@@ -4,9 +4,9 @@
   "miners": [],
   "scores": [],
   "lego": "sensors",
-  "categories": ["environmental"],
+  "categories": ["energy"],
   "token": "AKRE",
-  "blockchain": "Polygon",
+  "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/arkreen.jpeg",
   "links": [
