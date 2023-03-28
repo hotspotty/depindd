@@ -87,9 +87,12 @@ const Home: React.FC = () => {
 
           <Tab
             list={["Mine", "Host", "Invest", "Use"]}
-            panels={[
-              <div className="flex flex-col gap-4 md:flex-row" key={0}>
-                {MINE_ITEMS.map((item, index) => (
+            panels={Object.values(TAB_CONTENT).map((content, contentIndex) => (
+              <div
+                className="flex flex-col gap-4 sm:flex-row"
+                key={contentIndex}
+              >
+                {content.map((item, index) => (
                   <div
                     className="flex w-full flex-col rounded-xl border border-slate-200 p-4 dark:border-slate-800 dark:bg-slate-800 md:w-4/12"
                     key={index}
@@ -103,17 +106,8 @@ const Home: React.FC = () => {
                     </span>
                   </div>
                 ))}
-              </div>,
-              <div className="flex flex-col" key={1}>
-                <span>Host</span>
-              </div>,
-              <div className="flex flex-col" key={1}>
-                <span>Invest</span>
-              </div>,
-              <div className="flex flex-col" key={1}>
-                <span>Earn</span>
-              </div>,
-            ]}
+              </div>
+            ))}
           ></Tab>
         </div>
 
@@ -162,26 +156,93 @@ export default Home
 //
 // Utils
 //
-
-const MINE_ITEMS = [
-  {
-    title: "Find Project",
-    description:
-      "Explore DePIN projects and find the best one available to you",
-  },
-  {
-    title: "Purchase miner",
-    description:
-      "Compare miner options and make a purchase with your preferred decision",
-  },
-  {
-    title: "Install miner",
-    description:
-      "Receive the miner and install it optimally based on user guides",
-  },
-  {
-    title: "Earn rewards",
-    description:
-      "Get your return on investment by mining tokens with your miner",
-  },
-]
+const TAB_CONTENT = {
+  mine: [
+    {
+      title: "Find Project",
+      description:
+        "Explore DePIN projects and find the best one available to you",
+    },
+    {
+      title: "Purchase miner",
+      description:
+        "Compare miner options and make a purchase with your preferred decision",
+    },
+    {
+      title: "Install miner",
+      description:
+        "Receive the miner and install it optimally based on user guides",
+    },
+    {
+      title: "Earn rewards",
+      description:
+        "Get your return on investment by mining tokens with your miner",
+    },
+  ],
+  host: [
+    {
+      title: "Find Project",
+      description:
+        "Explore DePIN projects and find the best one available to you",
+    },
+    {
+      title: "Purchase miner",
+      description:
+        "Compare miner options and make a purchase with your preferred decision",
+    },
+    {
+      title: "Install miner",
+      description:
+        "Receive the miner and install it optimally based on user guides",
+    },
+    {
+      title: "Earn rewards",
+      description:
+        "Get your return on investment by mining tokens with your miner",
+    },
+  ],
+  invest: [
+    {
+      title: "Find Project",
+      description:
+        "Explore DePIN projects and find the best one available to you",
+    },
+    {
+      title: "Purchase miner",
+      description:
+        "Compare miner options and make a purchase with your preferred decision",
+    },
+    {
+      title: "Install miner",
+      description:
+        "Receive the miner and install it optimally based on user guides",
+    },
+    {
+      title: "Earn rewards",
+      description:
+        "Get your return on investment by mining tokens with your miner",
+    },
+  ],
+  use: [
+    {
+      title: "Find Project",
+      description:
+        "Explore DePIN projects and find the best one available to you",
+    },
+    {
+      title: "Purchase miner",
+      description:
+        "Compare miner options and make a purchase with your preferred decision",
+    },
+    {
+      title: "Install miner",
+      description:
+        "Receive the miner and install it optimally based on user guides",
+    },
+    {
+      title: "Earn rewards",
+      description:
+        "Get your return on investment by mining tokens with your miner",
+    },
+  ],
+}
