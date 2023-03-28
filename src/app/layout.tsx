@@ -37,6 +37,21 @@ export const metadata = {
       },
     ],
   },
+  openGraph: {
+    title: "DePIN DD by Hotspotty",
+    description: "Everything you need for Due Diligence on DePIN",
+    url: "https://depindd.com",
+    siteName: "DePIN DD",
+    images: [
+      {
+        url: "/og.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
 }
 
 const isProduction = process.env.NODE_ENV === "production"
