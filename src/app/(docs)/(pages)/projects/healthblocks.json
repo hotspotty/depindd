@@ -6,7 +6,7 @@
   "lego": "sensors",
   "categories": ["health care"],
   "token": "HEALTH",
-  "blockchain": "",
+  "blockchain": "iotex",
   "status": "production",
   "logo": "/images/projects/healthblocks.jpeg",
   "links": [
@@ -22,11 +22,17 @@
     { "type": "telegram", "url": "https://t.me/healthblocks" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/healthblocksio/" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/healthblocksio/"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://www.healthblocks.io/whitepapers/getting-started-in-digital-health" },
+    {
+      "type": "whitepaper",
+      "url": "https://www.healthblocks.io/whitepapers/getting-started-in-digital-health"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
