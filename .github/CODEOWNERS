@@ -1,0 +1,9 @@
+# These owners will be the default owners for everything in
+
+# the repo. Unless a later match takes precedence,
+
+# @mugoosse, @dansku and @danielzabotti will be requested for
+
+# review when someone opens a pull request.
+
+-       @mugoosse @dansku @danielzabotti
