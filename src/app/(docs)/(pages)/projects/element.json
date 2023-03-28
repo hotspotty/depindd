@@ -6,7 +6,7 @@
   "lego": "sensors",
   "categories": ["environmental"],
   "token": "IAQ",
-  "blockchain": "algorant",
+  "blockchain": "algorand",
   "status": "production",
   "logo": "/images/projects/element.jpeg",
   "links": [
