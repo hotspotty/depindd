@@ -26,8 +26,7 @@ interface GithubUser {
 
 export default async function ContributorsLeaderboard() {
   const req = await fetch(
-    "https://api.github.com/repos/hotspotty/depindd/contributors",
-    { cache: "no-cache" }
+    "https://api.github.com/repos/hotspotty/depindd/contributors"
   )
   const githubContributors = (await req.json()) as GithubUser[]
 
