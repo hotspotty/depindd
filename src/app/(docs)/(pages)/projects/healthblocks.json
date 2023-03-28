@@ -4,7 +4,7 @@
   "miners": [],
   "scores": [],
   "lego": "sensors",
-  "categories": ["health care"],
+  "categories": ["healthcare"],
   "token": "HEALTH",
   "blockchain": "iotex",
   "status": "production",
