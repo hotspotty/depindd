@@ -5,9 +5,6 @@ import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
 
-// TODO: add documentation for how to add a new project (including adding the json and markdown file, sidebar and logo)
-// TOOD: add prettier before commit
-
 interface Miner {
   name: string
   url: string
