@@ -1,7 +1,6 @@
 import { projects } from "@/app/(docs)/(data)/projects"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
-import clsx from "clsx"
 import Image from "next/image"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import { Icon } from "./(docs)/(components)/Icon"
@@ -19,7 +18,7 @@ const Home: React.FC = () => {
       <div className="w-full max-w-6xl px-4 sm:px-0">
         <div className="relative w-full">
           <Image
-            className="absolute -top-64 -right-64"
+            className="absolute -right-64 -top-64"
             src={blurCyanImage}
             alt=""
             width={530}
@@ -37,9 +36,9 @@ const Home: React.FC = () => {
             priority
           />
         </div>
-        <div className="mt-[45vh] mb-[40vh] flex flex-col items-center justify-center">
+        <div className="mb-[40vh] mt-[45vh] flex flex-col items-center justify-center">
           <Image
-            className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
+            className="absolute bottom-full right-full -mb-56 -mr-72 opacity-50"
             src={blurCyanImage}
             alt=""
             width={530}
@@ -74,7 +73,7 @@ const Home: React.FC = () => {
         <div className="flex w-full flex-col items-center justify-center">
           <div className="relative w-full">
             <Image
-              className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
+              className="absolute bottom-full right-full -mb-56 -mr-72 opacity-50"
               src={blurCyanImage}
               alt=""
               width={530}
@@ -114,7 +113,7 @@ const Home: React.FC = () => {
         <div className="my-40 flex w-full flex-col items-center justify-center">
           <div className="relative w-full">
             <Image
-              className="absolute -top-64 -right-64"
+              className="absolute -right-64 -top-64"
               src={blurCyanImage}
               alt=""
               width={530}
@@ -159,14 +158,14 @@ export default Home
 const TAB_CONTENT = {
   mine: [
     {
-      title: "Find Project",
+      title: "Analyse projects",
       description:
-        "Explore DePIN projects and find the best one available to you",
+        "Explore DePIN projects and make an informed investment decision",
     },
     {
       title: "Purchase miner",
       description:
-        "Compare miner options and make a purchase with your preferred decision",
+        "Compare miner options and make an optimal purchase decision",
     },
     {
       title: "Install miner",
@@ -181,68 +180,59 @@ const TAB_CONTENT = {
   ],
   host: [
     {
-      title: "Find Project",
-      description:
-        "Explore DePIN projects and find the best one available to you",
+      title: "Apply as host",
+      description: "Explore DePIN projects and apply for a host position",
     },
     {
-      title: "Purchase miner",
-      description:
-        "Compare miner options and make a purchase with your preferred decision",
+      title: "Get miner assigned",
+      description: "Enter the form to apply for a host position",
     },
     {
       title: "Install miner",
-      description:
-        "Receive the miner and install it optimally based on user guides",
+      description: "DePIN operator delivers and installs the miner",
     },
     {
       title: "Earn rewards",
-      description:
-        "Get your return on investment by mining tokens with your miner",
+      description: "Unlock passive income by mining tokens by hosting a miner",
     },
   ],
   invest: [
     {
-      title: "Find Project",
-      description:
-        "Explore DePIN projects and find the best one available to you",
+      title: "Explore projects",
+      description: "Explore DePIN projects based on your investor profile",
     },
     {
-      title: "Purchase miner",
-      description:
-        "Compare miner options and make a purchase with your preferred decision",
+      title: "Analyse leaderboards",
+      description: "Compare projects using data based on curated metrics",
     },
     {
-      title: "Install miner",
-      description:
-        "Receive the miner and install it optimally based on user guides",
+      title: "Buy tokens",
+      description: "Get early token exposure to promising projects",
     },
     {
       title: "Earn rewards",
-      description:
-        "Get your return on investment by mining tokens with your miner",
+      description: "Monitor your DePIN investment portfolio",
     },
   ],
   use: [
     {
-      title: "Find Project",
-      description:
-        "Explore DePIN projects and find the best one available to you",
+      title: "Explore projects",
+      description: "Explore DePIN projects in your field of interest",
     },
     {
-      title: "Purchase miner",
+      title: "Read case studies",
       description:
-        "Compare miner options and make a purchase with your preferred decision",
+        "Read success stories of DePIN networks with product market fit",
     },
     {
-      title: "Install miner",
+      title: "Evaluate opportunity",
       description:
-        "Receive the miner and install it optimally based on user guides",
+        "Find relevant DePIN network coverage using the map explorer",
     },
     {
-      title: "Earn rewards",
+      title: "Use and benefit",
       description:
-        "Get your return on investment by mining tokens with your miner",
+        "Benefit from better unit economics achieved by DePIN networks",
     },
   ],
 }
