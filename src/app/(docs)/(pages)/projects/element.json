@@ -32,7 +32,10 @@
     { "type": "tokenomics", "url": "https://elementdata.xyz/tokenomics" },
     { "type": "explorer", "url": "https://explorer.elementdata.xyz/" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://app.tinyman.org/#/analytics/assets/detail/923640017"
+    },
     { "type": "analytics", "url": "https://vestige.fi/asset/923640017" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

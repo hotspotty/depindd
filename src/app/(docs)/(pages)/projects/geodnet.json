@@ -35,7 +35,10 @@
     { "type": "tokenomics", "url": "https://geodnet.com/ecosystem.html" },
     { "type": "explorer", "url": "https://geodnet.com/ecosystem.html" },
     { "type": "shop", "url": "https://t.me/geodnet" },
-    { "type": "coingecko", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://coinmarketcap.com/currencies/geodnet/"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }
