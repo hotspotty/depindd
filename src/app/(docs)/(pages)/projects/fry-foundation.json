@@ -6,7 +6,7 @@
   "lego": "sensors",
   "categories": ["environmental"],
   "token": "FRY",
-  "blockchain": "algorant",
+  "blockchain": "algorand",
   "status": "production",
   "logo": "/images/projects/fry-foundation.jpeg",
   "links": [
@@ -24,9 +24,15 @@
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
-    { "type": "facebook", "url": "https://www.facebook.com/profile.php?id=100077880743385" },
+    {
+      "type": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=100077880743385"
+    },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://www.fryscryptoexcursions.com/whitepaper" },
+    {
+      "type": "whitepaper",
+      "url": "https://www.fryscryptoexcursions.com/whitepaper"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },

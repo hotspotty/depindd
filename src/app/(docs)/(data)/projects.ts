@@ -1,18 +1,18 @@
 import twoblox from "@/app/(docs)/(pages)/projects/2blox.json"
 import arkreen from "@/app/(docs)/(pages)/projects/arkreen.json"
 import dimo from "@/app/(docs)/(pages)/projects/dimo.json"
+import element from "@/app/(docs)/(pages)/projects/element.json"
 import envirobloq from "@/app/(docs)/(pages)/projects/envirobloq.json"
+import fryFoundation from "@/app/(docs)/(pages)/projects/fry-foundation.json"
 import geodnet from "@/app/(docs)/(pages)/projects/geodnet.json"
+import getdor from "@/app/(docs)/(pages)/projects/getdor.json"
+import greenPowerNetwork from "@/app/(docs)/(pages)/projects/green-power-network.json"
+import healthblocks from "@/app/(docs)/(pages)/projects/healthblocks.json"
 import heliumIot from "@/app/(docs)/(pages)/projects/helium-iot.json"
 import heliumMobile from "@/app/(docs)/(pages)/projects/helium-mobile.json"
 import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
-import element from "@/app/(docs)/(pages)/projects/element.json"
-import fryFoundation from "@/app/(docs)/(pages)/projects/fry-foundation.json"
-import getdor from "@/app/(docs)/(pages)/projects/getdor.json"
-import greenPowerNetwork from "@/app/(docs)/(pages)/projects/green-power-network.json"
-import healthblocks from "@/app/(docs)/(pages)/projects/healthblocks.json"
 
 interface Miner {
   name: string
@@ -80,6 +80,14 @@ export type Category =
   | "VPN"
   | "manufacturer"
 
+type Blockchain =
+  | "solana"
+  | "polygon"
+  | "iotex"
+  | "algorand"
+  | "bsc"
+  | "hypergraph"
+
 export interface ProjectInfo {
   slug: string // Project filename
   title: string
@@ -88,7 +96,7 @@ export interface ProjectInfo {
   lego: "data" | "sensors" | "servers" | "wireless" | "hardware"
   categories: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
-  blockchain: "solana" | "polygon" | "iotex" | "algorand"
+  blockchain: Blockchain
   status: "development" | "production"
   logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`
   links: LinkItem[]
