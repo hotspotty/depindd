@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             priority
           />
         </div>
-        <div className="mb-[40vh] mt-[45vh] flex flex-col items-center justify-center">
+        <div className="flex h-[100vh] flex-col items-center justify-center">
           <Image
             className="absolute bottom-full right-full -mb-56 -mr-72 opacity-50"
             src={blurCyanImage}
