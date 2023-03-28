@@ -1,0 +1,43 @@
+{
+  "slug": "element",
+  "title": "Element",
+  "miners": [],
+  "scores": [],
+  "lego": "sensors",
+  "categories": ["environmental"],
+  "token": "IAQ",
+  "blockchain": "algorand",
+  "status": "production",
+  "logo": "/images/projects/element.jpeg",
+  "links": [
+    { "type": "website", "url": "https://elementdata.xyz/" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/data_element" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.gg/ReZxN5W9Jw" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "https://elementdata.xyz/tokenomics" },
+    { "type": "explorer", "url": "https://explorer.elementdata.xyz/" },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://app.tinyman.org/#/analytics/assets/detail/923640017"
+    },
+    { "type": "analytics", "url": "https://vestige.fi/asset/923640017" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}

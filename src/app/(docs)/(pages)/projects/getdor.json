@@ -1,0 +1,46 @@
+{
+  "slug": "getdor",
+  "title": "Getdor",
+  "miners": [],
+  "scores": [],
+  "lego": "sensors",
+  "categories": ["smart home"],
+  "token": "DAG",
+  "blockchain": "hypergraph",
+  "status": "production",
+  "logo": "/images/projects/getdor.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.getdor.com/" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://www.getdor.com/blog/" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/dortechnologies" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "https://www.instagram.com/getdor/" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/dor-technologies"
+    },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "https://www.facebook.com/getdor" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "https://www.getdor.com/pricing" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/constellation"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
