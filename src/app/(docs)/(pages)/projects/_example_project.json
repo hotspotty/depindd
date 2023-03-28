@@ -8,7 +8,7 @@
   "token": "",
   "blockchain": "",
   "status": "development",
-  "logo": "/images/projects/<id>.jpeg",
+  "logo": "/images/projects/<slug>.jpeg",
   "links": [
     { "type": "website", "url": "" },
     { "type": "foundation", "url": "" },
