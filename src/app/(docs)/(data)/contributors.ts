@@ -50,4 +50,14 @@ export const contributors: ContributorInfo[] = [
     companyWebsite: "https://iotex.io",
     twitter: "dr_andrewlaw",
   },
+  {
+    githubHandle: "richhomiecon",
+    name: "Connor Lovely",
+    twitter: "RichhomieconE",
+  },
+  {
+    githubHandle: "hugolehelley",
+    name: "Hugo Le Helley",
+    twitter: "hlehelley65",
+  },
 ]
