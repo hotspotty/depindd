@@ -39,34 +39,37 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
       </div>
 
       <div className="relative flex flex-grow basis-0 justify-center lg:justify-start">
-        <Link href="/" aria-label="Home page">
-          <div className="flex items-center gap-3">
-            <Icon
-              icon="logo"
-              className={clsx(
-                isScrolled ? "opacity-100" : "opacity-0",
-                "h-8 w-8 text-transparent transition-opacity duration-500 ease-in"
-              )}
-            />
+        <div
+          onClick={() => {
+            window.location.href = "/"
+          }}
+          className="flex items-center gap-3"
+        >
+          <Icon
+            icon="logo"
+            className={clsx(
+              isScrolled ? "opacity-100" : "opacity-0",
+              "h-8 w-8 text-transparent transition-opacity duration-500 ease-in"
+            )}
+          />
 
-            <p
-              className={clsx(
-                isScrolled ? "opacity-100" : "opacity-0",
-                "bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-2xl font-extrabold tracking-tight text-slate-900 text-transparent transition-opacity duration-500 ease-in"
-              )}
-            >
-              DePIN DD
-            </p>
-            <div
-              className={clsx(
-                isScrolled ? "opacity-100" : "opacity-0",
-                "-mb-2 inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-mono text-xs font-light tracking-tight text-slate-900 text-transparent transition-opacity duration-500 ease-in"
-              )}
-            >
-              by Hotspotty
-            </div>
+          <p
+            className={clsx(
+              isScrolled ? "opacity-100" : "opacity-0",
+              "bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-2xl font-extrabold tracking-tight text-slate-900 text-transparent transition-opacity duration-500 ease-in"
+            )}
+          >
+            DePIN DD
+          </p>
+          <div
+            className={clsx(
+              isScrolled ? "opacity-100" : "opacity-0",
+              "-mb-2 inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-mono text-xs font-light tracking-tight text-slate-900 text-transparent transition-opacity duration-500 ease-in"
+            )}
+          >
+            by Hotspotty
           </div>
-        </Link>
+        </div>
       </div>
 
       <div className="-my-5 mr-4 sm:mr-8 md:mr-0">
