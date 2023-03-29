@@ -39,7 +39,8 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
       </div>
 
       <div className="relative flex flex-grow basis-0 justify-center lg:justify-start">
-        <div
+        <a
+          href="/"
           onClick={() => {
             window.location.href = "/"
           }}
@@ -69,7 +70,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
           >
             by Hotspotty
           </div>
-        </div>
+        </a>
       </div>
 
       <div className="-my-5 mr-4 sm:mr-8 md:mr-0">
