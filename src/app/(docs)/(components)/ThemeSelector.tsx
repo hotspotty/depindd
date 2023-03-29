@@ -2,17 +2,6 @@
 
 import { useCallback } from "react"
 
-interface Theme {
-  name: string
-  value: string
-  icon: any
-}
-
-const themes: Theme[] = [
-  { name: "Light", value: "light", icon: LightIcon },
-  { name: "Dark", value: "dark", icon: DarkIcon },
-]
-
 function LightIcon(props: any) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
@@ -32,18 +21,6 @@ function DarkIcon(props: any) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
-      />
-    </svg>
-  )
-}
-
-function SystemIcon(props: any) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M1 4a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-1.5l.31 1.242c.084.333.36.573.63.808.091.08.182.158.264.24A1 1 0 0 1 11 15H5a1 1 0 0 1-.704-1.71c.082-.082.173-.16.264-.24.27-.235.546-.475.63-.808L5.5 11H4a3 3 0 0 1-3-3V4Zm3-1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
       />
     </svg>
   )
