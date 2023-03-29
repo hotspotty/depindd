@@ -9,11 +9,12 @@
     "label": "Leaderboards",
     "items": [
       "miner-payback-time",
+      "blockchains",
+      "investors",
+      "contributors",
       "governance-score",
       "tokenomics-score",
-      "ease-of-mining-score",
-      "investors",
-      "contributors"
+      "ease-of-mining-score"
     ]
   },
   {
