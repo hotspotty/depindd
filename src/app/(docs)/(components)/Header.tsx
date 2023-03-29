@@ -103,7 +103,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-6  sm:gap-8">
+        <div className="flex items-center gap-6 sm:gap-4">
           <ThemeSelector className="relative z-10" />
           <Link
             href="https://github.com/hotspotty/depindd"

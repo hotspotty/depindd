@@ -7,13 +7,7 @@ import { Fragment } from "react"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
 import { Icon } from "./Icon"
-
-const tabs = [
-  { name: "Miner payback time", isActive: true },
-  { name: "Governance score", isActive: false },
-  { name: "Tokenomics score", isActive: false },
-  { name: "Ease of mining score", isActive: false },
-]
+import Tab from "./Tab"
 
 export function Hero() {
   return (
@@ -90,50 +84,46 @@ export function Hero() {
                   <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-white">
                     TOP 3
                   </h3>
-                  <div className="mt-4 flex space-x-2 text-xs">
-                    {tabs.map((tab) => (
+
+                  <Tab
+                    listContentClsx="my-0 gap-2 items-center justify-start w-full"
+                    tabClsx={{
+                      active:
+                        "rounded-full bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px text-sky-300",
+                      inactive: "text-slate-400 rounded-full p-px",
+                      textActive:
+                        "bg-slate-800 rounded-full px-2 py-0.5 text-xs",
+                      textInactive: "px-2 py-0.5 text-xs",
+                    }}
+                    list={tabs}
+                    panels={Object.values(panels).map((item, index) => (
                       <div
-                        key={tab.name}
-                        className={clsx(
-                          "flex h-6 rounded-full",
-                          tab.isActive
-                            ? "bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300"
-                            : "text-slate-500"
-                        )}
+                        className="mt-6 flex w-full items-start px-1 text-sm"
+                        key={index}
                       >
                         <div
-                          className={clsx(
-                            "flex items-center rounded-full px-2.5",
-                            tab.isActive && "bg-slate-800"
-                          )}
+                          aria-hidden="true"
+                          className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-300"
                         >
-                          {tab.name}
+                          {Array.from({
+                            length: item.length,
+                          }).map((_, index) => (
+                            <Fragment key={index}>
+                              {index + 1}
+                              <br />
+                            </Fragment>
+                          ))}
                         </div>
+                        <pre className="flex overflow-x-auto pb-6">
+                          <code className="px-4 text-slate-300">
+                            {item.map((project) => (
+                              <div key={project}>{project}</div>
+                            ))}
+                          </code>
+                        </pre>
                       </div>
                     ))}
-                  </div>
-                  <div className="mt-6 flex items-start px-1 text-sm">
-                    <div
-                      aria-hidden="true"
-                      className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-300"
-                    >
-                      {Array.from({
-                        length: 3,
-                      }).map((_, index) => (
-                        <Fragment key={index}>
-                          {index + 1}
-                          <br />
-                        </Fragment>
-                      ))}
-                    </div>
-                    <pre className="flex overflow-x-auto pb-6">
-                      <code className="px-4 text-slate-300">
-                        <div>DIMO: x months</div>
-                        <div>Hivemapper: y months</div>
-                        <div>Helium 5G: z months</div>
-                      </code>
-                    </pre>
-                  </div>
+                  ></Tab>
                 </div>
               </div>
             </div>
@@ -142,4 +132,34 @@ export function Hero() {
       </div>
     </div>
   )
+}
+
+//
+// Utils
+//
+
+const tabs = [
+  "Miner payback time",
+  "Governance score",
+  "Tokenomics score",
+  "Ease of mining score",
+]
+
+const panels = {
+  "Miner payback time": [
+    "DIMO: x months",
+    "Hivemapper: y months",
+    "Helium 5G: z months",
+  ],
+  "Governance score": [
+    "Hivemapper: y months",
+    "DIMO: x mont",
+    "Helium 5G: z months",
+  ],
+  "Tokenomics score": ["hs", "Hivemapper: y months", "Helium 5G: z months"],
+  "Ease of mining score": [
+    "Xnet",
+    "Hivemapper: y months",
+    "Helium 5G: z months",
+  ],
 }

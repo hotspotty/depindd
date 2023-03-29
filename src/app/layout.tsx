@@ -61,7 +61,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
     <html
       className="dark antialiased [font-feature-settings:'ss01']"
       lang="en"
-      data-theme="system"
+      data-theme="dark"
     >
       <body className="bg-white dark:bg-slate-900">
         {children}
