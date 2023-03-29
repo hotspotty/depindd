@@ -51,7 +51,8 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     token: { type: "string" },
     blockchain: {
       type: "string",
-      pattern: "(?:solana|polygon|iotex|algorand|bsc|hypergraph)",
+      pattern:
+        "(?:solana|polygon|iotex|algorand|bsc|hypergraph|kadena|cardano)",
     },
     status: { type: "string", pattern: "(?:development|production)" },
     logo: { type: "string" },
