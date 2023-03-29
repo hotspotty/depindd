@@ -13,6 +13,9 @@ import heliumMobile from "@/app/(docs)/(pages)/projects/helium-mobile.json"
 import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
+import crankk from "@/app/(docs)/(pages)/projects/crankk.json"
+import mapmetrics from "@/app/(docs)/(pages)/projects/mapmetrics.json"
+import planetwatch from "@/app/(docs)/(pages)/projects/planetwatch.json"
 
 interface Miner {
   name: string
@@ -120,4 +123,7 @@ export const projects: ProjectInfo[] = [
   getdor as ProjectInfo,
   greenPowerNetwork as ProjectInfo,
   healthblocks as ProjectInfo,
+  crankk as ProjectInfo,
+  mapmetrics as ProjectInfo,
+  planetwatch as ProjectInfo,
 ]
