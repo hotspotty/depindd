@@ -1,3 +1,13 @@
+export type Blockchain =
+  | "solana"
+  | "polygon"
+  | "iotex"
+  | "algorand"
+  | "bsc"
+  | "hypergraph"
+  | "kadena"
+  | "cardano"
+
 export const blockchainInfo = {
   solana: {
     name: "Solana",
@@ -34,5 +44,17 @@ export const blockchainInfo = {
     token: "DAG",
     website: "https://constellationnetwork.io/hypergraph",
     coingecko: "https://www.coingecko.com/en/coins/constellation",
+  },
+  kadena: {
+    name: "Kadena",
+    token: "KDA",
+    website: "https://kadena.io",
+    coingecko: "https://www.coingecko.com/en/coins/kadena",
+  },
+  cardano: {
+    name: "Cardano",
+    token: "ADA",
+    website: "https://cardano.org",
+    coingecko: "https://www.coingecko.com/en/coins/cardano",
   },
 }
