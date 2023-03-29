@@ -80,7 +80,7 @@ export type Category =
   | "VPN"
   | "manufacturer"
 
-type Blockchain =
+export type Blockchain =
   | "solana"
   | "polygon"
   | "iotex"
@@ -88,12 +88,14 @@ type Blockchain =
   | "bsc"
   | "hypergraph"
 
+export type Lego = "data" | "sensors" | "servers" | "wireless" | "hardware"
+
 export interface ProjectInfo {
   slug: string // Project filename
   title: string
   miners: Miner[]
   scores: Score[]
-  lego: "data" | "sensors" | "servers" | "wireless" | "hardware"
+  lego: Lego
   categories: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: Blockchain

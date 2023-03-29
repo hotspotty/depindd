@@ -8,12 +8,13 @@
     "section": "leaderboards",
     "label": "Leaderboards",
     "items": [
+      "blockchains",
+      "investors",
+      "contributors",
       "miner-payback-time",
       "governance-score",
       "tokenomics-score",
-      "ease-of-mining-score",
-      "investors",
-      "contributors"
+      "ease-of-mining-score"
     ]
   },
   {
