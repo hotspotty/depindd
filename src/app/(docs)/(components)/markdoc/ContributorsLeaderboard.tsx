@@ -43,9 +43,9 @@ export default async function ContributorsLeaderboard() {
       company: item.company,
       companyWebsite: item.companyWebsite,
       links: getLinksMarkdowntext(
-        [{ title: "Twitter", url: item.twitter }].filter(
-          (x) => x.url != null
-        ) as { title: string; url: string }[]
+        [
+          { title: "Twitter", url: `https://twitter.com/${item.twitter}` },
+        ].filter((x) => x.url != null) as { title: string; url: string }[]
       ),
       contributions: githubUser?.contributions || 0,
     }
