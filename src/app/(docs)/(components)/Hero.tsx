@@ -1,6 +1,5 @@
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
-import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
 import { Fragment } from "react"
@@ -12,11 +11,11 @@ import Tab from "./Tab"
 export function Hero() {
   return (
     <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]">
-      <div className="py-16 sm:px-2 lg:relative lg:py-20 lg:px-0">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
+      <div className="py-16 sm:px-2 lg:relative lg:px-0 lg:py-20">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
           <div className="relative z-10 md:text-center lg:text-left">
             <Image
-              className="absolute bottom-full right-full -mr-72 -mb-56 opacity-50"
+              className="absolute bottom-full right-full -mb-56 -mr-72 opacity-50"
               src={blurCyanImage}
               alt=""
               width={530}
@@ -53,12 +52,12 @@ export function Hero() {
             </div>
           </div>
           <div className="relative lg:static xl:pl-10">
-            <div className="absolute inset-x-[-50vw] -top-32 -bottom-48 [mask-image:linear-gradient(transparent,white,white)] dark:[mask-image:linear-gradient(transparent,white,transparent)] lg:left-[calc(50%+14rem)] lg:right-0 lg:-top-32 lg:-bottom-32 lg:[mask-image:none] lg:dark:[mask-image:linear-gradient(white,white,transparent)]">
-              <HeroBackground className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 lg:translate-y-[-60%]" />
+            <div className="absolute inset-x-[-50vw] -bottom-48 -top-32 [mask-image:linear-gradient(transparent,white,white)] dark:[mask-image:linear-gradient(transparent,white,transparent)] lg:-bottom-32 lg:-top-32 lg:left-[calc(50%+14rem)] lg:right-0 lg:[mask-image:none] lg:dark:[mask-image:linear-gradient(white,white,transparent)]">
+              <HeroBackground className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:translate-x-0 lg:translate-y-[-60%]" />
             </div>
             <div className="relative">
               <Image
-                className="absolute -top-64 -right-64"
+                className="absolute -right-64 -top-64"
                 src={blurCyanImage}
                 alt=""
                 width={530}
@@ -86,7 +85,7 @@ export function Hero() {
                   </h3>
 
                   <Tab
-                    listContentClsx="my-0 gap-2 items-center justify-start w-full"
+                    listContentClsx="!my-0 gap-2 items-center justify-start w-full"
                     tabClsx={{
                       active:
                         "rounded-full bg-gradient-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px text-sky-300",
@@ -98,7 +97,7 @@ export function Hero() {
                     list={tabs}
                     panels={Object.values(panels).map((item, index) => (
                       <div
-                        className="mt-6 flex w-full items-start px-1 text-sm"
+                        className="mt-2 flex w-full items-start px-1 text-sm"
                         key={index}
                       >
                         <div
