@@ -1,0 +1,43 @@
+{
+  "slug": "mapmetrics",
+  "title": "MapMetrics",
+  "miners": [],
+  "scores": [],
+  "lego": "sensors",
+  "categories": ["mobility"],
+  "token": "MMaps",
+  "blockchain": "solana",
+  "status": "production",
+  "logo": "/images/projects/mapmetrics.jpeg",
+  "links": [
+    { "type": "website", "url": "https://mapmetrics.org/" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://mapmetrics.org/blog/" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/MapMetrics" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/MapMetrics_official/" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/TPHxHAUYpx" },
+    { "type": "telegram", "url": "https://t.me/+kO_C7hMc6C40YjA8" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCKXw4f25P0MtR2oGiXqA0XQ" },
+    { "type": "instagram", "url": "" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/mapmetrics"
+    },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "https://www.facebook.com/MapMetrics" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "https://mapmetrics.org/white-paper/" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "https://techticsengineering.com/shop/?_ga=2.224141659.1341014961.1679919059-1931404328.1679919059&_gl=1*398lww*_ga*MTkzMTQwNDMyOC4xNjc5OTE5MDU5*_ga_YLG4NY25T8*MTY3OTkxOTA1OC4xLjEuMTY3OTkxOTE5Ni41Ni4wLjA." },
+    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/mapmetrics" },
+    { "type": "analytics", "url": "https://explorer.bitquery.io/bsc/token/0xeadad730701d02b28c73888448bdaceb7566bc5f" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
