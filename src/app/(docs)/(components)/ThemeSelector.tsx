@@ -1,8 +1,6 @@
 "use client"
 
-import { Listbox } from "@headlessui/react"
-import clsx from "clsx"
-import { useCallback, useEffect, useState } from "react"
+import { useCallback } from "react"
 
 interface Theme {
   name: string
