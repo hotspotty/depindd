@@ -55,6 +55,6 @@
     "ts-node": "10.9.1"
   },
   "lint-staged": {
-    "*.{ts,tsx,json,css,md}": "prettier --write"
+    "*.{js,ts,tsx,json,css,md}": "prettier --write"
   }
 }
