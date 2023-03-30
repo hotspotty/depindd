@@ -2,6 +2,8 @@
 title: Miner payback time
 ---
 
+{% miner-payback-time-leaderboard / %}
+
 ## About
 
 The **Miner Payback Time** is the approximate amount of time (in months) that the average hardware miner deployed today on its applicable DePIN network would take to pay itself off. Said another way, the point in time at which:

@@ -145,6 +145,19 @@ export function NumberCell({ value }: { value: number }) {
   return <div>{formatNumber(value)}</div>
 }
 
+export function CurrencyCell({ value }: { value: number }) {
+  return (
+    <div>
+      {value.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      })}
+    </div>
+  )
+}
+
 function Table({
   columns,
   data,

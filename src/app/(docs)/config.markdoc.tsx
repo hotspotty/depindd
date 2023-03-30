@@ -9,6 +9,7 @@ import BlockchainsLeaderboard from "./(components)/markdoc/BlockchainsLeaderboar
 import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderboard"
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
 import LegoCategoryProjects from "./(components)/markdoc/LegoCategoryProjects"
+import MinerPaybackTimeLeaderboard from "./(components)/markdoc/MinerPaybackTimeLeaderboard"
 import ScoreLeaderboard from "./(components)/markdoc/ScoreLeaderboard"
 import Scores from "./(components)/markdoc/Scores"
 import TwitterLeaderboard from "./(components)/markdoc/TwitterLeaderboard"
@@ -71,6 +72,10 @@ const config: Config = {
     },
     "twitter-leaderboard": {
       render: "TwitterLeaderboard",
+      selfClosing: true,
+    },
+    "miner-payback-time-leaderboard": {
+      render: "MinerPaybackTimeLeaderboard",
       selfClosing: true,
     },
     figure: {
@@ -144,6 +149,7 @@ const components = {
   ContributorsLeaderboard: ContributorsLeaderboard,
   BlockchainsLeaderboard: BlockchainsLeaderboard,
   TwitterLeaderboard: TwitterLeaderboard,
+  MinerPaybackTimeLeaderboard: MinerPaybackTimeLeaderboard,
   InternalLink: ({ href, title }: { href: string; title: string }) => (
     <Link href={href}>{title}</Link>
   ),
