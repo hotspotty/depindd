@@ -42,7 +42,7 @@ export function Hero() {
                 Everything you need for <b>Due Diligence</b> on <b>DePIN</b>
               </p>
               <div className="mt-6 flex gap-4 sm:mt-10 md:justify-center lg:justify-start">
-                <HeroButton href="/leaderboards/miner-payback-time">
+                <HeroButton href="/leaderboards/miner-profitability">
                   Get started
                 </HeroButton>
                 <HeroButton href="/about/depindd" variant="secondary">
@@ -135,7 +135,7 @@ export function Hero() {
 //
 
 const tabs = [
-  "Miner payback time",
+  "Miner profitability",
   "Governance score",
   "Tokenomics score",
   "Ease of mining score",

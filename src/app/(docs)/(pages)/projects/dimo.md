@@ -62,7 +62,7 @@ Calculation for 2023: 4,420,000 DIMO tokens issued per month (baseline issuance)
 
 There is currently only one hardware device available, from [DIMO x AutoPi](https://shop.dimo.zone/products/dimo-data-device?title=default%2520title). This price was used for average miner price.
 
-Note: software (app-only, generally free) connections are available for more modern cars. Check compatibility [here](https://explorer.dimo.zone/vehicles). Software connections significantly decrease payback period due to their reduced cost.
+Note: software (app-only, generally free) connections are available for more modern cars. Check compatibility [here](https://explorer.dimo.zone/vehicles). Software connections significantly decrease payback time due to their reduced cost.
 
 ### Payback period
 

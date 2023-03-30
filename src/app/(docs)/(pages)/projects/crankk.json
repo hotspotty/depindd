@@ -1,0 +1,49 @@
+{
+  "slug": "crankk",
+  "title": "Crankk",
+  "miners": [],
+  "scores": [],
+  "lego": "wireless",
+  "categories": ["connectivity"],
+  "token": "Crankk",
+  "blockchain": "kadena",
+  "status": "development",
+  "logo": "/images/projects/crankk.jpeg",
+  "links": [
+    { "type": "website", "url": "https://crankk.io/" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    {
+      "type": "medium",
+      "url": "https://alviso.medium.com/crankk-io-a-helium-like-crypto-network-on-kadena-25893cf32caa"
+    },
+    { "type": "twitter", "url": "https://twitter.com/IoCrankk" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.gg/vkFBbbvDqB" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    {
+      "type": "linkedin",
+      "url": ""
+    },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/alviso" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "https://crankk.io/#tokenomics" },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "" },
+    { "type": "coingecko", "url": "" },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    {
+      "type": "other",
+      "url": "https://alviso.medium.com/crankk-io-a-helium-like-crypto-network-on-kadena-25893cf32caa"
+    }
+  ]
+}

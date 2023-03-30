@@ -1,5 +1,6 @@
 import twoblox from "@/app/(docs)/(pages)/projects/2blox.json"
 import arkreen from "@/app/(docs)/(pages)/projects/arkreen.json"
+import crankk from "@/app/(docs)/(pages)/projects/crankk.json"
 import dimo from "@/app/(docs)/(pages)/projects/dimo.json"
 import element from "@/app/(docs)/(pages)/projects/element.json"
 import envirobloq from "@/app/(docs)/(pages)/projects/envirobloq.json"
@@ -11,8 +12,11 @@ import healthblocks from "@/app/(docs)/(pages)/projects/healthblocks.json"
 import heliumIot from "@/app/(docs)/(pages)/projects/helium-iot.json"
 import heliumMobile from "@/app/(docs)/(pages)/projects/helium-mobile.json"
 import hivemapper from "@/app/(docs)/(pages)/projects/hivemapper.json"
+import mapmetrics from "@/app/(docs)/(pages)/projects/mapmetrics.json"
+import planetwatch from "@/app/(docs)/(pages)/projects/planetwatch.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
+import { Blockchain } from "./blockchains"
 
 interface Miner {
   name: string
@@ -80,14 +84,6 @@ export type Category =
   | "VPN"
   | "manufacturer"
 
-export type Blockchain =
-  | "solana"
-  | "polygon"
-  | "iotex"
-  | "algorand"
-  | "bsc"
-  | "hypergraph"
-
 export type Lego = "data" | "sensors" | "servers" | "wireless" | "hardware"
 
 export interface ProjectInfo {
@@ -120,4 +116,7 @@ export const projects: ProjectInfo[] = [
   getdor as ProjectInfo,
   greenPowerNetwork as ProjectInfo,
   healthblocks as ProjectInfo,
+  crankk as ProjectInfo,
+  mapmetrics as ProjectInfo,
+  planetwatch as ProjectInfo,
 ]

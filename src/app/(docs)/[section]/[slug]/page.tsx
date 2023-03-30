@@ -9,6 +9,7 @@ import Markdoc from "@markdoc/markdoc"
 import slugify from "@sindresorhus/slugify"
 import { glob } from "glob"
 import { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import path from "path"
 import React from "react"
@@ -98,16 +99,32 @@ export default function Page({ params }: PageProps) {
   return (
     <div className="flex-1">
       <div className="flex">
-        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
           <article>
             <header className="mb-9 space-y-1">
-              <p className="font-display text-sm font-medium text-sky-500">
-                {section?.label}
-              </p>
-              <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                {projectInfo?.title || title}
-              </h1>
-              <Labels labels={labels} />
+              <div className="flex items-center gap-x-6">
+                {projectInfo?.logo && (
+                  <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
+                    <Image
+                      className="h-16 w-16 rounded-full"
+                      width={64}
+                      height={64}
+                      src={projectInfo.logo}
+                      alt={title}
+                    />
+                  </div>
+                )}
+                <div>
+                  <p className="font-display text-sm font-medium text-sky-500">
+                    {section?.label}
+                  </p>
+                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                    {projectInfo?.title || title}
+                  </h1>
+                  <Labels labels={labels} />
+                </div>
+              </div>
+
               <Links className="!mt-6" links={links} />
             </header>
             <Prose>

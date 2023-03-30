@@ -83,7 +83,7 @@ export default function Header({ sidebar }: { sidebar: SidebarSection[] }) {
             <li>
               <Link
                 className="hover:text-sky-500 dark:hover:text-sky-400"
-                href="/leaderboards/miner-payback-time"
+                href="/leaderboards/miner-profitability"
               >
                 Networks
               </Link>
