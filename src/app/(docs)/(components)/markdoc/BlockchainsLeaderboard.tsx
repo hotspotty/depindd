@@ -11,6 +11,7 @@ export default async function BlockchainsLeaderboard() {
           name: string
           website: string
           token: string
+          imagePath: string
           coingecko: string
           legos: Lego[]
           legosCount: number
@@ -25,7 +26,8 @@ export default async function BlockchainsLeaderboard() {
           projects: 1,
           name: blockchainInfo[blockchain].name,
           website: blockchainInfo[blockchain].website,
-          token: blockchainInfo[blockchain].token,
+          imagePath: blockchainInfo[blockchain].logo,
+          token: `$${blockchainInfo[blockchain].token}`,
           coingecko: blockchainInfo[blockchain].coingecko,
           legos: [lego],
           legosCount: 1,
@@ -63,13 +65,10 @@ export default async function BlockchainsLeaderboard() {
       Cell: LinkCell,
       hrefAccessor: "website",
       linkTarget: "_blank",
-    },
-    {
-      Header: "Token",
-      accessor: "token",
-      Cell: LinkCell,
-      hrefAccessor: "coingecko",
-      linkTarget: "_blank",
+      imageAccessor: "imagePath",
+      secondLinkTitleAccessor: "token",
+      secondLinkHrefAccessor: "coingecko",
+      secondLinkTarget: "_blank",
     },
     {
       Header: "LEGOs",
@@ -80,7 +79,7 @@ export default async function BlockchainsLeaderboard() {
       accessor: "categoriesCount",
     },
     {
-      Header: "Projects",
+      Header: "DePIN projects",
       accessor: "projects",
     },
   ]
