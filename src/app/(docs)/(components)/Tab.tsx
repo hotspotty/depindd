@@ -50,7 +50,7 @@ const Tab: React.FC<Props> = ({
             ))}
           </select>
 
-          <div className="hidden sm:flex">
+          <div className="hidden overflow-x-auto sm:flex">
             {list.map((item, index) => (
               <span
                 className={clsx(
@@ -67,7 +67,8 @@ const Tab: React.FC<Props> = ({
                 <span
                   className={clsx(
                     selectedIndex === index && tabClsx?.textActive,
-                    tabClsx?.textInactive
+                    tabClsx?.textInactive,
+                    "whitespace-nowrap"
                   )}
                 >
                   {item}
