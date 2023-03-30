@@ -1,6 +1,6 @@
 import { investors } from "../../(data)/investors"
 import { getLinksMarkdowntext } from "../Links"
-import Table, { LinkCell, LinksCell } from "../Table"
+import Table, { LinkCell, LinksCell, ProjectsCell } from "../Table"
 
 export default function InvestorsLeaderboard() {
   const data = investors.map((investor) => {
@@ -17,6 +17,7 @@ export default function InvestorsLeaderboard() {
         ) as { title: string; url: string }[]
       ),
       investmentsCount: investor.investments.length,
+      projectSlugs: investor.investments.join(","),
     }
   })
 
@@ -38,8 +39,13 @@ export default function InvestorsLeaderboard() {
       Cell: LinksCell,
     },
     {
-      Header: "DePIN Investments",
-      accessor: "investmentsCount", // TODO: add links to investments
+      Header: "Projects",
+      accessor: "projectSlugs",
+      Cell: ProjectsCell,
+    },
+    {
+      Header: "Investments",
+      accessor: "investmentsCount",
     },
   ]
 

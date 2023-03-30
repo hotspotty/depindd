@@ -23,6 +23,7 @@ import {
   useTable,
   UseTableInstanceProps,
 } from "react-table"
+import { projects } from "../(data)/projects"
 import SortDownIcon from "./icons/SortDownIcon"
 import SortIcon from "./icons/SortIcon"
 import SortUpIcon from "./icons/SortUpIcon"
@@ -112,6 +113,42 @@ export function SelectColumnFilter({
           </option>
         ))}
       </select>
+    </div>
+  )
+}
+
+export function ProjectsCell({ value }) {
+  const projectSlugs = value.split(",")
+  const projectsCount = projectSlugs.length
+
+  if (projectsCount === 0) return null
+
+  return (
+    <div className="isolate flex -space-x-4 overflow-hidden">
+      {projectSlugs.map((slug, index) => {
+        const projectInfo = projects.find((project) => project.slug === slug)
+        if (!projectInfo) return
+
+        const zIndexClass = `z-${(projectsCount - index) * 10}`
+
+        return (
+          <Link
+            key={slug}
+            href={`/projects/${slug}`}
+            className="group inline-block !shadow-none"
+          >
+            <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0 group-hover:dark:bg-slate-600">
+              <Image
+                className="h-8 w-8 rounded-full"
+                width={32}
+                height={32}
+                src={projectInfo.logo}
+                alt={projectInfo.title}
+              />
+            </div>
+          </Link>
+        )
+      })}
     </div>
   )
 }
@@ -324,7 +361,7 @@ function Table({
                         return (
                           <td
                             {...cell.getCellProps()}
-                            className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-white first:sm:pl-0 last:sm:pr-0"
+                            className="whitespace-nowrap py-4 pl-4 pr-3 align-middle text-sm font-medium text-white first:sm:pl-0 last:sm:pr-0"
                             role="cell"
                             key={j}
                           >
