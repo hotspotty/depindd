@@ -65,7 +65,7 @@ function PaginationGroupButton({
     <button
       type="button"
       className={clsx(
-        "text-tale-400 relative inline-flex items-center border-0 bg-white/5 py-1.5 px-3 text-sm font-medium ring-1 ring-inset ring-white/10 placeholder:text-gray-500 hover:bg-white/10 focus:ring-2 focus:ring-sky-600 sm:text-sm sm:leading-6",
+        "text-tale-400 relative inline-flex items-center border-0 bg-white/5 px-3 py-1.5 text-sm font-medium ring-1 ring-inset ring-white/10 placeholder:text-gray-500 hover:bg-white/10 focus:ring-2 focus:ring-sky-600 sm:text-sm sm:leading-6",
         className
       )}
       {...rest}
@@ -126,7 +126,23 @@ export function LinkCell({ value, column, row }) {
 }
 
 export function LinksCell({ value }) {
-  return <RenderLinks linksMarkdownText={value} />
+  return <RenderLinks linksMarkdownText={value} className="text-sm" />
+}
+
+const formatNumber = (number: number) => {
+  if (number > 1e6) {
+    return `${(number / 1e6).toFixed(1)}M`
+  }
+
+  if (number > 1e3) {
+    return `${(number / 1e3).toFixed(1)}K`
+  }
+
+  return number.toFixed(0).toLocaleString()
+}
+
+export function NumberCell({ value }: { value: number }) {
+  return <div>{formatNumber(value)}</div>
 }
 
 function Table({
@@ -198,7 +214,7 @@ function Table({
       </div>
       {/* table */}
       <div className="flow-root">
-        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
             <table
               {...getTableProps()}
