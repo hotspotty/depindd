@@ -36,12 +36,12 @@ const Tab: React.FC<Props> = ({
         <div
           className={clsx(
             listContentClsx || "items-center justify-center",
-            "my-10 flex h-9 overflow-hidden rounded-md"
+            "my-10 flex h-9 w-full overflow-hidden rounded-md"
           )}
         >
           <select
             onChange={(e) => setSelectedIndex(Number(e.target.value))}
-            className="w-full border-0 text-sm dark:bg-slate-800 dark:text-gray-300 sm:hidden"
+            className="z-10 w-full border-0 text-sm dark:bg-slate-800 dark:text-gray-300 sm:hidden"
           >
             {list.map((item, key) => (
               <option value={key} key={key}>
@@ -50,7 +50,7 @@ const Tab: React.FC<Props> = ({
             ))}
           </select>
 
-          <div className="hidden overflow-x-auto sm:flex">
+          <div className="hidden overflow-x-auto rounded-md sm:flex">
             {list.map((item, index) => (
               <span
                 className={clsx(
