@@ -59,7 +59,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
       <div className="relative overflow-hidden rounded-xl p-6">
         <div className="flex items-center gap-6">
           {image && (
-            <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
+            <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0 group-hover:dark:bg-slate-600">
               <Image
                 className="h-16 w-16 rounded-full"
                 width={64}

@@ -7,6 +7,7 @@ import {
   ChevronRightIcon,
 } from "@heroicons/react/24/solid"
 import clsx from "clsx"
+import Image from "next/image"
 import Link from "next/link"
 import React, { ReactNode } from "react"
 import {
@@ -26,6 +27,7 @@ import SortDownIcon from "./icons/SortDownIcon"
 import SortIcon from "./icons/SortIcon"
 import SortUpIcon from "./icons/SortUpIcon"
 import { RenderLinks } from "./Links"
+import { Prose } from "./markdoc/Prose"
 
 function PaginationButton({
   children,
@@ -118,10 +120,53 @@ export function LinkCell({ value, column, row }) {
   const href = row.original[column.hrefAccessor]
   if (!value) return null
   if (!href) return value
+  const image = row.original[column.imageAccessor]
+  if (!image) {
+    return (
+      <Link href={href} target={column.linkTarget}>
+        {value}
+      </Link>
+    )
+  }
+
+  const secondLinkTitle = row.original[column.secondLinkTitleAccessor]
+  const secondLinkHref = row.original[column.secondLinkHrefAccessor]
+
   return (
-    <Link href={href} target={column.linkTarget}>
-      {value}
-    </Link>
+    <div className="flex items-center gap-6">
+      {image && (
+        <Link
+          href={href}
+          target={column.linkTarget}
+          className="group !shadow-none"
+        >
+          <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0 group-hover:dark:bg-slate-600">
+            <Image
+              className="h-8 w-8 rounded-full"
+              width={32}
+              height={32}
+              src={image}
+              alt={value}
+            />
+          </div>
+        </Link>
+      )}
+
+      <div className="flex-1">
+        <Prose className="text-sm">
+          <Link href={href} target={column.linkTarget}>
+            {value}
+          </Link>
+        </Prose>
+        {secondLinkTitle && secondLinkHref && (
+          <Prose className="text-sm">
+            <Link href={secondLinkHref} target={column.secondLinkTarget}>
+              {secondLinkTitle}
+            </Link>
+          </Prose>
+        )}
+      </div>
+    </div>
   )
 }
 

@@ -1,6 +1,5 @@
 import { projects } from "../../(data)/projects"
-import { getLinksMarkdowntext } from "../Links"
-import Table, { LinkCell, LinksCell, NumberCell } from "../Table"
+import Table, { LinkCell, NumberCell } from "../Table"
 
 export default async function TwitterLeaderboard() {
   const req = await fetch("https://api.depindd.com/api/v1/projects/socials/", {
@@ -24,14 +23,9 @@ export default async function TwitterLeaderboard() {
       return {
         name: projectInfo.title,
         path: `/projects/${item.name}`,
-        links: getLinksMarkdowntext(
-          [
-            {
-              title: `@${item.twitter_username}`,
-              url: `https://twitter.com/${item.twitter_username}`,
-            },
-          ].filter((x) => x.url != null) as { title: string; url: string }[]
-        ),
+        imagePath: projectInfo.logo,
+        twitterHandle: `@${item.twitter_username}`,
+        twitterUrl: `https://twitter.com/${item.twitter_username}`,
         tweets: item.tweets || 0,
         followers: item.twitter_followers || 0,
       }
@@ -44,11 +38,10 @@ export default async function TwitterLeaderboard() {
       accessor: "name",
       Cell: LinkCell,
       hrefAccessor: "path",
-    },
-    {
-      Header: "Twitter",
-      accessor: "links",
-      Cell: LinksCell,
+      imageAccessor: "imagePath",
+      secondLinkTitleAccessor: "twitterHandle",
+      secondLinkHrefAccessor: "twitterUrl",
+      secondLinkTarget: "_blank",
     },
     {
       Header: "Tweets",

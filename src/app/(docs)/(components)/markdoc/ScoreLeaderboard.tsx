@@ -7,18 +7,19 @@ export default function ScoreLeaderboard({
   type: "governance" | "tokenomics" | "ease-of-mining"
 }) {
   const data = projects
-    .map((item) => {
-      const score = item.scores.find((score) => score.type === type)
+    .map((project) => {
+      const score = project.scores.find((score) => score.type === type)
       if (!score) return
 
       return {
-        id: item.slug,
-        name: item.title,
-        lego: item.lego,
-        legoPath: `/lego/${item.lego}`,
+        id: project.slug,
+        name: project.title,
+        imagePath: project.logo,
+        lego: project.lego,
+        legoPath: `/lego/${project.lego}`,
         score: score.value,
-        path: `/projects/${item.slug}`,
-        status: item.status,
+        path: `/projects/${project.slug}`,
+        status: project.status,
       }
     })
     .filter((item) => !!item)
@@ -29,6 +30,7 @@ export default function ScoreLeaderboard({
       accessor: "name",
       Cell: LinkCell,
       hrefAccessor: "path",
+      imageAccessor: "imagePath",
     },
     {
       Header: "LEGO",

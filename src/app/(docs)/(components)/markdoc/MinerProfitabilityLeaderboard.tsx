@@ -32,6 +32,7 @@ export default async function MinerProfitabilityLeaderboard() {
       return {
         name: projectInfo.title,
         path: `/projects/${name}`,
+        imagePath: projectInfo.logo,
         activeMiners: stats.active_miners,
         averageMinerPrice: payback_time.avg_hardware_price,
         averageMonthlyRewardsUsd: payback_time.avg_monthly_rewards_usd,
@@ -46,6 +47,7 @@ export default async function MinerProfitabilityLeaderboard() {
       accessor: "name",
       Cell: LinkCell,
       hrefAccessor: "path",
+      imageAccessor: "imagePath",
     },
     {
       Header: "Active miners",
