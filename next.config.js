@@ -6,6 +6,16 @@ const nextConfig = {
     appDir: true,
     scrollRestoration: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        port: "",
+        pathname: "/u/**",
+      },
+    ],
+  },
 }
 
 const withMarkdoc = require("@markdoc/next.js")

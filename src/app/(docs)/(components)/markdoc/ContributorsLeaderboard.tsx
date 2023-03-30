@@ -1,6 +1,5 @@
 import { contributors } from "../../(data)/contributors"
-import { getLinksMarkdowntext } from "../Links"
-import Table, { LinkCell, LinksCell } from "../Table"
+import Table, { LinkCell } from "../Table"
 
 interface GithubUser {
   login: string
@@ -40,13 +39,11 @@ export default async function ContributorsLeaderboard() {
     return {
       name: item.name,
       githubLink: `https://github.com/${item.githubHandle}`,
+      imagePath: githubUser?.avatar_url || "/android-chrome-192x192.png",
+      twitterHandle: `@${item.twitter}`,
+      twitterUrl: `https://twitter.com/${item.twitter}`,
       company: item.company,
       companyWebsite: item.companyWebsite,
-      links: getLinksMarkdowntext(
-        [
-          { title: "Twitter", url: `https://twitter.com/${item.twitter}` },
-        ].filter((x) => x.url != null) as { title: string; url: string }[]
-      ),
       contributions: githubUser?.contributions || 0,
     }
   })
@@ -57,12 +54,11 @@ export default async function ContributorsLeaderboard() {
       accessor: "name",
       Cell: LinkCell,
       hrefAccessor: "githubLink",
+      imageAccessor: "imagePath",
       linkTarget: "_blank",
-    },
-    {
-      Header: "Links",
-      accessor: "links",
-      Cell: LinksCell,
+      secondLinkTitleAccessor: "twitterHandle",
+      secondLinkHrefAccessor: "twitterUrl",
+      secondLinkTarget: "_blank",
     },
     {
       Header: "Company",
