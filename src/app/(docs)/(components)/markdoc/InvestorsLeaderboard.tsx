@@ -3,18 +3,20 @@ import { getLinksMarkdowntext } from "../Links"
 import Table, { LinkCell, LinksCell } from "../Table"
 
 export default function InvestorsLeaderboard() {
-  const data = investors.map((item) => {
+  const data = investors.map((investor) => {
     return {
-      id: item.id,
-      name: item.title,
-      website: item.website,
+      id: investor.id,
+      name: investor.title,
+      website: investor.website,
+      imagePath: investor.logo,
+      twitterHandle: `@${investor.twitterUsername}`,
+      twitterUrl: `https://twitter.com/${investor.twitterUsername}`,
       links: getLinksMarkdowntext(
-        [
-          { title: "Twitter", url: item.twitter },
-          { title: "Blog", url: item.blog },
-        ].filter((x) => x.url != null) as { title: string; url: string }[]
+        [{ title: "Blog", url: investor.blog }].filter(
+          (x) => x.url != null
+        ) as { title: string; url: string }[]
       ),
-      investmentsCount: item.investments.length,
+      investmentsCount: investor.investments.length,
     }
   })
 
@@ -25,6 +27,10 @@ export default function InvestorsLeaderboard() {
       Cell: LinkCell,
       hrefAccessor: "website",
       linkTarget: "_blank",
+      imageAccessor: "imagePath",
+      secondLinkTitleAccessor: "twitterHandle",
+      secondLinkHrefAccessor: "twitterUrl",
+      secondLinkTarget: "_blank",
     },
     {
       Header: "Links",
