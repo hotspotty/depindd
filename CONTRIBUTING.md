@@ -41,7 +41,12 @@ git push origin fix/some-bug-#123
 ## Adding a new DePIN project
 
 1. Come up with a slug for the project. This slug will act as the filename and id within the codebase. Let's say the project is called `Project X`, then you can go to [slugify.online](https://slugify.online/), enter `Project X` and press the `SLUGIFY` button so you get your slug: `project-x`
-2. Create a branch called `add-project/project-x`
+2. Create a branch called `add-project/project-x`:
+
+```shell
+git checkout -b add-project/project-x
+```
+
 3. Create an empty `project-x.md` file in [/src/app/(docs)/(pages)/projects](</src/app/(docs)/(pages)/projects>)
 4. Create a `project-x.json` file in [/src/app/(docs)/(pages)/projects](</src/app/(docs)/(pages)/projects>) and paste the following JSON content:
 
@@ -121,5 +126,12 @@ export const projects: ProjectInfo[] = [
 ]
 ```
 
-10. Push your changes to your forked repository
+10. Commit the changes and push them to your forked repository:
+
+```shell
+git add .
+git commit "Add Project X"
+git push -u origin add-project/project-x
+```
+
 11. Go to [github.com/hotspotty/depindd](https://github.com/hotspotty/depindd) in your web browser and issue a new pull request
