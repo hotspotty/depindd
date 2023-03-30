@@ -1,8 +1,7 @@
 ---
 title: Contributors
+topContentTag: contributors-leaderboard
 ---
-
-{% contributors-leaderboard / %}
 
 ## About
 

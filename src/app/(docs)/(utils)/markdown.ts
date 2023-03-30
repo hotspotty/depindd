@@ -6,9 +6,12 @@ import getMarkdownContentFromText from "./getMarkdownContentFromText"
 export function getMarkdownContent(filePath: string) {
   const source = fs.readFileSync(filePath, "utf-8")
   const matterResult = matter(source)
-  const { title } = matterResult.data
+  const { title, topContentTag } = matterResult.data
   const content = getMarkdownContentFromText(source)
-  return { content, title }
+  const topContent = topContentTag
+    ? getMarkdownContentFromText(`{% ${topContentTag} / %}`)
+    : undefined
+  return { content, title, topContent }
 }
 
 const getNodeText = (node) => {

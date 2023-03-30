@@ -1,8 +1,7 @@
 ---
 title: Twitter
+topContentTag: twitter-leaderboard
 ---
-
-{% twitter-leaderboard / %}
 
 ## About
 

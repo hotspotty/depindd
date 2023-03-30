@@ -1,8 +1,7 @@
 ---
 title: Blockchains
+topContentTag: blockchains-leaderboard
 ---
-
-{% blockchains-leaderboard / %}
 
 ## About
 

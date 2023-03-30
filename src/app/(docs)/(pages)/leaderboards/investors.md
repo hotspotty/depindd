@@ -1,8 +1,7 @@
 ---
 title: Investors
+topContentTag: investors-leaderboard
 ---
-
-{% investors-leaderboard / %}
 
 ## About
 
