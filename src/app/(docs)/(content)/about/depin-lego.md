@@ -7,8 +7,6 @@ DePIN Lego: DePIN’s Building Blocks
 
 ---
 
-DePIn legos are here. 
-
 DePIN projects can be split up in five big areas:
 
 {% quick-links %}
