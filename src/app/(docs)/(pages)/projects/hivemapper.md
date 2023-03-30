@@ -45,7 +45,7 @@ At the moment the best way to get involved with key decisions is to voice your o
 
 ### Average monthly USD earnings
 
-Note: this calculation is for mapping contributors, not QA contributors, since we’re assessing payback period on hardware and QA contributors don’t buy hardware.
+Note: this calculation is for mapping contributors, not QA contributors, since we’re assessing payback time on hardware and QA contributors don’t buy hardware.
 
 Take last week’s “Map Rewards” from this [Dune Dashboard.](https://dune.com/murathan/hivemapper) Multiply by four to get a rough estimate for monthly mapping token rewards paid out. Multiply by current token price [here.](https://coinmarketcap.com/currencies/hivemapper/) Divide by number of “Map Contributors” in that same week to get average monthly USD earnings.
 

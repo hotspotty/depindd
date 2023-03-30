@@ -1,12 +1,12 @@
 ---
-title: Miner payback time
+title: Miner profitabillity
 ---
 
-{% miner-payback-time-leaderboard / %}
+{% miner-profitability-leaderboard / %}
 
 ## About
 
-The **Miner Payback Time** is the approximate amount of time (in months) that the average hardware miner deployed today on its applicable DePIN network would take to pay itself off. Said another way, the point in time at which:
+In DePIN, the profitability of a miner is measured by the approximate amount of time (in months) that the average hardware miner deployed today on its applicable DePIN network would take to pay itself off. Said another way, the point in time at which:
 
 ```shell
 cumulative token rewards * current token price = hardware miner cost

@@ -1,7 +1,7 @@
 import { projects } from "../../(data)/projects"
 import Table, { CurrencyCell, LinkCell, NumberCell } from "../Table"
 
-export default async function MinerPaybackTimeLeaderboard() {
+export default async function MinerProfitabilityLeaderboard() {
   const req = await fetch("https://api.depindd.com/api/v1/projects/", {
     next: { revalidate: 10 },
   } as any)
