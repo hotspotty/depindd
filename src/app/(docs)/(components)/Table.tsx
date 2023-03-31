@@ -227,6 +227,28 @@ export function NumberCell({ value }: { value: number }) {
   return <div>{formatNumber(value)}</div>
 }
 
+// Accepts 'months' as value. Replace it with 'days' in the future.
+export function DurationCell({ value }: { value: number }) {
+  if (!value) return <div>-</div>
+
+  const months = value
+  const days = months * 30
+
+  if (months < 1) {
+    return (
+      <div>
+        {formatNumber(days)} day{days === 1 ? "" : "s"}
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      {formatNumber(months)} month{months === 1 ? "" : "s"}
+    </div>
+  )
+}
+
 export function CurrencyCell({ value }: { value: number }) {
   return (
     <div>

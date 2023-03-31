@@ -1,5 +1,10 @@
 import { projects } from "../../(data)/projects"
-import Table, { CurrencyCell, LinkCell, NumberCell } from "../Table"
+import Table, {
+  CurrencyCell,
+  DurationCell,
+  LinkCell,
+  NumberCell,
+} from "../Table"
 
 export default async function MinerProfitabilityLeaderboard({
   minimal = false,
@@ -64,21 +69,19 @@ export default async function MinerProfitabilityLeaderboard({
       Cell: CurrencyCell,
     },
     {
-      Header: "Avg monthly rewards",
+      Header: "Avg MRR",
       accessor: "averageMonthlyRewardsUsd",
       Cell: CurrencyCell,
     },
     {
-      Header: "Months to payback",
+      Header: "Break-even",
       accessor: "monthsToBreakEven",
-      Cell: NumberCell,
+      Cell: DurationCell,
     },
   ]
 
   const initialState = {
-    hiddenColumns: minimal
-      ? ["activeMiners", "averageMinerPrice", "averageMonthlyRewardsUsd"]
-      : [],
+    hiddenColumns: minimal ? ["activeMiners", "averageMinerPrice"] : [],
     sortBy: [
       {
         id: "monthsToBreakEven",
