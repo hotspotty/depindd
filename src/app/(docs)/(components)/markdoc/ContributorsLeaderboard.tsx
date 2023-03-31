@@ -23,19 +23,25 @@ interface GithubUser {
   contributions: number
 }
 
-export default async function ContributorsLeaderboard() {
+export default async function ContributorsLeaderboard({
+  minimal = false,
+}: {
+  minimal?: boolean
+}) {
   const req = await fetch(
-    "https://api.github.com/repos/hotspotty/depindd/contributors",
-    {
-      next: { revalidate: 10 },
-    } as any
+    "https://api.github.com/repos/hotspotty/depindd/contributors"
   )
-  const githubContributors = (await req.json()) as GithubUser[]
+  const githubContributors = (await req.json()) as
+    | GithubUser[]
+    | {
+        message: string
+        documentation_url: string
+      }
 
   const data = contributors.map((item) => {
-    const githubUser = githubContributors.find(
-      (x) => x.login === item.githubHandle
-    )
+    const githubUser = Array.isArray(githubContributors)
+      ? githubContributors.find((x) => x.login === item.githubHandle)
+      : undefined
     return {
       name: item.name,
       githubLink: `https://github.com/${item.githubHandle}`,
@@ -74,13 +80,22 @@ export default async function ContributorsLeaderboard() {
   ]
 
   const initialState = {
+    hiddenColumns: minimal ? ["company"] : [],
     sortBy: [
       {
         id: "contributions",
         desc: true,
       },
     ],
+    pageSize: minimal ? 3 : 5,
   }
 
-  return <Table columns={columns} data={data} initialState={initialState} />
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      initialState={initialState}
+      minimal={minimal}
+    />
+  )
 }

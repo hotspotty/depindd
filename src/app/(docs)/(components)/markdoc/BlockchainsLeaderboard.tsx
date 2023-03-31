@@ -2,7 +2,11 @@ import { blockchainInfo } from "../../(data)/blockchains"
 import { Category, Lego, projects } from "../../(data)/projects"
 import Table, { LinkCell } from "../Table"
 
-export default async function BlockchainsLeaderboard() {
+export default async function BlockchainsLeaderboard({
+  minimal = false,
+}: {
+  minimal?: boolean
+}) {
   const aggregation = projects.reduce(
     (
       result: {
@@ -85,13 +89,22 @@ export default async function BlockchainsLeaderboard() {
   ]
 
   const initialState = {
+    hiddenColumns: minimal ? ["legosCount", "categoriesCount"] : [],
     sortBy: [
       {
         id: "projects",
         desc: true,
       },
     ],
+    pageSize: minimal ? 3 : 5,
   }
 
-  return <Table columns={columns} data={data} initialState={initialState} />
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      initialState={initialState}
+      minimal={minimal}
+    />
+  )
 }

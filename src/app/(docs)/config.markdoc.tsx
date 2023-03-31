@@ -61,22 +61,37 @@ const config: Config = {
     "investors-leaderboard": {
       render: "InvestorsLeaderboard",
       selfClosing: true,
+      attributes: {
+        minimal: { type: Boolean },
+      },
     },
     "contributors-leaderboard": {
       render: "ContributorsLeaderboard",
       selfClosing: true,
+      attributes: {
+        minimal: { type: Boolean },
+      },
     },
     "blockchains-leaderboard": {
       render: "BlockchainsLeaderboard",
       selfClosing: true,
+      attributes: {
+        minimal: { type: Boolean },
+      },
     },
     "twitter-leaderboard": {
       render: "TwitterLeaderboard",
       selfClosing: true,
+      attributes: {
+        minimal: { type: Boolean },
+      },
     },
     "miner-profitability-leaderboard": {
       render: "MinerProfitabilityLeaderboard",
       selfClosing: true,
+      attributes: {
+        minimal: { type: Boolean },
+      },
     },
     figure: {
       render: "Figure",

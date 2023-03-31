@@ -227,6 +227,28 @@ export function NumberCell({ value }: { value: number }) {
   return <div>{formatNumber(value)}</div>
 }
 
+// Accepts 'months' as value. Replace it with 'days' in the future.
+export function DurationCell({ value }: { value: number }) {
+  if (!value) return <div>-</div>
+
+  const months = value
+  const days = months * 30
+
+  if (months < 1) {
+    return (
+      <div>
+        {formatNumber(days)} day{days === 1 ? "" : "s"}
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      {formatNumber(months)} month{months === 1 ? "" : "s"}
+    </div>
+  )
+}
+
 export function CurrencyCell({ value }: { value: number }) {
   return (
     <div>
@@ -244,10 +266,12 @@ function Table({
   columns,
   data,
   initialState,
+  minimal,
 }: {
   columns: Column<any>[]
   data: any
   initialState: any
+  minimal?: boolean
 }) {
   const {
     getTableProps,
@@ -288,25 +312,28 @@ function Table({
 
   return (
     <>
-      <div className="sm:flex sm:items-end sm:gap-x-2">
-        {/* search input */}
-        <input
-          type="text"
-          onChange={handleFilterInputChange}
-          className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
-          placeholder="Search..."
-        />
-        {/* filters */}
-        {headerGroups.map((headerGroup) =>
-          headerGroup.headers.map((column) =>
-            (column as any).Filter ? (
-              <div className="mt-2 sm:mt-0" key={column.id}>
-                {column.render("Filter")}
-              </div>
-            ) : null
-          )
-        )}
-      </div>
+      {!minimal && (
+        <div className="sm:flex sm:items-end sm:gap-x-2">
+          {/* search input */}
+          <input
+            type="text"
+            onChange={handleFilterInputChange}
+            className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
+            placeholder="Search..."
+          />
+          {/* filters */}
+          {headerGroups.map((headerGroup) =>
+            headerGroup.headers.map((column) =>
+              (column as any).Filter ? (
+                <div className="mt-2 sm:mt-0" key={column.id}>
+                  {column.render("Filter")}
+                </div>
+              ) : null
+            )
+          )}
+        </div>
+      )}
+
       {/* table */}
       <div className="flow-root">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -384,87 +411,96 @@ function Table({
           </div>
         </div>
       </div>
+
       {/* Pagination */}
-      <div className="flex items-center justify-between py-3">
-        <div className="flex flex-1 justify-between sm:hidden">
-          <PaginationButton
-            onClick={() => previousPage()}
-            disabled={!canPreviousPage}
-          >
-            Previous
-          </PaginationButton>
-          <PaginationButton onClick={() => nextPage()} disabled={!canNextPage}>
-            Next
-          </PaginationButton>
-        </div>
-        <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
-          <div className="flex items-baseline gap-x-2">
-            <span className="text-tale-900 dark:text-tale-400 text-sm font-medium leading-6">
-              Page{" "}
-              <span className="font-medium">
-                {(state as any).pageIndex + 1}
-              </span>{" "}
-              of <span className="font-medium">{pageOptions.length}</span>
-            </span>
+      {!minimal && (
+        <div className="flex items-center justify-between py-3">
+          <div className="flex flex-1 justify-between sm:hidden">
+            <PaginationButton
+              onClick={() => previousPage()}
+              disabled={!canPreviousPage}
+            >
+              Previous
+            </PaginationButton>
+            <PaginationButton
+              onClick={() => nextPage()}
+              disabled={!canNextPage}
+            >
+              Next
+            </PaginationButton>
+          </div>
+          <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+            <div className="flex items-baseline gap-x-2">
+              <span className="text-tale-900 dark:text-tale-400 text-sm font-medium leading-6">
+                Page{" "}
+                <span className="font-medium">
+                  {(state as any).pageIndex + 1}
+                </span>{" "}
+                of <span className="font-medium">{pageOptions.length}</span>
+              </span>
+              <div>
+                <select
+                  value={(state as any).pageSize}
+                  onChange={(e) => {
+                    setPageSize(Number(e.target.value))
+                  }}
+                  className="block w-full rounded-md border-0 bg-white/5 py-1.5 pl-3 pr-10 text-white ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-sky-600 sm:text-sm sm:leading-6"
+                >
+                  {[5, 10, 20].map((pageSize) => (
+                    <option key={pageSize} value={pageSize}>
+                      Show {pageSize}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
             <div>
-              <select
-                value={(state as any).pageSize}
-                onChange={(e) => {
-                  setPageSize(Number(e.target.value))
-                }}
-                className="block w-full rounded-md border-0 bg-white/5 py-1.5 pl-3 pr-10 text-white ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-sky-600 sm:text-sm sm:leading-6"
+              <nav
+                className="relative z-0 inline-flex -space-x-px rounded-md shadow-sm"
+                aria-label="Pagination"
               >
-                {[5, 10, 20].map((pageSize) => (
-                  <option key={pageSize} value={pageSize}>
-                    Show {pageSize}
-                  </option>
-                ))}
-              </select>
+                <PaginationGroupButton
+                  className="rounded-l-md"
+                  onClick={() => gotoPage(0)}
+                  disabled={!canPreviousPage}
+                >
+                  <span className="sr-only">First</span>
+                  <ChevronDoubleLeftIcon
+                    className="h-5 w-5"
+                    aria-hidden="true"
+                  />
+                </PaginationGroupButton>
+                <PaginationGroupButton
+                  onClick={() => previousPage()}
+                  disabled={!canPreviousPage}
+                >
+                  <span className="sr-only">Previous</span>
+                  <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
+                </PaginationGroupButton>
+                <PaginationGroupButton
+                  onClick={() => nextPage()}
+                  disabled={!canNextPage}
+                >
+                  <span className="sr-only">Next</span>
+                  <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
+                </PaginationGroupButton>
+                <PaginationGroupButton
+                  className="rounded-r-md"
+                  onClick={() => gotoPage(pageCount - 1)}
+                  disabled={!canNextPage}
+                >
+                  <span className="sr-only">Last</span>
+                  <ChevronDoubleRightIcon
+                    className="h-5 w-5"
+                    aria-hidden="true"
+                  />
+                </PaginationGroupButton>
+              </nav>
             </div>
           </div>
-
-          <div>
-            <nav
-              className="relative z-0 inline-flex -space-x-px rounded-md shadow-sm"
-              aria-label="Pagination"
-            >
-              <PaginationGroupButton
-                className="rounded-l-md"
-                onClick={() => gotoPage(0)}
-                disabled={!canPreviousPage}
-              >
-                <span className="sr-only">First</span>
-                <ChevronDoubleLeftIcon className="h-5 w-5" aria-hidden="true" />
-              </PaginationGroupButton>
-              <PaginationGroupButton
-                onClick={() => previousPage()}
-                disabled={!canPreviousPage}
-              >
-                <span className="sr-only">Previous</span>
-                <ChevronLeftIcon className="h-5 w-5" aria-hidden="true" />
-              </PaginationGroupButton>
-              <PaginationGroupButton
-                onClick={() => nextPage()}
-                disabled={!canNextPage}
-              >
-                <span className="sr-only">Next</span>
-                <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
-              </PaginationGroupButton>
-              <PaginationGroupButton
-                className="rounded-r-md"
-                onClick={() => gotoPage(pageCount - 1)}
-                disabled={!canNextPage}
-              >
-                <span className="sr-only">Last</span>
-                <ChevronDoubleRightIcon
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                />
-              </PaginationGroupButton>
-            </nav>
-          </div>
         </div>
-      </div>
+      )}
     </>
   )
 }

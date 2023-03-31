@@ -2,7 +2,11 @@ import { investors } from "../../(data)/investors"
 import { getLinksMarkdowntext } from "../Links"
 import Table, { LinkCell, LinksCell, ProjectsCell } from "../Table"
 
-export default function InvestorsLeaderboard() {
+export default function InvestorsLeaderboard({
+  minimal = false,
+}: {
+  minimal?: boolean
+}) {
   const data = investors.map((investor) => {
     return {
       id: investor.id,
@@ -50,13 +54,22 @@ export default function InvestorsLeaderboard() {
   ]
 
   const initialState = {
+    hiddenColumns: minimal ? ["links"] : [],
     sortBy: [
       {
         id: "investmentsCount",
         desc: true,
       },
     ],
+    pageSize: minimal ? 3 : 5,
   }
 
-  return <Table columns={columns} data={data} initialState={initialState} />
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      initialState={initialState}
+      minimal={minimal}
+    />
+  )
 }
