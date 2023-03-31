@@ -111,7 +111,7 @@ export function Hero() {
                 <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
                 <div className="px-4 pt-4">
                   <Tab
-                    title="TOP 3"
+                    title="Leaderboards"
                     listContentClsx="!my-0 gap-2 items-center justify-start w-full"
                     tabClsx={{
                       active:
