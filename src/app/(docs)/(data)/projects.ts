@@ -16,6 +16,11 @@ import mapmetrics from "@/app/(docs)/(pages)/projects/mapmetrics.json"
 import planetwatch from "@/app/(docs)/(pages)/projects/planetwatch.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
+import weatherxm from "@/app/(docs)/(pages)/projects/weatherxm.json"
+import iotex from "@/app/(docs)/(pages)/projects/iotex.json"
+import foam from "@/app/(docs)/(pages)/projects/foam.json"
+import nodle from "@/app/(docs)/(pages)/projects/nodle.json"
+import wifiMap from "@/app/(docs)/(pages)/projects/wifi-map.json"
 import { Blockchain } from "./blockchains"
 
 interface Miner {
@@ -119,4 +124,9 @@ export const projects: ProjectInfo[] = [
   crankk as ProjectInfo,
   mapmetrics as ProjectInfo,
   planetwatch as ProjectInfo,
+  weatherxm as ProjectInfo,
+  iotex as ProjectInfo,
+  foam as ProjectInfo,
+  nodle as ProjectInfo,
+  wifiMap as ProjectInfo,
 ]
