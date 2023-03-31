@@ -20,6 +20,11 @@ import weatherxm from "@/app/(docs)/(pages)/projects/weatherxm.json"
 import foam from "@/app/(docs)/(pages)/projects/foam.json"
 import nodle from "@/app/(docs)/(pages)/projects/nodle.json"
 import wifiMap from "@/app/(docs)/(pages)/projects/wifi-map.json"
+import really from "@/app/(docs)/(pages)/projects/really.json"
+import elumicate from "@/app/(docs)/(pages)/projects/elumicate.json"
+import mindLand from "@/app/(docs)/(pages)/projects/mind-land.json"
+import perkable from "@/app/(docs)/(pages)/projects/perkable.json"
+import natix from "@/app/(docs)/(pages)/projects/natix.json"
 import { Blockchain } from "./blockchains"
 
 interface Miner {
@@ -127,4 +132,9 @@ export const projects: ProjectInfo[] = [
   foam as ProjectInfo,
   nodle as ProjectInfo,
   wifiMap as ProjectInfo,
+  really as ProjectInfo,
+  elumicate as ProjectInfo,
+  mindLand as ProjectInfo,
+  perkable as ProjectInfo,
+  natix as ProjectInfo,
 ]
