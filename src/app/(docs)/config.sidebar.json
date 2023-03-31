@@ -33,6 +33,7 @@
       "dimo",
       "element",
       "envirobloq",
+      "foam",
       "fry-foundation",
       "geodnet",
       "getdor",
@@ -41,9 +42,13 @@
       "helium-iot",
       "helium-mobile",
       "hivemapper",
+      "iotex",
       "mapmetrics",
+      "nodle",
       "planetwatch",
       "react",
+      "weatherxm",
+      "wifi-map",
       "xnet"
     ]
   }
