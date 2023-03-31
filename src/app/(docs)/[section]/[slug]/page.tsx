@@ -17,7 +17,7 @@ import Labels from "../../(components)/Labels"
 import Links from "../../(components)/Links"
 import { legoCategories } from "../../(data)/lego"
 import { projects } from "../../(data)/projects"
-import { CONTENT_PATH, getSidebarItems } from "../../(utils)/sidebar"
+import { getSidebarItems, PAGES_PATH } from "../../(utils)/sidebar"
 import { capitalizeFirstLetter } from "../../(utils)/text"
 
 type Params = {
@@ -31,7 +31,7 @@ type PageProps = {
 
 export const dynamicParams = false
 
-const ARTICLES_DIR = path.join(process.cwd(), CONTENT_PATH)
+const ARTICLES_DIR = path.join(process.cwd(), PAGES_PATH)
 
 export async function generateStaticParams() {
   const docPaths = await glob(path.join(ARTICLES_DIR, "**/*.md"))
@@ -48,7 +48,7 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const projectInfo = projects.find((item) => item.slug === params.slug)
-  const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
+  const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
   const { title } = getMarkdownContent(filePath)
   return {
     title:
@@ -59,7 +59,7 @@ export async function generateMetadata({
 export default function Page({ params }: PageProps) {
   const sidebar = getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)
-  const filePath = path.join(CONTENT_PATH, params.section, params.slug + ".md")
+  const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
   const projectInfo = projects.find((item) => item.slug === params.slug)
 
   let labels: { title: string; url: string }[] = []

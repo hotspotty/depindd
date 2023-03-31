@@ -1,7 +1,11 @@
 import { projects } from "../../(data)/projects"
 import Table, { CurrencyCell, LinkCell, NumberCell } from "../Table"
 
-export default async function MinerProfitabilityLeaderboard() {
+export default async function MinerProfitabilityLeaderboard({
+  minimal = false,
+}: {
+  minimal?: boolean
+}) {
   const req = await fetch("https://api.depindd.com/api/v1/projects/", {
     next: { revalidate: 10 },
   } as any)
@@ -72,13 +76,24 @@ export default async function MinerProfitabilityLeaderboard() {
   ]
 
   const initialState = {
+    hiddenColumns: minimal
+      ? ["activeMiners", "averageMinerPrice", "averageMonthlyRewardsUsd"]
+      : [],
     sortBy: [
       {
         id: "monthsToBreakEven",
         desc: false,
       },
     ],
+    pageSize: minimal ? 3 : 5,
   }
 
-  return <Table columns={columns} data={data} initialState={initialState} />
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      initialState={initialState}
+      minimal={minimal}
+    />
+  )
 }

@@ -1,14 +1,44 @@
+import sidebarConfig from "@/app/(docs)/config.sidebar.json"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
+import Markdoc from "@markdoc/markdoc"
+import fs from "fs"
+import matter from "gray-matter"
 import Image from "next/image"
 import Link from "next/link"
-import { Fragment } from "react"
+import path from "path"
+import React from "react"
+import getMarkdownContentFromText from "../(utils)/getMarkdownContentFromText"
+import { PAGES_PATH } from "../(utils)/sidebar"
+import { components } from "../config.markdoc"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
 import { Icon } from "./Icon"
+import { Prose } from "./markdoc/Prose"
 import Tab from "./Tab"
 
 export function Hero() {
+  const leaderboardKeys = sidebarConfig.find(
+    ({ section }) => section === "leaderboards"
+  )!.items
+  const leaderboards = leaderboardKeys
+    .map((slug) => {
+      const filePath = path.join(PAGES_PATH, "leaderboards", slug + ".md")
+      const source = fs.readFileSync(filePath, "utf-8")
+      const {
+        data: { title, topContentTag },
+      } = matter(source)
+      const topContent = topContentTag
+        ? getMarkdownContentFromText(`{% ${topContentTag} minimal="true" / %}`)
+        : undefined
+      return {
+        slug,
+        title,
+        topContent,
+      }
+    })
+    .filter(({ topContent }) => topContent)
+
   return (
     <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]">
       <div className="py-16 sm:px-2 lg:relative lg:px-0 lg:py-20">
@@ -91,32 +121,14 @@ export function Hero() {
                         "bg-slate-800 rounded-full px-2 py-0.5 text-xs",
                       textInactive: "px-2 py-0.5 text-xs",
                     }}
-                    list={tabs}
-                    panels={Object.values(panels).map((item, index) => (
-                      <div
-                        className="mt-2 flex w-full items-start px-1 text-sm"
-                        key={index}
-                      >
-                        <div
-                          aria-hidden="true"
-                          className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-300"
-                        >
-                          {Array.from({
-                            length: item.length,
-                          }).map((_, index) => (
-                            <Fragment key={index}>
-                              {index + 1}
-                              <br />
-                            </Fragment>
-                          ))}
-                        </div>
-                        <pre className="flex overflow-x-auto pb-6">
-                          <code className="px-4 text-slate-300">
-                            {item.map((project) => (
-                              <div key={project}>{project}</div>
-                            ))}
-                          </code>
-                        </pre>
+                    list={leaderboards.map(({ slug }) => slug)}
+                    panels={leaderboards.map(({ topContent }, index) => (
+                      <div className="-my-6 w-full" key={index}>
+                        <Prose>
+                          {Markdoc.renderers.react(topContent, React, {
+                            components,
+                          })}
+                        </Prose>
                       </div>
                     ))}
                   ></Tab>
@@ -128,34 +140,4 @@ export function Hero() {
       </div>
     </div>
   )
-}
-
-//
-// Utils
-//
-
-const tabs = [
-  "Miner profitability",
-  "Governance score",
-  "Tokenomics score",
-  "Ease of mining score",
-]
-
-const panels = {
-  "Miner payback time": [
-    "DIMO: x months",
-    "Hivemapper: y months",
-    "Helium 5G: z months",
-  ],
-  "Governance score": [
-    "Hivemapper: y months",
-    "DIMO: x mont",
-    "Helium 5G: z months",
-  ],
-  "Tokenomics score": ["hs", "Hivemapper: y months", "Helium 5G: z months"],
-  "Ease of mining score": [
-    "Xnet",
-    "Hivemapper: y months",
-    "Helium 5G: z months",
-  ],
 }

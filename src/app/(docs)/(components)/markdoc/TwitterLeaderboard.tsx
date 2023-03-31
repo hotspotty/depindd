@@ -1,7 +1,11 @@
 import { projects } from "../../(data)/projects"
 import Table, { LinkCell, NumberCell } from "../Table"
 
-export default async function TwitterLeaderboard() {
+export default async function TwitterLeaderboard({
+  minimal = false,
+}: {
+  minimal?: boolean
+}) {
   const req = await fetch("https://api.depindd.com/api/v1/projects/socials/", {
     next: { revalidate: 10 },
   } as any)
@@ -56,13 +60,22 @@ export default async function TwitterLeaderboard() {
   ]
 
   const initialState = {
+    hiddenColumns: minimal ? ["tweets"] : [],
     sortBy: [
       {
         id: "followers",
         desc: true,
       },
     ],
+    pageSize: minimal ? 3 : 5,
   }
 
-  return <Table columns={columns} data={data} initialState={initialState} />
+  return (
+    <Table
+      columns={columns}
+      data={data}
+      initialState={initialState}
+      minimal={minimal}
+    />
+  )
 }
