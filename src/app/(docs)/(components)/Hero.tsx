@@ -121,7 +121,7 @@ export function Hero() {
                         "bg-slate-800 rounded-full px-2 py-0.5 text-xs",
                       textInactive: "px-2 py-0.5 text-xs",
                     }}
-                    list={leaderboards.map(({ slug }) => slug)}
+                    list={leaderboards.map(({ title }) => title)}
                     panels={leaderboards.map(({ topContent }, index) => (
                       <div className="-my-6 w-full" key={index}>
                         <Prose>
