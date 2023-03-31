@@ -7,6 +7,7 @@ export type Blockchain =
   | "constellation"
   | "kadena"
   | "cardano"
+  | "ethereum"
 
 export const blockchainInfo = {
   solana: {
@@ -64,5 +65,12 @@ export const blockchainInfo = {
     website: "https://cardano.org",
     coingecko: "https://www.coingecko.com/en/coins/cardano",
     logo: "/images/blockchains/cardano.png",
+  },
+  ethereum: {
+    name: "Ethereum",
+    token: "ETH",
+    website: "https://ethereum.org/",
+    coingecko: "https://www.coingecko.com/en/coins/ethereum",
+    logo: "/images/blockchains/ethereum.png",
   },
 }
