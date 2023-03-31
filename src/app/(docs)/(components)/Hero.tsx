@@ -1,7 +1,7 @@
 import sidebarConfig from "@/app/(docs)/config.sidebar.json"
 import blurCyanImage from "@/images/blur-cyan.png"
 import blurIndigoImage from "@/images/blur-indigo.png"
-import Markdoc from "@markdoc/markdoc"
+import Markdoc, { RenderableTreeNodes } from "@markdoc/markdoc"
 import fs from "fs"
 import matter from "gray-matter"
 import Image from "next/image"
@@ -125,9 +125,13 @@ export function Hero() {
                     panels={leaderboards.map(({ topContent }, index) => (
                       <div className="-my-6 w-full" key={index}>
                         <Prose>
-                          {Markdoc.renderers.react(topContent, React, {
-                            components,
-                          })}
+                          {Markdoc.renderers.react(
+                            topContent as RenderableTreeNodes,
+                            React,
+                            {
+                              components,
+                            }
+                          )}
                         </Prose>
                       </div>
                     ))}
