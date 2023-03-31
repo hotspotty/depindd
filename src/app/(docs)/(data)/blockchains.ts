@@ -8,6 +8,7 @@ export type Blockchain =
   | "kadena"
   | "cardano"
   | "ethereum"
+  | "polkadot"
 
 export const blockchainInfo = {
   solana: {
@@ -69,8 +70,15 @@ export const blockchainInfo = {
   ethereum: {
     name: "Ethereum",
     token: "ETH",
-    website: "https://ethereum.org/",
+    website: "https://ethereum.org",
     coingecko: "https://www.coingecko.com/en/coins/ethereum",
     logo: "/images/blockchains/ethereum.png",
+  },
+  polkadot: {
+    name: "Polkadot",
+    token: "DOT",
+    website: "https://polkadot.network",
+    coingecko: "https://www.coingecko.com/en/coins/polkadot",
+    logo: "/images/blockchains/polkadot.png",
   },
 }
