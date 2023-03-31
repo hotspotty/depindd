@@ -29,19 +29,14 @@ export default async function ContributorsLeaderboard({
   minimal?: boolean
 }) {
   const req = await fetch(
-    "https://api.github.com/repos/hotspotty/depindd/contributors"
+    "https://api.depindd.com/api/v1/depindd/contributors/"
   )
-  const githubContributors = (await req.json()) as
-    | GithubUser[]
-    | {
-        message: string
-        documentation_url: string
-      }
+  const githubContributors = (await req.json()) as GithubUser[]
 
   const data = contributors.map((item) => {
-    const githubUser = Array.isArray(githubContributors)
-      ? githubContributors.find((x) => x.login === item.githubHandle)
-      : undefined
+    const githubUser = githubContributors.find(
+      (x) => x.login === item.githubHandle
+    )
     return {
       name: item.name,
       githubLink: `https://github.com/${item.githubHandle}`,
