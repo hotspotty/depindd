@@ -1,0 +1,43 @@
+{
+  "slug": "iotex",
+  "title": "IoTeX",
+  "miners": [],
+  "scores": [],
+  "lego": "sensors",
+  "categories": ["general"],
+  "token": "iotex",
+  "blockchain": "iotex",
+  "status": "production",
+  "logo": "/images/projects/iotex.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.iotex.io/" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "https://machinefi.com/" },
+    { "type": "blog", "url": "https://iotex.io/blog" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/iotex_io" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/IoTeX/" },
+    { "type": "forum", "url": "https://community.iotex.io/" },
+    { "type": "discord", "url": "https://iotex.io/devdiscord" },
+    { "type": "telegram", "url": "https://t.me/IoTeXGroup" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw" },
+    { "type": "instagram", "url": "" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/iotex"
+    },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/iotexproject" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "https://docs.iotex.io/" },
+    { "type": "governance", "url": "https://snapshot.org/#/iotex.eth" },
+    { "type": "tokenomics", "url": "https://onboard.iotex.io/tokenomics/iotx-utility" },
+    { "type": "explorer", "url": "https://iotexscan.io/" },
+    { "type": "shop", "url": "https://www.crowdsupply.com/iotex/pebble-tracker#products" },
+    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/iotex" },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/iotex" },
+    { "type": "other", "url": "" }
+  ]
+}

@@ -16,6 +16,7 @@ import mapmetrics from "@/app/(docs)/(pages)/projects/mapmetrics.json"
 import planetwatch from "@/app/(docs)/(pages)/projects/planetwatch.json"
 import react from "@/app/(docs)/(pages)/projects/react.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
+import iotex from "@/app/(docs)/(pages)/projects/iotex.json"
 import { Blockchain } from "./blockchains"
 
 interface Miner {
@@ -119,4 +120,5 @@ export const projects: ProjectInfo[] = [
   crankk as ProjectInfo,
   mapmetrics as ProjectInfo,
   planetwatch as ProjectInfo,
+  iotex as ProjectInfo,
 ]
