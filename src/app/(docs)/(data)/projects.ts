@@ -25,7 +25,6 @@ import really from "@/app/(docs)/(pages)/projects/really.json"
 import weatherxm from "@/app/(docs)/(pages)/projects/weatherxm.json"
 import wifiMap from "@/app/(docs)/(pages)/projects/wifi-map.json"
 import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
-import { Blockchain } from "./blockchains"
 
 interface Miner {
   title: string
@@ -96,7 +95,7 @@ export interface ProjectInfo {
   lego: Lego
   categories: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
-  blockchain: Blockchain
+  blockchain: string // Possible values are in /src/scripts/validate.ts
   status: "development" | "production"
   logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`
   links: LinkItem[]

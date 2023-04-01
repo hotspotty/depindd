@@ -90,7 +90,7 @@ const Home: React.FC = () => {
                 className="flex flex-col gap-4 sm:flex-row"
                 key={contentIndex}
               >
-                {content.map((item, index) => (
+                {content.map(({ title, description }, index) => (
                   <div
                     className="flex w-full flex-col rounded-xl border border-slate-200 p-4 dark:border-slate-800 dark:bg-slate-800 md:w-4/12"
                     key={index}
@@ -98,9 +98,9 @@ const Home: React.FC = () => {
                     <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-700 text-slate-200">
                       {index + 1}
                     </span>
-                    <span className="my-2 text-lg">{item.title}</span>
+                    <span className="my-2 text-lg">{title}</span>
                     <span className="text-sm font-medium text-slate-600 dark:text-slate-400">
-                      {item.description}
+                      {description}
                     </span>
                   </div>
                 ))}
@@ -132,15 +132,17 @@ const Home: React.FC = () => {
           <span className="text-3xl font-medium">Featured Projects</span>
 
           <div className="mt-10 grid w-full grid-cols-1 gap-6 sm:grid-cols-3">
-            {projects.slice(0, 6).map((project) => (
-              <QuickLink
-                key={project.slug}
-                title={project.title}
-                labels={[project.lego, ...project.categories]}
-                image={project.logo}
-                href={`/projects/${project.slug}`}
-              />
-            ))}
+            {projects
+              .slice(0, 6)
+              .map(({ slug, title, lego, categories, logo }) => (
+                <QuickLink
+                  key={slug}
+                  title={title}
+                  labels={[lego, ...categories]}
+                  image={logo}
+                  href={`/projects/${slug}`}
+                />
+              ))}
           </div>
         </div>
       </div>

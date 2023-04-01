@@ -33,21 +33,23 @@ export default async function ContributorsLeaderboard({
   )
   const githubContributors = (await req.json()) as GithubUser[]
 
-  const data = contributors.map((item) => {
-    const githubUser = githubContributors.find(
-      (x) => x.login === item.githubHandle
-    )
-    return {
-      name: item.name,
-      githubLink: `https://github.com/${item.githubHandle}`,
-      imagePath: githubUser?.avatar_url || "/android-chrome-192x192.png",
-      twitterHandle: `@${item.twitter}`,
-      twitterUrl: `https://twitter.com/${item.twitter}`,
-      company: item.company,
-      companyWebsite: item.companyWebsite,
-      contributions: githubUser?.contributions || 0,
+  const data = contributors.map(
+    ({ name, githubHandle, twitter, company, companyWebsite }) => {
+      const githubUser = githubContributors.find(
+        (x) => x.login === githubHandle
+      )
+      return {
+        name,
+        githubLink: `https://github.com/${githubHandle}`,
+        imagePath: githubUser?.avatar_url || "/android-chrome-192x192.png",
+        twitterHandle: `@${twitter}`,
+        twitterUrl: `https://twitter.com/${twitter}`,
+        company,
+        companyWebsite,
+        contributions: githubUser?.contributions || 0,
+      }
     }
-  })
+  )
 
   const columns = [
     {

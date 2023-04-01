@@ -15,7 +15,7 @@ import path from "path"
 import React from "react"
 import Labels, { Label } from "../../(components)/Labels"
 import Links from "../../(components)/Links"
-import { blockchainInfo } from "../../(data)/blockchains"
+import { blockchains } from "../../(data)/blockchains"
 import { legoCategories } from "../../(data)/lego"
 import { projects } from "../../(data)/projects"
 import { PAGES_PATH, getSidebarItems } from "../../(utils)/sidebar"
@@ -48,7 +48,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const projectInfo = projects.find((item) => item.slug === params.slug)
+  const projectInfo = projects.find(({ slug }) => slug === params.slug)
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
   const { title } = getMarkdownContent(filePath)
   return {
@@ -68,7 +68,7 @@ export default function Page({ params }: PageProps) {
   let links: { title: string; url: string }[] = []
 
   if (params.section === "projects") {
-    const projectInfo = projects.find((item) => item.slug === params.slug)
+    const projectInfo = projects.find(({ slug }) => slug === params.slug)
     if (projectInfo) {
       title = projectInfo.title
       logo = projectInfo.logo
@@ -84,11 +84,13 @@ export default function Page({ params }: PageProps) {
         })),
       ]
 
-      const blockchain = blockchainInfo[projectInfo.blockchain]
-      if (blockchain) {
+      const blockchainInfo = blockchains.find(
+        ({ slug }) => slug === projectInfo.blockchain
+      )
+      if (blockchainInfo) {
         labels.push({
-          title: blockchain.title,
-          url: blockchain.links.find(({ type }) => type === "website")?.url,
+          title: blockchainInfo.title,
+          url: blockchainInfo.links.find(({ type }) => type === "website")?.url,
           target: "_blank",
         })
       }
@@ -101,12 +103,12 @@ export default function Page({ params }: PageProps) {
       })
     }
   } else if (params.section === "blockchains") {
-    const blockchain = blockchainInfo[params.slug]
-    if (blockchain) {
-      title = blockchain.title
-      logo = blockchain.logo
+    const blockchainInfo = blockchains.find(({ slug }) => slug === params.slug)
+    if (blockchainInfo) {
+      title = blockchainInfo.title
+      logo = blockchainInfo.logo
 
-      blockchain.links.forEach(({ type, label, url }) => {
+      blockchainInfo.links.forEach(({ type, label, url }) => {
         if (!url) return
         let title = capitalizeFirstLetter(type)
         if (label) title += ` - ${label}`
@@ -125,7 +127,7 @@ export default function Page({ params }: PageProps) {
 
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)
-  const pageIndex = allPages.findIndex((page) => page.slug === params.slug)
+  const pageIndex = allPages.findIndex(({ slug }) => slug === params.slug)
   const previousPage = allPages[pageIndex - 1]
   const nextPage = allPages[pageIndex + 1]
 

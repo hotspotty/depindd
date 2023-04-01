@@ -1,4 +1,4 @@
-import { blockchainInfo } from "../../(data)/blockchains"
+import { blockchains } from "../../(data)/blockchains"
 import { Category, Lego, projects } from "../../(data)/projects"
 import Table, { LinkCell } from "../Table"
 
@@ -25,19 +25,18 @@ export default async function BlockchainsLeaderboard({
       },
       { lego, categories, blockchain }
     ) => {
-      // TODO: refactor blockchainInfo to blockchains
-      if (!blockchainInfo[blockchain]) return result
+      const blockchainInfo = blockchains.find(({ slug }) => slug === blockchain)
+      if (!blockchainInfo) return result
 
       if (!result[blockchain]) {
         result[blockchain] = {
           projects: 1,
-          name: blockchainInfo[blockchain].title,
-          website: blockchainInfo[blockchain].links.find(
-            ({ type }) => type === "website"
-          )?.url!, // TODO: remove exclamation mark
-          imagePath: blockchainInfo[blockchain].logo,
-          token: `$${blockchainInfo[blockchain].token}`,
-          coingecko: blockchainInfo[blockchain].links.find(
+          name: blockchainInfo.title,
+          website: blockchainInfo.links.find(({ type }) => type === "website")
+            ?.url!, // TODO: remove exclamation mark
+          imagePath: blockchainInfo.logo,
+          token: `$${blockchainInfo.token}`,
+          coingecko: blockchainInfo.links.find(
             ({ type }) => type === "coingecko"
           )?.url!, // TODO: remove exclamation mark
           legos: [lego],

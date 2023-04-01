@@ -3,7 +3,7 @@
 import clsx from "clsx"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { use, useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 const isActive = (section: any, currentSection: string) => {
   if (section.id === currentSection) {
@@ -14,7 +14,7 @@ const isActive = (section: any, currentSection: string) => {
     return false
   }
 
-  return section.children.findIndex((item) => item.id === currentSection) > -1
+  return section.children.findIndex(({ id }) => id === currentSection) > -1
 }
 
 export default function TableOfContents({

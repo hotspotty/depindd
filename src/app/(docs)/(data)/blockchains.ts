@@ -1,30 +1,17 @@
 import { LinkItem } from "./projects"
 
-export type Blockchain =
-  | "tbd" // This is for projects that have yet to decide which blockchain they will use
-  | "n/a" // This is for projects that don't plan to have a token
-  | "solana"
-  | "polygon"
-  | "iotex"
-  | "algorand"
-  | "bsc"
-  | "constellation"
-  | "kadena"
-  | "cardano"
-  | "ethereum"
-  | "polkadot"
-
 export interface BlockchainInfo {
+  slug: string
   title: string
   token: string
   logo: string
   links: LinkItem[]
 }
 
-// TODO: make this a list
 // TODO: import from json files
-export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
-  solana: {
+export const blockchains: BlockchainInfo[] = [
+  {
+    slug: "solana",
     title: "Solana",
     token: "SOL",
     logo: "/images/blockchains/solana.jpeg",
@@ -57,7 +44,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  polygon: {
+  {
+    slug: "polygon",
     title: "Polygon",
     token: "MATIC",
     logo: "/images/blockchains/polygon.jpeg",
@@ -90,7 +78,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  iotex: {
+  {
+    slug: "iotex",
     title: "IoTeX",
     token: "IOTX",
     logo: "/images/blockchains/iotex.jpeg",
@@ -123,7 +112,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  algorand: {
+  {
+    slug: "algorand",
     title: "Algorand",
     token: "ALGO",
     logo: "/images/blockchains/algorand.jpeg",
@@ -156,7 +146,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  bsc: {
+  {
+    slug: "bsc",
     title: "BSC",
     token: "BNB",
     logo: "/images/blockchains/bsc.png",
@@ -189,7 +180,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  constellation: {
+  {
+    slug: "constellation",
     title: "Constellation",
     token: "DAG",
     logo: "/images/blockchains/constellation.jpeg",
@@ -225,7 +217,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  kadena: {
+  {
+    slug: "kadena",
     title: "Kadena",
     token: "KDA",
     logo: "/images/blockchains/kadena.jpeg",
@@ -258,7 +251,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  cardano: {
+  {
+    slug: "cardano",
     title: "Cardano",
     token: "ADA",
     logo: "/images/blockchains/cardano.jpeg",
@@ -291,7 +285,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  ethereum: {
+  {
+    slug: "ethereum",
     title: "Ethereum",
     token: "ETH",
     logo: "/images/blockchains/ethereum.jpeg",
@@ -324,7 +319,8 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-  polkadot: {
+  {
+    slug: "polkadot",
     title: "Polkadot",
     token: "DOT",
     logo: "/images/blockchains/polkadot.jpeg",
@@ -357,4 +353,4 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
       { type: "other", url: "" },
     ],
   },
-}
+]

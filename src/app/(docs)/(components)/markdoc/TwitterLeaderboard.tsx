@@ -19,19 +19,19 @@ export default async function TwitterLeaderboard({
   }
 
   const data = twitterData.twitter
-    .map((item) => {
-      const projectInfo = projects.find((project) => project.slug === item.name)
+    .map(({ name, twitter_username, twitter_followers, tweets }) => {
+      const projectInfo = projects.find((project) => project.slug === name)
 
       if (!projectInfo) return
 
       return {
         name: projectInfo.title,
-        path: `/projects/${item.name}`,
+        path: `/projects/${name}`,
         imagePath: projectInfo.logo,
-        twitterHandle: `@${item.twitter_username}`,
-        twitterUrl: `https://twitter.com/${item.twitter_username}`,
-        tweets: item.tweets || 0,
-        followers: item.twitter_followers || 0,
+        twitterHandle: `@${twitter_username}`,
+        twitterUrl: `https://twitter.com/${twitter_username}`,
+        tweets: tweets || 0,
+        followers: twitter_followers || 0,
       }
     })
     .filter((x) => x)

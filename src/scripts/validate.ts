@@ -38,6 +38,8 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     token: { type: "string" },
     blockchain: {
       type: "string",
+      // "tbd": This is for projects that have yet to decide which blockchain they will use
+      // "n/a": This is for projects that don't plan to have a token
       pattern:
         "(?:tbd|n/a|solana|polygon|iotex|algorand|bsc|constellation|kadena|cardano|ethereum|polkadot)",
     },
