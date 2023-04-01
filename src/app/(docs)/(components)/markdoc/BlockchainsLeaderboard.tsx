@@ -13,7 +13,7 @@ export default async function BlockchainsLeaderboard({
         [blockchain: string]: {
           projects: number
           name: string
-          website: string
+          path: string
           token: string
           imagePath: string
           coingecko: string
@@ -32,13 +32,12 @@ export default async function BlockchainsLeaderboard({
         result[blockchain] = {
           projects: 1,
           name: blockchainInfo.title,
-          website: blockchainInfo.links.find(({ type }) => type === "website")
-            ?.url!, // TODO: remove exclamation mark
+          path: `/blockchains/${blockchainInfo.slug}`,
           imagePath: blockchainInfo.logo,
           token: `$${blockchainInfo.token}`,
           coingecko: blockchainInfo.links.find(
             ({ type }) => type === "coingecko"
-          )?.url!, // TODO: remove exclamation mark
+          )?.url,
           legos: [lego],
           legosCount: 1,
           categories: [...categories],
@@ -73,8 +72,7 @@ export default async function BlockchainsLeaderboard({
       Header: "Blockchain",
       accessor: "name",
       Cell: LinkCell,
-      hrefAccessor: "website",
-      linkTarget: "_blank",
+      hrefAccessor: "path",
       imageAccessor: "imagePath",
       secondLinkTitleAccessor: "token",
       secondLinkHrefAccessor: "coingecko",
