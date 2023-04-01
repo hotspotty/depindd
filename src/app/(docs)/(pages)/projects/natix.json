@@ -6,7 +6,7 @@
   "lego": "sensors",
   "categories": ["mobility"],
   "token": "NTXT",
-  "blockchain": "",
+  "blockchain": "ethereum",
   "status": "development",
   "logo": "/images/projects/natix.jpeg",
   "links": [
@@ -29,7 +29,10 @@
     { "type": "whitepaper", "url": "https://docs.natix.network/" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://docs.natix.network/whitepaper/token-economy" },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.natix.network/whitepaper/token-economy"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
