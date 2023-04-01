@@ -38,10 +38,16 @@ export default async function MinerProfitabilityLeaderboard({
 
       if (!projectInfo) return
 
+      const coingecko = projectInfo.links.find(
+        (link) => link.type === "coingecko"
+      )?.url
+
       return {
         name: projectInfo.title,
         path: `/projects/${name}`,
         imagePath: projectInfo.logo,
+        token: `$${projectInfo.token}`,
+        coingecko: coingecko,
         activeMiners: stats.active_miners,
         averageMinerPrice: payback_time.avg_hardware_price,
         averageMonthlyRewardsUsd: payback_time.avg_monthly_rewards_usd,
@@ -57,6 +63,9 @@ export default async function MinerProfitabilityLeaderboard({
       Cell: LinkCell,
       hrefAccessor: "path",
       imageAccessor: "imagePath",
+      secondLinkTitleAccessor: "token",
+      secondLinkHrefAccessor: "coingecko",
+      secondLinkTarget: "_blank",
     },
     {
       Header: "Active miners",
