@@ -4,9 +4,9 @@ import blurIndigoImage from "@/images/blur-indigo.png"
 import Image from "next/image"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import { Icon } from "./(docs)/(components)/Icon"
-import { QuickLink } from "./(docs)/(components)/markdoc/QuickLinks"
 import { Search } from "./(docs)/(components)/Search"
 import Tab from "./(docs)/(components)/Tab"
+import { QuickLink } from "./(docs)/(components)/markdoc/QuickLinks"
 
 export const metadata = {
   title: "DePIN DD",
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
           <Image
             className="absolute -right-64 -top-64"
             src={blurCyanImage}
-            alt=""
+            alt="Background cyan blur image"
             width={530}
             height={530}
             unoptimized
@@ -29,9 +29,8 @@ const Home: React.FC = () => {
           <Image
             className="absolute -bottom-40 -right-44"
             src={blurIndigoImage}
-            alt=""
+            alt="Background indigo blur image"
             width={567}
-            height={567}
             unoptimized
             priority
           />
@@ -115,7 +114,7 @@ const Home: React.FC = () => {
             <Image
               className="absolute -right-64 -top-64"
               src={blurCyanImage}
-              alt=""
+              alt="Background cyan blur image"
               width={530}
               height={530}
               unoptimized
@@ -124,9 +123,8 @@ const Home: React.FC = () => {
             <Image
               className="absolute -bottom-40 -right-44"
               src={blurIndigoImage}
-              alt=""
+              alt="Background indigo blur image"
               width={567}
-              height={567}
               unoptimized
               priority
             />

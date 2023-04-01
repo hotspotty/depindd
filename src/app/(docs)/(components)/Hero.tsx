@@ -14,8 +14,8 @@ import { components } from "../config.markdoc"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
 import { Icon } from "./Icon"
-import { Prose } from "./markdoc/Prose"
 import Tab from "./Tab"
+import { Prose } from "./markdoc/Prose"
 
 export function Hero() {
   const leaderboardKeys = sidebarConfig.find(
@@ -47,7 +47,7 @@ export function Hero() {
             <Image
               className="absolute bottom-full right-full -mb-56 -mr-72 opacity-50"
               src={blurCyanImage}
-              alt=""
+              alt="Background cyan blur image"
               width={530}
               height={530}
               unoptimized
@@ -89,7 +89,7 @@ export function Hero() {
               <Image
                 className="absolute -right-64 -top-64"
                 src={blurCyanImage}
-                alt=""
+                alt="Background cyan blur image"
                 width={530}
                 height={530}
                 unoptimized
@@ -100,7 +100,6 @@ export function Hero() {
                 src={blurIndigoImage}
                 alt=""
                 width={567}
-                height={567}
                 unoptimized
                 priority
               />

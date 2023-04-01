@@ -216,7 +216,7 @@ export default function Page({ params }: PageProps) {
                       width={64}
                       height={64}
                       src={projectInfo.logo}
-                      alt={title}
+                      alt={projectInfo?.title}
                     />
                   </div>
                 )}
