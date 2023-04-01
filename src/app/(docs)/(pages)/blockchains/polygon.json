@@ -1,0 +1,37 @@
+{
+  "slug": "polygon",
+  "title": "Polygon",
+  "token": "MATIC",
+  "logo": "/images/blockchains/polygon.jpeg",
+  "links": [
+    { "type": "website", "url": "https://polygon.technology" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/0xPolygon" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "https://etherscan.io" },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/polygon"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}

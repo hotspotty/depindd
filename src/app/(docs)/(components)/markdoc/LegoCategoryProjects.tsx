@@ -1,4 +1,5 @@
-import { Category, projects } from "@/app/(docs)/(data)/projects"
+import { projects } from "@/app/(docs)/(data)/projects"
+import { Category } from "@/app/(docs)/(data)/types"
 import { QuickLink, QuickLinks } from "./QuickLinks"
 
 export default function LegoCategoryProjects({

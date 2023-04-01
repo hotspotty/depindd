@@ -1,0 +1,37 @@
+{
+  "slug": "polkadot",
+  "title": "Polkadot",
+  "token": "DOT",
+  "logo": "/images/blockchains/polkadot.jpeg",
+  "links": [
+    { "type": "website", "url": "https://polkadot.network" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/Polkadot" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "http://polkascan.io" },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/polkadot"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}

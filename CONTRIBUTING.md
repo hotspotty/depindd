@@ -92,7 +92,7 @@ git checkout -b add-project/project-x
 }
 ```
 
-5. Update the project details in `project-x.json` using the [LEGO classification](https://depindd.com/about/depin-lego) and the [possible values](</src/app/(docs)/(data)/projects.ts>)
+5. Update the project details in `project-x.json` using the [LEGO classification](https://depindd.com/about/depin-lego) and the [possible values](</src/app/(docs)/(data)/types.ts>)
 6. Download the logo from the project's Twitter account and save it as `project-x.png` (or other extension) in [/public/images/projects](/public/images/projects)
 7. Add a link to that image to the `project-x.json` file
 8. Update [/app/(docs)/(data)/projects.ts](</src/app/(docs)/(data)/projects.ts>) to add the `project-x.json` data:

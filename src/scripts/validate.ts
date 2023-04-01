@@ -2,7 +2,15 @@ import Ajv, { JSONSchemaType } from "ajv"
 import fs from "fs"
 import { glob } from "glob"
 import path from "path"
-import { ProjectInfo } from "../app/(docs)/(data)/projects"
+import {
+  ProjectInfo,
+  projectLinkValidationPattern,
+  projectLegoValidationPattern,
+  projectCategoryValidationPattern,
+  projectStatusValidationPattern,
+  BlockchainInfo,
+  blockchainValidationPattern,
+} from "../app/(docs)/(data)/types"
 
 const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
   type: "object",
@@ -24,26 +32,22 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     },
     lego: {
       type: "string",
-      pattern: "(?:data|sensors|servers|wireless|hardware)",
+      pattern: projectLegoValidationPattern,
     },
     categories: {
       type: "array",
       uniqueItems: true,
       items: {
         type: "string",
-        pattern:
-          "(?:connectivity|positioning|mobility|energy|environmental|healthcare|smart city|smart home|geo-location|general|storage|marketplace|proof|warehouse|analytics|tool|compute|CDN|VPN|manufacturer)",
+        pattern: projectCategoryValidationPattern,
       },
     },
     token: { type: "string" },
     blockchain: {
       type: "string",
-      // "tbd": This is for projects that have yet to decide which blockchain they will use
-      // "n/a": This is for projects that don't plan to have a token
-      pattern:
-        "(?:tbd|n/a|solana|polygon|iotex|algorand|bsc|constellation|kadena|cardano|ethereum|polkadot)",
+      pattern: blockchainValidationPattern,
     },
-    status: { type: "string", pattern: "(?:development|production)" },
+    status: { type: "string", pattern: projectStatusValidationPattern },
     logo: { type: "string" },
     links: {
       type: "array",
@@ -54,8 +58,7 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
           label: { type: "string", nullable: true },
           type: {
             type: "string",
-            pattern:
-              "(?:website|foundation|company|blog|medium|twitter|reddit|forum|discord|telegram|youtube|instagram|linkedin|tiktok|facebook|github|whitepaper|documentation|governance|tokenomics|explorer|shop|coingecko|analytics|crunchbase|other)",
+            pattern: projectLinkValidationPattern,
           },
           url: { type: "string" },
         },
@@ -85,12 +88,11 @@ async function validateProjectJsonFiles() {
 
   const ajv = new Ajv()
 
-  // validate is a type guard for ProjectInfo - type is inferred from schema type
   const compile = ajv.compile(projectInfoJsonSchema)
 
   return projectJsonPaths.map((projectJsonPath) => {
     const projectJson = fs.readFileSync(projectJsonPath, "utf-8")
-    const projectJsonParsed = JSON.parse(projectJson) // TODO: see why the 'pattern' validation is not working, while it is working when the json file is imported directly
+    const projectJsonParsed = JSON.parse(projectJson)
 
     if (!compile(projectJsonParsed)) {
       return {
@@ -108,6 +110,65 @@ async function validateProjectJsonFiles() {
   })
 }
 
+const blockchainInfoJsonSchema: JSONSchemaType<BlockchainInfo> = {
+  type: "object",
+  properties: {
+    slug: { type: "string", pattern: blockchainValidationPattern },
+    title: { type: "string" },
+    token: { type: "string" },
+    logo: { type: "string" },
+    links: {
+      type: "array",
+      uniqueItems: true,
+      items: {
+        type: "object",
+        properties: {
+          label: { type: "string", nullable: true },
+          type: {
+            type: "string",
+            pattern: projectLinkValidationPattern,
+          },
+          url: { type: "string" },
+        },
+        required: ["type", "url"],
+      },
+    },
+  },
+  required: ["slug", "title", "token", "logo", "links"],
+  additionalProperties: false,
+}
+
+async function validateBlockchainJsonFiles() {
+  const blockchainJsonPaths = await glob(
+    path.join(process.cwd(), "src/app/(docs)/(pages)/blockchains", "**/*.json")
+  )
+
+  console.log(blockchainJsonPaths)
+
+  const ajv = new Ajv()
+
+  const compile = ajv.compile(blockchainInfoJsonSchema)
+
+  return blockchainJsonPaths.map((blockchainJsonPath) => {
+    const blockchainJson = fs.readFileSync(blockchainJsonPath, "utf-8")
+    const blockchainJsonParsed = JSON.parse(blockchainJson)
+
+    if (!compile(blockchainJsonParsed)) {
+      return {
+        title: blockchainJsonPath,
+        exitCode: 1,
+        errors: compile.errors ?? [],
+      }
+    }
+
+    return {
+      title: blockchainJsonPath,
+      exitCode: 0,
+      errors: [],
+    }
+  })
+}
+
 async function validate() {
   console.log("validating json files...")
 
@@ -115,7 +176,11 @@ async function validate() {
 
   const errors = {}
 
-  const results = await validateProjectJsonFiles()
+  const projectResults = await validateProjectJsonFiles()
+
+  const blockchainResults = await validateBlockchainJsonFiles()
+
+  const results = [...projectResults, ...blockchainResults]
 
   exitCode = results.reduce((acum, cur) => (acum + cur.exitCode > 0 ? 1 : 0), 0)
 

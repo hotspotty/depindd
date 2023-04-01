@@ -1,12 +1,4 @@
-export interface InvestorInfo {
-  id: string
-  title: string
-  website: string
-  twitterUsername?: string
-  blog?: string
-  logo: string
-  investments: string[] // IDs of projects
-}
+import { InvestorInfo } from "./types"
 
 export const investors: InvestorInfo[] = [
   {
