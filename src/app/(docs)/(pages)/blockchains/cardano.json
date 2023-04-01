@@ -11,9 +11,9 @@
     { "type": "medium", "url": "" },
     { "type": "twitter", "url": "https://twitter.com/Cardano_CF" },
     { "type": "reddit", "url": "" },
-    { "type": "forum", "url": "" },
+    { "type": "forum", "url": "https://forum.cardano.org" },
     { "type": "discord", "url": "" },
-    { "type": "telegram", "url": "" },
+    { "type": "telegram", "url": "https://t.me/Cardano" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
@@ -21,10 +21,19 @@
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "" },
+    { "type": "documentation", "url": "https://docs.cardano.org" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "https://cardanoscan.io" },
+    {
+      "type": "explorer",
+      "url": "https://explorer.cardano.org/en",
+      "label": "Cardano Explorer"
+    },
+    {
+      "type": "explorer",
+      "url": "https://cardanoscan.io",
+      "label": "CardanoScan"
+    },
     { "type": "shop", "url": "" },
     {
       "type": "coingecko",

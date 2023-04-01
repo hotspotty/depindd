@@ -8,12 +8,12 @@
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
-    { "type": "medium", "url": "" },
+    { "type": "medium", "url": "https://medium.com/polkadot-network" },
     { "type": "twitter", "url": "https://twitter.com/Polkadot" },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
-    { "type": "discord", "url": "" },
-    { "type": "telegram", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/polkadot" },
+    { "type": "telegram", "url": "https://t.me/PolkadotOfficial" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
@@ -24,7 +24,16 @@
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "http://polkascan.io" },
+    {
+      "type": "explorer",
+      "url": "https://explorer.polkascan.io/polkadot",
+      "label": "PolkaScan"
+    },
+    {
+      "type": "explorer",
+      "url": "https://polkastats.io",
+      "label": "PolkaStats"
+    },
     { "type": "shop", "url": "" },
     {
       "type": "coingecko",

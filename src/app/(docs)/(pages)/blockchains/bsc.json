@@ -6,7 +6,7 @@
   "links": [
     { "type": "website", "url": "https://www.bnbchain.org" },
     { "type": "foundation", "url": "" },
-    { "type": "company", "url": "" },
+    { "type": "company", "url": "https://www.binance.com" },
     { "type": "blog", "url": "" },
     { "type": "medium", "url": "" },
     { "type": "twitter", "url": "https://twitter.com/BNBCHAIN" },
@@ -19,12 +19,17 @@
     { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
-    { "type": "github", "url": "" },
+    { "type": "github", "url": "https://github.com/binance-exchange" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "https://bscscan.com" },
+    { "type": "explorer", "url": "https://bscscan.com", "label": "BscScan" },
+    {
+      "type": "explorer",
+      "url": "https://explorer.bnbchain.org",
+      "label": "BNB Chain Explorer"
+    },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/bnb" },
     { "type": "analytics", "url": "" },

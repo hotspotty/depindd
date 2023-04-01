@@ -12,7 +12,7 @@
     { "type": "twitter", "url": "https://twitter.com/ethereum" },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
-    { "type": "discord", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/CetY6Y4" },
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
@@ -24,7 +24,12 @@
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "https://etherscan.io" },
+    { "type": "explorer", "url": "https://etherscan.io", "label": "EtherScan" },
+    {
+      "type": "explorer",
+      "url": "https://blockchair.com/ethereum",
+      "label": "Blockchair"
+    },
     { "type": "shop", "url": "" },
     {
       "type": "coingecko",
