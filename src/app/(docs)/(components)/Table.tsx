@@ -13,21 +13,21 @@ import React, { ReactNode } from "react"
 import {
   Column,
   TableInstance,
-  useFilters,
-  useGlobalFilter,
   UseGlobalFiltersInstanceProps,
-  usePagination,
   UsePaginationInstanceProps,
   UseRowSelectInstanceProps,
+  UseTableInstanceProps,
+  useFilters,
+  useGlobalFilter,
+  usePagination,
   useSortBy,
   useTable,
-  UseTableInstanceProps,
 } from "react-table"
 import { projects } from "../(data)/projects"
+import { RenderLinks } from "./Links"
 import SortDownIcon from "./icons/SortDownIcon"
 import SortIcon from "./icons/SortIcon"
 import SortUpIcon from "./icons/SortUpIcon"
-import { RenderLinks } from "./Links"
 import { Prose } from "./markdoc/Prose"
 
 function PaginationButton({
@@ -233,20 +233,24 @@ export function DurationCell({ value }: { value: number }) {
 
   const months = value
   const days = months * 30
+  const weeks = days / 7
+  const formattedMonths = formatNumber(months)
+  const formattedWeeks = formatNumber(weeks)
+  const formattedDays = formatNumber(days)
 
-  if (months < 1) {
+  if (weeks < 3) {
     return (
       <div>
-        {formatNumber(days)} day{days === 1 ? "" : "s"}
+        {formattedDays} day{formattedDays === "1" ? "" : "s"}
       </div>
     )
   }
 
-  return (
-    <div>
-      {formatNumber(months)} month{months === 1 ? "" : "s"}
-    </div>
-  )
+  if (months < 2) {
+    return <div>{formattedWeeks} weeks</div>
+  }
+
+  return <div>{formattedMonths} months</div>
 }
 
 export function CurrencyCell({ value }: { value: number }) {
