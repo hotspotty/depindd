@@ -48,7 +48,7 @@ export default function InvestorsLeaderboard({
       Cell: ProjectsCell,
     },
     {
-      Header: "Count",
+      Header: "Projects",
       accessor: "projectCount",
     },
   ]
