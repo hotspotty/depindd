@@ -2,7 +2,6 @@
   "slug": "element",
   "title": "Element",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["environmental"],
   "token": "IAQ",

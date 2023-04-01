@@ -2,7 +2,6 @@
   "slug": "nodle",
   "title": "Nodle",
   "miners": [],
-  "scores": [],
   "lego": "wireless",
   "categories": ["connectivity"],
   "token": "NODL",
@@ -32,7 +31,10 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://nodle.subscan.io/" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/nodle-network" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/nodle-network"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

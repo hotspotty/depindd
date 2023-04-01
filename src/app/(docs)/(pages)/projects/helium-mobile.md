@@ -49,8 +49,6 @@ Furthermore, Helium's network is designed to be open and transparent, with all n
 
 ## DD Metrics
 
-{% scores project="helium-mobile" / %}
-
 ### Average monthly USD earnings
 
 Thank our friends at Hotspotty for making this easy with their rewards calculator [here](https://app.hotspotty.net/helium-5g-genesis-mobile-rewards-calculator). If you want to double check their math, check out the Helium Proof of Coverage source docs [here](https://docs.helium.com/5g-on-helium/mobile-poc/).

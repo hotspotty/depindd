@@ -2,7 +2,6 @@
   "slug": "mind-land",
   "title": "Mind Land",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["healthcare"],
   "token": "BCI",
@@ -26,10 +25,16 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://mindland.gitbook.io/litepaper/overview/our-mission" },
+    {
+      "type": "whitepaper",
+      "url": "https://mindland.gitbook.io/litepaper/overview/our-mission"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://mindland.gitbook.io/litepaper/game-system/tokenomics-wip" },
+    {
+      "type": "tokenomics",
+      "url": "https://mindland.gitbook.io/litepaper/game-system/tokenomics-wip"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },

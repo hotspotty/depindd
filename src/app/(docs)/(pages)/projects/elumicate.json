@@ -2,7 +2,6 @@
   "slug": "elumicate",
   "title": "Elumicate",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["smart city"],
   "token": "ELUM",
@@ -22,14 +21,26 @@
     { "type": "telegram", "url": "https://t.me/elumicate_official" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/elumicate-inc/" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/elumicate-inc/"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://whitepaper.elumicate.com/user-experience/testnet-onboarding" },
+    {
+      "type": "whitepaper",
+      "url": "https://whitepaper.elumicate.com/user-experience/testnet-onboarding"
+    },
     { "type": "documentation", "url": "" },
-    { "type": "governance", "url": "https://whitepaper.elumicate.com/tokenomics/governance-and-staking" },
-    { "type": "tokenomics", "url": "https://whitepaper.elumicate.com/tokenomics/initial-supply-and-distribution" },
+    {
+      "type": "governance",
+      "url": "https://whitepaper.elumicate.com/tokenomics/governance-and-staking"
+    },
+    {
+      "type": "tokenomics",
+      "url": "https://whitepaper.elumicate.com/tokenomics/initial-supply-and-distribution"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },

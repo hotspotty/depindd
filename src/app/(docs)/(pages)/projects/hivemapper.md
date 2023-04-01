@@ -41,8 +41,6 @@ At the moment the best way to get involved with key decisions is to voice your o
 
 ## DD Metrics
 
-{% scores project="hivemapper" / %}
-
 ### Average monthly USD earnings
 
 Note: this calculation is for mapping contributors, not QA contributors, since we’re assessing payback time on hardware and QA contributors don’t buy hardware.

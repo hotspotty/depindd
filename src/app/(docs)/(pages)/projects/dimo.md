@@ -48,8 +48,6 @@ The $DIMO token holders can create and vote on proposals called DIMO Improvement
 
 ## DD Metrics
 
-{% scores project="dimo" / %}
-
 ### Average monthly USD earnings
 
 [1,105,000 DIMO tokens issued each week in 2023](https://docs.dimo.zone/governance/dip2) (only inclusive of baseline issuance, marketplace issuance not significant enough yet). Multiply by 4 to get to 4,420,000 DIMO tokens issued per month. Multiply by [current token price](https://quickswap.exchange/#/swap?outputCurrency=0xe261d618a959afffd53168cd07d12e37b26761db&swapIndex=0). Divide by [current number of vehicle IDs](https://dune.com/dylan_dimo/dimo) (lower number than “vehicles connected” stat on DIMO explorer as some users connected vehicles before minting vehicle IDs as NFTs was possible and can’t receive rewards until they do).

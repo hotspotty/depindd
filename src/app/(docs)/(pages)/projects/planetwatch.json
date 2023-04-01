@@ -2,7 +2,6 @@
   "slug": "planetwatch",
   "title": "PlanetWatch",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["environmental"],
   "token": "PLANET",

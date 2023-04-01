@@ -36,8 +36,6 @@ TBD
 
 ## DD Metrics
 
-{% scores project="xnet" / %}
-
 ### Average monthly USD earnings
 
 Yearly token rewards for Felix or Lucius nodes are listed [here](https://www.xnet.company/files/Phase_X.pdf) (for first 5,000 nodes deployed for Phase X). Divide by 12 to get monthly token rewards. Multiply by [current token price](https://quickswap.exchange/#/swap?inputCurrency=0xbc5eb84c052fd012bb902c258c9fd241b17c0005&outputCurrency=0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174&swapIndex=0). Divide by (number of “x sites with radios”\*1.5) from [XNET explorer](https://explorer.xnetmobile.com/) (”x sites” are XNET gateways, of which about half house two earning radios. Hence the 1.5x multiplier).

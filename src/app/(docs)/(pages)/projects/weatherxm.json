@@ -2,7 +2,6 @@
   "slug": "weatherxm",
   "title": "WeatherXM",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["environmental"],
   "token": "WXM",
@@ -20,19 +19,28 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://weatherxm.com/discord" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCAxcV0Jes225AuaLGdFue3g" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCAxcV0Jes225AuaLGdFue3g"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://www.linkedin.com/company/weatherxm" },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/weatherxm" },
     { "type": "github", "url": "https://github.com/WeatherXM" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "https://docs.google.com/document/d/1_z-sdCoSpm7H5kH0Ko8grUn7IatmAObSdkQULr21YGc/edit" },
+    {
+      "type": "documentation",
+      "url": "https://docs.google.com/document/d/1_z-sdCoSpm7H5kH0Ko8grUn7IatmAObSdkQULr21YGc/edit"
+    },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "https://weatherxm.com/token/" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/weatherxm" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/weatherxm"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

@@ -2,23 +2,6 @@
   "slug": "hivemapper",
   "title": "Hivemapper",
   "miners": [],
-  "scores": [
-    {
-      "type": "governance",
-      "value": 4,
-      "description": "Currently, Hivemapper Incorporated maintains the majority of governance control over the network, but a recent shift has occurred with the introduction of the first Map Improvement Proposals (MIPs) presented by the Hivemapper Foundation and proposed on the Hivemapper [Discord](https://discord.com/invite/FRWMKyy5v2) and [Medium](https://medium.com/@hivemapper). This move towards formal community governance is a positive step towards decentralization."
-    },
-    {
-      "type": "tokenomics",
-      "value": 7,
-      "description": "The Hivemapper Network has a fixed maximum supply of 10 billion HONEY tokens, with 40% initially allocated to contributors, 20% to investors, 20% to employees of Hivemapper Inc., 15% to Hivemapper Inc. for R&D and operational support, and 5% to the Hivemapper Foundation for governance. The exact amount of tokens minted each week for contributors is determined by the global map progress, which is calculated using map progress units (MPUs) at the regional (RMPU) or global (GMPU) level. For any given reward period (one week), a region produces between 0 and 1 MPUs based on its coverage, activity, and resilience. The GMPU is equal to the weighted average of the RMPUs for a given period, and it is used to calculate the amount of HONEY minted for contributors in that period. The total MPU amount is 520, which is a crucial factor to note as it would result in a minimum of 10 years for max token accrual by contributors. The HONEY token operates through a burn and mint system to establish an on-chain marketplace that connects contributors and customers. To access map data customers purchase USD-pegged map credits, which burn HONEY tokens. The tokens burned are then reminted as Map Consumption Rewards. With the consumption of more services and the rise in demand for map credits, the speed at which tokens are burned and reminted will increase, leading to a connection between the value of HONEY and the utility provided by the Hivemapper Network."
-    },
-    {
-      "type": "ease-of-mining",
-      "value": 7,
-      "description": "HONEY earnings are calculated based on coverage, freshness, and quality. Following the guidelines provided by Hivemapper and collecting imagery in desired locations, revisiting these areas for up-to-date imagery, and properly setting up the dashcam are crucial to earning HONEY. This straightforward system makes earning HONEY easy."
-    }
-  ],
   "lego": "sensors",
   "categories": ["mobility"],
   "token": "HONEY",

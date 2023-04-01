@@ -2,7 +2,6 @@
   "slug": "geodnet",
   "title": "Geodnet",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["geo-location"],
   "token": "GEOD",

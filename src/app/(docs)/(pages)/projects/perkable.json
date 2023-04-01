@@ -2,7 +2,6 @@
   "slug": "perkable",
   "title": "Perkable",
   "miners": [],
-  "scores": [],
   "lego": "sensors",
   "categories": ["general"],
   "token": "",
@@ -22,7 +21,10 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/perkableco/" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/perkableco/"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
@@ -34,7 +36,10 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/perkable" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/perkable"
+    },
     { "type": "other", "url": "" }
   ]
 }

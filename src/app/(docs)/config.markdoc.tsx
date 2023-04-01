@@ -10,8 +10,6 @@ import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderbo
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
 import LegoCategoryProjects from "./(components)/markdoc/LegoCategoryProjects"
 import MinerProfitabilityLeaderboard from "./(components)/markdoc/MinerProfitabilityLeaderboard"
-import ScoreLeaderboard from "./(components)/markdoc/ScoreLeaderboard"
-import Scores from "./(components)/markdoc/Scores"
 import TwitterLeaderboard from "./(components)/markdoc/TwitterLeaderboard"
 import { legos } from "./(data)/lego"
 
@@ -42,20 +40,6 @@ const config: Config = {
           matches: ["note", "warning"],
           errorLevel: "critical",
         },
-      },
-    },
-    scores: {
-      render: "Scores",
-      selfClosing: true,
-      attributes: {
-        project: { type: String },
-      },
-    },
-    "score-leaderboard": {
-      render: "ScoreLeaderboard",
-      selfClosing: true,
-      attributes: {
-        type: { type: String },
       },
     },
     "investors-leaderboard": {
@@ -155,11 +139,9 @@ const components = {
       <figcaption>{caption}</figcaption>
     </figure>
   ),
-  Scores: Scores,
   Callout: Callout,
   QuickLinks: QuickLinks,
   QuickLink: QuickLink,
-  ScoreLeaderboard: ScoreLeaderboard,
   InvestorsLeaderboard: InvestorsLeaderboard,
   ContributorsLeaderboard: ContributorsLeaderboard,
   BlockchainsLeaderboard: BlockchainsLeaderboard,

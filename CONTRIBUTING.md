@@ -55,7 +55,6 @@ git checkout -b add-project/project-x
   "slug": "",
   "title": "",
   "miners": [],
-  "scores": [],
   "lego": "wireless",
   "categories": ["connectivity"],
   "token": "",

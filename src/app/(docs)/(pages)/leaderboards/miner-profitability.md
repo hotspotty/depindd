@@ -11,4 +11,4 @@ In DePIN, the profitability of a miner is measured by the approximate amount of 
 cumulative token rewards * current token price = hardware miner cost
 ```
 
-This does not include opex like electricity, wireless connectivity, etc as these costs are usually minor and can vary greatly across regions, sites, hardware builds, etc. Opex is considered in the {% internal-link href="/leaderboards/ease-of-mining-score" title="Ease of Mining" / %} score.
+This does not include opex like electricity, wireless connectivity, etc as these costs are usually minor and can vary greatly across regions, sites, hardware builds, etc.

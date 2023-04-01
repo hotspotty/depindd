@@ -22,19 +22,6 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
         required: ["name", "url", "price"],
       },
     },
-    scores: {
-      type: "array",
-      uniqueItems: true,
-      items: {
-        type: "object",
-        properties: {
-          type: { type: "string" },
-          value: { type: "number" },
-          description: { type: "string" },
-        },
-        required: ["type", "value", "description"],
-      },
-    },
     lego: {
       type: "string",
       pattern: "(?:data|sensors|servers|wireless|hardware)",
@@ -78,7 +65,6 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     "slug",
     "title",
     "miners",
-    "scores",
     "lego",
     "categories",
     "token",
