@@ -1,5 +1,6 @@
-@import 'tailwindcss/base';
-@import './fonts.css';
-@import './docsearch.css';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "./fonts.css";
+@import "./docsearch.css";
+@import "./rc-tooltip.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

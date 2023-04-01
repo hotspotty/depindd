@@ -27,9 +27,9 @@ const Tab: React.FC<Props> = ({
 
   return (
     <div className="flex w-full flex-col items-center">
-      <div className="flex w-full items-center sm:flex-col sm:items-start">
+      <div className="flex w-full items-center gap-4 sm:flex-col sm:items-start">
         {title && (
-          <h3 className="w-14 font-display text-sm tracking-tight dark:text-white sm:w-auto sm:text-2xl">
+          <h3 className="font-display text-sm tracking-tight dark:text-white sm:w-auto sm:text-2xl">
             {title}
           </h3>
         )}

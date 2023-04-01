@@ -1,6 +1,6 @@
 import { blockchains } from "../../(data)/blockchains"
-import { Category, Lego, projects } from "../../(data)/projects"
-import Table, { LinkCell } from "../Table"
+import { projects } from "../../(data)/projects"
+import Table, { LinkCell, ProjectsCell } from "../Table"
 
 export default async function BlockchainsLeaderboard({
   minimal = false,
@@ -11,26 +11,22 @@ export default async function BlockchainsLeaderboard({
     (
       result: {
         [blockchain: string]: {
-          projects: number
           name: string
           path: string
           token: string
           imagePath: string
           coingecko: string
-          legos: Lego[]
-          legosCount: number
-          categories: Category[]
-          categoriesCount: number
+          projectSlugs: string
+          projectCount: number
         }
       },
-      { lego, categories, blockchain }
+      { slug, lego, categories, blockchain }
     ) => {
       const blockchainInfo = blockchains.find(({ slug }) => slug === blockchain)
       if (!blockchainInfo) return result
 
       if (!result[blockchain]) {
         result[blockchain] = {
-          projects: 1,
           name: blockchainInfo.title,
           path: `/blockchains/${blockchainInfo.slug}`,
           imagePath: blockchainInfo.logo,
@@ -38,27 +34,14 @@ export default async function BlockchainsLeaderboard({
           coingecko: blockchainInfo.links.find(
             ({ type }) => type === "coingecko"
           )?.url,
-          legos: [lego],
-          legosCount: 1,
-          categories: [...categories],
-          categoriesCount: categories.length,
+          projectSlugs: slug,
+          projectCount: 1,
         }
         return result
       }
 
-      result[blockchain].projects++
-
-      if (!result[blockchain].legos.includes(lego)) {
-        result[blockchain].legos.push(lego)
-        result[blockchain].legosCount++
-      }
-
-      categories.forEach((category) => {
-        if (!result[blockchain].categories.includes(category)) {
-          result[blockchain].categories.push(category)
-          result[blockchain].categoriesCount++
-        }
-      })
+      result[blockchain].projectSlugs += "," + slug
+      result[blockchain].projectCount++
 
       return result
     },
@@ -79,24 +62,21 @@ export default async function BlockchainsLeaderboard({
       secondLinkTarget: "_blank",
     },
     {
-      Header: "LEGOs",
-      accessor: "legosCount",
+      Header: "Projects",
+      accessor: "projectSlugs",
+      Cell: ProjectsCell,
     },
     {
-      Header: "Categories",
-      accessor: "categoriesCount",
-    },
-    {
-      Header: "DePIN projects",
-      accessor: "projects",
+      Header: "Projects",
+      accessor: "projectCount",
     },
   ]
 
   const initialState = {
-    hiddenColumns: minimal ? ["legosCount", "categoriesCount"] : [],
+    hiddenColumns: minimal ? ["projectSlugs"] : [],
     sortBy: [
       {
-        id: "projects",
+        id: "projectCount",
         desc: true,
       },
     ],

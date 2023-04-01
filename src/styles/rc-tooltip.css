@@ -1,0 +1,5 @@
+@import "rc-tooltip/assets/bootstrap.css";
+
+.rc-tooltip {
+  max-width: 250px;
+}

@@ -20,7 +20,7 @@ export default function InvestorsLeaderboard({
           (x) => x.url != null
         ) as { title: string; url: string }[]
       ),
-      investmentsCount: investor.investments.length,
+      projectCount: investor.investments.length,
       projectSlugs: investor.investments.join(","),
     }
   })
@@ -48,8 +48,8 @@ export default function InvestorsLeaderboard({
       Cell: ProjectsCell,
     },
     {
-      Header: "Investments",
-      accessor: "investmentsCount",
+      Header: "Count",
+      accessor: "projectCount",
     },
   ]
 
@@ -57,7 +57,7 @@ export default function InvestorsLeaderboard({
     hiddenColumns: minimal ? ["links"] : [],
     sortBy: [
       {
-        id: "investmentsCount",
+        id: "projectCount",
         desc: true,
       },
     ],
