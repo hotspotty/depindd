@@ -25,6 +25,8 @@ export default async function BlockchainsLeaderboard({
       },
       { lego, categories, blockchain }
     ) => {
+      if (!blockchainInfo[blockchain]) return result
+
       if (!result[blockchain]) {
         result[blockchain] = {
           projects: 1,

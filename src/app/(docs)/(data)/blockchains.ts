@@ -1,4 +1,6 @@
 export type Blockchain =
+  | "tbd" // This is for projects that have yet to decide which blockchain they will use
+  | "n/a" // This is for projects that don't plan to have a token
   | "solana"
   | "polygon"
   | "iotex"

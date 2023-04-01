@@ -6,7 +6,7 @@
   "lego": "wireless",
   "categories": ["connectivity"],
   "token": "",
-  "blockchain": "",
+  "blockchain": "tbd",
   "status": "development",
   "logo": "/images/projects/really.jpeg",
   "links": [
@@ -34,7 +34,10 @@
     { "type": "shop", "url": "https://really.com/shop" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/really-08a4" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/really-08a4"
+    },
     { "type": "other", "url": "https://www.instagram.com/reallywireless/" }
   ]
 }
