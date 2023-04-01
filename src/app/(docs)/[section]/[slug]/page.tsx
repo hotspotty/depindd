@@ -87,7 +87,7 @@ export default function Page({ params }: PageProps) {
       const blockchain = blockchainInfo[projectInfo.blockchain]
       if (blockchain) {
         labels.push({
-          title: blockchain.name,
+          title: blockchain.title,
           url: blockchain.links.find(({ type }) => type === "website")?.url,
           target: "_blank",
         })
@@ -103,7 +103,7 @@ export default function Page({ params }: PageProps) {
   } else if (params.section === "blockchains") {
     const blockchain = blockchainInfo[params.slug]
     if (blockchain) {
-      title = blockchain.name
+      title = blockchain.title
       logo = blockchain.logo
 
       blockchain.links.forEach(({ type, label, url }) => {

@@ -15,7 +15,7 @@ export type Blockchain =
   | "polkadot"
 
 export interface BlockchainInfo {
-  name: string
+  title: string
   token: string
   logo: string
   links: LinkItem[]
@@ -25,7 +25,7 @@ export interface BlockchainInfo {
 // TODO: import from json files
 export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
   solana: {
-    name: "Solana",
+    title: "Solana",
     token: "SOL",
     logo: "/images/blockchains/solana.jpeg",
     links: [
@@ -58,7 +58,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   polygon: {
-    name: "Polygon",
+    title: "Polygon",
     token: "MATIC",
     logo: "/images/blockchains/polygon.jpeg",
     links: [
@@ -91,7 +91,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   iotex: {
-    name: "IoTeX",
+    title: "IoTeX",
     token: "IOTX",
     logo: "/images/blockchains/iotex.jpeg",
     links: [
@@ -124,7 +124,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   algorand: {
-    name: "Algorand",
+    title: "Algorand",
     token: "ALGO",
     logo: "/images/blockchains/algorand.jpeg",
     links: [
@@ -157,7 +157,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   bsc: {
-    name: "BSC",
+    title: "BSC",
     token: "BNB",
     logo: "/images/blockchains/bsc.png",
     links: [
@@ -190,7 +190,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   constellation: {
-    name: "Constellation",
+    title: "Constellation",
     token: "DAG",
     logo: "/images/blockchains/constellation.jpeg",
     links: [
@@ -226,7 +226,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   kadena: {
-    name: "Kadena",
+    title: "Kadena",
     token: "KDA",
     logo: "/images/blockchains/kadena.jpeg",
     links: [
@@ -259,7 +259,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   cardano: {
-    name: "Cardano",
+    title: "Cardano",
     token: "ADA",
     logo: "/images/blockchains/cardano.jpeg",
     links: [
@@ -292,7 +292,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   ethereum: {
-    name: "Ethereum",
+    title: "Ethereum",
     token: "ETH",
     logo: "/images/blockchains/ethereum.jpeg",
     links: [
@@ -325,7 +325,7 @@ export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
     ],
   },
   polkadot: {
-    name: "Polkadot",
+    title: "Polkadot",
     token: "DOT",
     logo: "/images/blockchains/polkadot.jpeg",
     links: [

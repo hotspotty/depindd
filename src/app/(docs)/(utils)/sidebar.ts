@@ -30,7 +30,7 @@ export function getSidebarItems() {
           if (projectInfo) title = projectInfo.title
         } else if (section.section === "blockchains") {
           const blockchain = blockchainInfo[page]
-          if (blockchain) title = blockchain.name
+          if (blockchain) title = blockchain.title
         } else {
           const filePath = path.join(PAGES_PATH, section.section, page + ".md")
           const source = fs.readFileSync(filePath, "utf-8")

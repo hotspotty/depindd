@@ -31,7 +31,7 @@ export default async function BlockchainsLeaderboard({
       if (!result[blockchain]) {
         result[blockchain] = {
           projects: 1,
-          name: blockchainInfo[blockchain].name,
+          name: blockchainInfo[blockchain].title,
           website: blockchainInfo[blockchain].links.find(
             ({ type }) => type === "website"
           )?.url!, // TODO: remove exclamation mark

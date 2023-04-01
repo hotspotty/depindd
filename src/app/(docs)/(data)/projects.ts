@@ -28,7 +28,7 @@ import xnet from "@/app/(docs)/(pages)/projects/xnet.json"
 import { Blockchain } from "./blockchains"
 
 interface Miner {
-  name: string
+  title: string
   url: string
   price: number
 }

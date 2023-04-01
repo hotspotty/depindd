@@ -15,11 +15,11 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
       items: {
         type: "object",
         properties: {
-          name: { type: "string" },
+          title: { type: "string" },
           url: { type: "string" },
           price: { type: "number" },
         },
-        required: ["name", "url", "price"],
+        required: ["title", "url", "price"],
       },
     },
     lego: {
