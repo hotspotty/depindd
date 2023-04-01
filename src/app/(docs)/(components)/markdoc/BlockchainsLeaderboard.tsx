@@ -15,7 +15,7 @@ export default async function BlockchainsLeaderboard({
           path: string
           token: string
           imagePath: string
-          coingecko: string
+          coingecko: string | undefined
           projectSlugs: string
           projectCount: number
         }
