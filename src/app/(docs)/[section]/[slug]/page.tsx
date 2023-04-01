@@ -32,13 +32,13 @@ type PageProps = {
 
 export const dynamicParams = false
 
-const ARTICLES_DIR = path.join(process.cwd(), PAGES_PATH)
+const PAGES_DIR = path.join(process.cwd(), PAGES_PATH)
 
 export async function generateStaticParams() {
-  const docPaths = await glob(path.join(ARTICLES_DIR, "**/*.md"))
+  const docPaths = await glob(path.join(PAGES_DIR, "**/*.md"))
   return docPaths.map((docPath) => {
     const section = path
-      .dirname(docPath.replace(ARTICLES_DIR, ""))
+      .dirname(docPath.replace(PAGES_DIR, ""))
       .replace("/", "")
     const slug = path.basename(docPath, path.extname(docPath))
     return { section, slug }
@@ -57,9 +57,7 @@ export async function generateMetadata({
   }
 }
 
-export default function Page({ params }: PageProps) {
-  const sidebar = getSidebarItems()
-  const section = sidebar.find(({ section }) => section === params.section)
+export default async function Page({ params }: PageProps) {
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
   let { title, content, topContent } = getMarkdownContent(filePath)
 
@@ -126,7 +124,10 @@ export default function Page({ params }: PageProps) {
   if (!title) title = capitalizeFirstLetter(params.slug)
 
   const tableOfContents = collectHeadings(content)
-  const allPages = sidebar.flatMap((section) => section.items)
+
+  const sidebar = await getSidebarItems()
+  const section = sidebar.find(({ section }) => section === params.section)
+  const allPages = sidebar.flatMap(({ items }) => items)
   const pageIndex = allPages.findIndex(({ slug }) => slug === params.slug)
   const previousPage = allPages[pageIndex - 1]
   const nextPage = allPages[pageIndex + 1]

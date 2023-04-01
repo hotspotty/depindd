@@ -2,12 +2,12 @@
   {
     "section": "about",
     "label": "About",
-    "items": ["depin", "depindd", "depin-lego"]
+    "slugs": ["depin", "depindd", "depin-lego"]
   },
   {
     "section": "leaderboards",
     "label": "Leaderboards",
-    "items": [
+    "slugs": [
       "miner-profitability",
       "twitter",
       "blockchains",
@@ -18,55 +18,18 @@
   {
     "section": "lego",
     "label": "LEGO",
-    "items": ["wireless", "sensors", "data", "servers", "hardware"]
+    "slugs": ["wireless", "sensors", "data", "servers", "hardware"]
   },
   {
     "section": "projects",
     "label": "Projects",
-    "items": [
-      "2blox",
-      "arkreen",
-      "crankk",
-      "dimo",
-      "element",
-      "elumicate",
-      "envirobloq",
-      "foam",
-      "fry-foundation",
-      "geodnet",
-      "getdor",
-      "green-power-network",
-      "healthblocks",
-      "helium-iot",
-      "helium-mobile",
-      "hivemapper",
-      "mapmetrics",
-      "mind-land",
-      "natix",
-      "nodle",
-      "perkable",
-      "planetwatch",
-      "react",
-      "really",
-      "weatherxm",
-      "wifi-map",
-      "xnet"
-    ]
+    "automated": true,
+    "showCount": true
   },
   {
     "section": "blockchains",
     "label": "Blockchains",
-    "items": [
-      "algorand",
-      "bsc",
-      "cardano",
-      "constellation",
-      "ethereum",
-      "iotex",
-      "kadena",
-      "polkadot",
-      "polygon",
-      "solana"
-    ]
+    "automated": true,
+    "showCount": true
   }
 ]

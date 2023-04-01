@@ -17,11 +17,18 @@ export function Navigation({
   return (
     <nav className={clsx("text-base lg:text-sm", className)}>
       <ul role="list" className="space-y-9">
-        {sidebar.map(({ section, label, items }) => (
+        {sidebar.map(({ section, label, showCount, items }) => (
           <li key={section}>
-            <h2 className="font-display font-medium text-slate-900 dark:text-white">
-              {label}
-            </h2>
+            <div className="flex items-center">
+              <h2 className="font-display font-medium text-slate-900 dark:text-white">
+                {label}
+              </h2>
+              {showCount && (
+                <span className="ml-2 font-normal text-slate-700 dark:text-slate-200">
+                  ({items.length})
+                </span>
+              )}
+            </div>
             <ul
               role="list"
               className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200"

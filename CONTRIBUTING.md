@@ -99,34 +99,18 @@ git checkout -b add-project/project-x
 9. Update [/app/(docs)/(data)/projects.ts](</src/app/(docs)/(data)/projects.ts>) to add the `project-x.json` data:
 
 ```ts
-import projectX from "@/app/(docs)/(pages)/projects/project-x.json"
+import projectX from "../(pages)/projects/project-x.json"
 
 ...
 
 export const projects: ProjectInfo[] = [
   ...,
   projectX as ProjectInfo,
-]
-```
-
-10. Add the `project-x` slug to the sidebar in the projects section of [/src/app/(docs)/config.sidebar.json](</src/app/(docs)/config.sidebar.json>). The order of projects should be alphabetically.
-
-```ts
-[
   ...,
-  {
-    "section": "projects",
-    "label": "Projects",
-    "items": [
-      ...,
-      "project-x", // Add in alphabetical order
-      ...
-    ]
-  }
 ]
 ```
 
-11. Commit the changes and push them to your forked repository:
+10. Commit the changes and push them to your forked repository:
 
 ```shell
 git add .

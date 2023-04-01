@@ -18,9 +18,8 @@ import Tab from "./Tab"
 import { Prose } from "./markdoc/Prose"
 
 export function Hero() {
-  const leaderboardKeys = sidebarConfig.find(
-    ({ section }) => section === "leaderboards"
-  )!.items
+  const leaderboardKeys =
+    sidebarConfig.find(({ section }) => section === "leaderboards")!.slugs || []
   const leaderboards = leaderboardKeys
     .map((slug) => {
       const filePath = path.join(PAGES_PATH, "leaderboards", slug + ".md")
