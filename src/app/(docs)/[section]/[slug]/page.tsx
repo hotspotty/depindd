@@ -61,41 +61,59 @@ export default function Page({ params }: PageProps) {
   const sidebar = getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
-  const projectInfo = projects.find((item) => item.slug === params.slug)
+  let { title, content, topContent } = getMarkdownContent(filePath)
 
+  let logo: string | undefined = undefined
   let labels: Label[] = []
   let links: { title: string; url: string }[] = []
 
-  if (projectInfo) {
-    labels = [
-      {
-        title: capitalizeFirstLetter(projectInfo.lego),
-        url: `/lego/${projectInfo.lego}`,
-      },
-      ...projectInfo.categories.map((category) => ({
-        title: capitalizeFirstLetter(category),
-        url: `/lego/${projectInfo.lego}#${slugify(category)}`,
-      })),
-    ]
+  if (params.section === "projects") {
+    const projectInfo = projects.find((item) => item.slug === params.slug)
+    if (projectInfo) {
+      title = projectInfo.title
+      logo = projectInfo.logo
 
-    const blockchain = blockchainInfo[projectInfo.blockchain]
-    if (blockchain) {
-      labels.push({
-        title: blockchain.name,
-        url: blockchain.website,
-        target: "_blank",
+      labels = [
+        {
+          title: capitalizeFirstLetter(projectInfo.lego),
+          url: `/lego/${projectInfo.lego}`,
+        },
+        ...projectInfo.categories.map((category) => ({
+          title: capitalizeFirstLetter(category),
+          url: `/lego/${projectInfo.lego}#${slugify(category)}`,
+        })),
+      ]
+
+      const blockchain = blockchainInfo[projectInfo.blockchain]
+      if (blockchain) {
+        labels.push({
+          title: blockchain.name,
+          url: blockchain.links.find(({ type }) => type === "website")?.url,
+          target: "_blank",
+        })
+      }
+
+      projectInfo.links.forEach(({ type, label, url }) => {
+        if (!url) return
+        let title = capitalizeFirstLetter(type)
+        if (label) title += ` - ${label}`
+        links.push({ title, url })
       })
     }
+  } else if (params.section === "blockchains") {
+    const blockchain = blockchainInfo[params.slug]
+    if (blockchain) {
+      title = blockchain.name
+      logo = blockchain.logo
 
-    projectInfo.links.forEach(({ type, label, url }) => {
-      if (!url) return
-      let title = capitalizeFirstLetter(type)
-      if (label) title += ` - ${label}`
-      links.push({ title, url })
-    })
-  }
-
-  if (params.section === "lego") {
+      blockchain.links.forEach(({ type, label, url }) => {
+        if (!url) return
+        let title = capitalizeFirstLetter(type)
+        if (label) title += ` - ${label}`
+        links.push({ title, url })
+      })
+    }
+  } else if (params.section === "lego") {
     labels = legoCategories[params.slug].map((category) => ({
       title: capitalizeFirstLetter(category),
       url: `/lego/${params.slug}#${slugify(category)}`,
@@ -103,7 +121,8 @@ export default function Page({ params }: PageProps) {
     }))
   }
 
-  const { title, content, topContent } = getMarkdownContent(filePath)
+  if (!title) title = capitalizeFirstLetter(params.slug)
+
   const tableOfContents = collectHeadings(content)
   const allPages = sidebar.flatMap((section) => section.items)
   const pageIndex = allPages.findIndex((page) => page.slug === params.slug)
@@ -157,13 +176,13 @@ export default function Page({ params }: PageProps) {
         <div className="px-4 py-16 lg:pl-8 lg:pr-0 xl:px-16">
           <header className="mb-9 space-y-1">
             <div className="flex items-center gap-x-6">
-              {projectInfo?.logo && (
+              {logo && (
                 <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
                   <Image
                     className="h-16 w-16 rounded-full"
                     width={64}
                     height={64}
-                    src={projectInfo.logo}
+                    src={logo}
                     alt={title}
                   />
                 </div>
@@ -173,7 +192,7 @@ export default function Page({ params }: PageProps) {
                   {section?.label}
                 </p>
                 <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                  {projectInfo?.title || title}
+                  {title}
                 </h1>
                 <Labels labels={labels} />
               </div>
@@ -209,14 +228,14 @@ export default function Page({ params }: PageProps) {
           <article>
             <header className="mb-9 space-y-1">
               <div className="flex items-center gap-x-6">
-                {projectInfo?.logo && (
+                {logo && (
                   <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
                     <Image
                       className="h-16 w-16 rounded-full"
                       width={64}
                       height={64}
-                      src={projectInfo.logo}
-                      alt={projectInfo?.title}
+                      src={logo}
+                      alt={title}
                     />
                   </div>
                 )}
@@ -225,7 +244,7 @@ export default function Page({ params }: PageProps) {
                     {section?.label}
                   </p>
                   <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                    {projectInfo?.title || title}
+                    {title}
                   </h1>
                   <Labels labels={labels} />
                 </div>

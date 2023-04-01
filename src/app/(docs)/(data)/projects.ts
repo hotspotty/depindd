@@ -33,7 +33,7 @@ interface Miner {
   price: number
 }
 
-interface LinkItem {
+export interface LinkItem {
   label?: string
   type:
     | "website"

@@ -52,5 +52,21 @@
       "wifi-map",
       "xnet"
     ]
+  },
+  {
+    "section": "blockchains",
+    "label": "Blockchains",
+    "items": [
+      "algorand",
+      "bsc",
+      "cardano",
+      "constellation",
+      "ethereum",
+      "iotex",
+      "kadena",
+      "polkadot",
+      "polygon",
+      "solana"
+    ]
   }
 ]

@@ -1,7 +1,3 @@
----
-title: Wireless
----
-
 ## About
 
 TBD

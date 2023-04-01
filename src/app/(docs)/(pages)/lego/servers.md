@@ -1,7 +1,3 @@
----
-title: Servers
----
-
 ## About
 
 Server networks are groups of computers that work together to provide various web-based services by tapping into idle storage, compute, and bandwidth resources.

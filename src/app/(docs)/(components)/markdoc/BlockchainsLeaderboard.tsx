@@ -25,16 +25,21 @@ export default async function BlockchainsLeaderboard({
       },
       { lego, categories, blockchain }
     ) => {
+      // TODO: refactor blockchainInfo to blockchains
       if (!blockchainInfo[blockchain]) return result
 
       if (!result[blockchain]) {
         result[blockchain] = {
           projects: 1,
           name: blockchainInfo[blockchain].name,
-          website: blockchainInfo[blockchain].website,
+          website: blockchainInfo[blockchain].links.find(
+            ({ type }) => type === "website"
+          )?.url!, // TODO: remove exclamation mark
           imagePath: blockchainInfo[blockchain].logo,
           token: `$${blockchainInfo[blockchain].token}`,
-          coingecko: blockchainInfo[blockchain].coingecko,
+          coingecko: blockchainInfo[blockchain].links.find(
+            ({ type }) => type === "coingecko"
+          )?.url!, // TODO: remove exclamation mark
           legos: [lego],
           legosCount: 1,
           categories: [...categories],
