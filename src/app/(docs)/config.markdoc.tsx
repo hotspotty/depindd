@@ -5,13 +5,14 @@ import {
 } from "@/app/(docs)/(components)/markdoc/QuickLinks"
 import { Config, nodes as defaultNodes } from "@markdoc/markdoc"
 import Link from "next/link"
+import BlockchainProjects from "./(components)/markdoc/BlockchainProjects"
 import BlockchainsLeaderboard from "./(components)/markdoc/BlockchainsLeaderboard"
 import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderboard"
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
 import LegoCategoryProjects from "./(components)/markdoc/LegoCategoryProjects"
 import MinerProfitabilityLeaderboard from "./(components)/markdoc/MinerProfitabilityLeaderboard"
 import TwitterLeaderboard from "./(components)/markdoc/TwitterLeaderboard"
-import { legos } from "./(data)/lego"
+import { blockchainSlugs, categories, legos } from "./(data)/types"
 
 const config: Config = {
   nodes: {
@@ -115,9 +116,19 @@ const config: Config = {
       attributes: {
         lego: {
           type: String,
-          matches: legos,
+          matches: legos as any,
         },
-        category: { type: String },
+        category: { type: String, matches: categories as any },
+      },
+    },
+    "blockchain-projects": {
+      render: "BlockchainProjects",
+      selfClosing: true,
+      attributes: {
+        blockchain: {
+          type: String,
+          matches: blockchainSlugs,
+        },
       },
     },
   },
@@ -151,6 +162,7 @@ const components = {
     <Link href={href}>{title}</Link>
   ),
   LegoCategoryProjects: LegoCategoryProjects,
+  BlockchainProjects: BlockchainProjects,
 }
 
 export { config, components }

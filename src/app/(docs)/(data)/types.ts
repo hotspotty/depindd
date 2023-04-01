@@ -1,77 +1,103 @@
+import { blockchains } from "./blockchains"
+
 interface Miner {
   title: string
   url: string
   price: number
 }
 
-export const projectLinkValidationPattern =
-  "(?:website|foundation|company|blog|medium|twitter|reddit|forum|discord|telegram|youtube|instagram|linkedin|tiktok|facebook|github|whitepaper|documentation|governance|tokenomics|explorer|shop|coingecko|analytics|crunchbase|other)"
+export const linkTypes = [
+  "website",
+  "foundation",
+  "company",
+  "blog",
+  "medium",
+  "twitter",
+  "reddit",
+  "forum",
+  "discord",
+  "telegram",
+  "youtube",
+  "instagram",
+  "linkedin",
+  "tiktok",
+  "facebook",
+  "github",
+  "whitepaper",
+  "documentation",
+  "governance",
+  "tokenomics",
+  "explorer",
+  "shop",
+  "coingecko",
+  "analytics",
+  "crunchbase",
+  "other",
+] as const
+
+export type LinkType = (typeof linkTypes)[number]
 
 export interface LinkItem {
   label?: string
-  type:
-    | "website"
-    | "foundation"
-    | "company"
-    | "blog"
-    | "medium"
-    | "twitter"
-    | "reddit"
-    | "forum"
-    | "discord"
-    | "telegram"
-    | "youtube"
-    | "instagram"
-    | "linkedin"
-    | "tiktok"
-    | "facebook"
-    | "github"
-    | "whitepaper"
-    | "documentation"
-    | "governance"
-    | "tokenomics"
-    | "explorer"
-    | "shop"
-    | "coingecko"
-    | "analytics"
-    | "crunchbase"
-    | "other"
+  type: LinkType
   url: string
 }
 
-export const projectCategoryValidationPattern =
-  "(?:connectivity|positioning|mobility|energy|environmental|healthcare|smart city|smart home|geo-location|general|storage|marketplace|proof|warehouse|analytics|tool|compute|CDN|VPN|manufacturer)"
+export const legos = [
+  "wireless",
+  "sensors",
+  "data",
+  "servers",
+  "hardware",
+] as const
 
-export type Category =
-  | "connectivity"
-  | "positioning"
-  | "mobility"
-  | "energy"
-  | "environmental"
-  | "healthcare"
-  | "smart city"
-  | "smart home"
-  | "geo-location"
-  | "general"
-  | "storage"
-  | "marketplace"
-  | "proof"
-  | "warehouse"
-  | "analytics"
-  | "tool"
-  | "compute"
-  | "CDN"
-  | "VPN"
-  | "manufacturer"
+export type Lego = (typeof legos)[number]
 
-export const projectLegoValidationPattern =
-  "(?:data|sensors|servers|wireless|hardware)"
+export const categories = [
+  "connectivity",
+  "positioning",
+  "mobility",
+  "energy",
+  "environmental",
+  "healthcare",
+  "smart city",
+  "smart home",
+  "geo-location",
+  "general",
+  "storage",
+  "marketplace",
+  "proof",
+  "warehouse",
+  "analytics",
+  "tool",
+  "compute",
+  "CDN",
+  "VPN",
+  "manufacturer",
+] as const
 
-export type Lego = "data" | "sensors" | "servers" | "wireless" | "hardware"
+export type Category = (typeof categories)[number]
 
-export const projectStatusValidationPattern = "(?:development|production)"
+export const legoCategories: { [lego: string]: Category[] } = {
+  wireless: ["connectivity", "positioning"],
+  sensors: [
+    "mobility",
+    "energy",
+    "environmental",
+    "healthcare",
+    "smart city",
+    "smart home",
+    "geo-location",
+    "general",
+  ],
+  data: ["storage", "marketplace", "proof", "warehouse", "analytics", "tool"],
+  servers: ["compute", "CDN", "VPN"],
+  hardware: ["manufacturer", "marketplace"],
+}
 
-export type Status = "development" | "production"
+export const projectStatuses = ["development", "production"] as const
+
+export type ProjectStatus = (typeof projectStatuses)[number]
 
 export interface ProjectInfo {
   slug: string // Project filename
@@ -80,8 +106,9 @@ export interface ProjectInfo {
   lego: Lego
   categories: Category[]
   token: string // All caps, no dollar sign. E.g. HNT
-  blockchain: string // Possible values are in /src/scripts/validate.ts
-  status: Status
+  blockchain: string // Possible values are the blockchains listed in /src/app/(docs)/(pages)/blockchains
+  // In /src/scripts/validate.ts there is an allowance for "tbd" and "n/a" as well
+  status: ProjectStatus
   logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`
   links: LinkItem[]
 }
@@ -94,10 +121,7 @@ export interface BlockchainInfo {
   links: LinkItem[]
 }
 
-// "tbd": This is for projects that have yet to decide which blockchain they will use
-// "n/a": This is for projects that don't plan to have a token
-export const blockchainValidationPattern =
-  "(?:tbd|n/a|solana|polygon|iotex|algorand|bsc|constellation|kadena|cardano|ethereum|polkadot)"
+export const blockchainSlugs = blockchains.map(({ slug }) => slug)
 
 export interface InvestorInfo {
   id: string

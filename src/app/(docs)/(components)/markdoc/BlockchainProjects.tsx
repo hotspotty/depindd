@@ -1,16 +1,13 @@
 import { projects } from "@/app/(docs)/(data)/projects"
-import { Category } from "@/app/(docs)/(data)/types"
 import { QuickLink, QuickLinks } from "./QuickLinks"
 
-export default function LegoCategoryProjects({
-  lego,
-  category,
+export default function BlockchainProjects({
+  blockchain,
 }: {
-  lego: string
-  category: Category
+  blockchain: string
 }) {
   const filteredProjects = projects.filter(
-    (project) => project.lego === lego && project.categories.includes(category)
+    (project) => project.blockchain === blockchain
   )
 
   if (filteredProjects.length === 0) {
@@ -19,12 +16,13 @@ export default function LegoCategoryProjects({
 
   return (
     <>
-      <h4>Projects</h4>
+      <h4>DePIN projects</h4>
       <QuickLinks className="lg:grid-cols-2">
-        {filteredProjects.map(({ slug, title, logo }) => (
+        {filteredProjects.map(({ slug, title, lego, categories, logo }) => (
           <QuickLink
             key={slug}
             title={title}
+            labels={[lego, ...categories]}
             image={logo}
             href={`/projects/${slug}`}
           />

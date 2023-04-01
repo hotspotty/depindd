@@ -3,14 +3,18 @@ import fs from "fs"
 import { glob } from "glob"
 import path from "path"
 import {
-  ProjectInfo,
-  projectLinkValidationPattern,
-  projectLegoValidationPattern,
-  projectCategoryValidationPattern,
-  projectStatusValidationPattern,
   BlockchainInfo,
-  blockchainValidationPattern,
+  ProjectInfo,
+  blockchainSlugs,
+  categories,
+  legos,
+  linkTypes,
+  projectStatuses,
 } from "../app/(docs)/(data)/types"
+
+const getValidationPattern = (values) => `(?:${values.join("|")})`
+
+const projectLinkValidationPattern = getValidationPattern(linkTypes)
 
 const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
   type: "object",
@@ -32,22 +36,26 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     },
     lego: {
       type: "string",
-      pattern: projectLegoValidationPattern,
+      pattern: getValidationPattern(legos),
     },
     categories: {
       type: "array",
       uniqueItems: true,
       items: {
         type: "string",
-        pattern: projectCategoryValidationPattern,
+        pattern: getValidationPattern(categories),
       },
     },
     token: { type: "string" },
     blockchain: {
       type: "string",
-      pattern: blockchainValidationPattern,
+      pattern: getValidationPattern([
+        "tbd", // This is for projects that have yet to decide which blockchain they will use
+        "n/a", // This is for projects that don't plan to have a token
+        ...blockchainSlugs,
+      ]),
     },
-    status: { type: "string", pattern: projectStatusValidationPattern },
+    status: { type: "string", pattern: getValidationPattern(projectStatuses) },
     logo: { type: "string" },
     links: {
       type: "array",
@@ -113,7 +121,7 @@ async function validateProjectJsonFiles() {
 const blockchainInfoJsonSchema: JSONSchemaType<BlockchainInfo> = {
   type: "object",
   properties: {
-    slug: { type: "string", pattern: blockchainValidationPattern },
+    slug: { type: "string", pattern: getValidationPattern(blockchainSlugs) },
     title: { type: "string" },
     token: { type: "string" },
     logo: { type: "string" },
@@ -142,8 +150,6 @@ async function validateBlockchainJsonFiles() {
   const blockchainJsonPaths = await glob(
     path.join(process.cwd(), "src/app/(docs)/(pages)/blockchains", "**/*.json")
   )
-
-  console.log(blockchainJsonPaths)
 
   const ajv = new Ajv()
 
