@@ -68,9 +68,12 @@ export default function Page({ params }: PageProps) {
 
   if (projectInfo) {
     labels = [
-      { title: projectInfo.lego, url: `/lego/${projectInfo.lego}` },
+      {
+        title: capitalizeFirstLetter(projectInfo.lego),
+        url: `/lego/${projectInfo.lego}`,
+      },
       ...projectInfo.categories.map((category) => ({
-        title: category,
+        title: capitalizeFirstLetter(category),
         url: `/lego/${projectInfo.lego}#${slugify(category)}`,
       })),
     ]
@@ -94,7 +97,7 @@ export default function Page({ params }: PageProps) {
 
   if (params.section === "lego") {
     labels = legoCategories[params.slug].map((category) => ({
-      title: category,
+      title: capitalizeFirstLetter(category),
       url: `/lego/${params.slug}#${slugify(category)}`,
       samePage: true,
     }))
