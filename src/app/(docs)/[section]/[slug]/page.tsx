@@ -1,5 +1,5 @@
-import { Prose } from "@/app/(docs)/(components)/markdoc/Prose"
 import TableOfContents from "@/app/(docs)/(components)/TableOfContents"
+import { Prose } from "@/app/(docs)/(components)/markdoc/Prose"
 import {
   collectHeadings,
   getMarkdownContent,
@@ -13,11 +13,12 @@ import Image from "next/image"
 import Link from "next/link"
 import path from "path"
 import React from "react"
-import Labels from "../../(components)/Labels"
+import Labels, { Label } from "../../(components)/Labels"
 import Links from "../../(components)/Links"
+import { blockchainInfo } from "../../(data)/blockchains"
 import { legoCategories } from "../../(data)/lego"
 import { projects } from "../../(data)/projects"
-import { getSidebarItems, PAGES_PATH } from "../../(utils)/sidebar"
+import { PAGES_PATH, getSidebarItems } from "../../(utils)/sidebar"
 import { capitalizeFirstLetter } from "../../(utils)/text"
 
 type Params = {
@@ -62,7 +63,7 @@ export default function Page({ params }: PageProps) {
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
   const projectInfo = projects.find((item) => item.slug === params.slug)
 
-  let labels: { title: string; url: string }[] = []
+  let labels: Label[] = []
   let links: { title: string; url: string }[] = []
 
   if (projectInfo) {
@@ -73,6 +74,16 @@ export default function Page({ params }: PageProps) {
         url: `/lego/${projectInfo.lego}#${slugify(category)}`,
       })),
     ]
+
+    const blockchain = blockchainInfo[projectInfo.blockchain]
+    if (blockchain) {
+      labels.push({
+        title: blockchain.name,
+        url: blockchain.website,
+        target: "_blank",
+      })
+    }
+
     projectInfo.links.forEach(({ type, label, url }) => {
       if (!url) return
       let title = capitalizeFirstLetter(type)

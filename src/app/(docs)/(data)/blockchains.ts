@@ -12,7 +12,15 @@ export type Blockchain =
   | "ethereum"
   | "polkadot"
 
-export const blockchainInfo = {
+export interface BlockchainInfo {
+  name: string
+  token: string
+  website: string
+  coingecko: string
+  logo: string
+}
+
+export const blockchainInfo: { [blockchain: string]: BlockchainInfo } = {
   solana: {
     name: "Solana",
     token: "SOL",

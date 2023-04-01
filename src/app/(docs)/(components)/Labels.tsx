@@ -26,18 +26,25 @@ function Label({
   )
 }
 
+export interface Label {
+  title: string
+  url?: string
+  samePage?: boolean
+  target?: string
+}
+
 export default function Labels({
   className,
   labels,
 }: {
   className?: string
-  labels: { title: string; url?: string; samePage?: boolean }[] // The samePage is needed to swap Link with an anchor tag because the scroll to item is not working: https://github.com/vercel/next.js/issues/44295
+  labels: Label[] // The samePage is needed to swap Link with an anchor tag because the scroll to item is not working: https://github.com/vercel/next.js/issues/44295
 }) {
   if (labels.length === 0) return null
 
   return (
     <div className={clsx("-mx-1", className)}>
-      {labels.map(({ title, url, samePage }) => {
+      {labels.map(({ title, url, samePage, target = "_blank" }) => {
         if (!url) {
           return (
             <Label
@@ -57,7 +64,7 @@ export default function Labels({
         }
 
         return (
-          <Link href={url} key={title}>
+          <Link href={url} key={title} target={target}>
             <Label title={title} className="cursor-pointer hover:underline" />
           </Link>
         )
