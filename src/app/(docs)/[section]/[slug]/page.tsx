@@ -88,8 +88,7 @@ export default async function Page({ params }: PageProps) {
       if (blockchainInfo) {
         labels.push({
           title: blockchainInfo.title,
-          url: blockchainInfo.links.find(({ type }) => type === "website")?.url,
-          target: "_blank",
+          url: `/blockchains/${blockchainInfo.slug}`,
         })
       }
 

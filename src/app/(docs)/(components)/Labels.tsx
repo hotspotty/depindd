@@ -44,7 +44,7 @@ export default function Labels({
 
   return (
     <div className={clsx("-mx-1", className)}>
-      {labels.map(({ title, url, samePage, target = "_blank" }) => {
+      {labels.map(({ title, url, samePage, target }) => {
         if (!url) {
           return (
             <Label
