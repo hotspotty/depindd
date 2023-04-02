@@ -1,5 +1,5 @@
 import { projects } from "../../(data)/projects"
-import Table, { LinkCell, NumberCell, ProjectsCell } from "../Table"
+import Table, { LinkCell, ProjectsCell } from "../Table"
 
 export default async function CrossPollinationLeaderboard({
   minimal = false,
@@ -37,18 +37,13 @@ export default async function CrossPollinationLeaderboard({
     },
     {
       Header: "Used by",
-      accessor: "usedByProjectSlugs",
-      Cell: ProjectsCell,
-    },
-    {
-      Header: "Used by",
       accessor: "usedByProjectCount",
-      Cell: NumberCell,
+      Cell: ProjectsCell,
+      projectSlugsAccessor: "usedByProjectSlugs",
     },
   ]
 
   const initialState = {
-    hiddenColumns: minimal ? [] : [],
     sortBy: [
       {
         id: "usedByProjectCount",

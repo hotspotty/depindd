@@ -1,6 +1,6 @@
 import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
-import Table, { LinkCell, NumberCell, ProjectsCell } from "../Table"
+import Table, { LinkCell, ProjectsCell } from "../Table"
 
 export default async function BlockchainsLeaderboard({
   minimal = false,
@@ -63,18 +63,13 @@ export default async function BlockchainsLeaderboard({
     },
     {
       Header: "Projects",
-      accessor: "projectSlugs",
-      Cell: ProjectsCell,
-    },
-    {
-      Header: "Projects",
       accessor: "projectCount",
-      Cell: NumberCell,
+      Cell: ProjectsCell,
+      projectSlugsAccessor: "projectSlugs",
     },
   ]
 
   const initialState = {
-    hiddenColumns: minimal ? ["projectSlugs"] : [],
     sortBy: [
       {
         id: "projectCount",

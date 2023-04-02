@@ -43,13 +43,10 @@ export default function InvestorsLeaderboard({
       Cell: LinksCell,
     },
     {
-      Header: "Projects",
-      accessor: "projectSlugs",
-      Cell: ProjectsCell,
-    },
-    {
-      Header: "Projects",
+      Header: "Investments",
       accessor: "projectCount",
+      Cell: ProjectsCell,
+      projectSlugsAccessor: "projectSlugs",
     },
   ]
 

@@ -118,19 +118,17 @@ export function SelectColumnFilter({
   )
 }
 
-export function ProjectsCell({ value }) {
-  const projectSlugs = value.split(",")
-  const projectsCount = projectSlugs.length
+export function ProjectsCell({ column, row }) {
+  const projectSlugs: string[] =
+    row.original[column.projectSlugsAccessor].split(",")
 
-  if (projectsCount === 0) return null
+  if (projectSlugs.length === 0) return null
 
   return (
     <div className="isolate flex -space-x-4 overflow-hidden">
-      {projectSlugs.map((slug, index) => {
+      {projectSlugs.map((slug) => {
         const projectInfo = projects.find((project) => project.slug === slug)
         if (!projectInfo) return
-
-        const zIndexClass = `z-${(projectsCount - index) * 10}`
 
         return (
           <Link
