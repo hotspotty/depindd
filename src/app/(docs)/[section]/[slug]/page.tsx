@@ -131,136 +131,91 @@ export default async function Page({ params }: PageProps) {
   const previousPage = allPages[pageIndex - 1]
   const nextPage = allPages[pageIndex + 1]
 
-  const renderFooter = (
-    <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
-      {previousPage && (
-        <div>
-          <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-            Previous
-          </dt>
-          <dd className="mt-1">
-            <Link
-              href={previousPage.path}
-              className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-            >
-              <span aria-hidden="true">&larr;</span> {previousPage.label}
-            </Link>
-          </dd>
-        </div>
-      )}
-      {nextPage && (
-        <div className="ml-auto text-right">
-          <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-            Next
-          </dt>
-          <dd className="mt-1">
-            <Link
-              href={nextPage.path}
-              className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-            >
-              {nextPage.label} <span aria-hidden="true">&rarr;</span>
-            </Link>
-          </dd>
-        </div>
-      )}
-    </dl>
-  )
-
-  const renderTableOfContents = (
-    <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
-      <TableOfContents tableOfContents={tableOfContents} />
-    </div>
-  )
-
-  if (topContent) {
-    return (
-      <div className="flex-1">
-        <div className="px-4 py-16 lg:pl-8 lg:pr-0 xl:px-16">
-          <header className="mb-9 space-y-1">
-            <div className="flex items-center gap-x-6">
-              {logo && (
-                <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
-                  <Image
-                    className="h-16 w-16 rounded-full"
-                    width={64}
-                    height={64}
-                    src={logo}
-                    alt={title}
-                  />
-                </div>
-              )}
-              <div>
-                <p className="font-display text-sm font-medium text-sky-500">
-                  {section?.label}
-                </p>
-                <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                  {title}
-                </h1>
-                <Labels labels={labels} />
+  return (
+    <div className="flex-1">
+      <div className="px-4 pt-16 lg:pl-8 lg:pr-0 xl:px-16">
+        <header className="mb-9 space-y-1">
+          <div className="flex items-center gap-x-6">
+            {logo && (
+              <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
+                <Image
+                  className="h-16 w-16 rounded-full"
+                  width={64}
+                  height={64}
+                  src={logo}
+                  alt={title}
+                />
               </div>
+            )}
+            <div>
+              <p className="font-display text-sm font-medium text-sky-500">
+                {section?.label}
+              </p>
+              <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                {title}
+              </h1>
+              <Labels labels={labels} />
             </div>
-            <Links className="!mt-6" links={links} />
-          </header>
+          </div>
+          <Links className="!mt-6" links={links} />
+        </header>
+        {topContent && (
           <Prose>
             {Markdoc.renderers.react(topContent, React, {
               components,
             })}
-            <hr />
+            <hr className="mb-6 mt-3" />
           </Prose>
-        </div>
-        <div className="flex">
-          <div className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
-            <article>
-              <Prose>
-                {Markdoc.renderers.react(content, React, { components })}
-              </Prose>
-            </article>
-            {renderFooter}
-          </div>
-          {renderTableOfContents}
-        </div>
+        )}
       </div>
-    )
-  }
-
-  return (
-    <div className="flex-1">
       <div className="flex">
-        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
+        <div className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
           <article>
-            <header className="mb-9 space-y-1">
-              <div className="flex items-center gap-x-6">
-                {logo && (
-                  <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0">
-                    <Image
-                      className="h-16 w-16 rounded-full"
-                      width={64}
-                      height={64}
-                      src={logo}
-                      alt={title}
-                    />
-                  </div>
-                )}
-                <div>
-                  <p className="font-display text-sm font-medium text-sky-500">
-                    {section?.label}
-                  </p>
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                    {title}
-                  </h1>
-                  <Labels labels={labels} />
-                </div>
-              </div>
-
-              <Links className="!mt-6" links={links} />
-            </header>
             <Prose>
               {Markdoc.renderers.react(content, React, { components })}
             </Prose>
           </article>
-          {renderFooter}
+          <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
+            {previousPage && (
+              <div>
+                <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+                  Previous
+                </dt>
+                <dd className="mt-1">
+                  <Link
+                    href={previousPage.path}
+                    className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                  >
+                    <span aria-hidden="true">&larr;</span> {previousPage.label}
+                  </Link>
+                </dd>
+              </div>
+            )}
+            {nextPage && (
+              <div className="ml-auto text-right">
+                <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+                  Next
+                </dt>
+                <dd className="mt-1">
+                  <Link
+                    href={nextPage.path}
+                    className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                  >
+                    {nextPage.label} <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                </dd>
+              </div>
+            )}
+          </dl>
         </div>
-        {renderTableOfContents}
+        {tableOfContents.length > 0 && (
+          <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:pr-6">
+            <h5 className="mb-4 text-sm font-semibold leading-6 text-slate-900 dark:text-slate-100">
+              On this page
+            </h5>
+            <TableOfContents tableOfContents={tableOfContents} />
+          </div>
+        )}
       </div>
     </div>
   )
