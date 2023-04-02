@@ -8,6 +8,7 @@
   "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/weatherxm.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://weatherxm.com/" },
     { "type": "foundation", "url": "" },

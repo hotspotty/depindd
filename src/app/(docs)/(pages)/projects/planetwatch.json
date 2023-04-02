@@ -8,6 +8,7 @@
   "blockchain": "algorand",
   "status": "production",
   "logo": "/images/projects/planetwatch.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.planetwatch.us/" },
     { "type": "foundation", "url": "" },

@@ -8,6 +8,7 @@
   "blockchain": "ethereum",
   "status": "development",
   "logo": "/images/projects/foam.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://foam.space/" },
     { "type": "foundation", "url": "" },

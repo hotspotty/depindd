@@ -8,6 +8,7 @@
   "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/wifi-map.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.wifimap.io/" },
     { "type": "foundation", "url": "" },

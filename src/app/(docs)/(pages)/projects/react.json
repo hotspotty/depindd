@@ -8,6 +8,7 @@
   "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/react.jpeg",
+  "usedBy": [],
   "links": [
     {
       "type": "website",

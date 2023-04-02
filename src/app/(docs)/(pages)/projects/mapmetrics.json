@@ -8,6 +8,7 @@
   "blockchain": "solana",
   "status": "production",
   "logo": "/images/projects/mapmetrics.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://mapmetrics.org/" },
     { "type": "foundation", "url": "" },

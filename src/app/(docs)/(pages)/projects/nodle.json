@@ -8,6 +8,7 @@
   "blockchain": "polkadot",
   "status": "production",
   "logo": "/images/projects/nodle.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.nodle.com/" },
     { "type": "foundation", "url": "" },

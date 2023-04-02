@@ -8,6 +8,7 @@
   "blockchain": "kadena",
   "status": "development",
   "logo": "/images/projects/crankk.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://crankk.io/" },
     { "type": "foundation", "url": "" },

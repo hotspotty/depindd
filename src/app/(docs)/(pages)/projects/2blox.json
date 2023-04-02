@@ -8,6 +8,7 @@
   "blockchain": "algorand",
   "status": "development",
   "logo": "/images/projects/2blox.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.2blox.io/" },
     { "type": "foundation", "url": "" },

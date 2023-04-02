@@ -8,6 +8,7 @@
   "blockchain": "polygon",
   "status": "production",
   "logo": "/images/projects/dimo.png",
+  "usedBy": [],
   "links": [
     {
       "type": "website",

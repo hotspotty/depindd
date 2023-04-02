@@ -8,6 +8,7 @@
   "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/arkreen.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://arkreen.com/" },
     { "type": "foundation", "url": "" },

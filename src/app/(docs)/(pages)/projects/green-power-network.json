@@ -8,6 +8,7 @@
   "blockchain": "bsc",
   "status": "production",
   "logo": "/images/projects/green-power-network.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.greenpowern.com/gidNFT" },
     { "type": "foundation", "url": "" },

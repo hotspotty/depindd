@@ -8,6 +8,7 @@
   "blockchain": "solana",
   "status": "production",
   "logo": "/images/projects/helium-mobile.jpeg",
+  "usedBy": [],
   "links": [
     {
       "type": "website",

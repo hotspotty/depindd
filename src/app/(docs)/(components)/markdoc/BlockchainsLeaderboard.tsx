@@ -1,6 +1,6 @@
 import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
-import Table, { LinkCell, ProjectsCell } from "../Table"
+import Table, { LinkCell, NumberCell, ProjectsCell } from "../Table"
 
 export default async function BlockchainsLeaderboard({
   minimal = false,
@@ -69,6 +69,7 @@ export default async function BlockchainsLeaderboard({
     {
       Header: "Projects",
       accessor: "projectCount",
+      Cell: NumberCell,
     },
   ]
 

@@ -8,6 +8,7 @@
   "blockchain": "iotex",
   "status": "production",
   "logo": "/images/projects/healthblocks.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.healthblocks.ai/" },
     { "type": "foundation", "url": "" },

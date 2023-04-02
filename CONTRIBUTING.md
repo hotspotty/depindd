@@ -61,6 +61,7 @@ git checkout -b add-project/project-x
   "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/<project-id>.jpeg",
+  "usedBy": ["dimo"], // Includes all DePIN projects that make use of this project
   "links": [
     { "type": "website", "url": "" },
     { "type": "foundation", "url": "" },

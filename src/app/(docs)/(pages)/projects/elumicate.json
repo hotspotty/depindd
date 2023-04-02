@@ -8,6 +8,7 @@
   "blockchain": "iotex",
   "status": "development",
   "logo": "/images/projects/elumicate.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.elumicate.com/" },
     { "type": "foundation", "url": "" },

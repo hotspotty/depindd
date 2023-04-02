@@ -8,6 +8,7 @@
   "blockchain": "algorand",
   "status": "production",
   "logo": "/images/projects/element.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://elementdata.xyz/" },
     { "type": "foundation", "url": "" },

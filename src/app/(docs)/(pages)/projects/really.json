@@ -8,6 +8,7 @@
   "blockchain": "tbd",
   "status": "development",
   "logo": "/images/projects/really.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://really.com/" },
     { "type": "foundation", "url": "" },

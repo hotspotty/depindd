@@ -8,6 +8,7 @@
   "blockchain": "algorand",
   "status": "production",
   "logo": "/images/projects/fry-foundation.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.fryfoundation.com/" },
     { "type": "foundation", "url": "" },

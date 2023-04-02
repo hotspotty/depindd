@@ -8,6 +8,7 @@ import Link from "next/link"
 import BlockchainProjects from "./(components)/markdoc/BlockchainProjects"
 import BlockchainsLeaderboard from "./(components)/markdoc/BlockchainsLeaderboard"
 import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderboard"
+import CrossPollinationLeaderboard from "./(components)/markdoc/CrossPollinationLeaderboard"
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
 import LegoCategoryProjects from "./(components)/markdoc/LegoCategoryProjects"
 import MinerProfitabilityLeaderboard from "./(components)/markdoc/MinerProfitabilityLeaderboard"
@@ -73,6 +74,13 @@ const config: Config = {
     },
     "miner-profitability-leaderboard": {
       render: "MinerProfitabilityLeaderboard",
+      selfClosing: true,
+      attributes: {
+        minimal: { type: Boolean },
+      },
+    },
+    "cross-pollination-leaderboard": {
+      render: "CrossPollinationLeaderboard",
       selfClosing: true,
       attributes: {
         minimal: { type: Boolean },
@@ -158,6 +166,7 @@ const components = {
   BlockchainsLeaderboard: BlockchainsLeaderboard,
   TwitterLeaderboard: TwitterLeaderboard,
   MinerProfitabilityLeaderboard: MinerProfitabilityLeaderboard,
+  CrossPollinationLeaderboard: CrossPollinationLeaderboard,
   InternalLink: ({ href, title }: { href: string; title: string }) => (
     <Link href={href}>{title}</Link>
   ),

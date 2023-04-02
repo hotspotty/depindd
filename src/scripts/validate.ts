@@ -2,6 +2,7 @@ import Ajv, { JSONSchemaType } from "ajv"
 import fs from "fs"
 import { glob } from "glob"
 import path from "path"
+import { projects } from "../app/(docs)/(data)/projects"
 import {
   BlockchainInfo,
   ProjectInfo,
@@ -57,6 +58,14 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     },
     status: { type: "string", pattern: getValidationPattern(projectStatuses) },
     logo: { type: "string" },
+    usedBy: {
+      type: "array",
+      uniqueItems: true,
+      items: {
+        type: "string",
+        pattern: getValidationPattern(projects.map(({ slug }) => slug)),
+      },
+    },
     links: {
       type: "array",
       uniqueItems: true,
@@ -84,6 +93,7 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     "blockchain",
     "status",
     "logo",
+    "usedBy",
     "links",
   ],
   additionalProperties: false,

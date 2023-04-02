@@ -110,6 +110,7 @@ export interface ProjectInfo {
   // In /src/scripts/validate.ts there is an allowance for "tbd" and "n/a" as well
   status: ProjectStatus
   logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`
+  usedBy: string[] // Projects that are making use of this DePIN project
   links: LinkItem[]
 }
 

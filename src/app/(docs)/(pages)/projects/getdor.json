@@ -8,6 +8,7 @@
   "blockchain": "constellation",
   "status": "production",
   "logo": "/images/projects/getdor.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.getdor.com/" },
     { "type": "foundation", "url": "" },

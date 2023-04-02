@@ -8,6 +8,7 @@
   "blockchain": "solana",
   "status": "development",
   "logo": "/images/projects/mind-land.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://mndlnd.xyz/" },
     { "type": "foundation", "url": "" },

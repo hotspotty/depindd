@@ -8,6 +8,7 @@
   "blockchain": "ethereum",
   "status": "development",
   "logo": "/images/projects/natix.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.natix.network/" },
     { "type": "foundation", "url": "" },

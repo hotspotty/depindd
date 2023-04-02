@@ -8,6 +8,7 @@
   "blockchain": "polygon",
   "status": "production",
   "logo": "/images/projects/geodnet.jpeg",
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://geodnet.com/" },
     { "type": "foundation", "url": "" },
