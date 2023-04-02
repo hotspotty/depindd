@@ -3,15 +3,22 @@ import fs from "fs"
 import matter from "gray-matter"
 import getMarkdownContentFromText from "./getMarkdownContentFromText"
 
+export function getMarkdownTitle(filePath: string) {
+  const source = fs.readFileSync(filePath, "utf-8")
+  const matterResult = matter(source)
+  const { title } = matterResult.data
+  return title
+}
+
 export function getMarkdownContent(filePath: string) {
   const source = fs.readFileSync(filePath, "utf-8")
   const matterResult = matter(source)
-  const { title, topContentTag } = matterResult.data
+  const { topContentTag } = matterResult.data
   const content = getMarkdownContentFromText(source)
   const topContent = topContentTag
     ? getMarkdownContentFromText(`{% ${topContentTag} / %}`)
     : undefined
-  return { content, title, topContent }
+  return { content, topContent }
 }
 
 const getNodeText = (node) => {

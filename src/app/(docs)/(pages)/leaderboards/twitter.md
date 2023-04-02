@@ -3,6 +3,4 @@ title: Twitter
 topContentTag: twitter-leaderboard
 ---
 
-## About
-
 This page ranks DePIN projects by their following and activity on Twitter.
