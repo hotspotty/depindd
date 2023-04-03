@@ -5,7 +5,7 @@
   "lego": "sensors",
   "categories": ["smart city"],
   "token": "",
-  "blockchain": "",
+  "blockchain": "tbd",
   "status": "development",
   "logo": "/images/projects/smartpoint.jpeg",
   "usedBy": [],

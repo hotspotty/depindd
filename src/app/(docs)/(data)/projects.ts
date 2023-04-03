@@ -29,6 +29,7 @@ import switchElectric from "../(pages)/projects/switch-electric.json"
 import weatherxm from "../(pages)/projects/weatherxm.json"
 import wifiMap from "../(pages)/projects/wifi-map.json"
 import xnet from "../(pages)/projects/xnet.json"
+import iotex from "../(pages)/projects/iotex.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -63,4 +64,5 @@ export const projects: ProjectInfo[] = [
   smartpoint as ProjectInfo,
   soarchain as ProjectInfo,
   switchElectric as ProjectInfo,
+  iotex as ProjectInfo,
 ]
