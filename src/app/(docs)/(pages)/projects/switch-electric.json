@@ -8,9 +8,9 @@
   "blockchain": "",
   "status": "development",
   "logo": "/images/projects/switch-electric.jpeg",
-  "usedBy": [""], 
+  "usedBy": [""],
   "links": [
-    { "type": "website", "url": "https://www.whynotswitch.com/" },
+    { "type": "website", "url": "https://www.whynotswitch.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
@@ -21,8 +21,11 @@
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
-    { "type": "instagram", "url": "https://www.instagram.com/whynotswitch/" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/whynotswitch/" },
+    { "type": "instagram", "url": "https://www.instagram.com/whynotswitch" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/whynotswitch"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },

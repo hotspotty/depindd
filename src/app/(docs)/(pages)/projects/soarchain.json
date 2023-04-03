@@ -10,11 +10,11 @@
   "logo": "/images/projects/soarchain.jpeg",
   "usedBy": [""],
   "links": [
-    { "type": "website", "url": "https://www.soarchain.com/" },
+    { "type": "website", "url": "https://www.soarchain.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
-    { "type": "medium", "url": "https://soarchain.medium.com/" },
+    { "type": "medium", "url": "https://soarchain.medium.com" },
     { "type": "twitter", "url": "https://twitter.com/soar_chain" },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
@@ -22,7 +22,10 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/soar-robotics" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/soar-robotics"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/soar-robotics" },
