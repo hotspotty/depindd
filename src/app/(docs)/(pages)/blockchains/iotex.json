@@ -14,7 +14,10 @@
     { "type": "forum", "url": "https://community.iotex.io" },
     { "type": "discord", "url": "https://iotex.io/devdiscord" },
     { "type": "telegram", "url": "https://t.me/IoTeXGroup" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://www.linkedin.com/company/iotex" },
     { "type": "tiktok", "url": "" },
@@ -23,12 +26,18 @@
     { "type": "whitepaper", "url": "https://v1.iotex.io/white-paper" },
     { "type": "documentation", "url": "https://docs.iotex.io" },
     { "type": "governance", "url": "https://gov.iotex.io/#" },
-    { "type": "tokenomics", "url": "https://onboard.iotex.io/tokenomics/iotx-metrics" },
+    {
+      "type": "tokenomics",
+      "url": "https://onboard.iotex.io/tokenomics/iotx-metrics"
+    },
     { "type": "explorer", "url": "https://iotexscan.io", "label": "IotexScan" },
-    { "type": "shop", "url": "https://www.crowdsupply.com/iotex/pebble-tracker" },
+    { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/iotex" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/iotex" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/iotex"
+    },
     { "type": "other", "url": "" }
   ]
 }
