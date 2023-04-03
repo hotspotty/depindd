@@ -4,11 +4,11 @@
   "miners": [],
   "lego": "sensors",
   "categories": ["general"],
-  "token": "",
+  "token": "IOTX",
   "blockchain": "iotex",
   "status": "production",
   "logo": "/images/projects/iotex.jpeg",
-  "usedBy": [],
+  "usedBy": ["elumicate", "envirobloq", "healthblocks"],
   "links": [
     { "type": "website", "url": "https://www.iotex.io" },
     { "type": "foundation", "url": "" },
@@ -20,7 +20,10 @@
     { "type": "forum", "url": "https://community.iotex.io" },
     { "type": "discord", "url": "https://iotex.io/devdiscord" },
     { "type": "telegram", "url": "https://t.me/IoTeXGroup" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCdj3xY3LCktuamvuFusWOZw"
+    },
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
@@ -29,15 +32,30 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/iotexproject" },
-    { "type": "whitepaper", "url": "https://cdn.iotex.io/machinefi/IoTeX%202.0.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://cdn.iotex.io/machinefi/IoTeX%202.0.pdf"
+    },
     { "type": "documentation", "url": "https://docs.iotex.io" },
     { "type": "governance", "url": "https://gov.iotex.io/#" },
-    { "type": "tokenomics", "url": "https://onboard.iotex.io/tokenomics/iotx-metrics" },
+    {
+      "type": "tokenomics",
+      "url": "https://onboard.iotex.io/tokenomics/iotx-metrics"
+    },
     { "type": "explorer", "url": "https://iotexscan.io" },
-    { "type": "shop", "url": "https://www.crowdsupply.com/iotex/pebble-tracker" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/categories/iotex-ecosystem" },
+    {
+      "type": "shop",
+      "url": ""
+    },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/categories/iotex-ecosystem"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/iotex" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/iotex"
+    },
     { "type": "other", "url": "" }
   ]
 }
