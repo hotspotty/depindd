@@ -22,13 +22,13 @@ import perkable from "../(pages)/projects/perkable.json"
 import planetwatch from "../(pages)/projects/planetwatch.json"
 import react from "../(pages)/projects/react.json"
 import really from "../(pages)/projects/really.json"
+import smartpoint from "../(pages)/projects/smartpoint.json"
+import soarchain from "../(pages)/projects/soarchain.json"
+import streamr from "../(pages)/projects/streamr.json"
+import switchElectric from "../(pages)/projects/switch-electric.json"
 import weatherxm from "../(pages)/projects/weatherxm.json"
 import wifiMap from "../(pages)/projects/wifi-map.json"
 import xnet from "../(pages)/projects/xnet.json"
-import streamr from "../(pages)/projects/streamr.json"
-import smartpoint from "../(pages)/projects/smartpoint.json"
-import sourchain from "../(pages)/projects/sourchain.json"
-import switchElectric from "../(pages)/projects/switch-electric.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -61,6 +61,6 @@ export const projects: ProjectInfo[] = [
   natix as ProjectInfo,
   streamr as ProjectInfo,
   smartpoint as ProjectInfo,
-  sourchain as ProjectInfo,
+  soarchain as ProjectInfo,
   switchElectric as ProjectInfo,
 ]
