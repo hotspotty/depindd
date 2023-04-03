@@ -1,6 +1,6 @@
 import Parser from "rss-parser"
 import { LinkItem, LinkType } from "../(data)/types"
-import { capitalizeFirstLetter, truncateText } from "./text"
+import { slugToTitle, truncateText } from "./text"
 
 async function getFeed(feedUrl: string) {
   const parser = new Parser()
@@ -98,7 +98,7 @@ export async function getRssFeed(links: LinkItem[]) {
       }
 
       rssArticles.push({
-        sourceLabel: capitalizeFirstLetter(type),
+        sourceLabel: slugToTitle(type),
         link,
         title: article.title,
         description: truncatedDescription,

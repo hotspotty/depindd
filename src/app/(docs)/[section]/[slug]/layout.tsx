@@ -11,7 +11,7 @@ import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
 import { legoCategories } from "../../(data)/types"
 import { PAGES_PATH, getSidebarItems } from "../../(utils)/sidebar"
-import { capitalizeFirstLetter } from "../../(utils)/text"
+import { slugToTitle } from "../../(utils)/text"
 
 type PageProps = {
   params: {
@@ -49,11 +49,11 @@ export default async function PageLayout({ params, children }: PageProps) {
 
       labels = [
         {
-          title: capitalizeFirstLetter(projectInfo.lego),
+          title: slugToTitle(projectInfo.lego),
           url: `/lego/${projectInfo.lego}`,
         },
         ...projectInfo.categories.map((category) => ({
-          title: capitalizeFirstLetter(category),
+          title: slugToTitle(category),
           url: `/lego/${projectInfo.lego}#${slugify(category)}`,
         })),
       ]
@@ -70,7 +70,7 @@ export default async function PageLayout({ params, children }: PageProps) {
 
       projectInfo.links.forEach(({ type, label, url }) => {
         if (!url) return
-        let title = capitalizeFirstLetter(type)
+        let title = slugToTitle(type)
         if (label) title += ` - ${label}`
         links.push({ title, url })
       })
@@ -83,20 +83,20 @@ export default async function PageLayout({ params, children }: PageProps) {
 
       blockchainInfo.links.forEach(({ type, label, url }) => {
         if (!url) return
-        let title = capitalizeFirstLetter(type)
+        let title = slugToTitle(type)
         if (label) title += ` - ${label}`
         links.push({ title, url })
       })
     }
   } else if (params.section === "lego") {
     labels = legoCategories[params.slug].map((category) => ({
-      title: capitalizeFirstLetter(category),
+      title: slugToTitle(category),
       url: `/lego/${params.slug}#${slugify(category)}`,
       samePage: true,
     }))
   }
 
-  if (!title) title = capitalizeFirstLetter(params.slug)
+  if (!title) title = slugToTitle(params.slug)
 
   const sidebar = await getSidebarItems()
   const section = sidebar.find(({ section }) => section === params.section)

@@ -10,6 +10,7 @@ import path from "path"
 import React from "react"
 import getMarkdownContentFromText from "../(utils)/getMarkdownContentFromText"
 import { PAGES_PATH } from "../(utils)/sidebar"
+import { slugToTitle } from "../(utils)/text"
 import { components } from "../config.markdoc"
 import { HeroBackground } from "./HeroBackground"
 import { HeroButton } from "./HeroButton"
@@ -25,14 +26,14 @@ export function Hero() {
       const filePath = path.join(PAGES_PATH, "leaderboards", slug + ".md")
       const source = fs.readFileSync(filePath, "utf-8")
       const {
-        data: { title, topContentTag },
+        data: { topContentTag },
       } = matter(source)
       const topContent = topContentTag
         ? getMarkdownContentFromText(`{% ${topContentTag} minimal="true" / %}`)
         : undefined
       return {
         slug,
-        title,
+        title: slugToTitle(slug),
         topContent,
       }
     })

@@ -15,7 +15,7 @@ import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
 import { LinkItem } from "../../(data)/types"
 import { PAGES_PATH } from "../../(utils)/sidebar"
-import { capitalizeFirstLetter } from "../../(utils)/text"
+import { slugToTitle } from "../../(utils)/text"
 
 type PageProps = {
   params: {
@@ -39,14 +39,10 @@ export async function generateMetadata({
     if (blockchainInfo) title = blockchainInfo.title
   }
 
-  if (!title) title = capitalizeFirstLetter(params.slug)
+  if (!title) title = slugToTitle(params.slug)
 
   return {
-    title:
-      "DePIN DD | " +
-      capitalizeFirstLetter(params.section.replaceAll("-", " ")) +
-      " - " +
-      title,
+    title: "DePIN DD | " + slugToTitle(params.section) + " - " + title,
   }
 }
 

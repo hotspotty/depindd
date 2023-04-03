@@ -5,7 +5,7 @@ import matter from "gray-matter"
 import path from "path"
 import { blockchains } from "../(data)/blockchains"
 import { projects } from "../(data)/projects"
-import { capitalizeFirstLetter } from "./text"
+import { slugToTitle } from "./text"
 
 type SidebarPage = {
   label: string
@@ -49,7 +49,7 @@ export async function getSidebarItems() {
       label,
       showCount,
       items: slugs.map((slug) => {
-        let title = capitalizeFirstLetter(slug)
+        let title = slugToTitle(slug)
 
         if (section === "projects") {
           const projectInfo = projects.find((project) => project.slug === slug)

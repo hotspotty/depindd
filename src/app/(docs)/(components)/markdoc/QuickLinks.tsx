@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import { capitalizeFirstLetter } from "../../(utils)/text"
+import { slugToTitle } from "../../(utils)/text"
 import Labels from "../Labels"
 
 interface QuickLinksProps {
@@ -82,7 +82,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
             </p>
             <Labels
               labels={transformedLabels.map((label) => ({
-                title: capitalizeFirstLetter(label),
+                title: slugToTitle(label),
               }))}
             />
           </div>

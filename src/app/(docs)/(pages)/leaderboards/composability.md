@@ -1,5 +1,4 @@
 ---
-title: Composability
 topContentTag: composability-leaderboard
 ---
 

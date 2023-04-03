@@ -1,5 +1,6 @@
-export function capitalizeFirstLetter(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1)
+export function slugToTitle(str: string): string {
+  const newString = str.replaceAll("-", " ")
+  return newString.charAt(0).toUpperCase() + newString.slice(1)
 }
 
 export const truncateText = (

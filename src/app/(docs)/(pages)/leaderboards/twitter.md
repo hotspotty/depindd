@@ -1,5 +1,4 @@
 ---
-title: Twitter
 topContentTag: twitter-leaderboard
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: Blockchains
 topContentTag: blockchains-leaderboard
 ---
 

@@ -1,5 +1,4 @@
 ---
-title: Miner profitabillity
 topContentTag: miner-profitability-leaderboard
 ---
 

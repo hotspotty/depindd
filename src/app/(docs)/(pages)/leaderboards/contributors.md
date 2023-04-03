@@ -1,5 +1,4 @@
 ---
-title: Contributors
 topContentTag: contributors-leaderboard
 ---
 

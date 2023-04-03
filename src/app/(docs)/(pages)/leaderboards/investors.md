@@ -1,5 +1,4 @@
 ---
-title: Investors
 topContentTag: investors-leaderboard
 ---
 
