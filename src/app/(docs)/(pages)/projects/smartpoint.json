@@ -8,7 +8,7 @@
   "blockchain": "",
   "status": "development",
   "logo": "/images/projects/smartpoint.jpeg",
-  "usedBy": [""],
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://smartpoint.io" },
     { "type": "foundation", "url": "" },
