@@ -10,10 +10,10 @@
   "logo": "/images/projects/getdor.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.getdor.com/" },
+    { "type": "website", "url": "https://www.getdor.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://www.getdor.com/blog/" },
+    { "type": "blog", "url": "https://www.getdor.com/blog" },
     { "type": "medium", "url": "" },
     { "type": "twitter", "url": "https://twitter.com/dortechnologies" },
     { "type": "reddit", "url": "" },
@@ -21,7 +21,7 @@
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
-    { "type": "instagram", "url": "https://www.instagram.com/getdor/" },
+    { "type": "instagram", "url": "https://www.instagram.com/getdor" },
     {
       "type": "linkedin",
       "url": "https://www.linkedin.com/company/dor-technologies"

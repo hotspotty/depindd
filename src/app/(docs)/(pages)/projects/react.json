@@ -19,10 +19,10 @@
       "url": ""
     },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://www.reactnetwork.io/" },
+    { "type": "blog", "url": "" },
     {
       "type": "medium",
-      "url": "https://reactnetwork.medium.com/"
+      "url": "https://reactnetwork.medium.com"
     },
     {
       "type": "twitter",

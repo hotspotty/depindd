@@ -13,7 +13,7 @@
     { "type": "website", "url": "https://www.healthblocks.ai/" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://blog.healthblocks.ai/" },
+    { "type": "blog", "url": "https://blog.healthblocks.ai" },
     { "type": "medium", "url": "" },
     { "type": "twitter", "url": "https://twitter.com/HealthBlocks" },
     { "type": "reddit", "url": "" },

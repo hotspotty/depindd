@@ -28,7 +28,7 @@
       "type": "company",
       "url": "https://1663.io"
     },
-    { "type": "blog", "url": "https://blog.helium.com" },
+    { "type": "medium", "url": "https://blog.helium.com" },
     {
       "type": "medium",
       "url": "https://heliumfoundation.medium.com"
