@@ -10,7 +10,7 @@
   "logo": "/images/projects/wifi-map.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.wifimap.io/" },
+    { "type": "website", "url": "https://www.wifimap.io" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "https://www.wifimap.io/blog" },
@@ -24,10 +24,10 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/wifi-map-llc/"
+      "url": "https://www.linkedin.com/company/wifi-map-llc"
     },
     { "type": "tiktok", "url": "" },
-    { "type": "facebook", "url": "https://www.facebook.com/wifimap.io/" },
+    { "type": "facebook", "url": "https://www.facebook.com/wifimap.io" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },

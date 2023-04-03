@@ -10,7 +10,7 @@
   "logo": "/images/projects/element.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://elementdata.xyz/" },
+    { "type": "website", "url": "https://elementdata.xyz" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
@@ -30,7 +30,7 @@
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "https://elementdata.xyz/tokenomics" },
-    { "type": "explorer", "url": "https://explorer.elementdata.xyz/" },
+    { "type": "explorer", "url": "https://explorer.elementdata.xyz" },
     { "type": "shop", "url": "" },
     {
       "type": "coingecko",

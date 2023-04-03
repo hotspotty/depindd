@@ -26,7 +26,7 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://whitepaper.greenpowern.com/" },
+    { "type": "whitepaper", "url": "https://whitepaper.greenpowern.com" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     {

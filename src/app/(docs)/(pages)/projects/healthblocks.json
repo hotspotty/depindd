@@ -10,7 +10,7 @@
   "logo": "/images/projects/healthblocks.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.healthblocks.ai/" },
+    { "type": "website", "url": "https://www.healthblocks.ai" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "https://blog.healthblocks.ai" },
@@ -24,7 +24,7 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/healthblocksio/"
+      "url": "https://www.linkedin.com/company/healthblocksio"
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },

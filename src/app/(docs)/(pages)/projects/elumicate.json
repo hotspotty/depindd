@@ -10,10 +10,10 @@
   "logo": "/images/projects/elumicate.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.elumicate.com/" },
+    { "type": "website", "url": "https://www.elumicate.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://www.elumicate.com/blog/" },
+    { "type": "blog", "url": "https://www.elumicate.com/blog" },
     { "type": "medium", "url": "" },
     { "type": "twitter", "url": "https://twitter.com/elumicate" },
     { "type": "reddit", "url": "" },
@@ -24,7 +24,7 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/elumicate-inc/"
+      "url": "https://www.linkedin.com/company/elumicate-inc"
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },

@@ -10,10 +10,10 @@
   "logo": "/images/projects/planetwatch.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.planetwatch.us/" },
+    { "type": "website", "url": "https://www.planetwatch.us" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://www.planetwatch.us/blog-news-3/" },
+    { "type": "blog", "url": "https://www.planetwatch.us/blog-news-3" },
     { "type": "medium", "url": "https://medium.com/planet-watch" },
     { "type": "twitter", "url": "https://twitter.com/planetwatchsas" },
     { "type": "reddit", "url": "" },
@@ -24,23 +24,23 @@
       "type": "youtube",
       "url": "https://www.youtube.com/channel/UCe5uT64o7nugWNzSgPoktQw"
     },
-    { "type": "instagram", "url": "https://www.instagram.com/planetwatchsas/" },
+    { "type": "instagram", "url": "https://www.instagram.com/planetwatchsas" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/64512233/"
+      "url": "https://www.linkedin.com/company/64512233"
     },
     { "type": "tiktok", "url": "" },
     {
       "type": "facebook",
-      "url": "https://web.facebook.com/people/PlanetWatch/100050008579981/"
+      "url": "https://web.facebook.com/people/PlanetWatch/100050008579981"
     },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://www.planetwatch.us/white-paper/" },
+    { "type": "whitepaper", "url": "https://www.planetwatch.us/white-paper" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
-    { "type": "shop", "url": "https://www.planetwatch.us/approved-sensors/" },
+    { "type": "shop", "url": "https://www.planetwatch.us/approved-sensors" },
     {
       "type": "coingecko",
       "url": "https://www.coingecko.com/en/coins/planetwatch"

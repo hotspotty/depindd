@@ -10,7 +10,7 @@
   "logo": "/images/projects/mind-land.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://mndlnd.xyz/" },
+    { "type": "website", "url": "https://mndlnd.xyz" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },

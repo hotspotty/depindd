@@ -10,7 +10,7 @@
   "logo": "/images/projects/really.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://really.com/" },
+    { "type": "website", "url": "https://really.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "https://really.com/learn" },
@@ -30,7 +30,7 @@
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "https://explorer.really.com/" },
+    { "type": "explorer", "url": "https://explorer.really.com" },
     { "type": "shop", "url": "https://really.com/shop" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
