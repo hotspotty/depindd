@@ -12,7 +12,7 @@
   "links": [
     { "type": "website", "url": "https://www.iotex.io" },
     { "type": "foundation", "url": "" },
-    { "type": "company", "url": "https://machinefi.com/lab" },
+    { "type": "company", "url": "" },
     { "type": "blog", "url": "https://iotex.io/blog" },
     { "type": "medium", "url": "https://medium.com/@iotex" },
     { "type": "twitter", "url": "https://twitter.com/iotex_io" },
@@ -37,7 +37,7 @@
       "url": "https://cdn.iotex.io/machinefi/IoTeX%202.0.pdf"
     },
     { "type": "documentation", "url": "https://docs.iotex.io" },
-    { "type": "governance", "url": "https://gov.iotex.io/#" },
+    { "type": "governance", "url": "https://gov.iotex.io" },
     {
       "type": "tokenomics",
       "url": "https://onboard.iotex.io/tokenomics/iotx-metrics"
