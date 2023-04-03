@@ -1,6 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/24/solid"
 import clsx from "clsx"
-import Link, { LinkProps } from "next/link"
 
 interface ComponentProps<T extends React.ElementType> {
   as?: T
@@ -24,17 +23,18 @@ export function Card<T extends React.ElementType = "div">({
   )
 }
 
-Card.Link = function CardLink({
+Card.Link = function CardLink<T extends React.ElementType = "a">({
   children,
   ...props
-}: LinkProps & { children?: React.ReactNode }) {
+}: ComponentProps<T> &
+  Omit<React.ComponentPropsWithoutRef<T>, keyof ComponentProps<T>>) {
   return (
     <>
       <div className="absolute -inset-x-4 -inset-y-2.5 z-0 scale-95 bg-slate-50 opacity-0 transition duration-200 group-hover:scale-100 group-hover:opacity-100 dark:bg-slate-800/50 sm:rounded-2xl md:-inset-x-6 md:-inset-y-4" />
-      <Link {...props}>
+      <a {...props}>
         <span className="absolute -inset-x-4 -inset-y-2.5 z-20 sm:rounded-2xl md:-inset-x-6 md:-inset-y-4" />
         <span className="relative z-10">{children}</span>
-      </Link>
+      </a>
     </>
   )
 }
@@ -48,14 +48,20 @@ Card.Title = function CardTitle<T extends React.ElementType = "h2">({
   const Component = as || "h2"
   return (
     <Component className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-200">
-      {href ? <Card.Link href={href}>{children}</Card.Link> : children}
+      {href ? (
+        <Card.Link href={href} target="_blank" rel="noopener">
+          {children}
+        </Card.Link>
+      ) : (
+        children
+      )}
     </Component>
   )
 }
 
 Card.Description = function CardDescription({ children }) {
   return (
-    <p className="relative z-10 mt-2 text-sm text-slate-700 dark:text-slate-500">
+    <p className="relative z-10 mt-2 text-sm text-slate-700 dark:text-slate-300">
       {children}
     </p>
   )
@@ -88,7 +94,7 @@ Card.Eyebrow = function CardEyebrow<T extends React.ElementType = "p">({
     <Component
       className={clsx(
         className,
-        "relative z-10 order-first flex items-center text-sm leading-6 text-slate-400 dark:text-slate-400",
+        "relative z-10 order-first mb-2 flex items-center text-sm leading-6 text-slate-400 dark:text-slate-400",
         decorate && "pl-3.5"
       )}
       {...props}
@@ -101,6 +107,27 @@ Card.Eyebrow = function CardEyebrow<T extends React.ElementType = "p">({
           <span className="h-4 w-0.5 rounded-full bg-slate-200 dark:bg-slate-500" />
         </span>
       )}
+      {children}
+    </Component>
+  )
+}
+
+Card.Footer = function CardFooter<T extends React.ElementType = "p">({
+  as,
+  className,
+  children,
+  ...props
+}: ComponentProps<T> &
+  Omit<React.ComponentPropsWithoutRef<T>, keyof ComponentProps<T>>) {
+  const Component = as || "p"
+  return (
+    <Component
+      className={clsx(
+        className,
+        "relative z-10 mt-1 flex items-center gap-4 text-sm leading-6 text-slate-300 dark:text-slate-500"
+      )}
+      {...props}
+    >
       {children}
     </Component>
   )
