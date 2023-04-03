@@ -5,7 +5,7 @@
   "lego": "sensors",
   "categories": ["smart home"],
   "token": "",
-  "blockchain": "",
+  "blockchain": "tbd",
   "status": "development",
   "logo": "/images/projects/switch-electric.jpeg",
   "usedBy": [],
