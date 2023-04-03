@@ -11,8 +11,6 @@ Projects in DePIN DD will follow this classification system. Learn more about ea
 
 {% quick-link title="Wireless" href="/lego/wireless" labels="connectivity,positioning" /%}
 {% quick-link title="Sensors" href="/lego/sensors" labels="mobility,energy,environmental,healthcare,smart city,smart home,geo-location,general" /%}
-{% quick-link title="Data" href="/lego/data" labels="storage,marketplace,proof,warehouse,analytics,tool" /%}
-{% quick-link title="Servers" href="/lego/servers" labels="compute,CDN,VPN" /%}
-{% quick-link title="Hardware" href="/lego/hardware" labels="manufacturer,marketplace" /%}
+{% quick-link title="Servers" href="/lego/servers" labels="storage,compute,CDN,VPN" /%}
 
 {% /quick-links %}

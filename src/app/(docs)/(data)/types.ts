@@ -43,13 +43,7 @@ export interface LinkItem {
   url: string
 }
 
-export const legos = [
-  "wireless",
-  "sensors",
-  "data",
-  "servers",
-  "hardware",
-] as const
+export const legos = ["wireless", "sensors", "servers"] as const
 
 export type Lego = (typeof legos)[number]
 
@@ -65,15 +59,9 @@ export const categories = [
   "geo-location",
   "general",
   "storage",
-  "marketplace",
-  "proof",
-  "warehouse",
-  "analytics",
-  "tool",
   "compute",
   "CDN",
   "VPN",
-  "manufacturer",
 ] as const
 
 export type Category = (typeof categories)[number]
@@ -90,9 +78,7 @@ export const legoCategories: { [lego: string]: Category[] } = {
     "geo-location",
     "general",
   ],
-  data: ["storage", "marketplace", "proof", "warehouse", "analytics", "tool"],
-  servers: ["compute", "CDN", "VPN"],
-  hardware: ["manufacturer", "marketplace"],
+  servers: ["storage", "compute", "CDN", "VPN"],
 }
 
 export const projectStatuses = ["development", "production"] as const
