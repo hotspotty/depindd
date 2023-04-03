@@ -1,3 +1,7 @@
+---
+rss: https://blog.helium.com/feed
+---
+
 ## About
 
 ### What is this network?

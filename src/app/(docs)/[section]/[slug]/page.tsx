@@ -10,6 +10,7 @@ import Markdoc from "@markdoc/markdoc"
 import { Metadata } from "next"
 import path from "path"
 import React from "react"
+import RssFeed from "../../(components)/RssFeed"
 import { projects } from "../../(data)/projects"
 import { PAGES_PATH } from "../../(utils)/sidebar"
 
@@ -34,7 +35,7 @@ export async function generateMetadata({
 
 export default async function Page({ params }: PageProps) {
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
-  let { content, topContent } = getMarkdownContent(filePath)
+  let { content, topContent, rss } = getMarkdownContent(filePath)
 
   const tableOfContents = collectHeadings(content)
 
@@ -66,6 +67,18 @@ export default async function Page({ params }: PageProps) {
           </div>
         )}
       </div>
+
+      {rss && (
+        <div className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
+          <div className="mt-12 border-t border-slate-200 pt-12 dark:border-slate-800">
+            <h1 className="mb-10 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
+              Articles
+            </h1>
+            {/* @ts-expect-error Async Server Component */}
+            <RssFeed feedUrl={rss} />
+          </div>
+        </div>
+      )}
     </>
   )
 }
