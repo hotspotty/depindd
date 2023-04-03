@@ -8,7 +8,7 @@
   "blockchain": "",
   "status": "development",
   "logo": "/images/projects/switch-electric.jpeg",
-  "usedBy": [""],
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.whynotswitch.com" },
     { "type": "foundation", "url": "" },
