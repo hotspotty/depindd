@@ -1,7 +1,7 @@
 import { projects } from "../../(data)/projects"
 import Table, { LinkCell, ProjectsCell } from "../Table"
 
-export default async function CrossPollinationLeaderboard({
+export default async function ComposabilityLeaderboard({
   minimal = false,
 }: {
   minimal?: boolean
