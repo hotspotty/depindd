@@ -10,11 +10,11 @@
   "logo": "/images/projects/foam.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://foam.space/" },
+    { "type": "website", "url": "https://foam.space" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://blog.foam.space/" },
-    { "type": "medium", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "https://blog.foam.space" },
     { "type": "twitter", "url": "https://twitter.com/foamspace" },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
@@ -24,7 +24,7 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/foam-corp/"
+      "url": "https://www.linkedin.com/company/foam-corp"
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },

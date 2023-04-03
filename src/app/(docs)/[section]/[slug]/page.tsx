@@ -11,7 +11,9 @@ import { Metadata } from "next"
 import path from "path"
 import React from "react"
 import RssFeed from "../../(components)/RssFeed"
+import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
+import { LinkItem } from "../../(data)/types"
 import { PAGES_PATH } from "../../(utils)/sidebar"
 
 type PageProps = {
@@ -33,13 +35,30 @@ export async function generateMetadata({
   }
 }
 
+function getLinks(section: string, slug: string): LinkItem[] {
+  switch (section) {
+    case "projects": {
+      const projectInfo = projects.find((project) => project.slug === slug)
+      return projectInfo ? projectInfo.links : []
+    }
+    case "blockchains": {
+      const blockchainInfo = blockchains.find(
+        (blockchain) => blockchain.slug === slug
+      )
+      return blockchainInfo ? blockchainInfo.links : []
+    }
+    default:
+      return []
+  }
+}
+
 export default async function Page({ params }: PageProps) {
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
   let { content, topContent } = getMarkdownContent(filePath)
 
   const tableOfContents = collectHeadings(content)
 
-  const projectInfo = projects.find(({ slug }) => slug === params.slug)
+  const links = getLinks(params.section, params.slug)
 
   return (
     <>
@@ -51,7 +70,6 @@ export default async function Page({ params }: PageProps) {
           <hr className="mb-6 mt-3" />
         </Prose>
       )}
-
       <div className="flex">
         <div className="min-w-0 max-w-2xl flex-auto px-4 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16">
           <article>
@@ -70,13 +88,11 @@ export default async function Page({ params }: PageProps) {
         )}
       </div>
 
-      {projectInfo && projectInfo.links.length > 0 && (
-        /* @ts-expect-error Async Server Component */
-        <RssFeed
-          className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16"
-          links={projectInfo.links}
-        />
-      )}
+      {/* @ts-expect-error Async Server Component */}
+      <RssFeed
+        links={links}
+        className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16"
+      />
     </>
   )
 }

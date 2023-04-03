@@ -28,7 +28,7 @@
       "type": "company",
       "url": "https://hellohelium.com"
     },
-    { "type": "blog", "url": "https://blog.helium.com" },
+    { "type": "medium", "url": "https://blog.helium.com" },
     {
       "type": "medium",
       "url": "https://heliumfoundation.medium.com"
