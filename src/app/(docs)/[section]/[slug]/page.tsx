@@ -12,9 +12,7 @@ import path from "path"
 import React from "react"
 import RssFeed from "../../(components)/RssFeed"
 import { projects } from "../../(data)/projects"
-import { RssFeedConfig, getRssFeedConfigs } from "../../(utils)/rss"
 import { PAGES_PATH } from "../../(utils)/sidebar"
-import { capitalizeFirstLetter } from "../../(utils)/text"
 
 type PageProps = {
   params: {
@@ -41,14 +39,7 @@ export default async function Page({ params }: PageProps) {
 
   const tableOfContents = collectHeadings(content)
 
-  let rssFeeds: RssFeedConfig[] = []
-
-  if (params.section === "projects") {
-    const projectInfo = projects.find(({ slug }) => slug === params.slug)
-    if (projectInfo) {
-      rssFeeds = await getRssFeedConfigs(projectInfo.links)
-    }
-  }
+  const projectInfo = projects.find(({ slug }) => slug === params.slug)
 
   return (
     <>
@@ -79,21 +70,13 @@ export default async function Page({ params }: PageProps) {
         )}
       </div>
 
-      {rssFeeds.length > 0 &&
-        rssFeeds.map(({ type, sourceUrl, feedUrl }) => (
-          <div
-            key={sourceUrl}
-            className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16"
-          >
-            <div className="mt-12 border-t border-slate-200 pt-12 dark:border-slate-800">
-              <h1 className="mb-10 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
-                On {capitalizeFirstLetter(type)}
-              </h1>
-              {/* @ts-expect-error Async Server Component */}
-              <RssFeed type={type} feedUrl={feedUrl} />
-            </div>
-          </div>
-        ))}
+      {projectInfo && projectInfo.links.length > 0 && (
+        /* @ts-expect-error Async Server Component */
+        <RssFeed
+          className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16"
+          links={projectInfo.links}
+        />
+      )}
     </>
   )
 }
