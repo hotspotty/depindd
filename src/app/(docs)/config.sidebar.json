@@ -19,7 +19,7 @@
   {
     "section": "lego",
     "label": "LEGO",
-    "slugs": ["wireless", "sensors", "data", "servers", "hardware"]
+    "slugs": ["wireless", "sensors", "servers"]
   },
   {
     "section": "projects",
