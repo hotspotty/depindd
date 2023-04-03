@@ -15,6 +15,7 @@ import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
 import { LinkItem } from "../../(data)/types"
 import { PAGES_PATH } from "../../(utils)/sidebar"
+import { capitalizeFirstLetter } from "../../(utils)/text"
 
 type PageProps = {
   params: {
@@ -26,12 +27,26 @@ type PageProps = {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const projectInfo = projects.find(({ slug }) => slug === params.slug)
   const filePath = path.join(PAGES_PATH, params.section, params.slug + ".md")
-  const title = getMarkdownTitle(filePath)
+
+  let title = getMarkdownTitle(filePath)
+
+  if (params.section === "projects") {
+    const projectInfo = projects.find(({ slug }) => slug === params.slug)
+    if (projectInfo) title = projectInfo.title
+  } else if (params.section === "blockchains") {
+    const blockchainInfo = blockchains.find(({ slug }) => slug === params.slug)
+    if (blockchainInfo) title = blockchainInfo.title
+  }
+
+  if (!title) title = capitalizeFirstLetter(params.slug)
+
   return {
     title:
-      params.section.replaceAll("-", " ") + " - " + title || projectInfo?.title,
+      "DePIN DD | " +
+      capitalizeFirstLetter(params.section.replaceAll("-", " ")) +
+      " - " +
+      title,
   }
 }
 
