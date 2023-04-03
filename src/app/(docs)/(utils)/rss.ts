@@ -1,7 +1,8 @@
 import Parser from "rss-parser"
 import { LinkItem, LinkType } from "../(data)/types"
+import { capitalizeFirstLetter, truncateText } from "./text"
 
-export async function getFeed(feedUrl: string) {
+async function getFeed(feedUrl: string) {
   const parser = new Parser()
   const feed = await parser.parseURL(feedUrl)
   return feed
@@ -13,9 +14,7 @@ export interface RssFeedConfig {
   feedUrl: string
 }
 
-export async function getRssFeedConfigs(
-  links: LinkItem[]
-): Promise<RssFeedConfig[]> {
+async function getRssFeedConfigs(links: LinkItem[]): Promise<RssFeedConfig[]> {
   const feedConfigs: RssFeedConfig[] = []
 
   for (const { type, url } of links) {
@@ -56,4 +55,61 @@ export async function getRssFeedConfigs(
   }
 
   return feedConfigs
+}
+
+export interface RssArticle {
+  sourceLabel: string
+  link: string
+  title: string
+  description: string
+  author: string
+  date: string
+}
+
+export async function getRssFeed(links: LinkItem[]) {
+  const rssFeedConfigs = await getRssFeedConfigs(links)
+
+  const rssArticles: RssArticle[] = []
+
+  for await (const { type, feedUrl } of rssFeedConfigs) {
+    let detailedFeed
+
+    try {
+      detailedFeed = await getFeed(feedUrl)
+    } catch (e) {
+      console.log(`RSS Feed failed: ${feedUrl}`)
+      console.log(e)
+      continue
+    }
+
+    detailedFeed?.items.forEach((article) => {
+      const description =
+        article["content:encodedSnippet"] || article.contentSnippet || ""
+      const truncatedDescription = truncateText(
+        description.replaceAll("\n", " "),
+        240
+      )!
+      let link = article.link
+
+      if (type === "twitter") {
+        link = link.replace("nitter.net", "twitter.com")
+      }
+
+      rssArticles.push({
+        sourceLabel: capitalizeFirstLetter(type),
+        link,
+        title: article.title,
+        description: truncatedDescription,
+        author: article.creator || article.author,
+        date: article.isoDate,
+      })
+    })
+  }
+
+  rssArticles.sort(
+    (d1: RssArticle, d2: RssArticle) =>
+      new Date(d2.date).getTime() - new Date(d1.date).getTime()
+  )
+
+  return rssArticles
 }

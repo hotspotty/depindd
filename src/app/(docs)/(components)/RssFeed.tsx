@@ -1,34 +1,24 @@
 import { format, formatDistanceToNow } from "date-fns"
-import { Item } from "rss-parser"
-import { LinkType } from "../(data)/types"
-import { getFeed } from "../(utils)/rss"
-import { truncateText } from "../(utils)/text"
+import { LinkItem } from "../(data)/types"
+import { RssArticle, getRssFeed } from "../(utils)/rss"
 import { Card } from "./Card"
 
 function Article({
-  article,
-  source,
+  article: { sourceLabel, link, title, description, author, date },
 }: {
-  article: Item & { author?: string }
-  source?: string
+  article: RssArticle
 }) {
-  const description =
-    article["content:encodedSnippet"] || article.contentSnippet || ""
-  const truncatedDescription = truncateText(
-    description.replaceAll("\n", " "),
-    240
-  )
-  const dateTime = article.isoDate ? new Date(article.isoDate) : undefined
+  const dateTime = date ? new Date(date) : undefined
 
   return (
     <Card as="article">
-      <Card.Eyebrow decorate>{source}</Card.Eyebrow>
-      <Card.Title href={article.link}>{article.title}</Card.Title>
-      <Card.Description>{truncatedDescription}</Card.Description>
+      <Card.Eyebrow decorate>{sourceLabel}</Card.Eyebrow>
+      <Card.Title href={link}>{title}</Card.Title>
+      <Card.Description>{description}</Card.Description>
       <Card.Footer>
-        <span>{article.creator || article.author}</span>
+        <span>{author}</span>
         {dateTime && (
-          <time dateTime={article.isoDate}>
+          <time dateTime={date}>
             {format(
               dateTime,
               "MMM d" +
@@ -52,29 +42,28 @@ function Article({
 }
 
 export default async function RssFeed({
-  type,
-  feedUrl,
+  className,
+  links,
 }: {
-  type: LinkType
-  feedUrl: string
+  className?: string
+  links: LinkItem[]
 }) {
-  let detailedFeed
+  const rssFeed = await getRssFeed(links)
 
-  try {
-    detailedFeed = await getFeed(feedUrl)
-  } catch (e) {
-    return
-  }
+  if (rssFeed.length === 0) return
 
   return (
-    <div className="flex flex-col gap-16">
-      {detailedFeed.items.map((article) => (
-        <Article
-          key={article.link}
-          article={article}
-          source={detailedFeed.title}
-        />
-      ))}
+    <div className={className}>
+      <div className="mt-12 border-t border-slate-200 pt-12 dark:border-slate-800">
+        <h1 className="mb-10 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
+          News
+        </h1>
+        <div className="flex flex-col gap-16">
+          {rssFeed.map((article) => (
+            <Article key={article.link} article={article} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
