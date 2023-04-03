@@ -10,7 +10,7 @@
   "logo": "/images/projects/fry-foundation.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.fryfoundation.com/" },
+    { "type": "website", "url": "https://www.fryfoundation.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },

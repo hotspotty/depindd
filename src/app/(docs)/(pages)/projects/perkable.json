@@ -10,7 +10,7 @@
   "logo": "/images/projects/perkable.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.perkable.co/" },
+    { "type": "website", "url": "https://www.perkable.co" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },

@@ -28,7 +28,7 @@
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
-    { "type": "github", "url": "https://github.com/f-o-a-m/" },
+    { "type": "github", "url": "https://github.com/f-o-a-m" },
     {
       "type": "whitepaper",
       "url": "https://foam.space/publicAssets/FOAM_Whitepaper.pdf"

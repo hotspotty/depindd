@@ -10,7 +10,7 @@
   "logo": "/images/projects/2blox.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://www.2blox.io/" },
+    { "type": "website", "url": "https://www.2blox.io" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
@@ -24,12 +24,12 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/2bloxaway/"
+      "url": "https://www.linkedin.com/company/2bloxaway"
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://www.2blox.io/" },
+    { "type": "whitepaper", "url": "https://www.2blox.io" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },

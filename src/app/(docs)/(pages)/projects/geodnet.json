@@ -10,7 +10,7 @@
   "logo": "/images/projects/geodnet.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://geodnet.com/" },
+    { "type": "website", "url": "https://geodnet.com" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
@@ -37,7 +37,7 @@
     { "type": "shop", "url": "https://t.me/geodnet" },
     {
       "type": "coingecko",
-      "url": "https://coinmarketcap.com/currencies/geodnet/"
+      "url": "https://coinmarketcap.com/currencies/geodnet"
     },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },

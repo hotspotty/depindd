@@ -10,13 +10,13 @@
   "logo": "/images/projects/crankk.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://crankk.io/" },
+    { "type": "website", "url": "https://crankk.io" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
     {
       "type": "medium",
-      "url": "https://alviso.medium.com/crankk-io-a-helium-like-crypto-network-on-kadena-25893cf32caa"
+      "url": "https://alviso.medium.com"
     },
     { "type": "twitter", "url": "https://twitter.com/IoCrankk" },
     { "type": "reddit", "url": "" },
@@ -25,10 +25,7 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    {
-      "type": "linkedin",
-      "url": ""
-    },
+    { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/alviso" },
@@ -41,9 +38,6 @@
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
-    {
-      "type": "other",
-      "url": "https://alviso.medium.com/crankk-io-a-helium-like-crypto-network-on-kadena-25893cf32caa"
-    }
+    { "type": "other", "url": "" }
   ]
 }

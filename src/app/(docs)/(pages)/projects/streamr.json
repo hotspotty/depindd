@@ -10,10 +10,10 @@
   "logo": "/images/projects/streamr.jpeg",
   "usedBy": ["dimo"],
   "links": [
-    { "type": "website", "url": "https://streamr.network/" },
+    { "type": "website", "url": "https://streamr.network" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
-    { "type": "blog", "url": "https://blog.streamr.network/" },
+    { "type": "blog", "url": "https://blog.streamr.network" },
     { "type": "medium", "url": "https://medium.com/streamrblog" },
     { "type": "twitter", "url": "https://twitter.com/streamr" },
     { "type": "reddit", "url": "" },
@@ -27,12 +27,12 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/streamr-network/"
+      "url": "https://www.linkedin.com/company/streamr-network"
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/streamr-dev" },
-    { "type": "whitepaper", "url": "https://streamr.network/whitepapers/" },
+    { "type": "whitepaper", "url": "https://streamr.network/whitepapers" },
     { "type": "documentation", "url": "https://streamr.network/docs/welcome" },
     { "type": "governance", "url": "" },
     {
