@@ -1,15 +1,17 @@
 import { format, formatDistanceToNow } from "date-fns"
-import Parser, { Item } from "rss-parser"
+import { Item } from "rss-parser"
+import { LinkType } from "../(data)/types"
+import { getFeed } from "../(utils)/rss"
 import { truncateText } from "../(utils)/text"
 import { Card } from "./Card"
 
-async function getFeed(feedUrl: string) {
-  const parser = new Parser()
-  const feed = await parser.parseURL(feedUrl)
-  return feed
-}
-
-function Article({ article, source }: { article: Item; source?: string }) {
+function Article({
+  article,
+  source,
+}: {
+  article: Item & { author?: string }
+  source?: string
+}) {
   const description =
     article["content:encodedSnippet"] || article.contentSnippet || ""
   const truncatedDescription = truncateText(
@@ -24,7 +26,7 @@ function Article({ article, source }: { article: Item; source?: string }) {
       <Card.Title href={article.link}>{article.title}</Card.Title>
       <Card.Description>{truncatedDescription}</Card.Description>
       <Card.Footer>
-        <span>{article.creator}</span>
+        <span>{article.creator || article.author}</span>
         {dateTime && (
           <time dateTime={article.isoDate}>
             {format(
@@ -49,10 +51,20 @@ function Article({ article, source }: { article: Item; source?: string }) {
   )
 }
 
-export default async function RssFeed({ feedUrl }: { feedUrl: string }) {
-  if (!feedUrl) return null
+export default async function RssFeed({
+  type,
+  feedUrl,
+}: {
+  type: LinkType
+  feedUrl: string
+}) {
+  let detailedFeed
 
-  const detailedFeed = await getFeed(feedUrl)
+  try {
+    detailedFeed = await getFeed(feedUrl)
+  } catch (e) {
+    return
+  }
 
   return (
     <div className="flex flex-col gap-16">
