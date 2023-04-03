@@ -36,20 +36,17 @@ export async function generateMetadata({
 }
 
 function getLinks(section: string, slug: string): LinkItem[] {
-  switch (section) {
-    case "projects": {
-      const projectInfo = projects.find((project) => project.slug === slug)
-      return projectInfo ? projectInfo.links : []
-    }
-    case "blockchains": {
-      const blockchainInfo = blockchains.find(
-        (blockchain) => blockchain.slug === slug
-      )
-      return blockchainInfo ? blockchainInfo.links : []
-    }
-    default:
-      return []
+  if (section === "projects") {
+    const projectInfo = projects.find((project) => project.slug === slug)
+    return projectInfo ? projectInfo.links : []
+  } else if (section === "blockchains") {
+    const blockchainInfo = blockchains.find(
+      (blockchain) => blockchain.slug === slug
+    )
+    return blockchainInfo ? blockchainInfo.links : []
   }
+
+  return []
 }
 
 export default async function Page({ params }: PageProps) {
@@ -88,11 +85,13 @@ export default async function Page({ params }: PageProps) {
         )}
       </div>
 
-      {/* @ts-expect-error Async Server Component */}
-      <RssFeed
-        links={links}
-        className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16"
-      />
+      {links.length > 0 && (
+        /* @ts-expect-error Async Server Component */
+        <RssFeed
+          links={links}
+          className="min-w-0 max-w-2xl flex-auto px-4 pb-16 lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16"
+        />
+      )}
     </>
   )
 }

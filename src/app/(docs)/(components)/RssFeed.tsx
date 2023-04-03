@@ -47,8 +47,6 @@ export default async function RssFeed({
   className?: string
   links: LinkItem[]
 }) {
-  if (links.length === 0) return
-
   const rssFeed = await getRssFeed(links)
 
   if (rssFeed.length === 0) return
