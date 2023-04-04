@@ -49,7 +49,6 @@ export type Lego = (typeof legos)[number]
 
 export const categories = [
   "connectivity",
-  "positioning",
   "mobility",
   "energy",
   "environmental",
@@ -67,7 +66,7 @@ export const categories = [
 export type Category = (typeof categories)[number]
 
 export const legoCategories: { [lego: string]: Category[] } = {
-  wireless: ["connectivity", "positioning"],
+  wireless: ["connectivity"],
   sensors: [
     "mobility",
     "energy",

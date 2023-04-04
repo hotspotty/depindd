@@ -8,7 +8,7 @@
   "blockchain": "solana",
   "status": "production",
   "logo": "/images/projects/helium-iot.jpeg",
-  "usedBy": ["dimo", "hivemapper", "react", "weatherxm"],
+  "usedBy": ["dimo", "hivemapper", "react", "weatherxm", "ascensionwx"],
   "links": [
     {
       "type": "website",

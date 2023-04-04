@@ -1,0 +1,43 @@
+{
+  "slug": "ascensionwx",
+  "title": "AscensionWx",
+  "miners": [],
+  "lego": "sensors",
+  "categories": ["environmental"],
+  "token": "",
+  "blockchain": "tbd",
+  "status": "development",
+  "logo": "/images/projects/ascensionwx.jpeg",
+  "usedBy": [],
+  "links": [
+    { "type": "website", "url": "https://www.ascensionwx.com" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/kandaweather" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.gg/BpuNkAZk5y" },
+    { "type": "telegram", "url": "https://t.me/kandaweather" },
+    {
+      "type": "youtube",
+      "url": "https://youtube.com/channel/UCIFDPGEPPkX858Sgwicx1_A"
+    },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "https://www.ascensionwx.com/miner" },
+    { "type": "coingecko", "url": "" },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "karrier-one",
+  "title": "Karrier One",
+  "miners": [],
+  "lego": "wireless",
+  "categories": ["connectivity"],
+  "token": "KONE",
+  "blockchain": "polygon",
+  "status": "development",
+  "logo": "/images/projects/karrier-one.jpeg",
+  "usedBy": [],
+  "links": [
+    { "type": "website", "url": "https://karrier.one" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/karrier_one" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/karrier-one"
+    },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "" },
+    {
+      "type": "whitepaper",
+      "url": "https://karrier.one/karrierone-whitepaper.pdf"
+    },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "" },
+    { "type": "coingecko", "url": "" },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
