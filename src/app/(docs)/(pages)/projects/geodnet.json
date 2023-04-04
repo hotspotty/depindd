@@ -16,7 +16,7 @@
     { "type": "blog", "url": "" },
     { "type": "medium", "url": "https://medium.com/geodnet" },
     { "type": "twitter", "url": "https://twitter.com/GEODNET_" },
-    { "type": "reddit", "url": "" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/GeodNet" },
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.gg/geodnet" },
     { "type": "telegram", "url": "https://t.me/geodnet" },
@@ -40,7 +40,7 @@
       "url": "https://coinmarketcap.com/currencies/geodnet"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/geodnet" },
     { "type": "other", "url": "" }
   ]
 }
