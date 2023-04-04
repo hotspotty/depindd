@@ -16,7 +16,7 @@
     { "type": "blog", "url": "" },
     { "type": "medium", "url": "https://blog.weatherxm.com" },
     { "type": "twitter", "url": "https://twitter.com/WeatherXM" },
-    { "type": "reddit", "url": "" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/WeatherXM" },
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://weatherxm.com/discord" },
     { "type": "telegram", "url": "" },
@@ -43,7 +43,7 @@
       "url": "https://www.coingecko.com/en/coins/weatherxm"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/weatherxm-b41a" },
     { "type": "other", "url": "" }
   ]
 }
