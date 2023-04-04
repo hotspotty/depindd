@@ -43,8 +43,6 @@ async function getRssFeedConfigs(links: LinkItem[]): Promise<RssFeedConfig[]> {
       const username = pathname.replace(/^\/|\/$/g, "")
 
       feedUrl = `https://nitter.net/${username}/rss`
-    } else {
-      continue
     }
 
     if (feedUrl) {
