@@ -1,6 +1,6 @@
 {
   "slug": "ascensionwx",
-  "title": "Ascension Wx",
+  "title": "AscensionWx",
   "miners": [],
   "lego": "sensors",
   "categories": ["environmental"],
@@ -8,7 +8,7 @@
   "blockchain": "tbd",
   "status": "development",
   "logo": "/images/projects/ascensionwx.jpeg",
-  "usedBy": ["helium"],
+  "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.ascensionwx.com" },
     { "type": "foundation", "url": "" },
@@ -18,9 +18,12 @@
     { "type": "twitter", "url": "https://twitter.com/kandaweather" },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
-    { "type": "discord", "url": "" },
-    { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "" },
+    { "type": "discord", "url": "https://discord.gg/BpuNkAZk5y" },
+    { "type": "telegram", "url": "https://t.me/kandaweather" },
+    {
+      "type": "youtube",
+      "url": "https://youtube.com/channel/UCIFDPGEPPkX858Sgwicx1_A"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
