@@ -37,7 +37,7 @@
     { "type": "shop", "url": "https://shop.weatherflow.com" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/weatherflow" },
     { "type": "other", "url": "" }
   ]
 }
