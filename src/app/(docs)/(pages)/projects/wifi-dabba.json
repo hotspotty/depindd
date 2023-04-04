@@ -20,11 +20,14 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCGPw0Ju80hvQU0mmZi_hExg?app=desktop" },
-    { "type": "instagram", "url": "https://www.instagram.com/wifidabba/?hl=en" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCGPw0Ju80hvQU0mmZi_hExg"
+    },
+    { "type": "instagram", "url": "https://www.instagram.com/wifidabba" },
     { "type": "linkedin", "url": "https://www.linkedin.com/company/wifidabba" },
     { "type": "tiktok", "url": "" },
-    { "type": "facebook", "url": "https://www.facebook.com/WifiDabba/?locale=pt_BR" },
+    { "type": "facebook", "url": "https://www.facebook.com/WifiDabba" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },
