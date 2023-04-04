@@ -35,7 +35,10 @@
     },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.geckoterminal.com/bsc/pools/0x84c8785975c85ed9a4edcbb6d1d11da024897ab0?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults" },
+    {
+      "type": "coingecko",
+      "url": "https://www.geckoterminal.com/bsc/pools/0x84c8785975c85ed9a4edcbb6d1d11da024897ab0"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }
