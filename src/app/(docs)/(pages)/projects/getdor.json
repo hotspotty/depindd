@@ -20,7 +20,7 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/@Getdor" },
     { "type": "instagram", "url": "https://www.instagram.com/getdor" },
     {
       "type": "linkedin",
@@ -28,7 +28,7 @@
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/getdor" },
-    { "type": "github", "url": "" },
+    { "type": "github", "url": "https://github.com/DoubleDor" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
