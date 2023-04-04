@@ -10,7 +10,7 @@
   "logo": "/images/projects/piphi.jpeg",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://piphi.network/#" },
+    { "type": "website", "url": "https://piphi.network" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
@@ -26,7 +26,10 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://piphi.network/updates/documents/PiPhi-LitePaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://piphi.network/updates/documents/PiPhi-LitePaper.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
