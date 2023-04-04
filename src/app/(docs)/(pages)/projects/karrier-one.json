@@ -5,7 +5,7 @@
   "lego": "wireless",
   "categories": ["connectivity"],
   "token": "KONE",
-  "blockchain": "tbd",
+  "blockchain": "polygon",
   "status": "development",
   "logo": "/images/projects/karrier-one.jpeg",
   "usedBy": [],
