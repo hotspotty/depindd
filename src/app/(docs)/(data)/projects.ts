@@ -30,6 +30,11 @@ import weatherxm from "../(pages)/projects/weatherxm.json"
 import wifiMap from "../(pages)/projects/wifi-map.json"
 import xnet from "../(pages)/projects/xnet.json"
 import iotex from "../(pages)/projects/iotex.json"
+import weatherflow from "../(pages)/projects/weatherflow.json"
+import karrierOne from "../(pages)/projects/karrier-one.json"
+import nesten from "../(pages)/projects/nesten.json"
+import worldMobile from "../(pages)/projects/world-mobile.json"
+import ascensionwx from "../(pages)/projects/ascensionwx.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -65,4 +70,9 @@ export const projects: ProjectInfo[] = [
   soarchain as ProjectInfo,
   switchElectric as ProjectInfo,
   iotex as ProjectInfo,
+  weatherflow as ProjectInfo,
+  karrierOne as ProjectInfo,
+  nesten as ProjectInfo,
+  worldMobile as ProjectInfo,
+  ascensionwx as ProjectInfo,
 ]
