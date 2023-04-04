@@ -37,6 +37,13 @@ import weatherxm from "../(pages)/projects/weatherxm.json"
 import wifiMap from "../(pages)/projects/wifi-map.json"
 import worldMobile from "../(pages)/projects/world-mobile.json"
 import xnet from "../(pages)/projects/xnet.json"
+import piphi from "../(pages)/projects/piphi.json"
+import chirp from "../(pages)/projects/chirp.json"
+import metablox from "../(pages)/projects/metablox.json"
+import onocoy from "../(pages)/projects/onocoy.json"
+import wayru from "../(pages)/projects/wayru.json"
+import wicrypt from "../(pages)/projects/wicrypt.json"
+import wifiDabba from "../(pages)/projects/wifi-dabba.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -79,4 +86,11 @@ export const projects: ProjectInfo[] = [
   nesten as ProjectInfo,
   worldMobile as ProjectInfo,
   ascensionwx as ProjectInfo,
+  piphi as ProjectInfo,
+  chirp as ProjectInfo,
+  metablox as ProjectInfo,
+  onocoy as ProjectInfo,
+  wayru as ProjectInfo,
+  wicrypt as ProjectInfo,
+  wifi-dabba as ProjectInfo,
 ]
