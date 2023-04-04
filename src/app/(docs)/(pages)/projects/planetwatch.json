@@ -46,7 +46,7 @@
       "url": "https://www.coingecko.com/en/coins/planetwatch"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/planetwatch" },
     { "type": "other", "url": "" }
   ]
 }
