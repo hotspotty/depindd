@@ -15,7 +15,7 @@
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },
     { "type": "medium", "url": "" },
-    { "type": "twitter", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/iotex_io" },
     { "type": "reddit", "url": "" },
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
