@@ -20,7 +20,7 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/@karrierone" },
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
