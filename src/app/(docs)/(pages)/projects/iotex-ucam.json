@@ -1,0 +1,43 @@
+{
+  "slug": "iotex-ucam",
+  "title": "IoTeX Ucam",
+  "miners": [],
+  "lego": "sensors",
+  "categories": ["general"],
+  "token": "",
+  "blockchain": "iotex",
+  "status": "production",
+  "logo": "/images/projects/iotex.jpeg",
+  "usedBy": [],
+  "links": [
+    { "type": "website", "url": "https://iotex.io/ucam" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "" },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "" },
+    {
+      "type": "shop",
+      "url": "https://shop.getucam.com/products/ucam-referral"
+    },
+    { "type": "coingecko", "url": "" },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
