@@ -20,11 +20,14 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "https://t.me/s/nestenus/2" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCrvZMMxEUbkBFtx3-nXjKTQ/videos" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCrvZMMxEUbkBFtx3-nXjKTQ/videos"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://www.linkedin.com/in/nesten-inc" },
     { "type": "tiktok", "url": "" },
-    { "type": "facebook", "url": "https://web.facebook.com/nestenUS?_rdc=1&_rdr" },
+    { "type": "facebook", "url": "https://web.facebook.com/nestenUS" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "https://www.nesten.io/Document/WP_en.pdf" },
     { "type": "documentation", "url": "" },
@@ -34,7 +37,10 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/nesten" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/%EB%84%A4%EC%8A%A4%ED%85%90-nesten" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/%EB%84%A4%EC%8A%A4%ED%85%90-nesten"
+    },
     { "type": "other", "url": "" }
   ]
 }
