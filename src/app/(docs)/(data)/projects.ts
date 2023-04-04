@@ -15,8 +15,6 @@ import healthblocks from "../(pages)/projects/healthblocks.json"
 import heliumIot from "../(pages)/projects/helium-iot.json"
 import heliumMobile from "../(pages)/projects/helium-mobile.json"
 import hivemapper from "../(pages)/projects/hivemapper.json"
-import iotexPebble from "../(pages)/projects/iotex-pebble.json"
-import iotexUcam from "../(pages)/projects/iotex-ucam.json"
 import iotexW3bstream from "../(pages)/projects/iotex-w3bstream.json"
 import karrierOne from "../(pages)/projects/karrier-one.json"
 import mapmetrics from "../(pages)/projects/mapmetrics.json"
@@ -72,8 +70,6 @@ export const projects: ProjectInfo[] = [
   soarchain as ProjectInfo,
   switchElectric as ProjectInfo,
   iotexW3bstream as ProjectInfo,
-  iotexPebble as ProjectInfo,
-  iotexUcam as ProjectInfo,
   weatherflow as ProjectInfo,
   karrierOne as ProjectInfo,
   nesten as ProjectInfo,
