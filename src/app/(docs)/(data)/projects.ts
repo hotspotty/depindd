@@ -1,5 +1,6 @@
 import twoblox from "../(pages)/projects/2blox.json"
 import arkreen from "../(pages)/projects/arkreen.json"
+import ascensionwx from "../(pages)/projects/ascensionwx.json"
 import crankk from "../(pages)/projects/crankk.json"
 import dimo from "../(pages)/projects/dimo.json"
 import element from "../(pages)/projects/element.json"
@@ -14,9 +15,12 @@ import healthblocks from "../(pages)/projects/healthblocks.json"
 import heliumIot from "../(pages)/projects/helium-iot.json"
 import heliumMobile from "../(pages)/projects/helium-mobile.json"
 import hivemapper from "../(pages)/projects/hivemapper.json"
+import iotexW3bstream from "../(pages)/projects/iotex-w3bstream.json"
+import karrierOne from "../(pages)/projects/karrier-one.json"
 import mapmetrics from "../(pages)/projects/mapmetrics.json"
 import mindLand from "../(pages)/projects/mind-land.json"
 import natix from "../(pages)/projects/natix.json"
+import nesten from "../(pages)/projects/nesten.json"
 import nodle from "../(pages)/projects/nodle.json"
 import perkable from "../(pages)/projects/perkable.json"
 import planetwatch from "../(pages)/projects/planetwatch.json"
@@ -26,15 +30,11 @@ import smartpoint from "../(pages)/projects/smartpoint.json"
 import soarchain from "../(pages)/projects/soarchain.json"
 import streamr from "../(pages)/projects/streamr.json"
 import switchElectric from "../(pages)/projects/switch-electric.json"
+import weatherflow from "../(pages)/projects/weatherflow.json"
 import weatherxm from "../(pages)/projects/weatherxm.json"
 import wifiMap from "../(pages)/projects/wifi-map.json"
-import xnet from "../(pages)/projects/xnet.json"
-import iotex from "../(pages)/projects/iotex.json"
-import weatherflow from "../(pages)/projects/weatherflow.json"
-import karrierOne from "../(pages)/projects/karrier-one.json"
-import nesten from "../(pages)/projects/nesten.json"
 import worldMobile from "../(pages)/projects/world-mobile.json"
-import ascensionwx from "../(pages)/projects/ascensionwx.json"
+import xnet from "../(pages)/projects/xnet.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -69,7 +69,7 @@ export const projects: ProjectInfo[] = [
   smartpoint as ProjectInfo,
   soarchain as ProjectInfo,
   switchElectric as ProjectInfo,
-  iotex as ProjectInfo,
+  iotexW3bstream as ProjectInfo,
   weatherflow as ProjectInfo,
   karrierOne as ProjectInfo,
   nesten as ProjectInfo,
