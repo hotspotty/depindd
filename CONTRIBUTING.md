@@ -56,7 +56,7 @@ git checkout -b add-project/project-x
   "title": "",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["5G"],
   "token": "",
   "blockchain": "polygon",
   "status": "development",

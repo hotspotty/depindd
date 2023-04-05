@@ -3,7 +3,7 @@
   "title": "Helium IoT",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["LoRaWAN"],
   "token": "IOT",
   "blockchain": "solana",
   "status": "production",

@@ -3,7 +3,7 @@
   "title": "Wayru",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["WiFi"],
   "token": "WRU",
   "blockchain": "algorand",
   "status": "development",

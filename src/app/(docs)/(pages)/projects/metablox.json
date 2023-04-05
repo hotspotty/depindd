@@ -3,7 +3,7 @@
   "title": "Metablox",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["WiFi"],
   "token": "MBLX",
   "blockchain": "ethereum",
   "status": "development",
@@ -27,7 +27,10 @@
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/MetaBloxIO" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "https://metablox.io/learn/the-metablox-network-concept" },
+    {
+      "type": "documentation",
+      "url": "https://metablox.io/learn/the-metablox-network-concept"
+    },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },

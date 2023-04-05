@@ -3,7 +3,7 @@
   "title": "WiCrypt",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["WiFi"],
   "token": "WNT",
   "blockchain": "polygon",
   "status": "production",

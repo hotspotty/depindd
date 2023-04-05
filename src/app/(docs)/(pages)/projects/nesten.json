@@ -3,7 +3,7 @@
   "title": "Nesten",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["LoRaWAN", "WiFi", "bluetooth"],
   "token": "NIT",
   "blockchain": "ethereum",
   "status": "development",

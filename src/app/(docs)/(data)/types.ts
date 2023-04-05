@@ -48,7 +48,10 @@ export const legos = ["wireless", "sensors", "servers"] as const
 export type Lego = (typeof legos)[number]
 
 export const categories = [
-  "connectivity",
+  "5G",
+  "LoRaWAN",
+  "WiFi",
+  "bluetooth",
   "mobility",
   "energy",
   "environmental",
@@ -66,7 +69,7 @@ export const categories = [
 export type Category = (typeof categories)[number]
 
 export const legoCategories: { [lego: string]: Category[] } = {
-  wireless: ["connectivity"],
+  wireless: ["5G", "LoRaWAN", "WiFi", "bluetooth"],
   sensors: [
     "mobility",
     "energy",

@@ -3,7 +3,7 @@
   "title": "Helium Mobile",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["5G"],
   "token": "MOBILE",
   "blockchain": "solana",
   "status": "production",

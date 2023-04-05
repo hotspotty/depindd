@@ -3,7 +3,7 @@
   "title": "Crankk",
   "miners": [],
   "lego": "wireless",
-  "categories": ["connectivity"],
+  "categories": ["LoRaWAN"],
   "token": "Crankk",
   "blockchain": "kadena",
   "status": "development",
