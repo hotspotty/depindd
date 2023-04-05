@@ -32,4 +32,4 @@ In this section you can learn more about individual projects through references 
 
 ## Blockchains
 
-DePIN networks typically use a blockchain to implement decentralized ownership and incentive structures. DePIN DD has a dedicated page for every blokchain that is used by DePIN projects.
+DePIN networks typically use a blockchain to implement decentralized ownership and incentive structures. DePIN DD has a dedicated page for every blockchain that is used by DePIN projects.
