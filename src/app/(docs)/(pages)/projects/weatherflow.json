@@ -20,7 +20,7 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/@weatherflow6334" },
     { "type": "instagram", "url": "https://www.instagram.com/weatherflow" },
     {
       "type": "linkedin",
@@ -37,7 +37,7 @@
     { "type": "shop", "url": "https://shop.weatherflow.com" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/weatherflow" },
     { "type": "other", "url": "" }
   ]
 }

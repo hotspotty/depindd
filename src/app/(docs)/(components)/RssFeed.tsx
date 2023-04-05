@@ -49,7 +49,7 @@ export default async function RssFeed({
 }) {
   const rssFeed = await getRssFeed(links)
 
-  if (rssFeed.length === 0) return
+  if (rssFeed.length === 0) return null
 
   return (
     <div className={className}>

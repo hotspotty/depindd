@@ -1,0 +1,58 @@
+{
+  "slug": "wicrypt",
+  "title": "WiCrypt",
+  "miners": [],
+  "lego": "wireless",
+  "categories": ["connectivity"],
+  "token": "WNT",
+  "blockchain": "polygon",
+  "status": "production",
+  "logo": "/images/projects/wicrypt.jpeg",
+  "usedBy": [],
+  "links": [
+    { "type": "website", "url": "https://wicrypt.com" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://wicrypt.com/#blog" },
+    { "type": "medium", "url": "https://medium.com/wicrypt" },
+    { "type": "twitter", "url": "https://twitter.com/wicrypt" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/Wicrypt" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.gg/9dqcTSxfuZ" },
+    { "type": "telegram", "url": "https://t.me/wicrypt" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UC3NGYpnFSgw9Nj8Vpb18y3g"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/wicryptnetwork"
+    },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/wicrypt" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "https://web.facebook.com/wicrypt" },
+    { "type": "github", "url": "" },
+    { "type": "whitepaper", "url": "https://whitepaper.wicrypt.com" },
+    { "type": "documentation", "url": "" },
+    {
+      "type": "governance",
+      "url": "https://whitepaper.wicrypt.com/4.-tokenomics/4.3-governance"
+    },
+    {
+      "type": "tokenomics",
+      "url": "https://whitepaper.wicrypt.com/4.-tokenomics"
+    },
+    { "type": "explorer", "url": "https://scan.wicrypt.com" },
+    { "type": "shop", "url": "https://wicrypt.com/product.html" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/wicrypt"
+    },
+    { "type": "analytics", "url": "" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/wicrypt"
+    },
+    { "type": "other", "url": "" }
+  ]
+}

@@ -28,7 +28,7 @@
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
-    { "type": "github", "url": "" },
+    { "type": "github", "url": "https://github.com/WhyNotSwitch" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
@@ -37,7 +37,7 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/whynotswitch" },
     { "type": "other", "url": "" }
   ]
 }

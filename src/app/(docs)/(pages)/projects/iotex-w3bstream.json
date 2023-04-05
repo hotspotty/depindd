@@ -1,0 +1,46 @@
+{
+  "slug": "iotex-w3bstream",
+  "title": "IoTeX W3bstream",
+  "miners": [],
+  "lego": "servers",
+  "categories": ["compute"],
+  "token": "",
+  "blockchain": "iotex",
+  "status": "development",
+  "logo": "/images/projects/iotex.jpeg",
+  "usedBy": ["elumicate", "envirobloq", "healthblocks"],
+  "links": [
+    { "type": "website", "url": "https://w3bstream.com" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/w3bstream_com" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/q5eYde2CU7" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/machinefi/w3bstream" },
+    {
+      "type": "whitepaper",
+      "url": "https://docsend.com/view/twtxhbzvisdye2xj"
+    },
+    {
+      "type": "documentation",
+      "url": "https://docs.w3bstream.com/introduction/readme"
+    },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "" },
+    { "type": "coingecko", "url": "" },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
