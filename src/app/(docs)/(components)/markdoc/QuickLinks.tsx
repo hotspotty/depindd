@@ -14,9 +14,14 @@ export const QuickLinks: React.FC<QuickLinksProps> = ({
   children,
 }) => {
   return (
-    <div className={clsx("not-prose my-12 grid grid-cols-1 gap-6", className)}>
+    <ul
+      className={clsx(
+        "not-prose my-10 grid grid-cols-1 gap-x-6 gap-y-10 pl-0 sm:grid-cols-2 xl:grid-cols-3",
+        className
+      )}
+    >
       {children}
-    </div>
+    </ul>
   )
 }
 
@@ -50,44 +55,52 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
 }) => {
   const transformedLabels = transformLabels(labels)
   return (
-    <div
-      className={clsx(
-        "group relative rounded-xl border border-slate-200 dark:border-slate-800 dark:bg-slate-800",
-        className
-      )}
-    >
-      <div className="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 transition duration-200 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.sky.50)),var(--quick-links-hover-bg,theme(colors.sky.50)))_padding-box,linear-gradient(to_top,theme(colors.indigo.400),theme(colors.cyan.400),theme(colors.sky.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]" />
-      <div className="relative overflow-hidden rounded-xl p-6">
-        <div className="flex items-center gap-4">
-          {image && (
-            <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 transition duration-200 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0 group-hover:dark:bg-slate-600">
-              <Image
-                className="h-16 w-16 rounded-full"
-                width={64}
-                height={64}
-                src={image}
-                alt={title}
+    <li className={clsx("group relative flex flex-row-reverse", className)}>
+      <div className="peer ml-4 flex-auto">
+        <h4 className="font-semibold leading-6 text-slate-900 dark:text-slate-200">
+          <Link
+            className="before:absolute before:-inset-3 before:rounded-2xl"
+            href={href}
+          >
+            {title}
+            <svg
+              viewBox="0 0 3 6"
+              className="-mt-px ml-3 inline h-1.5 w-auto overflow-visible text-slate-400 opacity-0 transition duration-200 group-focus-within:opacity-100 group-hover:opacity-100"
+            >
+              <path
+                d="M0 0L3 3L0 6"
+                fill="none"
+                stroke-width="2"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
               />
-            </div>
-          )}
-          <div className="flex-1">
-            <h2 className="font-display text-xl text-slate-900 dark:text-white">
-              <Link href={href}>
-                <span className="absolute -inset-px rounded-xl" />
-                {title}
-              </Link>
-            </h2>
-            <p className="mt-1 text-sm text-slate-700 dark:text-slate-400">
-              {description}
-            </p>
-            <Labels
-              labels={transformedLabels.map((label) => ({
-                title: slugToTitle(label),
-              }))}
-            />
-          </div>
-        </div>
+            </svg>
+          </Link>
+        </h4>
+        {description && (
+          <p className="mt-2 text-sm leading-6 text-slate-700 dark:text-slate-400">
+            {description}
+          </p>
+        )}
+        <Labels
+          labels={transformedLabels.map((label) => ({
+            title: slugToTitle(label),
+          }))}
+        />
       </div>
-    </div>
+      {image && (
+        <div className="dark:highlight-white/5 flex h-14 w-14 flex-none items-center justify-center overflow-hidden rounded-full bg-white shadow ring-1 ring-slate-900/5 transition duration-200 dark:bg-slate-800 group-hover:dark:bg-slate-600 ">
+          <Image
+            className="h-10 w-10 rounded-full"
+            width={40}
+            height={40}
+            src={image}
+            alt={title}
+          />
+        </div>
+      )}
+      <div className="absolute -inset-3 -z-10 rounded-2xl bg-slate-50 opacity-0 transition duration-200 peer-hover:opacity-100 dark:bg-slate-800/50" />
+    </li>
   )
 }

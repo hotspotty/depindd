@@ -20,12 +20,13 @@ export default function LegoCategoryProjects({
   return (
     <>
       <h4>Projects</h4>
-      <QuickLinks className="lg:grid-cols-2">
-        {filteredProjects.map(({ slug, title, logo }) => (
+      <QuickLinks>
+        {filteredProjects.map(({ slug, title, logo, blockchain }) => (
           <QuickLink
             key={slug}
             title={title}
             image={logo}
+            labels={[blockchain]}
             href={`/projects/${slug}`}
           />
         ))}
