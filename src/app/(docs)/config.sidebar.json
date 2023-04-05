@@ -2,7 +2,7 @@
   {
     "section": "about",
     "label": "About",
-    "slugs": ["depin", "depindd", "depin-categories"]
+    "slugs": ["depin", "depindd"]
   },
   {
     "section": "leaderboards",
