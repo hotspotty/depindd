@@ -20,7 +20,7 @@ export default async function BlockchainsLeaderboard({
           projectCount: number
         }
       },
-      { slug, lego, categories, blockchain }
+      { slug, blockchain }
     ) => {
       const blockchainInfo = blockchains.find(({ slug }) => slug === blockchain)
       if (!blockchainInfo) return result
