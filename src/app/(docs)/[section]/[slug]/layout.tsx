@@ -9,7 +9,7 @@ import Labels, { Label } from "../../(components)/Labels"
 import Links from "../../(components)/Links"
 import { blockchains } from "../../(data)/blockchains"
 import { projects } from "../../(data)/projects"
-import { legoCategories } from "../../(data)/types"
+import { subcategoriesByCategory } from "../../(data)/types"
 import { PAGES_PATH, getSidebarItems } from "../../(utils)/sidebar"
 import { slugToTitle } from "../../(utils)/text"
 
@@ -49,12 +49,12 @@ export default async function PageLayout({ params, children }: PageProps) {
 
       labels = [
         {
-          title: slugToTitle(projectInfo.lego),
-          url: `/lego/${projectInfo.lego}`,
+          title: slugToTitle(projectInfo.category),
+          url: `/categories/${projectInfo.category}`,
         },
-        ...projectInfo.categories.map((category) => ({
-          title: slugToTitle(category),
-          url: `/lego/${projectInfo.lego}#${slugify(category)}`,
+        ...projectInfo.subcategories.map((subcategory) => ({
+          title: slugToTitle(subcategory),
+          url: `/categories/${projectInfo.category}#${slugify(subcategory)}`,
         })),
       ]
 
@@ -88,10 +88,10 @@ export default async function PageLayout({ params, children }: PageProps) {
         links.push({ title, url })
       })
     }
-  } else if (params.section === "lego") {
-    labels = legoCategories[params.slug].map((category) => ({
+  } else if (params.section === "category") {
+    labels = subcategoriesByCategory[params.slug].map((category) => ({
       title: slugToTitle(category),
-      url: `/lego/${params.slug}#${slugify(category)}`,
+      url: `/categories/${params.slug}#${slugify(category)}`,
       samePage: true,
     }))
   }

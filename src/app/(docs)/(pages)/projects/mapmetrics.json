@@ -2,8 +2,8 @@
   "slug": "mapmetrics",
   "title": "MapMetrics",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["mobility"],
+  "category": "sensors",
+  "subcategories": ["mobility"],
   "token": "MMaps",
   "blockchain": "solana",
   "status": "production",
@@ -27,7 +27,10 @@
       "type": "youtube",
       "url": "https://www.youtube.com/channel/UCKXw4f25P0MtR2oGiXqA0XQ"
     },
-    { "type": "instagram", "url": "https://www.instagram.com/mapmetrics_official" },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/mapmetrics_official"
+    },
     {
       "type": "linkedin",
       "url": "https://www.linkedin.com/company/mapmetrics"

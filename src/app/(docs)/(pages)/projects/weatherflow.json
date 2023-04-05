@@ -2,8 +2,8 @@
   "slug": "weatherflow",
   "title": "WeatherFlow",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["environmental"],
+  "category": "sensors",
+  "subcategories": ["environmental"],
   "token": "",
   "blockchain": "tbd",
   "status": "production",
@@ -37,7 +37,10 @@
     { "type": "shop", "url": "https://shop.weatherflow.com" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/weatherflow" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/weatherflow"
+    },
     { "type": "other", "url": "" }
   ]
 }

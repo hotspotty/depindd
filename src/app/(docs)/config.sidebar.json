@@ -2,7 +2,7 @@
   {
     "section": "about",
     "label": "About",
-    "slugs": ["depin", "depindd", "depin-lego"]
+    "slugs": ["depin", "depindd", "depin-categories"]
   },
   {
     "section": "leaderboards",
@@ -17,8 +17,8 @@
     ]
   },
   {
-    "section": "lego",
-    "label": "LEGO",
+    "section": "categories",
+    "label": "Categories",
     "slugs": ["wireless", "sensors", "servers"]
   },
   {

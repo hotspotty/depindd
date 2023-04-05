@@ -1,16 +1,18 @@
 import { projects } from "@/app/(docs)/(data)/projects"
-import { Category } from "@/app/(docs)/(data)/types"
+import { Subcategory } from "@/app/(docs)/(data)/types"
 import { QuickLink, QuickLinks } from "./QuickLinks"
 
-export default function LegoCategoryProjects({
-  lego,
+export default function ProjectsByCategory({
   category,
+  subcategory,
 }: {
-  lego: string
-  category: Category
+  category: string
+  subcategory: Subcategory
 }) {
   const filteredProjects = projects.filter(
-    (project) => project.lego === lego && project.categories.includes(category)
+    (project) =>
+      project.category === category &&
+      project.subcategories.includes(subcategory)
   )
 
   if (filteredProjects.length === 0) {

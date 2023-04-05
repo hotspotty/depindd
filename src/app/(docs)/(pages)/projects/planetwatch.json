@@ -2,8 +2,8 @@
   "slug": "planetwatch",
   "title": "PlanetWatch",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["environmental"],
+  "category": "sensors",
+  "subcategories": ["environmental"],
   "token": "PLANET",
   "blockchain": "algorand",
   "status": "production",
@@ -46,7 +46,10 @@
       "url": "https://www.coingecko.com/en/coins/planetwatch"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/planetwatch" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/planetwatch"
+    },
     { "type": "other", "url": "" }
   ]
 }

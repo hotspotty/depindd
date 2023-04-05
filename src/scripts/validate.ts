@@ -8,9 +8,9 @@ import {
   ProjectInfo,
   blockchainSlugs,
   categories,
-  legos,
   linkTypes,
   projectStatuses,
+  subcategories,
 } from "../app/(docs)/(data)/types"
 
 const getValidationPattern = (values) => `(?:${values.join("|")})`
@@ -35,16 +35,16 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
         required: ["title", "url", "price"],
       },
     },
-    lego: {
+    category: {
       type: "string",
-      pattern: getValidationPattern(legos),
+      pattern: getValidationPattern(categories),
     },
-    categories: {
+    subcategories: {
       type: "array",
       uniqueItems: true,
       items: {
         type: "string",
-        pattern: getValidationPattern(categories),
+        pattern: getValidationPattern(subcategories),
       },
     },
     token: { type: "string" },
@@ -87,8 +87,8 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     "slug",
     "title",
     "miners",
-    "lego",
-    "categories",
+    "category",
+    "subcategories",
     "token",
     "blockchain",
     "status",

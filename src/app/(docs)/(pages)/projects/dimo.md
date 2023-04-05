@@ -2,7 +2,7 @@
 
 ### What is this network?
 
-Founded in 2020, DIMO means Digital Infrastructure for Moving Objects and allows vehicle owners to collect, use, and monetize data from their vehicles. Developers and data consumers can build apps and services on this platform, which is built in the open with open-source components. DIMO lives on the Polygon blockchain (EVM-compatible) and establishes an open, blockchain-based identity for users and vehicles. Users can mint their car as an NFT, self-custody its data, and choose if and when they’d like to monetize said data. DIMO offers new opportunities for app developers and data consumers to make use of rich, verifiable data and build new app categories.
+Founded in 2020, DIMO means Digital Infrastructure for Moving Objects and allows vehicle owners to collect, use, and monetize data from their vehicles. Developers and data consumers can build apps and services on this platform, which is built in the open with open-source components. DIMO lives on the Polygon blockchain (EVM-compatible) and establishes an open, blockchain-based identity for users and vehicles. Users can mint their car as an NFT, self-custody its data, and choose if and when they’d like to monetize said data. DIMO offers new opportunities for app developers and data consumers to make use of rich, verifiable data and build new app subcategories.
 
 ### How can I mine $DIMO tokens?
 

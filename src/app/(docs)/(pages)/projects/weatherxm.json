@@ -2,8 +2,8 @@
   "slug": "weatherxm",
   "title": "WeatherXM",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["environmental"],
+  "category": "sensors",
+  "subcategories": ["environmental"],
   "token": "WXM",
   "blockchain": "polygon",
   "status": "development",
@@ -43,7 +43,10 @@
       "url": "https://www.coingecko.com/en/coins/weatherxm"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/weatherxm-b41a" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/weatherxm-b41a"
+    },
     { "type": "other", "url": "" }
   ]
 }

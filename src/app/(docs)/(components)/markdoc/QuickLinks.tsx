@@ -1,3 +1,4 @@
+import { ChevronRightIcon } from "@heroicons/react/24/solid"
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
@@ -63,19 +64,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
             href={href}
           >
             {title}
-            <svg
-              viewBox="0 0 3 6"
-              className="-mt-px ml-3 inline h-1.5 w-auto overflow-visible text-slate-400 opacity-0 transition duration-200 group-focus-within:opacity-100 group-hover:opacity-100"
-            >
-              <path
-                d="M0 0L3 3L0 6"
-                fill="none"
-                stroke-width="2"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <ChevronRightIcon className="-mt-px ml-2 inline h-3 w-auto overflow-visible text-slate-400 opacity-0 transition duration-200 group-focus-within:opacity-100 group-hover:opacity-100" />
           </Link>
         </h4>
         {description && (
