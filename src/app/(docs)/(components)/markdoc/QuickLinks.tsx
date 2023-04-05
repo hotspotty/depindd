@@ -79,7 +79,7 @@ export const QuickLink: React.FC<QuickLinkProps> = ({
           </Link>
         </h4>
         {description && (
-          <p className="mt-2 text-sm leading-6 text-slate-700 dark:text-slate-400">
+          <p className="mt-1.5 text-sm leading-6 text-slate-700 dark:text-slate-400">
             {description}
           </p>
         )}

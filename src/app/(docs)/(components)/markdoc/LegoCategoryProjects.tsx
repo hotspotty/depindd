@@ -21,12 +21,12 @@ export default function LegoCategoryProjects({
     <>
       <h4>Projects</h4>
       <QuickLinks>
-        {filteredProjects.map(({ slug, title, logo, blockchain }) => (
+        {filteredProjects.map(({ slug, title, logo, token }) => (
           <QuickLink
             key={slug}
             title={title}
             image={logo}
-            labels={[blockchain]}
+            description={token ? `$${token}` : undefined}
             href={`/projects/${slug}`}
           />
         ))}
