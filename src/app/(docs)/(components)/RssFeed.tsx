@@ -57,7 +57,7 @@ export default async function RssFeed({
         <h1 className="mb-10 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-4xl">
           News
         </h1>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-10">
           {rssFeed.map((article) => (
             <Article key={article.link} article={article} />
           ))}
