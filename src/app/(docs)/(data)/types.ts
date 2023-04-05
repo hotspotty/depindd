@@ -43,12 +43,15 @@ export interface LinkItem {
   url: string
 }
 
-export const legos = ["wireless", "sensors", "servers"] as const
+export const categories = ["wireless", "sensors", "servers"] as const
 
-export type Lego = (typeof legos)[number]
+export type Category = (typeof categories)[number]
 
-export const categories = [
-  "connectivity",
+export const subcategories = [
+  "5G",
+  "LoRaWAN",
+  "WiFi",
+  "bluetooth",
   "mobility",
   "energy",
   "environmental",
@@ -63,10 +66,10 @@ export const categories = [
   "VPN",
 ] as const
 
-export type Category = (typeof categories)[number]
+export type Subcategory = (typeof subcategories)[number]
 
-export const legoCategories: { [lego: string]: Category[] } = {
-  wireless: ["connectivity"],
+export const subcategoriesByCategory: { [category: string]: Subcategory[] } = {
+  wireless: ["5G", "LoRaWAN", "WiFi", "bluetooth"],
   sensors: [
     "mobility",
     "energy",
@@ -88,8 +91,8 @@ export interface ProjectInfo {
   slug: string // Project filename
   title: string
   miners: Miner[]
-  lego: Lego
-  categories: Category[]
+  category: Category
+  subcategories: Subcategory[]
   token: string // All caps, no dollar sign. E.g. HNT
   blockchain: string // Possible values are the blockchains listed in /src/app/(docs)/(pages)/blockchains
   // In /src/scripts/validate.ts there is an allowance for "tbd" and "n/a" as well

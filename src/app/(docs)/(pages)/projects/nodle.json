@@ -2,8 +2,8 @@
   "slug": "nodle",
   "title": "Nodle",
   "miners": [],
-  "lego": "wireless",
-  "categories": ["connectivity"],
+  "category": "wireless",
+  "subcategories": ["bluetooth"],
   "token": "NODL",
   "blockchain": "polkadot",
   "status": "production",
@@ -37,7 +37,10 @@
       "url": "https://www.coingecko.com/en/coins/nodle-network"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/nodle-io" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/nodle-io"
+    },
     { "type": "other", "url": "" }
   ]
 }

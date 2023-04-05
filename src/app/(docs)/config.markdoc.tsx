@@ -10,10 +10,10 @@ import BlockchainsLeaderboard from "./(components)/markdoc/BlockchainsLeaderboar
 import ComposabilityLeaderboard from "./(components)/markdoc/ComposabilityLeaderboard"
 import ContributorsLeaderboard from "./(components)/markdoc/ContributorsLeaderboard"
 import InvestorsLeaderboard from "./(components)/markdoc/InvestorsLeaderboard"
-import LegoCategoryProjects from "./(components)/markdoc/LegoCategoryProjects"
 import MinerProfitabilityLeaderboard from "./(components)/markdoc/MinerProfitabilityLeaderboard"
+import ProjectsByCategory from "./(components)/markdoc/ProjectsByCategory"
 import TwitterLeaderboard from "./(components)/markdoc/TwitterLeaderboard"
-import { blockchainSlugs, categories, legos } from "./(data)/types"
+import { blockchainSlugs, categories, subcategories } from "./(data)/types"
 
 const config: Config = {
   nodes: {
@@ -118,15 +118,15 @@ const config: Config = {
         href: { type: String },
       },
     },
-    "lego-category-projects": {
-      render: "LegoCategoryProjects",
+    "projects-by-category": {
+      render: "ProjectsByCategory",
       selfClosing: true,
       attributes: {
-        lego: {
+        category: {
           type: String,
-          matches: legos as any,
+          matches: categories as any,
         },
-        category: { type: String, matches: categories as any },
+        subcategory: { type: String, matches: subcategories as any },
       },
     },
     "blockchain-projects": {
@@ -170,7 +170,7 @@ const components = {
   InternalLink: ({ href, title }: { href: string; title: string }) => (
     <Link href={href}>{title}</Link>
   ),
-  LegoCategoryProjects: LegoCategoryProjects,
+  ProjectsByCategory: ProjectsByCategory,
   BlockchainProjects: BlockchainProjects,
 }
 

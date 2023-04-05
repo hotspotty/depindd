@@ -2,8 +2,8 @@
   "slug": "wifi-map",
   "title": "Wifi Map",
   "miners": [],
-  "lego": "wireless",
-  "categories": ["connectivity"],
+  "category": "wireless",
+  "subcategories": ["WiFi"],
   "token": "WIFI",
   "blockchain": "polygon",
   "status": "development",
@@ -37,7 +37,10 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/wifi" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/wifi-map-llc" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/wifi-map-llc"
+    },
     { "type": "other", "url": "" }
   ]
 }

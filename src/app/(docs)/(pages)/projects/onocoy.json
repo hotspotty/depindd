@@ -2,8 +2,8 @@
   "slug": "onocoy",
   "title": "Onocoy",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["geo-location"],
+  "category": "sensors",
+  "subcategories": ["geo-location"],
   "token": "",
   "blockchain": "tbd",
   "status": "development",
@@ -34,7 +34,10 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/onocoy-association" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/onocoy-association"
+    },
     { "type": "other", "url": "" }
   ]
 }

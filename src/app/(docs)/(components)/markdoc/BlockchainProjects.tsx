@@ -18,15 +18,17 @@ export default function BlockchainProjects({
     <>
       <h4>DePIN projects</h4>
       <QuickLinks className="lg:grid-cols-2">
-        {filteredProjects.map(({ slug, title, lego, categories, logo }) => (
-          <QuickLink
-            key={slug}
-            title={title}
-            labels={[lego, ...categories]}
-            image={logo}
-            href={`/projects/${slug}`}
-          />
-        ))}
+        {filteredProjects.map(
+          ({ slug, title, category, subcategories, logo }) => (
+            <QuickLink
+              key={slug}
+              title={title}
+              labels={[category, ...subcategories]}
+              image={logo}
+              href={`/projects/${slug}`}
+            />
+          )
+        )}
       </QuickLinks>
     </>
   )

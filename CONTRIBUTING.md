@@ -55,8 +55,8 @@ git checkout -b add-project/project-x
   "slug": "",
   "title": "",
   "miners": [],
-  "lego": "wireless",
-  "categories": ["connectivity"],
+  "category": "wireless",
+  "subcategories": ["5G"],
   "token": "",
   "blockchain": "polygon",
   "status": "development",
@@ -93,7 +93,7 @@ git checkout -b add-project/project-x
 }
 ```
 
-5. Update the project details in `project-x.json` using the [LEGO classification](https://depindd.com/about/depin-lego) and the [possible values](</src/app/(docs)/(data)/types.ts>).
+5. Update the project details in `project-x.json` using the [values available in this file](</src/app/(docs)/(data)/types.ts>).
 6. For the `blockchain` field, you can only use the blockchains listed in [/src/app/(docs)/(pages)/blockchains](</src/app/(docs)/(pages)/blockchains>). For example `"solana"`, because `solana.json` exists in that folder. If one is missing, it needs to be added as part of the PR. If a project didn't make up what blockhain they'll use for their token, use "tbd". If the project doesn't plan to issue a token, use "n/a".
 7. Download the logo from the project's Twitter account and save it as `project-x.png` (or other extension) in [/public/images/projects](/public/images/projects)
 8. Add a link to that image to the `project-x.json` file

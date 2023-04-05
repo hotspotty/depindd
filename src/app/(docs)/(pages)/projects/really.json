@@ -2,8 +2,8 @@
   "slug": "really",
   "title": "REALLY",
   "miners": [],
-  "lego": "wireless",
-  "categories": ["connectivity"],
+  "category": "wireless",
+  "subcategories": ["5G"],
   "token": "",
   "blockchain": "tbd",
   "status": "development",
@@ -22,7 +22,10 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "https://www.instagram.com/reallywireless" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/reallywireless" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/reallywireless"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },

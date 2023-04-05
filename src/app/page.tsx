@@ -133,12 +133,12 @@ const Home: React.FC = () => {
 
           <div className="mt-10 grid w-full grid-cols-1 gap-6 sm:grid-cols-3">
             {projects
-              .slice(0, 6)
-              .map(({ slug, title, lego, categories, logo }) => (
+              .slice(0, 18)
+              .map(({ slug, title, category, subcategories, logo }) => (
                 <QuickLink
                   key={slug}
                   title={title}
-                  labels={[lego, ...categories]}
+                  labels={[category, ...subcategories]}
                   image={logo}
                   href={`/projects/${slug}`}
                 />

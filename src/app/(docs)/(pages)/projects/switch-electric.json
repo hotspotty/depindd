@@ -2,8 +2,8 @@
   "slug": "switch-electric",
   "title": "Switch Electric",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["smart home"],
+  "category": "sensors",
+  "subcategories": ["smart home"],
   "token": "",
   "blockchain": "tbd",
   "status": "development",
@@ -37,7 +37,10 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/whynotswitch" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/whynotswitch"
+    },
     { "type": "other", "url": "" }
   ]
 }

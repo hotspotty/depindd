@@ -9,7 +9,6 @@ import {
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import Tooltip from "rc-tooltip"
 import React, { ReactNode } from "react"
 import {
   Column,
@@ -24,8 +23,8 @@ import {
   useSortBy,
   useTable,
 } from "react-table"
-import { projects } from "../(data)/projects"
 import { RenderLinks } from "./Links"
+import { ProjectLogoChain } from "./ProjectLogoChain"
 import SortDownIcon from "./icons/SortDownIcon"
 import SortIcon from "./icons/SortIcon"
 import SortUpIcon from "./icons/SortUpIcon"
@@ -119,39 +118,7 @@ export function SelectColumnFilter({
 }
 
 export function ProjectsCell({ column, row }) {
-  const projectSlugs: string[] =
-    row.original[column.projectSlugsAccessor].split(",")
-
-  if (projectSlugs.length === 0) return null
-
-  return (
-    <div className="isolate flex -space-x-4 overflow-hidden">
-      {projectSlugs.map((slug) => {
-        const projectInfo = projects.find((project) => project.slug === slug)
-        if (!projectInfo) return
-
-        return (
-          <Link
-            key={slug}
-            href={`/projects/${slug}`}
-            className="group inline-block !shadow-none"
-          >
-            <Tooltip placement="top" overlay={projectInfo.title}>
-              <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 dark:border dark:border-slate-700/50 dark:bg-slate-700 dark:ring-0 group-hover:dark:bg-slate-600">
-                <Image
-                  className="h-8 w-8 rounded-full"
-                  width={32}
-                  height={32}
-                  src={projectInfo.logo}
-                  alt={projectInfo.title}
-                />
-              </div>
-            </Tooltip>
-          </Link>
-        )
-      })}
-    </div>
-  )
+  return <ProjectLogoChain slugs={row.original[column.projectSlugsAccessor]} />
 }
 
 export function LinkCell({ value, column, row }) {

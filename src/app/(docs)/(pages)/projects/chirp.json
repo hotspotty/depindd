@@ -2,8 +2,8 @@
   "slug": "chirp",
   "title": "Chirp",
   "miners": [],
-  "lego": "wireless",
-  "categories": ["connectivity"],
+  "category": "wireless",
+  "subcategories": ["LoRaWAN"],
   "token": "CHIRP",
   "blockchain": "ethereum",
   "status": "development",
@@ -20,7 +20,10 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.com/invite/zxAaVQgFvs" },
     { "type": "telegram", "url": "https://t.me/ChirpIoT" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UClG9ngaNeWJ-3EhQK0tJ5mQ" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UClG9ngaNeWJ-3EhQK0tJ5mQ"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
@@ -29,10 +32,16 @@
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://chirptoken.io/become-a-keeper/#tab1" },
+    {
+      "type": "tokenomics",
+      "url": "https://chirptoken.io/become-a-keeper/#tab1"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://coinmarketcap.com/currencies/chirp-network" },
+    {
+      "type": "coingecko",
+      "url": "https://coinmarketcap.com/currencies/chirp-network"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

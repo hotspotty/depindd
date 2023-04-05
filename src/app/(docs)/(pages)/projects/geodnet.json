@@ -2,8 +2,8 @@
   "slug": "geodnet",
   "title": "Geodnet",
   "miners": [],
-  "lego": "sensors",
-  "categories": ["geo-location"],
+  "category": "sensors",
+  "subcategories": ["geo-location"],
   "token": "GEOD",
   "blockchain": "polygon",
   "status": "production",
@@ -40,7 +40,10 @@
       "url": "https://coinmarketcap.com/currencies/geodnet"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/geodnet" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/geodnet"
+    },
     { "type": "other", "url": "" }
   ]
 }

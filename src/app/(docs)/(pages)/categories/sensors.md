@@ -2,13 +2,13 @@
 
 Decentralized sensor networks consist of a network of interconnected devices embedded with sensors that collect real-time data from the physical world, then transmit it to a gateway for processing and analysis. The data gathered by these networks can include environmental and weather data, vehicle and traffic data, and street view and aerial imagery data.
 
-## Categories
+## Subcategories
 
 ### Mobility
 
 TBD
 
-{% lego-category-projects lego="sensors" category="mobility" / %}
+{% projects-by-category category="sensors" subcategory="mobility" / %}
 
 ### Energy
 
@@ -18,40 +18,40 @@ Decentralized energy networks aggregate distributed energy sources to create a m
 
 - [A Primer to Web3-Enabled Decentralized Energy Networks](https://medium.com/@0xfu/a-primer-to-web3-enabled-decentralized-energy-networks-e8c3075157ae)
 
-{% lego-category-projects lego="sensors" category="energy" / %}
+{% projects-by-category category="sensors" subcategory="energy" / %}
 
 ### Environmental
 
 TBD
 
-{% lego-category-projects lego="sensors" category="environmental" / %}
+{% projects-by-category category="sensors" subcategory="environmental" / %}
 
 ### Healthcare
 
 TBD
 
-{% lego-category-projects lego="sensors" category="healthcare" / %}
+{% projects-by-category category="sensors" subcategory="healthcare" / %}
 
 ### Smart city
 
 TBD
 
-{% lego-category-projects lego="sensors" category="smart city" / %}
+{% projects-by-category category="sensors" subcategory="smart city" / %}
 
 ### Smart home
 
 TBD
 
-{% lego-category-projects lego="sensors" category="smart home" / %}
+{% projects-by-category category="sensors" subcategory="smart home" / %}
 
 ### Geo-location
 
 TBD
 
-{% lego-category-projects lego="sensors" category="geo-location" / %}
+{% projects-by-category category="sensors" subcategory="geo-location" / %}
 
 ### General
 
 TBD
 
-{% lego-category-projects lego="sensors" category="general" / %}
+{% projects-by-category category="sensors" subcategory="general" / %}

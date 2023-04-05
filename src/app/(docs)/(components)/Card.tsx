@@ -30,9 +30,9 @@ Card.Link = function CardLink<T extends React.ElementType = "a">({
   Omit<React.ComponentPropsWithoutRef<T>, keyof ComponentProps<T>>) {
   return (
     <>
-      <div className="absolute -inset-x-4 -inset-y-2.5 z-0 scale-95 bg-slate-50 opacity-0 transition duration-200 group-hover:scale-100 group-hover:opacity-100 dark:bg-slate-800/50 sm:rounded-2xl md:-inset-x-6 md:-inset-y-4" />
+      <div className="absolute -inset-x-4 -inset-y-2.5 z-0 bg-slate-50 opacity-0 transition duration-200 group-hover:opacity-100 dark:bg-slate-800/50 sm:rounded-2xl md:-inset-4" />
       <a {...props}>
-        <span className="absolute -inset-x-4 -inset-y-2.5 z-20 sm:rounded-2xl md:-inset-x-6 md:-inset-y-4" />
+        <span className="absolute -inset-x-4 -inset-y-2.5 z-20 sm:rounded-2xl md:-inset-4" />
         <span className="relative z-10">{children}</span>
       </a>
     </>

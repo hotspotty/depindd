@@ -19,7 +19,7 @@ export const getLabelColorStyle = (
 
   if (isDark) {
     const lightnessThreshold = 0.6
-    const backgroundAlpha = 0.18
+    const backgroundAlpha = 0.05
     const borderAlpha = 0.3
     const lightnessSwitch = `max(0,min(calc(${perceivedLightness}*-1000 - ${lightnessThreshold}*-1000),1))`
     const lightenBy = `calc((${lightnessThreshold}*100 - ${perceivedLightness}*100)*${lightnessSwitch})`
