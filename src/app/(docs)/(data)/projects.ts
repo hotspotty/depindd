@@ -44,6 +44,7 @@ import wifiDabba from "../(pages)/projects/wifi-dabba.json"
 import wifiMap from "../(pages)/projects/wifi-map.json"
 import worldMobile from "../(pages)/projects/world-mobile.json"
 import xnet from "../(pages)/projects/xnet.json"
+import fleek from "../(pages)/projects/fleek.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -93,4 +94,5 @@ export const projects: ProjectInfo[] = [
   wayru as ProjectInfo,
   wicrypt as ProjectInfo,
   wifiDabba as ProjectInfo,
+  fleek as ProjectInfo,
 ]
