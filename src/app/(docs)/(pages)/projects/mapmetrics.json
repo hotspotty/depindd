@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["mobility"],
   "token": "MMaps",
-  "blockchain": "solana",
+  "blockchains": ["solana"],
   "status": "production",
   "logo": "/images/projects/mapmetrics.jpeg",
   "usedBy": [],

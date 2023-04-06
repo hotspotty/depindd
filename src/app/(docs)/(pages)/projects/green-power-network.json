@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["energy"],
   "token": "GPT",
-  "blockchain": "bsc",
+  "blockchains": ["bsc"],
   "status": "production",
   "logo": "/images/projects/green-power-network.jpeg",
   "usedBy": [],

@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["mobility"],
   "token": "HONEY",
-  "blockchain": "solana",
+  "blockchains": ["solana"],
   "status": "production",
   "logo": "/images/projects/hivemapper.jpeg",
   "usedBy": [],

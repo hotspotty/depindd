@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["WiFi"],
   "token": "WIFI",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "development",
   "logo": "/images/projects/wifi-map.jpeg",
   "usedBy": [],

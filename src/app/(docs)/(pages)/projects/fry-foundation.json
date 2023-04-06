@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["environmental"],
   "token": "FRY",
-  "blockchain": "algorand",
+  "blockchains": ["algorand"],
   "status": "production",
   "logo": "/images/projects/fry-foundation.jpeg",
   "usedBy": [],

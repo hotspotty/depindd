@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["healthcare"],
   "token": "HEALTH",
-  "blockchain": "iotex",
+  "blockchains": ["iotex"],
   "status": "production",
   "logo": "/images/projects/healthblocks.jpeg",
   "usedBy": [],

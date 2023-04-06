@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["compute"],
   "token": "DATA",
-  "blockchain": "ethereum",
+  "blockchains": ["ethereum"],
   "status": "development",
   "logo": "/images/projects/streamr.jpeg",
   "usedBy": ["dimo"],

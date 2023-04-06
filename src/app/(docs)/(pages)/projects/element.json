@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["environmental"],
   "token": "IAQ",
-  "blockchain": "algorand",
+  "blockchains": ["algorand"],
   "status": "production",
   "logo": "/images/projects/element.jpeg",
   "usedBy": [],

@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["mobility"],
   "token": "DIMO",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "production",
   "logo": "/images/projects/dimo.png",
   "usedBy": [],

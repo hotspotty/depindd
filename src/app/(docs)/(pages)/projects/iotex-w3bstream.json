@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["compute"],
   "token": "",
-  "blockchain": "iotex",
+  "blockchains": ["iotex"],
   "status": "development",
   "logo": "/images/projects/iotex-w3bstream.jpg",
   "usedBy": ["elumicate", "envirobloq", "healthblocks"],

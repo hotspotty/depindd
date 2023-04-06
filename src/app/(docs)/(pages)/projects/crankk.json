@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["LoRaWAN"],
   "token": "Crankk",
-  "blockchain": "kadena",
+  "blockchains": ["kadena"],
   "status": "development",
   "logo": "/images/projects/crankk.jpeg",
   "usedBy": [],

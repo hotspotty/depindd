@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["environmental"],
   "token": "PIPHI",
-  "blockchain": "algorand",
+  "blockchains": ["algorand"],
   "status": "development",
   "logo": "/images/projects/piphi.jpeg",
   "usedBy": [],

@@ -94,7 +94,7 @@ export interface ProjectInfo {
   category: Category
   subcategories: Subcategory[]
   token: string // All caps, no dollar sign. E.g. HNT
-  blockchain: string // Possible values are the blockchains listed in /src/app/(docs)/(pages)/blockchains
+  blockchains: string[] // Possible values are the blockchains listed in /src/app/(docs)/(pages)/blockchains
   // In /src/scripts/validate.ts there is an allowance for "tbd" and "n/a" as well
   status: ProjectStatus
   logo: string // Download the logo (e.g. from the twitter account) and link to it: `/public/images/projects/<id>.png`

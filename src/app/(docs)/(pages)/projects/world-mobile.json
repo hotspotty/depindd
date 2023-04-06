@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["5G"],
   "token": "WMT",
-  "blockchain": "cardano",
+  "blockchains": ["cardano"],
   "status": "production",
   "logo": "/images/projects/world-mobile.jpeg",
   "usedBy": [],

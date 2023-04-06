@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["smart city"],
   "token": "ELUM",
-  "blockchain": "iotex",
+  "blockchains": ["iotex"],
   "status": "development",
   "logo": "/images/projects/elumicate.jpeg",
   "usedBy": [],

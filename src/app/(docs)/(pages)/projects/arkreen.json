@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["energy"],
   "token": "AKRE",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "development",
   "logo": "/images/projects/arkreen.jpeg",
   "usedBy": [],

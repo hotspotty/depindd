@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["LoRaWAN"],
   "token": "IOT",
-  "blockchain": "solana",
+  "blockchains": ["solana"],
   "status": "production",
   "logo": "/images/projects/helium-iot.jpeg",
   "usedBy": ["dimo", "hivemapper", "react", "weatherxm", "ascensionwx"],

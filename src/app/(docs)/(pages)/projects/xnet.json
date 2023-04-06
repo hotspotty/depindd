@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["5G"],
   "token": "XNET",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "production",
   "logo": "/images/projects/xnet.jpeg",
   "usedBy": [],

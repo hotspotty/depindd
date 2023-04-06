@@ -58,15 +58,17 @@ export default async function PageLayout({ params, children }: PageProps) {
         })),
       ]
 
-      const blockchainInfo = blockchains.find(
-        ({ slug }) => slug === projectInfo.blockchain
-      )
-      if (blockchainInfo) {
-        labels.push({
-          title: blockchainInfo.title,
-          url: `/blockchains/${blockchainInfo.slug}`,
-        })
-      }
+      projectInfo.blockchains.forEach((blockchainSlug) => {
+        const blockchainInfo = blockchains.find(
+          ({ slug }) => slug === blockchainSlug
+        )
+        if (blockchainInfo) {
+          labels.push({
+            title: blockchainInfo.title,
+            url: `/blockchains/${blockchainInfo.slug}`,
+          })
+        }
+      })
 
       projectInfo.links.forEach(({ type, label, url }) => {
         if (!url) return

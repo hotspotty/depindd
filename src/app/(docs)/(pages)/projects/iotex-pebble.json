@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["general"],
   "token": "",
-  "blockchain": "iotex",
+  "blockchains": ["iotex"],
   "status": "production",
   "logo": "/images/projects/iotex-pebble.jpg",
   "usedBy": [],

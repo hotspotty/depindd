@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["environmental"],
   "token": "PLANET",
-  "blockchain": "algorand",
+  "blockchains": ["algorand"],
   "status": "production",
   "logo": "/images/projects/planetwatch.jpeg",
   "usedBy": [],

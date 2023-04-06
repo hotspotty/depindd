@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["mobility"],
   "token": "NTXT",
-  "blockchain": "ethereum",
+  "blockchains": ["ethereum"],
   "status": "development",
   "logo": "/images/projects/natix.jpeg",
   "usedBy": [],

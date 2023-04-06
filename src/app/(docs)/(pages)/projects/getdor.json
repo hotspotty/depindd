@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["smart home"],
   "token": "DAG",
-  "blockchain": "constellation",
+  "blockchains": ["constellation"],
   "status": "production",
   "logo": "/images/projects/getdor.jpeg",
   "usedBy": [],
