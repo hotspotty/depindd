@@ -1,0 +1,44 @@
+{
+  "slug": "celestia",
+  "title": "Celestia",
+  "token": "",
+  "logo": "/images/blockchains/celestia.jpeg",
+  "links": [
+    { "type": "website", "url": "https://celestia.org" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://blog.celestia.org" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/CelestiaOrg" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "https://forum.celestia.org" },
+    { "type": "discord", "url": "https://discord.com/invite/YsnTPcSfWQ" },
+    { "type": "telegram", "url": "https://t.me/CelestiaCommunity" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCLlvAEzXBFZ-P3zS6BF2Bjg" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/celestiaorg" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://docs.celestia.org" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://celestia.explorers.guru/",
+      "label": "Celestia"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://coinmarketcap.com/currencies/celestia"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/lazyledger" },
+    { "type": "other", "url": "" }
+  ]
+}
