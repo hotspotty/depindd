@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["LoRaWAN"],
   "token": "CHIRP",
-  "blockchain": "ethereum",
+  "blockchains": ["ethereum"],
   "status": "development",
   "logo": "/images/projects/chirp.jpeg",
   "usedBy": [],

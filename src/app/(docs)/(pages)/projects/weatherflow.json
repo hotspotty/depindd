@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["environmental"],
   "token": "",
-  "blockchain": "tbd",
+  "blockchains": ["tbd"],
   "status": "production",
   "logo": "/images/projects/weatherflow.jpeg",
   "usedBy": [],

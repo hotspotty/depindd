@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["bluetooth"],
   "token": "NODL",
-  "blockchain": "polkadot",
+  "blockchains": ["polkadot"],
   "status": "production",
   "logo": "/images/projects/nodle.jpeg",
   "usedBy": [],

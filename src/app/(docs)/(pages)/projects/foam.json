@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["geo-location"],
   "token": "FOAM",
-  "blockchain": "ethereum",
+  "blockchains": ["ethereum"],
   "status": "development",
   "logo": "/images/projects/foam.jpeg",
   "usedBy": [],

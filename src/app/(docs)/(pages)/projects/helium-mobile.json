@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["5G"],
   "token": "MOBILE",
-  "blockchain": "solana",
+  "blockchains": ["solana"],
   "status": "production",
   "logo": "/images/projects/helium-mobile.jpeg",
   "usedBy": [],

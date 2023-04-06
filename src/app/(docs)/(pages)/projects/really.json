@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["5G"],
   "token": "",
-  "blockchain": "tbd",
+  "blockchains": ["tbd"],
   "status": "development",
   "logo": "/images/projects/really.jpeg",
   "usedBy": [],

@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["5G"],
   "token": "KONE",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "development",
   "logo": "/images/projects/karrier-one.jpeg",
   "usedBy": [],

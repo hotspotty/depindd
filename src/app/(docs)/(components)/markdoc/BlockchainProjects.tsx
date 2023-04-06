@@ -6,8 +6,8 @@ export default function BlockchainProjects({
 }: {
   blockchain: string
 }) {
-  const filteredProjects = projects.filter(
-    (project) => project.blockchain === blockchain
+  const filteredProjects = projects.filter((project) =>
+    project.blockchains.includes(blockchain)
   )
 
   if (filteredProjects.length === 0) {

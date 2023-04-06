@@ -48,13 +48,17 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
       },
     },
     token: { type: "string" },
-    blockchain: {
-      type: "string",
-      pattern: getValidationPattern([
-        "tbd", // This is for projects that have yet to decide which blockchain they will use
-        "n/a", // This is for projects that don't plan to have a token
-        ...blockchainSlugs,
-      ]),
+    blockchains: {
+      type: "array",
+      uniqueItems: true,
+      items: {
+        type: "string",
+        pattern: getValidationPattern([
+          "tbd", // This is for projects that have yet to decide which blockchain they will use
+          "n/a", // This is for projects that don't plan to have a token
+          ...blockchainSlugs,
+        ]),
+      },
     },
     status: { type: "string", pattern: getValidationPattern(projectStatuses) },
     logo: { type: "string" },
@@ -90,7 +94,7 @@ const projectInfoJsonSchema: JSONSchemaType<ProjectInfo> = {
     "category",
     "subcategories",
     "token",
-    "blockchain",
+    "blockchains",
     "status",
     "logo",
     "usedBy",

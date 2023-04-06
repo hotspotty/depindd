@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["LoRaWAN", "WiFi", "bluetooth"],
   "token": "NIT",
-  "blockchain": "ethereum",
+  "blockchains": ["ethereum"],
   "status": "development",
   "logo": "/images/projects/nesten.jpeg",
   "usedBy": [],

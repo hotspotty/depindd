@@ -20,28 +20,33 @@ export default async function BlockchainsLeaderboard({
           projectCount: number
         }
       },
-      { slug, blockchain }
+      project
     ) => {
-      const blockchainInfo = blockchains.find(({ slug }) => slug === blockchain)
-      if (!blockchainInfo) return result
+      project.blockchains.forEach((blockchainSlug) => {
+        const blockchainInfo = blockchains.find(
+          ({ slug }) => slug === blockchainSlug
+        )
 
-      if (!result[blockchain]) {
-        result[blockchain] = {
-          name: blockchainInfo.title,
-          path: `/blockchains/${blockchainInfo.slug}`,
-          imagePath: blockchainInfo.logo,
-          token: `$${blockchainInfo.token}`,
-          coingecko: blockchainInfo.links.find(
-            ({ type }) => type === "coingecko"
-          )?.url,
-          projectSlugs: slug,
-          projectCount: 1,
+        if (!blockchainInfo) return
+
+        if (!result[blockchainSlug]) {
+          result[blockchainSlug] = {
+            name: blockchainInfo.title,
+            path: `/blockchains/${blockchainInfo.slug}`,
+            imagePath: blockchainInfo.logo,
+            token: `$${blockchainInfo.token}`,
+            coingecko: blockchainInfo.links.find(
+              ({ type }) => type === "coingecko"
+            )?.url,
+            projectSlugs: project.slug,
+            projectCount: 1,
+          }
+          return
         }
-        return result
-      }
 
-      result[blockchain].projectSlugs += "," + slug
-      result[blockchain].projectCount++
+        result[blockchainSlug].projectSlugs += "," + project.slug
+        result[blockchainSlug].projectCount++
+      })
 
       return result
     },

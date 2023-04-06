@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["WiFi"],
   "token": "MBLX",
-  "blockchain": "ethereum",
+  "blockchains": ["ethereum"],
   "status": "development",
   "logo": "/images/projects/metablox.jpeg",
   "usedBy": [],

@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["WiFi"],
   "token": "WRU",
-  "blockchain": "algorand",
+  "blockchains": ["algorand"],
   "status": "development",
   "logo": "/images/projects/wayru.jpeg",
   "usedBy": [],

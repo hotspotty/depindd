@@ -5,7 +5,7 @@
   "category": "wireless",
   "subcategories": ["WiFi"],
   "token": "WNT",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "production",
   "logo": "/images/projects/wicrypt.jpeg",
   "usedBy": [],

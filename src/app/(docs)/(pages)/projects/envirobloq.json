@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["smart home"],
   "token": "EBLOQ",
-  "blockchain": "iotex",
+  "blockchains": ["iotex"],
   "status": "production",
   "logo": "/images/projects/envirobloq.jpeg",
   "usedBy": [],

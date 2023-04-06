@@ -5,7 +5,7 @@
   "category": "sensors",
   "subcategories": ["geo-location"],
   "token": "GEOD",
-  "blockchain": "polygon",
+  "blockchains": ["polygon"],
   "status": "production",
   "logo": "/images/projects/geodnet.jpeg",
   "usedBy": [],
