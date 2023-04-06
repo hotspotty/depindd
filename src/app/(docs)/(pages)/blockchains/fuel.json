@@ -1,0 +1,44 @@
+{
+  "slug": "fuel",
+  "title": "Fuel",
+  "token": "FUEL",
+  "logo": "/images/blockchains/fuel.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.fuel.network" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://fuel-labs.ghost.io" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/fuel_network" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "https://forum.fuel.network" },
+    { "type": "discord", "url": "https://discord.com/invite/xfpK4Pe" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCam2Sj3SvFSAIfDbP-4jWZQ" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "https://ky.linkedin.com/company/fuel-labs" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/FuelLabs" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://fuellabs.github.io/block-explorer-v2/beta-3/#",
+      "label": "  NETWORK EXPLORER"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/fuel-network"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/fuel-labs" },
+    { "type": "other", "url": "" }
+  ]
+}
