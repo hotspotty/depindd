@@ -1,0 +1,44 @@
+{
+  "slug": "optimism",
+  "title": "Optimism",
+  "token": "OP",
+  "logo": "/images/blockchains/optimism.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.optimism.io" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://optimism.mirror.xyz" },
+    { "type": "medium", "url": "https://optimismpbc.medium.com" },
+    { "type": "twitter", "url": "https://twitter.com/optimismFND" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord-gateway.optimism.io" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "https://www.instagram.com/optimismfnd" },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/optimism-foundation?trk=similar-pages" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/ethereum-optimism" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://community.optimism.io" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://optimistic.etherscan.io",
+      "label": "The Optimism Explorer"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/optimism"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/optimism" },
+    { "type": "other", "url": "https://www.twitch.tv/optimismfnd" }
+  ]
+}
