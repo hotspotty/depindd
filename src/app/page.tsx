@@ -4,7 +4,6 @@ import blurIndigoImage from "@/images/blur-indigo.png"
 import Image from "next/image"
 import { HeroButton } from "./(docs)/(components)/HeroButton"
 import { Icon } from "./(docs)/(components)/Icon"
-import { Search } from "./(docs)/(components)/Search"
 import Tab from "./(docs)/(components)/Tab"
 import { QuickLink } from "./(docs)/(components)/markdoc/QuickLinks"
 
@@ -65,7 +64,6 @@ const Home: React.FC = () => {
             >
               Get started
             </HeroButton>
-            <Search />
           </div>
         </div>
 
