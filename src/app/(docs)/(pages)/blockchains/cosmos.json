@@ -1,0 +1,44 @@
+{
+  "slug": "cosmos",
+  "title": "Cosmos",
+  "token": "ATOM",
+  "logo": "/images/blockchains/cosmos.jpeg",
+  "links": [
+    { "type": "website", "url": "https://cosmos.network" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "" },
+    { "type": "twitter", "url": "https://twitter.com/cosmos" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/cosmosnetwork" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/cosmosnetwork" },
+    { "type": "telegram", "url": "https://t.me/cosmosproject" },
+    { "type": "youtube", "url": "https://www.youtube.com/c/CosmosProject" },
+    { "type": "instagram", "url": "https://www.instagram.com/cosmos__network" },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/cosmoshub/?trk=public_profile_experience-item_profile-section-card_image-click&originalSubdomain=ca" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "https://www.facebook.com/Cosmos.Network.Atom" },
+    { "type": "github", "url": "https://github.com/cosmos/cosmos-sdk" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://docs.cosmos.network/main" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://atomscan.com",
+      "label": "ATOMScan"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/cosmos-hub"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/cosmos-network" },
+    { "type": "other", "url": "" }
+  ]
+}
