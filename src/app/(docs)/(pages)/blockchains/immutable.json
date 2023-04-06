@@ -14,9 +14,15 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.com/invite/QSsKR6J7my" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCR_WlrGou7hm0ACXYpldcuA/featured" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCR_WlrGou7hm0ACXYpldcuA"
+    },
     { "type": "instagram", "url": "https://www.instagram.com/lifeatimmutable" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/immutable-1/?originalSubdomain=au" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/immutable-1"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/immutable" },
@@ -29,7 +35,7 @@
     { "type": "tokenomics", "url": "" },
     {
       "type": "explorer",
-      "url": "https://immutascan.io/?chartTab=TradeVolume",
+      "url": "https://immutascan.io",
       "label": "Immutascan"
     },
     { "type": "shop", "url": "" },
