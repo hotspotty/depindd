@@ -1,0 +1,44 @@
+{
+  "slug": "starknet",
+  "title": "Starknet",
+  "token": "STRK",
+  "logo": "/images/blockchains/starknet.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.starknet.io/en" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "https://www.starknet.io/en/posts" },
+    { "type": "medium", "url": "https://medium.com/starkware/starknet/home" },
+    { "type": "twitter", "url": "https://twitter.com/StarknetFndn" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/starknet" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/qypnmzkhbc" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/@starkware_ltd" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/starknet-io/starknet-website" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "" },
+    { "type": "governance", "url": "https://www.starknet.io/en/posts/governance" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://starkscan.co",
+      "label": "STARKSCAN"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/starknet"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
