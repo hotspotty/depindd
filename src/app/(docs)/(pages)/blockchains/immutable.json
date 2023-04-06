@@ -1,0 +1,44 @@
+{
+  "slug": "immutable",
+  "title": "Immutable",
+  "token": "IMX",
+  "logo": "/images/blockchains/immutable.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.immutable.com" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "https://immutablex.medium.com" },
+    { "type": "twitter", "url": "https://twitter.com/Immutable" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/ImmutableX" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/QSsKR6J7my" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCR_WlrGou7hm0ACXYpldcuA/featured" },
+    { "type": "instagram", "url": "https://www.instagram.com/lifeatimmutable" },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/immutable-1/?originalSubdomain=au" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/immutable" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://docs.x.immutable.com" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://immutascan.io/?chartTab=TradeVolume",
+      "label": "Immutascan"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/immutablex"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
