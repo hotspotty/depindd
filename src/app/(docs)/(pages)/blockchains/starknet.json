@@ -4,7 +4,7 @@
   "token": "STRK",
   "logo": "/images/blockchains/starknet.jpeg",
   "links": [
-    { "type": "website", "url": "https://www.starknet.io/en" },
+    { "type": "website", "url": "https://www.starknet.io" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "https://www.starknet.io/en/posts" },
@@ -19,18 +19,24 @@
     { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
-    { "type": "github", "url": "https://github.com/starknet-io/starknet-website" },
+    {
+      "type": "github",
+      "url": "https://github.com/starknet-io/starknet-website"
+    },
     {
       "type": "whitepaper",
       "url": ""
     },
     { "type": "documentation", "url": "" },
-    { "type": "governance", "url": "https://www.starknet.io/en/posts/governance" },
+    {
+      "type": "governance",
+      "url": "https://www.starknet.io/en/posts/governance"
+    },
     { "type": "tokenomics", "url": "" },
     {
       "type": "explorer",
       "url": "https://starkscan.co",
-      "label": "STARKSCAN"
+      "label": "StarkScan"
     },
     { "type": "shop", "url": "" },
     {

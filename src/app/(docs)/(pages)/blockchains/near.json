@@ -14,9 +14,15 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.com/invite/UY9Xf2k" },
     { "type": "telegram", "url": "https://t.me/cryptonear" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCuKdIYVN8iE3fv8alyk1aMw" },
-    { "type": "instagram", "url": "https://www.instagram.com/near_protocol/?hl=en" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/near-protocol-project" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCuKdIYVN8iE3fv8alyk1aMw"
+    },
+    { "type": "instagram", "url": "https://www.instagram.com/near_protocol" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/near-protocol-project"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/near" },
@@ -38,7 +44,10 @@
       "url": "https://www.coingecko.com/en/coins/near"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/near-0565" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/near-0565"
+    },
     { "type": "other", "url": "" }
   ]
 }
