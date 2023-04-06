@@ -1,0 +1,44 @@
+{
+  "slug": "arbitrum",
+  "title": "Arbitrum",
+  "token": "ARB",
+  "logo": "/images/blockchains/arbitrum.jpeg",
+  "links": [
+    { "type": "website", "url": "https://arbitrum.io" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "https://arbitrumfoundation.medium.com" },
+    { "type": "twitter", "url": "https://twitter.com/arbitrum" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/Arbitrum" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/arbitrum" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "https://www.youtube.com/c/arbitrum" },
+    { "type": "instagram", "url": "https://www.instagram.com/arbitrum/?hl=en" },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/arbitrum" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "https://www.facebook.com/ArbitrumOfficial" },
+    { "type": "github", "url": "https://github.com/OffchainLabs/nitro" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://community.optimism.io" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "https://www.coingecko.com/en/coins/arbitrum/tokenomics" },
+    {
+      "type": "explorer",
+      "url": "https://arbiscan.io",
+      "label": "arbiscan"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/arbitrum"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
