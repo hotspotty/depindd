@@ -7,7 +7,7 @@
   "token": "",
   "blockchain": "iotex",
   "status": "development",
-  "logo": "/images/projects/iotex.jpeg",
+  "logo": "/images/projects/iotex-w3bstream.jpg",
   "usedBy": ["elumicate", "envirobloq", "healthblocks"],
   "links": [
     { "type": "website", "url": "https://w3bstream.com" },
