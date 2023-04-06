@@ -1,0 +1,44 @@
+{
+  "slug": "near",
+  "title": "Near",
+  "token": "NEAR",
+  "logo": "/images/blockchains/near.jpeg",
+  "links": [
+    { "type": "website", "url": "https://near.org" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "https://medium.com/nearprotocol" },
+    { "type": "twitter", "url": "https://twitter.com/nearprotocol" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/nearprotocol" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/UY9Xf2k" },
+    { "type": "telegram", "url": "https://t.me/cryptonear" },
+    { "type": "youtube", "url": "https://www.youtube.com/channel/UCuKdIYVN8iE3fv8alyk1aMw" },
+    { "type": "instagram", "url": "https://www.instagram.com/near_protocol/?hl=en" },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/near-protocol-project" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/near" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://docs.near.org" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://nearscan.org/home",
+      "label": "NEARSCAN"
+    },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/near"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/near-0565" },
+    { "type": "other", "url": "" }
+  ]
+}
