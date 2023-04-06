@@ -7,10 +7,10 @@
   "token": "",
   "blockchain": "iotex",
   "status": "development",
-  "logo": "/images/projects/iotex.jpeg",
+  "logo": "/images/projects/iotex-ucam.png",
   "usedBy": [],
   "links": [
-    { "type": "website", "url": "https://w3bstream.com" },
+    { "type": "website", "url": "https://iotex.io/ucam" },
     { "type": "foundation", "url": "" },
     { "type": "company", "url": "" },
     { "type": "blog", "url": "" },

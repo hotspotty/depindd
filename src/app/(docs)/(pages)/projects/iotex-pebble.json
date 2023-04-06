@@ -7,8 +7,8 @@
   "token": "",
   "blockchain": "iotex",
   "status": "production",
-  "logo": "/images/projects/iotex.jpeg",
-  "usedBy": [],
+  "logo": "/images/projects/iotex-pebble.png",
+  "usedBy": ["envirobloq"],
   "links": [
     { "type": "website", "url": "https://iotex.io/pebble" },
     { "type": "foundation", "url": "" },
