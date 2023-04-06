@@ -4,9 +4,7 @@ title: DePIN
 
 DePIN stands for **Decentralized Physical Infrastructure Networks**, which are blockchain networks that incentivize communities to build physical infrastructure networks/dApps by using tokens. These tokens are used to provide tangible benefits like power, telecom services, web access, and more.
 
-DePINs are designed to provide **real-world value** and rely on a decentralized network and community rather than a centralized backend and company for transactions and business logic. They are open, democratic, and more accessible compared to traditional infrastructure projects. By crowdsourcing the hardware and its maintenance,
-
-DePINs operate at a fraction of the capital and operating expenditures of traditional companies, incentivize network members to take care of expenses while still profiting, and reduce barriers to entry.
+DePINs are designed to provide **real-world value** and rely on a decentralized network and community rather than a centralized backend and company for transactions and business logic. They are open, democratic, and more accessible compared to traditional infrastructure projects. By crowdsourcing the hardware and its maintenance. DePINs operate at a fraction of the capital and operating expenditures of traditional companies, incentivize network members to take care of expenses while still profiting, and reduce barriers to entry.
 
 DePINs are versatile and can enter traditionally underserved areas.
 
