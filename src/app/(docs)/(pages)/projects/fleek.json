@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["CDN"],
   "token": "",
-  "blockchains": ["ethereum","polygon","optmism","arbitrum","bnb","celestia","cosmos","fuel","immutable","near","polkadot","solana","starknet","zksync"],
+  "blockchains": ["ethereum","polygon","optmism","arbitrum","bsc","celestia","cosmos","fuel","immutable","near","polkadot","solana","starknet","zksync"],
   "status": "production",
   "logo": "/images/projects/fleek.jpeg",
   "usedBy": [],
