@@ -5,7 +5,22 @@
   "category": "servers",
   "subcategories": ["CDN"],
   "token": "",
-  "blockchains": ["ethereum","polygon","optmism","arbitrum","bsc","celestia","cosmos","fuel","immutable","near","polkadot","solana","starknet","zksync"],
+  "blockchains": [
+    "ethereum",
+    "polygon",
+    "optmism",
+    "arbitrum",
+    "bsc",
+    "celestia",
+    "cosmos",
+    "fuel",
+    "immutable",
+    "near",
+    "polkadot",
+    "solana",
+    "starknet",
+    "zksync"
+  ],
   "status": "production",
   "logo": "/images/projects/fleek.jpeg",
   "usedBy": [],
@@ -20,7 +35,10 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.com/invite/fleekxyz" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCBzlwYM0JjZpjDZ52-SLUmw" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCBzlwYM0JjZpjDZ52-SLUmw"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://www.linkedin.com/company/fleekxyz" },
     { "type": "tiktok", "url": "" },
@@ -34,7 +52,10 @@
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/fleek-2537" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/fleek-2537"
+    },
     { "type": "other", "url": "" }
   ]
 }
