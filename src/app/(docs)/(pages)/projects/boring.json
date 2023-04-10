@@ -3,7 +3,7 @@
   "title": "Boring",
   "miners": [],
   "category": "servers",
-  "subcategories": ["vpn"],
+  "subcategories": ["VPN"],
   "token": "BOP",
   "blockchains": ["solana"],
   "status": "production",
