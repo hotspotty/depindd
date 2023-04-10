@@ -45,6 +45,16 @@ import wifiMap from "../(pages)/projects/wifi-map.json"
 import worldMobile from "../(pages)/projects/world-mobile.json"
 import xnet from "../(pages)/projects/xnet.json"
 import fleek from "../(pages)/projects/fleek.json"
+import boring from "../(pages)/projects/boring.json"
+import cudos from "../(pages)/projects/cudos.json"
+import gensyn from "../(pages)/projects/gensyn.json"
+import golem from "../(pages)/projects/golem.json"
+import iexec from "../(pages)/projects/iexec.json"
+import incognito from "../(pages)/projects/incognito.json"
+import livepeer from "../(pages)/projects/livepeer.json"
+import masq from "../(pages)/projects/masq.json"
+import media from "../(pages)/projects/media.json"
+import meson from "../(pages)/projects/meson.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -95,4 +105,14 @@ export const projects: ProjectInfo[] = [
   wicrypt as ProjectInfo,
   wifiDabba as ProjectInfo,
   fleek as ProjectInfo,
+  boring as ProjectInfo,
+  cudos as ProjectInfo,
+  gensyn as ProjectInfo,
+  golem as ProjectInfo,
+  iexec as ProjectInfo,
+  incognito as ProjectInfo,
+  livepeer as ProjectInfo,
+  masq as ProjectInfo,
+  media as ProjectInfo,
+  meson as ProjectInfo,
 ]
