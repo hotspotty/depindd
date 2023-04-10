@@ -26,7 +26,15 @@ export const investors: InvestorInfo[] = [
     twitterUsername: "borderless_cap",
     blog: "https://medium.com/borderless-capital",
     logo: "/images/investors/borderless-capital.jpeg",
-    investments: [],
+    investments: [
+      "wayru",
+      "dimo",
+      "wifi-dabba",
+      "planetwatch",
+      "xnet",
+      "helium-iot",
+      "react",
+    ],
   },
   {
     id: "multicoin-capital",
