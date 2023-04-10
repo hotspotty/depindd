@@ -1,13 +1,13 @@
 {
-  "slug": "genesys",
-  "title": "Genesys",
+  "slug": "gensyn",
+  "title": "Gensyn",
   "miners": [],
   "category": "servers",
   "subcategories": ["compute"],
   "token": "",
   "blockchains": ["polkadot"],
   "status": "development",
-  "logo": "/images/projects/genesys.jpeg",
+  "logo": "/images/projects/gensyn.jpeg",
   "usedBy": [],
   "links": [
     { "type": "website", "url": "https://www.gensyn.ai" },
