@@ -20,21 +20,39 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.gg/pbt9m98wnU" },
     { "type": "telegram", "url": "https://t.me/iexec_rlc_official" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCwWxZWvKVHn3CXnmDooLWtA" },
-    { "type": "instagram", "url": "https://www.instagram.com/iexec_team/?hl=pt" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/iex.ec/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3Bonfqh73OTRqDFHIW1%2FlgUw%3D%3D" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCwWxZWvKVHn3CXnmDooLWtA"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/iexec_team"
+    },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/iex.ec" },
     { "type": "tiktok", "url": "" },
-    { "type": "facebook", "url": "https://www.facebook.com/Iex-ec-1164124083643301" },
+    {
+      "type": "facebook",
+      "url": "https://www.facebook.com/Iex-ec-1164124083643301"
+    },
     { "type": "github", "url": "https://github.com/iExecBlockchainComputing" },
-    { "type": "whitepaper", "url": "https://iex.ec/wp-content/uploads/2022/09/iexec_whitepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://iex.ec/wp-content/uploads/2022/09/iexec_whitepaper.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://explorer.iex.ec/bellecour" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/iexec-rlc" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/iexec-rlc"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/iexec" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/iexec"
+    },
     { "type": "other", "url": "" }
   ]
 }

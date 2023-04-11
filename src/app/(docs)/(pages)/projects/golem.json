@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["compute"],
   "token": "GLM",
-  "blockchains": ["polygon","ethereum"],
+  "blockchains": ["polygon", "ethereum"],
   "status": "production",
   "logo": "/images/projects/golem.jpeg",
   "usedBy": [],
@@ -20,21 +20,42 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://chat.golem.network" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCl3fxgrSML2sL3UYZrynbMg/videos" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCl3fxgrSML2sL3UYZrynbMg/videos"
+    },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/golem-network?originalSubdomain=pl" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/golem-network?originalSubdomain=pl"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/golemproject" },
     { "type": "github", "url": "https://github.com/golemfactory" },
-    { "type": "whitepaper", "url": "https://assets.website-files.com/62446d07873fde065cbcb8d5/62446d07873fdeb626bcb927_Golemwhitepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://assets.website-files.com/62446d07873fde065cbcb8d5/62446d07873fdeb626bcb927_Golemwhitepaper.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "https://polygonscan.com/token/0x0b220b82f3ea3b7f6d9a1d8ab58930c064a2b5bf / https://etherscan.io/token/0x7DD9c5Cba05E151C895FDe1CF355C9A1D5DA6429" },
+    {
+      "type": "explorer",
+      "url": "https://polygonscan.com/token/0x0b220b82f3ea3b7f6d9a1d8ab58930c064a2b5bf",
+      "label": "PolygonScan"
+    },
+    {
+      "type": "explorer",
+      "url": "https://etherscan.io/token/0x7DD9c5Cba05E151C895FDe1CF355C9A1D5DA6429",
+      "label": "EtherScan"
+    },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/golem" },
+    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/golem" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/golem-network" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/golem-network"
+    },
     { "type": "other", "url": "https://stats.golem.network" }
   ]
 }
