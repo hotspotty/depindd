@@ -27,14 +27,36 @@
     { "type": "facebook", "url": "https://www.facebook.com/cudos.org" },
     { "type": "github", "url": "https://github.com/CudoVentures" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "https://docs.cudos.org/docs/learn/introduction/overview/?_ga=2.155893755.1791752876.1680780230-1508519881.1680780230" },
-    { "type": "governance", "url": "https://docs.cudos.org/docs/governance/tokens" },
-    { "type": "tokenomics", "url": "https://docs.cudos.org/docs/governance/tokenomics" },
-    { "type": "explorer", "url": "https://explorer.cudos.org/?_ga=2.120831048.1791752876.1680780230-1508519881.1680780230" },
+    {
+      "type": "documentation",
+      "url": "https://docs.cudos.org"
+    },
+    {
+      "type": "governance",
+      "url": "https://docs.cudos.org/docs/governance/tokens"
+    },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.cudos.org/docs/governance/tokenomics"
+    },
+    {
+      "type": "explorer",
+      "url": "https://explorer.cudos.org"
+    },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/cudos/usd" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/cudos/usd"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/cudos-cc73" },
-    { "type": "other", "url": "https://open.spotify.com/show/2lZuBXJ270g7taK06tnK35" }
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/cudos-cc73"
+    },
+    {
+      "type": "other",
+      "url": "https://open.spotify.com/show/2lZuBXJ270g7taK06tnK35",
+      "label": "Spotify"
+    }
   ]
 }

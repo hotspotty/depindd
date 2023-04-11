@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["CDN"],
   "token": "MEDIA",
-  "blockchains": ["solana","bsc","ethereum"],
+  "blockchains": ["solana", "bsc", "ethereum"],
   "status": "development",
   "logo": "/images/projects/media.jpeg",
   "usedBy": [],
@@ -28,11 +28,29 @@
     { "type": "github", "url": "https://github.com/mediafoundation" },
     { "type": "whitepaper", "url": "https://www.media.network/whitepaper.pdf" },
     { "type": "documentation", "url": "https://docs.media.network" },
-    { "type": "governance", "url": "https://docs.media.network/about-components" },
-    { "type": "tokenomics", "url": "https://docs.media.network/media-token-tokenomics" },
-    { "type": "explorer", "url": "https://explorer.solana.com/address/ETAtLmCmsoiEEKfNrHKJ2kYy3MoABhU6NQvpSfij5tDs /////// https://etherscan.io/token/0xdb726152680ece3c9291f1016f1d36f3995f6941" },
+    {
+      "type": "governance",
+      "url": "https://docs.media.network/about-components"
+    },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.media.network/media-token-tokenomics"
+    },
+    {
+      "type": "explorer",
+      "url": "https://explorer.solana.com/address/ETAtLmCmsoiEEKfNrHKJ2kYy3MoABhU6NQvpSfij5tDs",
+      "label": "Solana"
+    },
+    {
+      "type": "explorer",
+      "url": "https://etherscan.io/token/0xdb726152680ece3c9291f1016f1d36f3995f6941",
+      "label": "EtherScan"
+    },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/media-network" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/media-network"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

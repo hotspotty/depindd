@@ -22,19 +22,34 @@
     { "type": "telegram", "url": "https://t.me/mesonnetwork" },
     { "type": "youtube", "url": "https://www.youtube.com/c/MesonNetwork" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https:/www.linkedin.com/company/meson/about" },
+    {
+      "type": "linkedin",
+      "url": "https:/www.linkedin.com/company/meson"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://docs.meson.network/Meson-Network-Whitepaper-v1.6.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://docs.meson.network/Meson-Network-Whitepaper-v1.6.pdf"
+    },
     { "type": "documentation", "url": "https://docs.meson.network" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://docs.meson.network/meson-token.html" },
-    { "type": "explorer", "url": "https://explorer.meson.network:1984/d/mzO2Tpg4k/home?orgId=2" },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.meson.network/meson-token.html"
+    },
+    {
+      "type": "explorer",
+      "url": "https://explorer.meson.network:1984/d/mzO2Tpg4k/home"
+    },
     { "type": "shop", "url": "https://docs.meson.network/pricing.html" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/meson-network/org_similarity_overview" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/meson-network/org_similarity_overview"
+    },
     { "type": "other", "url": "" }
   ]
 }

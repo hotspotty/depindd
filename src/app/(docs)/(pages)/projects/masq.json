@@ -3,9 +3,9 @@
   "title": "Masq",
   "miners": [],
   "category": "servers",
-  "subcategories": ["VPN","CDN"],
+  "subcategories": ["VPN", "CDN"],
   "token": "MASQ",
-  "blockchains": ["polygon","ethereum"],
+  "blockchains": ["polygon", "ethereum"],
   "status": "production",
   "logo": "/images/projects/masq.jpeg",
   "usedBy": [],
@@ -30,9 +30,12 @@
     { "type": "documentation", "url": "https://docs.masq.ai" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
-    { "type": "explorer", "url": "https://etherscan.io/token/0x06f3c323f0238c72bf35011071f2b5b7f43a054c" },
+    {
+      "type": "explorer",
+      "url": "https://etherscan.io/token/0x06f3c323f0238c72bf35011071f2b5b7f43a054c"
+    },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/masq" },
+    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/masq" },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

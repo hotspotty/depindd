@@ -22,19 +22,40 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "https://www.youtube.com/c/boringprotocol" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/boringprotocol/people" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/boringprotocol/people"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/boringprotocol" },
     { "type": "github", "url": "https://github.com/boringprotocol" },
-    { "type": "whitepaper", "url": "https://github.com/boringprotocol/whitepaper" },
-    { "type": "documentation", "url": "https://docs.boringprotocol.io/bop/information/boring-protocol" },
+    {
+      "type": "whitepaper",
+      "url": "https://github.com/boringprotocol/whitepaper"
+    },
+    {
+      "type": "documentation",
+      "url": "https://docs.boringprotocol.io/bop/information/boring-protocol"
+    },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://docs.boringprotocol.io/bop/information/distribution-and-tokenomics" },
-    { "type": "explorer", "url": "https://explorer.solana.com/address/BLwTnYKqf7u4qjgZrrsKeNs2EzWkMLqVCu6j8iHyrNA3/largest" },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.boringprotocol.io/bop/information/distribution-and-tokenomics"
+    },
+    {
+      "type": "explorer",
+      "url": "https://explorer.solana.com/address/BLwTnYKqf7u4qjgZrrsKeNs2EzWkMLqVCu6j8iHyrNA3/largest"
+    },
     { "type": "shop", "url": "https://store.motherbored.limited" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/boring-protocol" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/boring-protocol"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/boring-protocol" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/boring-protocol"
+    },
     { "type": "other", "url": "" }
   ]
 }
