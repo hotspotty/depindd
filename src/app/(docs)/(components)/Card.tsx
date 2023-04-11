@@ -33,7 +33,7 @@ Card.Link = function CardLink<T extends React.ElementType = "a">({
       <div className="absolute -inset-x-4 -inset-y-2.5 z-0 bg-slate-50 opacity-0 transition duration-200 group-hover:opacity-100 dark:bg-slate-800/50 sm:rounded-2xl md:-inset-4" />
       <a {...props}>
         <span className="absolute -inset-x-4 -inset-y-2.5 z-20 sm:rounded-2xl md:-inset-4" />
-        <span className="relative z-10">{children}</span>
+        <span className="relative z-10 w-full break-all">{children}</span>
       </a>
     </>
   )
