@@ -64,6 +64,7 @@ import sia from "../(pages)/projects/sia.json"
 import storm from "../(pages)/projects/storm.json"
 import tableland from "../(pages)/projects/tableland.json"
 import zus from "../(pages)/projects/zus.json"
+import kwill from "../(pages)/projects/kwill.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -133,4 +134,5 @@ export const projects: ProjectInfo[] = [
   storm as ProjectInfo,
   tableland as ProjectInfo,
   zus as ProjectInfo,
+  kwill as ProjectInfo,
 ]
