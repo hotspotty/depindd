@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["warehouse"],
   "token": "testnet",
-  "blockchains": ["tbd"],
+  "blockchains": ["ethereum"],
   "status": "production",
   "logo": "/images/projects/kwill.jpeg",
   "usedBy": [],
