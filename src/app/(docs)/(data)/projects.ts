@@ -55,6 +55,14 @@ import livepeer from "../(pages)/projects/livepeer.json"
 import masq from "../(pages)/projects/masq.json"
 import media from "../(pages)/projects/media.json"
 import meson from "../(pages)/projects/meson.json"
+import orchid from "../(pages)/projects/orchid.json"
+import render from "../(pages)/projects/render.json"
+import ceramic from "../(pages)/projects/ceramic.json"
+import crust from "../(pages)/projects/crust.json"
+import genesysgo from "../(pages)/projects/genesysgo.json"
+import sia from "../(pages)/projects/sia.json"
+import storm from "../(pages)/projects/storm.json"
+import tableland from "../(pages)/projects/tableland.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -115,4 +123,12 @@ export const projects: ProjectInfo[] = [
   masq as ProjectInfo,
   media as ProjectInfo,
   meson as ProjectInfo,
+  orchid as ProjectInfo,
+  render as ProjectInfo,
+  ceramic as ProjectInfo,
+  crust as ProjectInfo,
+  genesysgo as ProjectInfo,
+  sia as ProjectInfo,
+  storm as ProjectInfo,
+  tableland as ProjectInfo,
 ]
