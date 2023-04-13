@@ -3,10 +3,10 @@
   "title": "Kwill",
   "miners": [],
   "category": "servers",
-  "subcategories": ["warehouse"],
-  "token": "testnet",
+  "subcategories": ["data warehouse"],
+  "token": "",
   "blockchains": ["ethereum"],
-  "status": "production",
+  "status": "development",
   "logo": "/images/projects/kwill.jpeg",
   "usedBy": [],
   "links": [
@@ -20,7 +20,10 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.gg/HzRPZ59Kay" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UC7byhahd6AZ0zPSjFX5NTlQ/featured" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UC7byhahd6AZ0zPSjFX5NTlQ/featured"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://www.linkedin.com/company/kwilapp" },
     { "type": "tiktok", "url": "" },

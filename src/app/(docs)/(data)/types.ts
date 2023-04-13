@@ -64,6 +64,7 @@ export const subcategories = [
   "compute",
   "CDN",
   "VPN",
+  "data warehouse",
 ] as const
 
 export type Subcategory = (typeof subcategories)[number]
@@ -80,7 +81,7 @@ export const subcategoriesByCategory: { [category: string]: Subcategory[] } = {
     "geo-location",
     "general",
   ],
-  servers: ["storage", "compute", "CDN", "VPN"],
+  servers: ["storage", "compute", "data warehouse", "CDN", "VPN"],
 }
 
 export const projectStatuses = ["development", "production"] as const

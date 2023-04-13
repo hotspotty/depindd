@@ -3,7 +3,7 @@
   "title": "Tableland",
   "miners": [],
   "category": "servers",
-  "subcategories": ["warehouse"],
+  "subcategories": ["data warehouse"],
   "token": "",
   "blockchains": ["ethereum"],
   "status": "development",
@@ -22,14 +22,20 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/showcase/welcome-to-tableland" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/showcase/welcome-to-tableland"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "https://docs.tableland.xyz" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://docs.tableland.xyz/fundamentals/architecture/table-token" },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.tableland.xyz/fundamentals/architecture/table-token"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },

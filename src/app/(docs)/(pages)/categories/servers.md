@@ -21,3 +21,7 @@ Content Delivery Networks (CDN) deliver data at high speeds by caching copies of
 Virtual Private Networks (VPN) provide a secure connection between a user's device and the internet, creating a private network while using public networks.
 
 {% projects-by-category category="servers" subcategory="VPN" / %}
+
+### Data warehouse
+
+{% projects-by-category category="servers" subcategory="data warehouse" / %}

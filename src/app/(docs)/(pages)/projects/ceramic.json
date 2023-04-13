@@ -3,7 +3,7 @@
   "title": "Ceramic",
   "miners": [],
   "category": "servers",
-  "subcategories": ["warehouse"],
+  "subcategories": ["data warehouse"],
   "token": "",
   "blockchains": ["tbd"],
   "status": "development",
@@ -20,14 +20,20 @@
     { "type": "forum", "url": "https://forum.ceramic.network" },
     { "type": "discord", "url": "https://discord.com/invite/tHRjkatCDb" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCgCLq5dx7sX-yUrrEbtYqVw" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCgCLq5dx7sX-yUrrEbtYqVw"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/ceramicnetwork" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "https://developers.ceramic.network/build/cli/quick-start" },
+    {
+      "type": "documentation",
+      "url": "https://developers.ceramic.network/build/cli/quick-start"
+    },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
