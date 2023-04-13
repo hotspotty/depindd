@@ -78,6 +78,7 @@ import filecoin from "../(pages)/projects/filecoin.json"
 import polybase from "../(pages)/projects/polybase.json"
 import spaceAndTime from "../(pages)/projects/space-and-time.json"
 import scprime from "../(pages)/projects/scprime.json"
+import theta from "../(pages)/projects/theta.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -161,4 +162,5 @@ export const projects: ProjectInfo[] = [
   polybase as ProjectInfo,
   spaceAndTime as ProjectInfo,
   scprime as ProjectInfo,
+  theta as ProjectInfo,
 ]
