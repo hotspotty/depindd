@@ -65,6 +65,13 @@ import wifiMap from "../(pages)/projects/wifi-map.json"
 import worldMobile from "../(pages)/projects/world-mobile.json"
 import xnet from "../(pages)/projects/xnet.json"
 import zus from "../(pages)/projects/zus.json"
+import foureverland from "../(pages)/projects/4everland.json"
+import sentinel from "../(pages)/projects/sentinel.json"
+import flux from "../(pages)/projects/flux.json"
+import fxLand from "../(pages)/projects/fx-land.json"
+import mysterium from "../(pages)/projects/mysterium.json"
+import saturn from "../(pages)/projects/saturn.json"
+import aleph from "../(pages)/projects/aleph.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -135,4 +142,11 @@ export const projects: ProjectInfo[] = [
   tableland as ProjectInfo,
   zus as ProjectInfo,
   kwill as ProjectInfo,
+  foureverland as ProjectInfo,
+  sentinel as ProjectInfo,
+  flux as ProjectInfo,
+  fxLand as ProjectInfo,
+  mysterium as ProjectInfo,
+  saturn as ProjectInfo,
+  aleph as ProjectInfo,
 ]
