@@ -72,6 +72,13 @@ import fxLand from "../(pages)/projects/fx-land.json"
 import mysterium from "../(pages)/projects/mysterium.json"
 import saturn from "../(pages)/projects/saturn.json"
 import aleph from "../(pages)/projects/aleph.json"
+import lit from "../(pages)/projects/lit.json"
+import arweave from "../(pages)/projects/arweave.json"
+import filecoin from "../(pages)/projects/filecoin.json"
+import arweave from "../(pages)/projects/arweave.json"
+import polybase from "../(pages)/projects/polybase.json"
+import spaceAndTime from "../(pages)/projects/space-and-time.json"
+import scprime from "../(pages)/projects/scprime.json"
 import { ProjectInfo } from "./types"
 
 export const projects: ProjectInfo[] = [
@@ -149,4 +156,11 @@ export const projects: ProjectInfo[] = [
   mysterium as ProjectInfo,
   saturn as ProjectInfo,
   aleph as ProjectInfo,
+  lit as ProjectInfo,
+  arweave as ProjectInfo,
+  filecoin as ProjectInfo,
+  arweave as ProjectInfo,
+  polybase as ProjectInfo,
+  spaceAndTime as ProjectInfo,
+  scprime as ProjectInfo,
 ]
