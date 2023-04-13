@@ -1,0 +1,45 @@
+{
+  "slug": "sui",
+  "title": "Sui",
+  "token": "SUI",
+  "logo": "/images/blockchains/sui.jpeg",
+  "links": [
+    { "type": "website", "url": "https://sui.io" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "https://medium.com/mysten-labs" },
+    { "type": "twitter", "url": "https://twitter.com/SuiNetwork" },
+    { "type": "reddit", "url": "" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/sui" },
+    { "type": "telegram", "url": "" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "https://www.linkedin.com/company/sui-foundation?trk=public_jobs_jserp-result_job-search-card-subtitle" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "" },
+    { "type": "github", "url": "https://github.com/MystenLabs" },
+    {
+      "type": "whitepaper",
+      "url": "https://github.com/MystenLabs/sui/blob/main/doc/paper/sui.pdf"
+    },
+    { "type": "documentation", "url": "https://docs.sui.io" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://suiscan.xyz/devnet/home",
+      "label": "Suiscan"
+    },
+    { "type": "explorer", "url": "https://explorer.sui.io" },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/sui"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "" },
+    { "type": "other", "url": "" }
+  ]
+}
