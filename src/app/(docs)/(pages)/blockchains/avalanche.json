@@ -1,0 +1,45 @@
+{
+  "slug": "avalanche",
+  "title": "Avalanche",
+  "token": "AVAX",
+  "logo": "/images/blockchains/avalanche.jpeg",
+  "links": [
+    { "type": "website", "url": "https://www.avax.com" },
+    { "type": "foundation", "url": "" },
+    { "type": "company", "url": "" },
+    { "type": "blog", "url": "" },
+    { "type": "medium", "url": "https://medium.com/avalancheavax" },
+    { "type": "twitter", "url": "https://twitter.com/Avax" },
+    { "type": "reddit", "url": "https://www.reddit.com/r/Avax" },
+    { "type": "forum", "url": "" },
+    { "type": "discord", "url": "https://discord.com/invite/RwXY7P6" },
+    { "type": "telegram", "url": "https://t.me/avalancheavax" },
+    { "type": "youtube", "url": "" },
+    { "type": "instagram", "url": "" },
+    { "type": "linkedin", "url": "https://sg.linkedin.com/company/avalancheavax" },
+    { "type": "tiktok", "url": "" },
+    { "type": "facebook", "url": "https://www.facebook.com/avalancheavax" },
+    { "type": "github", "url": "" },
+    {
+      "type": "whitepaper",
+      "url": ""
+    },
+    { "type": "documentation", "url": "https://docs.avax.network" },
+    { "type": "governance", "url": "" },
+    { "type": "tokenomics", "url": "" },
+    {
+      "type": "explorer",
+      "url": "https://avascan.info",
+      "label": "Avascan"
+    },
+    { "type": "explorer", "url": "" },
+    { "type": "shop", "url": "" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/avalanche"
+    },
+    { "type": "analytics", "url": "" },
+    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/avalanche-f0c4" },
+    { "type": "other", "url": "" }
+  ]
+}
