@@ -3,7 +3,7 @@
   "title": "Space and Time",
   "miners": [],
   "category": "servers",
-  "subcategories": ["warehouse"],
+  "subcategories": ["data warehouse"],
   "token": "",
   "blockchains": ["polygon","ethereum","avalanche","bsc","sui"],
   "status": "production",
