@@ -22,7 +22,7 @@
     { "type": "telegram", "url": "" },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/channel/UC7byhahd6AZ0zPSjFX5NTlQ/featured"
+      "url": "https://www.youtube.com/channel/UC7byhahd6AZ0zPSjFX5NTlQ"
     },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://www.linkedin.com/company/kwilapp" },
