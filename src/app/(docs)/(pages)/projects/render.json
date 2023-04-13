@@ -26,15 +26,24 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/OTOY" },
     { "type": "github", "url": "" },
-    { "type": "whitepaper", "url": "https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad442da8a-067e-490f-88cf-2c4511016ff7&viewer%21megaVerb=group-discover" },
+    {
+      "type": "whitepaper",
+      "url": "https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ad442da8a-067e-490f-88cf-2c4511016ff7"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/render-token" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/render-token"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/rndr-token" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/rndr-token"
+    },
     { "type": "other", "url": "" }
   ]
 }

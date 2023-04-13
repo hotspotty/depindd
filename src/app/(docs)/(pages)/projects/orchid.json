@@ -20,21 +20,36 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.gg/invite/GDbxmjxX9F" },
     { "type": "telegram", "url": "https://www.t.me/OrchidOfficial" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw"
+    },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/orchidprotocol" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/orchidprotocol"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/OrchidProtocol" },
     { "type": "github", "url": "https://github.com/OrchidTechnologies" },
-    { "type": "whitepaper", "url": "https://www.orchid.com/whitepaper/english.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://www.orchid.com/whitepaper/english.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/orchid-protocol" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/orchid-protocol"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/orchid-labs" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/orchid-labs"
+    },
     { "type": "other", "url": "" }
   ]
 }

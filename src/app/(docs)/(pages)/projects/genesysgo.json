@@ -32,7 +32,10 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/genesysgo-shadow" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/genesysgo-shadow"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }

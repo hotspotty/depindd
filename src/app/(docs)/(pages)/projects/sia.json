@@ -32,9 +32,15 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://explore.sia.tech" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/siacoin" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/siacoin"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/sia-c6f4" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/sia-c6f4"
+    },
     { "type": "other", "url": "" }
   ]
 }

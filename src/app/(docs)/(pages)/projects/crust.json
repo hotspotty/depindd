@@ -22,19 +22,31 @@
     { "type": "telegram", "url": "https://t.me/CrustNetwork" },
     { "type": "youtube", "url": "https://www.youtube.com/@crustnetwork4461" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/showcase/crust-network" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/showcase/crust-network"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/crustio" },
-    { "type": "whitepaper", "url": "https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/whitepaper_en.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/whitepaper_en.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://crust.subscan.io" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/crust-network" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/crust-network"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/crust" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/crust"
+    },
     { "type": "other", "url": "" }
   ]
 }

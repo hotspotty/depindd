@@ -22,17 +22,26 @@
     { "type": "telegram", "url": "https://t.me/zus_network" },
     { "type": "youtube", "url": "https://www.youtube.com/@Zus_Network" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/zusnetwork" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/zusnetwork"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/ZusNetwork" },
     { "type": "github", "url": "https://github.com/0chain" },
     { "type": "whitepaper", "url": "https://zus.network/whitepapers" },
     { "type": "documentation", "url": "https://docs.zus.network" },
     { "type": "governance", "url": "" },
-    { "type": "tokenomics", "url": "https://docs.zus.network/concepts/tokenomics" },
-    { "type": "explorer", "url": "https://etherscan.io/token/0xb9ef770b6a5e12e45983c5d80545258aa38f3b78" },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.zus.network/concepts/tokenomics"
+    },
+    {
+      "type": "explorer",
+      "url": "https://etherscan.io/token/0xb9ef770b6a5e12e45983c5d80545258aa38f3b78"
+    },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/0chain" },
+    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/0chain" },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }
