@@ -17,6 +17,11 @@ import immutable from "../(pages)/blockchains/immutable.json"
 import near from "../(pages)/blockchains/near.json"
 import starknet from "../(pages)/blockchains/starknet.json"
 import zksync from "../(pages)/blockchains/zksync.json"
+import akash from "../(pages)/blockchains/akash.json"
+import filecoin from "../(pages)/blockchains/filecoin.json"
+import sentinel from "../(pages)/blockchains/sentinel.json"
+import avalanche from "../(pages)/blockchains/avalanche.json"
+import sui from "../(pages)/blockchains/sui.json"
 import { BlockchainInfo } from "./types"
 
 export const blockchains: BlockchainInfo[] = [
@@ -39,4 +44,9 @@ export const blockchains: BlockchainInfo[] = [
   near as BlockchainInfo,
   starknet as BlockchainInfo,
   zksync as BlockchainInfo,
+  akash as BlockchainInfo,
+  filecoin as BlockchainInfo,
+  sentinel as BlockchainInfo,
+  avalanche as BlockchainInfo,
+  sui as BlockchainInfo,
 ]
