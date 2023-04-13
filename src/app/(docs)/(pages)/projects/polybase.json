@@ -3,7 +3,7 @@
   "title": "Polybase",
   "miners": [],
   "category": "servers",
-  "subcategories": ["warehouse"],
+  "subcategories": ["data warehouse"],
   "token": "",
   "blockchains": ["filecoin"],
   "status": "production",
