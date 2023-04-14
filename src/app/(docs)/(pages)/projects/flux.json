@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["compute"],
   "token": "FLUX",
-  "blockchains": ["ethereum","solana","kadena","avalanche","bsc"],
+  "blockchains": ["ethereum", "solana", "kadena", "avalanche", "bsc"],
   "status": "production",
   "logo": "/images/projects/flux.jpeg",
   "usedBy": [],
@@ -20,9 +20,15 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.io/runonflux" },
     { "type": "telegram", "url": "https://t.me/runonflux" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCphbdfb1MXYgUPsdhQPcnGw"
+    },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/flux-official/mycompany" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/flux-official/mycompany"
+    },
     { "type": "tiktok", "url": "https://www.tiktok.com/@flux_runonflux" },
     { "type": "facebook", "url": "https://www.facebook.com/runonflux" },
     { "type": "github", "url": "https://github.com/RunOnFlux" },
@@ -32,7 +38,10 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://explorer.runonflux.io" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/flux-zelcash" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/flux-zelcash"
+    },
     { "type": "analytics", "url": "" },
     { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }
