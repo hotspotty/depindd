@@ -24,11 +24,11 @@
     { "type": "instagram", "url": "" },
     {
       "type": "linkedin",
-      "url": "https://www.linkedin.com/company/arweave/people"
+      "url": "https://www.linkedin.com/company/arweave"
     },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
-    { "type": "github", "url": "https://github.com/ArweaveTeam/arweave" },
+    { "type": "github", "url": "https://github.com/ArweaveTeam" },
     { "type": "whitepaper", "url": "" },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },

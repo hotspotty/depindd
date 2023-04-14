@@ -20,21 +20,30 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.gg/DrXkRpCFDX" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://youtube.com/channel/UC0odjAGDuv3QPr_ZEAQnhIQ" },
+    {
+      "type": "youtube",
+      "url": "https://youtube.com/channel/UC0odjAGDuv3QPr_ZEAQnhIQ"
+    },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "https://linkedin.com/company/polybase" },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "https://polybase.xyz/whitepaper" },
-    { "type": "documentation", "url": "https://polybase.xyz/docs/introduction" },
+    {
+      "type": "documentation",
+      "url": "https://polybase.xyz/docs"
+    },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/polybase" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/polybase"
+    },
     { "type": "other", "url": "" }
   ]
 }

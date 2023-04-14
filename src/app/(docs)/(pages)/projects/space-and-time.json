@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["data warehouse"],
   "token": "",
-  "blockchains": ["polygon","ethereum","avalanche","bsc","sui"],
+  "blockchains": ["polygon", "ethereum", "avalanche", "bsc", "sui"],
   "status": "production",
   "logo": "/images/projects/space-and-time.jpeg",
   "usedBy": [],
@@ -20,21 +20,30 @@
     { "type": "forum", "url": "" },
     { "type": "discord", "url": "https://discord.gg/spaceandtimeDB" },
     { "type": "telegram", "url": "https://t.me/spaceandtimedb" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCXJyE7ahmqCH11aO7L76PBA" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCXJyE7ahmqCH11aO7L76PBA"
+    },
     { "type": "instagram", "url": "https://www.instagram.com/spaceandtimedb" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/space-and-time-db" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/space-and-time-db"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "https://docs.spaceandtime.io/docs" },
+    { "type": "documentation", "url": "https://docs.spaceandtime.io" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/space-and-time" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/space-and-time"
+    },
     { "type": "other", "url": "" }
   ]
 }
