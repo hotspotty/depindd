@@ -36,10 +36,13 @@
     { "type": "shop", "url": "" },
     {
       "type": "coingecko",
-      "url": "https://www.coingecko.com/pt/moedas/sentinel"
+      "url": "https://www.coingecko.com/en/coins/sentinel"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/sentinel-7e5b" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/sentinel-7e5b"
+    },
     { "type": "other", "url": "" }
   ]
 }

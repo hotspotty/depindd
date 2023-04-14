@@ -3,9 +3,17 @@
   "title": "Aleph",
   "miners": [],
   "category": "servers",
-  "subcategories": ["storage","compute"],
+  "subcategories": ["storage", "compute"],
   "token": "ALEPH",
-  "blockchains": ["ethereum","bsc","cosmos","polkadot","polygon","solana","avalanche"],
+  "blockchains": [
+    "ethereum",
+    "bsc",
+    "cosmos",
+    "polkadot",
+    "polygon",
+    "solana",
+    "avalanche"
+  ],
   "status": "production",
   "logo": "/images/projects/aleph.jpeg",
   "usedBy": [],
@@ -26,15 +34,24 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/aleph-im" },
-    { "type": "whitepaper", "url": "https://github.com/aleph-im/aleph-whitepaper/raw/master/aleph-whitepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://github.com/aleph-im/aleph-whitepaper/raw/master/aleph-whitepaper.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://explorer.aleph.im" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/aleph-im" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/aleph-im"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/aleph-im-966e" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/aleph-im-966e"
+    },
     { "type": "other", "url": "" }
   ]
 }

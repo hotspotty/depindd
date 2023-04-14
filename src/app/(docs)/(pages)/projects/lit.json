@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["compute"],
   "token": "LIT",
-  "blockchains": ["solana","polygon","ethereum","cosmos"],
+  "blockchains": ["solana", "polygon", "ethereum", "cosmos"],
   "status": "production",
   "logo": "/images/projects/lit.jpeg",
   "usedBy": [],
@@ -22,7 +22,10 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/lit-protocol" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/lit-protocol"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/LIT-Protocol/js-sdk" },
@@ -32,9 +35,12 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://explorer.litprotocol.com" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/lit" },
+    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/lit" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/lit-protocol" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/lit-protocol"
+    },
     { "type": "other", "url": "" }
   ]
 }

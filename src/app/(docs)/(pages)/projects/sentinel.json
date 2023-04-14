@@ -26,15 +26,24 @@
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/sentinel-official" },
-    { "type": "whitepaper", "url": "https://raw.githubusercontent.com/sentinel-official/docs/master/whitepaper/whitepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://raw.githubusercontent.com/sentinel-official/docs/master/whitepaper/whitepaper.pdf"
+    },
     { "type": "documentation", "url": "" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://www.mintscan.io/sentinel" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/sentinel" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/sentinel"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/sentinel-7e5b" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/sentinel-7e5b"
+    },
     { "type": "other", "url": "" }
   ]
 }

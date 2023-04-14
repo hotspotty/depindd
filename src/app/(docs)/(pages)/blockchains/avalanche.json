@@ -16,7 +16,10 @@
     { "type": "telegram", "url": "https://t.me/avalancheavax" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://sg.linkedin.com/company/avalancheavax" },
+    {
+      "type": "linkedin",
+      "url": "https://sg.linkedin.com/company/avalancheavax"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/avalancheavax" },
     { "type": "github", "url": "" },
@@ -39,7 +42,10 @@
       "url": "https://www.coingecko.com/en/coins/avalanche"
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/avalanche-f0c4" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/avalanche-f0c4"
+    },
     { "type": "other", "url": "" }
   ]
 }

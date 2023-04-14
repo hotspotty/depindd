@@ -1,1 +1,1 @@
-
+{% blockchain-projects blockchain="akash" / %}

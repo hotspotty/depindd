@@ -5,7 +5,7 @@
   "category": "servers",
   "subcategories": ["storage"],
   "token": "AR",
-  "blockchains": ["cosmos","polkadot","near","solana","avalanche"],
+  "blockchains": ["cosmos", "polkadot", "near", "solana", "avalanche"],
   "status": "production",
   "logo": "/images/projects/arweave.jpeg",
   "usedBy": [],
@@ -22,7 +22,10 @@
     { "type": "telegram", "url": "https://t.me/arweaverefbot" },
     { "type": "youtube", "url": "https://www.youtube.com/c/arweave" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/arweave/people" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/arweave/people"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/ArweaveTeam/arweave" },
@@ -32,9 +35,15 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://viewblock.io/arweave" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/arweave" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/arweave"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/arweave" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/arweave"
+    },
     { "type": "other", "url": "" }
   ]
 }

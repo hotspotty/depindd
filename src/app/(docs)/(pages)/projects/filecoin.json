@@ -20,9 +20,15 @@
     { "type": "forum", "url": "https://monaverse.com" },
     { "type": "discord", "url": "https://discord.com/invite/ipfs" },
     { "type": "telegram", "url": "" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UCPyYmtJYQwxM-EUyRUTp5DA"
+    },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/filecoin-labs" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/filecoin-labs"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/filecoin-project" },
@@ -32,9 +38,15 @@
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/filecoin" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/filecoin"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/filecoin" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/filecoin"
+    },
     { "type": "other", "url": "" }
   ]
 }

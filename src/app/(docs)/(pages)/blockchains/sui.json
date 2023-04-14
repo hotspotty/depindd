@@ -16,7 +16,10 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/sui-foundation?trk=public_jobs_jserp-result_job-search-card-subtitle" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/sui-foundation"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/MystenLabs" },

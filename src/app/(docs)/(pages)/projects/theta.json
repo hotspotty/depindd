@@ -22,19 +22,31 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/theta-labs-inc/?originalSubdomain=br" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/theta-labs-inc/?originalSubdomain=br"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "https://www.facebook.com/ThetaNetwork" },
     { "type": "github", "url": "https://github.com/thetatoken" },
-    { "type": "whitepaper", "url": "https://assets.thetatoken.org/theta-mainnet-4-whitepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://assets.thetatoken.org/theta-mainnet-4-whitepaper.pdf"
+    },
     { "type": "documentation", "url": "https://www.thetatoken.org/docs" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },
     { "type": "explorer", "url": "https://explorer.thetatoken.org" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/pt/moedas/theta-network" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/theta-network"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/theta" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/theta"
+    },
     { "type": "other", "url": "" }
   ]
 }

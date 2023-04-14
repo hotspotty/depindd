@@ -11,7 +11,10 @@
     { "type": "medium", "url": "" },
     { "type": "twitter", "url": "https://twitter.com/akashnet_" },
     { "type": "reddit", "url": "https://www.reddit.com/r/akashnetwork" },
-    { "type": "forum", "url": "https://github.com/orgs/akash-network/discussions/2" },
+    {
+      "type": "forum",
+      "url": "https://github.com/orgs/akash-network"
+    },
     { "type": "discord", "url": "https://discord.com/invite/DxftX67" },
     { "type": "telegram", "url": "https://t.me/AkashNW" },
     { "type": "youtube", "url": "https://www.youtube.com/@AkashNetwork" },
@@ -39,7 +42,10 @@
       "url": ""
     },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/akash-network" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/akash-network"
+    },
     { "type": "other", "url": "" }
   ]
 }
