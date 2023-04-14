@@ -20,13 +20,22 @@
     { "type": "forum", "url": "https://dfinity.org" },
     { "type": "discord", "url": "http://discord.gg/4everland" },
     { "type": "telegram", "url": "https://t.me/org_4everland" },
-    { "type": "youtube", "url": "https://www.youtube.com/channel/UC9gDft8jnTt_1yrtLfsUq0w" },
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/channel/UC9gDft8jnTt_1yrtLfsUq0w"
+    },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://au.linkedin.com/company/4everlandorg" },
+    {
+      "type": "linkedin",
+      "url": "https://au.linkedin.com/company/4everlandorg"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
     { "type": "github", "url": "https://github.com/4everland" },
-    { "type": "whitepaper", "url": "https://static.4everland.org/4everland-litepaper.pdf" },
+    {
+      "type": "whitepaper",
+      "url": "https://static.4everland.org/4everland-litepaper.pdf"
+    },
     { "type": "documentation", "url": "https://docs.4everland.org" },
     { "type": "governance", "url": "" },
     { "type": "tokenomics", "url": "" },

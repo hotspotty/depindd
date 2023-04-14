@@ -22,19 +22,37 @@
     { "type": "telegram", "url": "" },
     { "type": "youtube", "url": "" },
     { "type": "instagram", "url": "" },
-    { "type": "linkedin", "url": "https://www.linkedin.com/company/filecoin-foundation" },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/company/filecoin-foundation"
+    },
     { "type": "tiktok", "url": "" },
     { "type": "facebook", "url": "" },
-    { "type": "github", "url": "https://github.com/filecoin-saturn/L1-node" },
+    { "type": "github", "url": "https://github.com/filecoin-saturn" },
     { "type": "whitepaper", "url": "" },
-    { "type": "documentation", "url": "https://docs.filecoin.io/basics/how-retrieval-works/saturn" },
-    { "type": "governance", "url": "https://docs.filecoin.io/basics/assets/the-fil-token" },
-    { "type": "tokenomics", "url": "https://docs.filecoin.io/basics/assets/the-fil-token" },
+    {
+      "type": "documentation",
+      "url": "https://docs.filecoin.io/basics/how-retrieval-works/saturn"
+    },
+    {
+      "type": "governance",
+      "url": "https://docs.filecoin.io/basics/assets/the-fil-token"
+    },
+    {
+      "type": "tokenomics",
+      "url": "https://docs.filecoin.io/basics/assets/the-fil-token"
+    },
     { "type": "explorer", "url": "" },
     { "type": "shop", "url": "" },
-    { "type": "coingecko", "url": "https://www.coingecko.com/en/coins/filecoin" },
+    {
+      "type": "coingecko",
+      "url": "https://www.coingecko.com/en/coins/filecoin"
+    },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.crunchbase.com/organization/filecoin" },
+    {
+      "type": "crunchbase",
+      "url": "https://www.crunchbase.com/organization/filecoin"
+    },
     { "type": "other", "url": "" }
   ]
 }

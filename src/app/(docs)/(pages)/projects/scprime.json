@@ -22,7 +22,7 @@
     { "type": "telegram", "url": "https://t.me/scpcoin" },
     {
       "type": "youtube",
-      "url": "https://www.youtube.com/channel/UCWv45kPX-mcJEal9D4UPuGg/videos?app=desktop&view=0&sort=dd&shelf_id=0"
+      "url": "https://www.youtube.com/channel/UCWv45kPX-mcJEal9D4UPuGg"
     },
     { "type": "instagram", "url": "" },
     { "type": "linkedin", "url": "" },
