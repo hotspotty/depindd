@@ -40,7 +40,7 @@
     },
     { "type": "coingecko", "url": "" },
     { "type": "analytics", "url": "" },
-    { "type": "crunchbase", "url": "https://www.coingecko.com/en/coins/iotex" },
+    { "type": "crunchbase", "url": "" },
     { "type": "other", "url": "" }
   ]
 }
